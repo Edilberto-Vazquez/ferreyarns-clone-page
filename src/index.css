@@ -30,6 +30,12 @@ h2 {
   /* font-family: "akkurat-regular", "Georgia", "Times New Roman", "serif"; */
 }
 
+h4 {
+  font-size: 1.4rem;
+  color: #8f8f8f;
+  font-weight: 400;
+}
+
 p,
 a {
   font-size: 1.4rem;

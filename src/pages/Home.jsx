@@ -78,7 +78,7 @@ const Home = () => {
               inquire about prices and minimum order quantities.
             </p>
           </FormSectionDescription>
-          <FormSectionContainer>
+          <FormSectionContainer desktopShort>
             <FormSectionInput type="text" name="name" placeholder="Name*" />
             <FormSectionInput
               type="text"

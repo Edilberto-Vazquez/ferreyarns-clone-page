@@ -37,9 +37,13 @@ export const FormSectionDescription = ({ children }) => {
   );
 };
 
-export const FormSectionContainer = ({ children }) => {
+export const FormSectionContainer = ({ children, desktopShort }) => {
   return (
-    <div className="form-container-inputs">
+    <div
+      className={`form-container-inputs ${
+        desktopShort ? "form-container-inputs-short" : ""
+      }`}
+    >
       {children.map((item) => {
         return item;
       })}

@@ -19,7 +19,6 @@
   width: 100%;
   display: grid;
   row-gap: 14px;
-  grid-template-columns: 1fr 1fr;
   column-gap: 100px;
 }
 
@@ -67,4 +66,17 @@
 .form-container-inputs__button::after {
   content: "->";
   margin-left: 10px;
+}
+
+@media (min-width: 980px) {
+  .form-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-container-inputs-short {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+  .form-container-inputs__textarea {
+    grid-column: 1/3;
+  }
 }

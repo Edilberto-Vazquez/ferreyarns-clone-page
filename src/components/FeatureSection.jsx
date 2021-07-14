@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/FeatureSection.css";
 
-const FeatureSection = ({ title, img, xAxis, yAxis, children }) => {
+const FeatureSection = ({ title, subTitle, img, xAxis, yAxis, children }) => {
   return (
     <section className="feature-section">
       <div
@@ -15,6 +15,7 @@ const FeatureSection = ({ title, img, xAxis, yAxis, children }) => {
             : "feature-description-bottom"
         }`}
       >
+        {subTitle ? <h4>{subTitle}</h4> : null}
         <h2>{title}</h2>
         {children}
       </div>

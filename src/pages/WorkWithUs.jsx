@@ -11,13 +11,19 @@ import {
   FormSectionButton,
 } from "../components/FormSection";
 import wwu1 from "../assets/images/work-with-us-1.jpg";
+import "./styles/WorkWithUs.css";
 
 const WorkWithUs = () => {
   return (
     <>
       <Header />
       <main className="work-with-us">
-        <FeatureSection title="Work at Ferre" img={wwu1} yAxis="top">
+        <FeatureSection
+          title="Work at Ferre"
+          subTitle="Ferre / Work with us"
+          img={wwu1}
+          yAxis="top"
+        >
           <p>
             At Ferre we have a passion for low-impact yarns and a deep knowledge
             of what a recycled yarn is capable of. We are Yarn Experts and Yarn
@@ -39,7 +45,10 @@ const WorkWithUs = () => {
             <FormSectionInput type="text" name="name" placeholder="Name*" />
             <FormSectionInput type="email" name="email" placeholder="Email*" />
             <FormSectionInput type="text" name="phone" placeholder="Phone*" />
-            <FormSectionInput type="file" name="file" />
+            <div className="file-upload">
+              <p>Please upload your resume (.pdf / 1MB max.)</p>
+              <FormSectionInput type="file" name="file" />
+            </div>
           </FormSectionContainer>
           <FormSectionButton btnName="SEND" />
         </FormSection>
