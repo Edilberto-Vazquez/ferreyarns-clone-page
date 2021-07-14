@@ -59,28 +59,7 @@ main {
   height: auto;
 }
 
-@media (min-width: 490px) {
-  .brand-features .feature-section:nth-child(1) .feature-description {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .brand-features .feature-section:nth-child(3) .feature-description {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  h2 {
-    font-size: 2.8rem;
-  }
-  p {
-    font-size: 1.6rem;
-  }
-}
-
 @media (min-width: 980px) {
-  .feature-description {
-    padding: 0 20%;
-  }
   .our-clientes-section {
     display: grid;
   }

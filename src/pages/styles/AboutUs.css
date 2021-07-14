@@ -1,0 +1,86 @@
+.about-us {
+  background: url("../../assets/images/slider-1-1914.jpg");
+}
+
+.slogan {
+  padding: 15% 10%;
+  background: #3e2753;
+}
+
+/* .slogan div {
+  width: auto;
+  height: 100%;
+} */
+
+.slogan div p {
+  font-size: 1.8rem;
+  text-align: left;
+  text-size-adjust: 100%;
+  vertical-align: baseline;
+  color: white;
+}
+
+.slogan div p span {
+  font-weight: 700;
+}
+
+.story-slides {
+  display: grid;
+}
+
+.time-line-description {
+  height: auto;
+  padding: 10% 10%;
+  display: grid;
+  align-items: center;
+  grid-auto-rows: min-content;
+  row-gap: 14px;
+}
+
+.time-line-description h2 {
+  color: white;
+}
+
+.time-line-description div p {
+  color: white;
+}
+
+.year-img {
+  width: 150px;
+  height: 50px;
+}
+
+.time-line-image {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: flex-end;
+}
+
+.time-line-image img {
+  width: 120%;
+  height: 100px;
+}
+
+.story-slides h2:nth-child(1) {
+  display: none;
+}
+
+.story-slides h2:nth-child(3) {
+  font-size: 2.6rem;
+}
+
+@media (min-width: 980px) {
+  .story-slides {
+    height: 720px;
+  }
+  .slogan div p {
+    font-size: 3.6rem;
+    line-height: 6.4rem;
+  }
+  .story-slides h2:nth-child(1) {
+    display: inherit;
+    font-size: 2.2rem;
+  }
+}

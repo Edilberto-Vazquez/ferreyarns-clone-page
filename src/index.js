@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import WorkWithUs from "./pages/WorkWithUs";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <WorkWithUs />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,4 +1,5 @@
 import React from "react";
+import certifications from "../assets/images/certifications-footer2.jpg";
 import "./styles/Footer.css";
 
 const Footer = () => {
@@ -41,7 +42,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="certifications">
-        <img src="../assets/images/certifications-footer2.jpg" alt="" />
+        <img src={certifications} alt="" />
       </div>
       <div className="all-rights-reserved">
         <p>© Ferre 2021 | All rights reserved</p>

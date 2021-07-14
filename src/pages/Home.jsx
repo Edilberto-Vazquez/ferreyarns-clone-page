@@ -27,7 +27,11 @@ const Home = () => {
           </div>
         </div>
         <div className="brand-features">
-          <FeatureSection title="Building a zero-impact fashion" img={home1}>
+          <FeatureSection
+            title="Building a zero-impact fashion"
+            img={home1}
+            xAxis="left"
+          >
             <p>
               We make high-quality recycled yarns for all types of fashion
               products, accessories and home textiles. Our products are made
@@ -35,7 +39,7 @@ const Home = () => {
               global market, according to the Higg MSI Index.
             </p>
           </FeatureSection>
-          <FeatureSection title="A circular process" img={home2}>
+          <FeatureSection title="A circular process" img={home2} xAxis="right">
             <p>
               Recycled raw material, zero chemicals, zero water and minimal CO2
               emissions. We keep textile waste out of landfill or incineration
@@ -44,7 +48,11 @@ const Home = () => {
               strong will to minimize our impact.
             </p>
           </FeatureSection>
-          <FeatureSection title="Fully traceable and transparent" img={home3}>
+          <FeatureSection
+            title="Fully traceable and transparent"
+            img={home3}
+            xAxis="left"
+          >
             <p>
               We share the traceability and sustainability performance of each
               of our products to drive positive change and meet consumer demand
