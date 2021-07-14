@@ -1,0 +1,66 @@
+footer {
+  width: 100%;
+  height: auto;
+  padding: 40px 10%;
+  display: grid;
+  justify-items: center;
+  row-gap: 30px;
+}
+
+.footer-information {
+  width: 100%;
+  height: min-content;
+  padding-bottom: 30px;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  row-gap: 14px;
+  border-bottom: 1px solid var(--primary-font);
+}
+
+.footer-logo {
+  place-self: center;
+  width: min-content;
+  height: auto;
+}
+
+.footer-logo div {
+  width: 80px;
+  height: 50px;
+  background: url("../../assets/icons/icono-bobina.svg");
+  background-size: cover;
+}
+
+.footer-contac,
+.footer-general-information,
+.footer-social-media {
+  display: grid;
+  row-gap: 14px;
+}
+
+.footer-general-information {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+
+footer .certifications {
+  width: 100%;
+  min-height: 30px;
+}
+
+footer .certifications img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-contac p:nth-child(2) a,
+.footer-contac p:nth-child(3) a {
+  text-decoration: underline;
+}
+
+@media (min-width: 980px) {
+  .footer-information {
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

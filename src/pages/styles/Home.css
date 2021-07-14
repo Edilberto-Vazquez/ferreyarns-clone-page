@@ -1,0 +1,87 @@
+main {
+  width: 100%;
+  height: auto;
+  display: grid;
+  padding-top: 55px;
+}
+
+.title-section {
+  width: 100%;
+  height: 710px;
+  display: grid;
+  place-items: center;
+  background: url("../../assets/images/hero-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title-container {
+  width: 80%;
+  height: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.title-container h1 {
+  text-align: center;
+  font-size: clamp(3.6rem, 5vw, 8rem);
+  color: white;
+}
+
+.brand-features {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: repeat(3, minmax(min-content, max-content));
+}
+
+.our-clientes-section {
+  display: none;
+  padding: 40px 10%;
+}
+
+.our-clientes-title {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-font);
+}
+
+.our-clientes-img {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--primary-font);
+}
+
+.our-clientes-img img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 490px) {
+  .brand-features .feature-section:nth-child(1) .feature-description {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .brand-features .feature-section:nth-child(3) .feature-description {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 980px) {
+  .feature-description {
+    padding: 0 20%;
+  }
+  .our-clientes-section {
+    display: grid;
+  }
+}

@@ -1,0 +1,22 @@
+.feature-section {
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-auto-rows: min-content 1fr;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+}
+
+.feature-description {
+  width: 100%;
+  height: auto;
+  padding: 40px 10%;
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 10px;
+}
+
+.feature-img {
+  width: 100%;
+  height: auto;
+}

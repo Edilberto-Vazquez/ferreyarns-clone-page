@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-font: #06222e;
+  --secondary-font: #9aa6aa;
+  --form-inputs: #97a3a8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", "Arial", "sans-serif";
+  color: var(--main-font);
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 2.2rem;
+  line-height: 4rem;
+  font-weight: 400;
+  font-family: "Open Sans", "Arial", "sans-serif";
+  /* font-family: "akkurat-regular", "Georgia", "Times New Roman", "serif"; */
+}
+
+p,
+a {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: var(--primary-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid rgba(6, 34, 46, 0.51);
+}
+
+li {
+  list-style: none;
+}
+
+::selection {
+  background-color: #06222e;
+  color: #ffffff;
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--form-inputs);
+}
+
+@media (min-width: 980px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+  p,
+  a {
+    font-size: 1.6rem;
+  }
 }
