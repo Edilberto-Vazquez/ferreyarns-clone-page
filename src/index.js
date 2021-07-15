@@ -5,14 +5,16 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
 import WorkWithUs from "./pages/WorkWithUs";
+import Certifications from "./pages/Certifications";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Home /> */}
     {/* <AboutUs /> */}
-    <Products />
+    {/* <Products /> */}
     {/* <WorkWithUs /> */}
+    <Certifications />
   </React.StrictMode>,
   document.getElementById("root")
 );
