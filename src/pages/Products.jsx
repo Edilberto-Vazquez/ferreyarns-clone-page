@@ -70,7 +70,7 @@ const Products = () => {
                 aplication="Knitting, weaving and hosiery."
                 specs={["Nm 28", "Ne 17"]}
               >
-                <EcologicalDescription>
+                <EcologicalDescription key={1}>
                   <EcologicalMaterial material="rrCotton" percentage="50%" />
                 </EcologicalDescription>
                 <EcologicalDescription>
@@ -86,7 +86,7 @@ const Products = () => {
                 aplication="Knitting, weaving and hosiery."
                 specs={["Nm 40", "Ne 24"]}
               >
-                <EcologicalDescription>
+                <EcologicalDescription key={2}>
                   <EcologicalMaterial material="rrCotton" percentage="52%" />
                 </EcologicalDescription>
                 <EcologicalDescription>
@@ -94,6 +94,22 @@ const Products = () => {
                 </EcologicalDescription>
                 <EcologicalDescription>
                   <EcologicalMaterial material="oFibers" percentage="3%" />
+                </EcologicalDescription>
+              </EcologicalSection>
+              <EcologicalSection
+                title="fearth"
+                type="COTOPOL 30"
+                aplication="Knitting, weaving and hosiery."
+                specs={["Nm 30", "Ne 18"]}
+              >
+                <EcologicalDescription key={3}>
+                  <EcologicalMaterial material="rrCotton" percentage="60%" />
+                </EcologicalDescription>
+                <EcologicalDescription>
+                  <EcologicalMaterial material="polyester" percentage="35%" />
+                </EcologicalDescription>
+                <EcologicalDescription>
+                  <EcologicalMaterial material="oFibers" percentage="5%" />
                 </EcologicalDescription>
               </EcologicalSection>
             </div>

@@ -11,8 +11,8 @@
 .ecological-item__button {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  column-gap: 14px;
   background: none;
   border: none;
   text-align: left;
@@ -27,6 +27,18 @@
 .ecological-item__button img {
   width: auto;
   height: 15px;
+}
+
+.ecological-item__button::after {
+  content: "+";
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  font-size: 3.2rem;
+  font-weight: 500;
+  border-radius: 50%;
+  background: white;
 }
 
 .ecological-item__applications {
