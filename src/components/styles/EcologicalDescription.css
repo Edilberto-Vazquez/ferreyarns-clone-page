@@ -1,0 +1,95 @@
+/* ecological container */
+
+.ecological-item {
+  height: min-content;
+  padding: 14px 0;
+  display: grid;
+  row-gap: 14px;
+  border-bottom: 1px solid white;
+}
+
+.ecological-item__button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  background: none;
+  border: none;
+  text-align: left;
+}
+
+.ecological-item__button span {
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 400;
+}
+
+.ecological-item__button img {
+  width: auto;
+  height: 15px;
+}
+
+.ecological-item__applications {
+  color: white;
+}
+
+.ecological-item__features {
+  display: grid;
+  grid-auto-rows: 126px;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  row-gap: 14px;
+}
+
+.ecological-section__especifications {
+  width: 100px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, 20px);
+}
+
+/* ecological description */
+
+.ecological-descr {
+  display: grid;
+}
+
+/* ecological material */
+
+.ecological-material {
+  width: 180px;
+  height: auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  column-gap: 20px;
+}
+
+.ecological-material img {
+  max-width: 120px;
+  height: 84px;
+}
+
+.percentage-material {
+  width: 80px;
+}
+
+.percentage-material span {
+  font-size: 3.6rem;
+  color: white;
+}
+
+.percentage-material p {
+  display: grid;
+  color: white;
+}
+
+@media (min-width: 780px) {
+  .ecological-item__button span {
+    font-size: 2.4rem;
+  }
+  .ecological-item__button img {
+    width: auto;
+    height: 30px;
+  }
+}

@@ -3,12 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
+import Products from "./pages/Products";
 import WorkWithUs from "./pages/WorkWithUs";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <WorkWithUs />
+    {/* <Home /> */}
+    {/* <AboutUs /> */}
+    <Products />
+    {/* <WorkWithUs /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );
