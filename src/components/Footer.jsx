@@ -28,6 +28,8 @@ const Footer = () => {
           <a href="#">Cookie Policy</a>
           <a href="#">Legal Notice</a>
           <a href="#">Projects</a>
+        </div>
+        <div className="footer-general-information">
           <a href="#">About us</a>
           <a href="#">Products</a>
           <a href="#">Work with us</a>

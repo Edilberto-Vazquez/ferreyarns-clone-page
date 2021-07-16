@@ -1,0 +1,34 @@
+.faqs {
+  display: grid;
+  row-gap: 32px;
+}
+
+.faqs-description {
+  display: grid;
+  row-gap: 14px;
+}
+
+.faqs-questions {
+  display: grid;
+  row-gap: 24px;
+}
+
+.faqs-question {
+  border-bottom: 1px solid var(--primary-font);
+}
+
+.faqs-question button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  text-align: left;
+  padding-bottom: 14px;
+}
+
+.faqs-question button h5 {
+  font-size: 1.8rem;
+  color: var(--primary-font);
+}

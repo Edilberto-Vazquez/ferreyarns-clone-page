@@ -1,0 +1,35 @@
+.some-questions {
+  padding: 80px 10% 10% 10%;
+}
+
+.some-questions-title {
+  margin: 32px 0;
+}
+
+.some-questions-container {
+  width: 100%;
+  height: auto;
+  padding-top: 32px;
+  display: grid;
+  row-gap: 14px;
+  border-top: 1px solid var(--primary-font);
+}
+
+.some-questions-list {
+  padding: 14px 0;
+}
+
+.some-questions-list ul {
+  display: grid;
+  row-gap: 24px;
+}
+
+.some-questions-list ul li {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 980px) {
+  .some-questions-container {
+    grid-template-columns: 1fr 4fr;
+  }
+}

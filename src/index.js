@@ -7,16 +7,18 @@ import Products from "./pages/Products";
 import WorkWithUs from "./pages/WorkWithUs";
 import Certifications from "./pages/Certifications";
 import CircularProcess from "./pages/CircularProcess";
+import SomeQuestions from "./pages/SomeQuestions";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    {/* <Home /> */}
     {/* <AboutUs /> */}
     {/* <Products /> */}
     {/* <WorkWithUs /> */}
     {/* <Certifications /> */}
     {/* <CircularProcess /> */}
+    <SomeQuestions />
   </React.StrictMode>,
   document.getElementById("root")
 );
