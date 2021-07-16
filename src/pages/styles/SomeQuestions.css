@@ -15,19 +15,6 @@
   margin: 32px 0;
 }
 
-.some-questions-section-list {
-  padding: 14px 0;
-}
-
-.some-questions-section-list ul {
-  display: grid;
-  row-gap: 24px;
-}
-
-.some-questions-section-list ul li {
-  font-size: 1.6rem;
-}
-
 .some-questions-section-item {
   display: grid;
   row-gap: 32px;

@@ -1,3 +1,19 @@
+.current-section {
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 24px;
+  padding: 14px 0;
+}
+
+.current-section li {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.current-section-underline {
+  text-decoration: underline;
+}
+
 .section-description {
   display: grid;
   row-gap: 14px;
@@ -8,14 +24,17 @@
   font-weight: 700;
 }
 
+.section-description ul li,
+.section-description ol li {
+  font-size: 1.6rem;
+}
+
 .section-description ul li {
   list-style: disc inside;
-  font-size: 1.6rem;
 }
 
 .section-description ol li {
   list-style: decimal inside;
-  font-size: 1.6rem;
 }
 
 .section-description a {

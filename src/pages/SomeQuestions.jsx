@@ -6,10 +6,12 @@ import PrivacyPolicy from "../components/PrivacyPolicy";
 import Cookies from "../components/Cookies";
 import LegalNotice from "../components/LegalNotice";
 import Projects from "../components/Projects";
+import { SectionOptions } from "../components/SectionItem";
 import "./styles/SomeQuestions.css";
 
 const SomeQuestions = () => {
   const [section, setSection] = useState("FAQs");
+
   const handleSection = () => {
     switch (section) {
       case "FAQs":
@@ -33,17 +35,18 @@ const SomeQuestions = () => {
           <h2>{section}</h2>
         </div>
         <div className="some-questions-container">
-          <aside className="some-questions-section-list">
-            <ul>
-              <li onClick={() => setSection("FAQs")}>FAQs</li>
-              <li onClick={() => setSection("Privacy Policy")}>
-                Privacy Policy
-              </li>
-              <li onClick={() => setSection("Cookie Policy")}>Cookie Policy</li>
-              <li onClick={() => setSection("Legal Notice")}>Legal Notice</li>
-              <li onClick={() => setSection("Projects")}>Projects</li>
-            </ul>
-          </aside>
+          <SectionOptions
+            listItems={[
+              "FAQs",
+              "Privacy Policy",
+              "Cookie Policy",
+              "Legal Notice",
+              "Projects",
+            ]}
+            itemName="FAQs"
+            section={section}
+            setSection={setSection}
+          />
           {handleSection()}
         </div>
       </main>

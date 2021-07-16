@@ -54,15 +54,15 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+  line-height: 2.8rem;
+}
+
 input,
 textarea {
   border: none;
   border-bottom: 1px solid rgba(6, 34, 46, 0.51);
-}
-
-li {
-  list-style: none;
-  line-height: 2.8rem;
 }
 
 ::selection {

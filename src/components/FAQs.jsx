@@ -27,9 +27,13 @@ export const FAQs = () => {
         </p>
       </SectionItem>
       <div className="faqs-questions">
-        {faqsQuestions.map((item) => {
+        {faqsQuestions.map((item, index) => {
           return (
-            <FAQsQuestions question={item.question} answer={item.answer} />
+            <FAQsQuestions
+              key={index}
+              question={item.question}
+              answer={item.answer}
+            />
           );
         })}
       </div>
