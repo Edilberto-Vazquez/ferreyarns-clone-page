@@ -1,13 +1,3 @@
-.faqs {
-  display: grid;
-  row-gap: 32px;
-}
-
-.faqs-description {
-  display: grid;
-  row-gap: 14px;
-}
-
 .faqs-questions {
   display: grid;
   row-gap: 24px;

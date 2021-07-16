@@ -1,0 +1,23 @@
+.section-description {
+  display: grid;
+  row-gap: 14px;
+}
+
+.section-description h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.section-description ul li {
+  list-style: disc inside;
+  font-size: 1.6rem;
+}
+
+.section-description ol li {
+  list-style: decimal inside;
+  font-size: 1.6rem;
+}
+
+.section-description a {
+  text-decoration: underline;
+}

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { faqsQuestions } from "../utils/GeneralInformation";
+import { SectionItem } from "./SectionItem";
 import "./styles/FAQs.css";
 
 export const FAQs = () => {
   return (
-    <div className="faqs">
-      <div className="faqs-description">
+    <div className="faqs some-questions-section-item">
+      <SectionItem>
         <p>
           <strong>FERRE </strong>has been proudly producing recycled cotton,
           wool and polyester yarns in Europe since 1947. This has given us an
@@ -24,7 +25,7 @@ export const FAQs = () => {
           thus a percentage of other fibres such as polyester, viscose, acrylic,
           wool or nylon may be identified during final composition testing.
         </p>
-      </div>
+      </SectionItem>
       <div className="faqs-questions">
         {faqsQuestions.map((item) => {
           return (
