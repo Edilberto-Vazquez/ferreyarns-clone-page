@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import { FAQs } from "../components/FAQs";
 import PrivacyPolicy from "../components/PrivacyPolicy";
 import Cookies from "../components/Cookies";
+import LegalNotice from "../components/LegalNotice";
+import Projects from "../components/Projects";
 import "./styles/SomeQuestions.css";
 
 const SomeQuestions = () => {
@@ -17,9 +19,9 @@ const SomeQuestions = () => {
       case "Cookie Policy":
         return <Cookies />;
       case "Legal Notice":
-        return <p>ln</p>;
+        return <LegalNotice />;
       case "Projects":
-        return <p>p</p>;
+        return <Projects />;
     }
   };
   return (

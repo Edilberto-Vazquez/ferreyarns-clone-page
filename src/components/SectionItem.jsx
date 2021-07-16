@@ -17,7 +17,11 @@ export const SectionItemList = ({ listType, listItems }) => {
         <ul>
           {listItems.map((item) => (
             <li>
-              {item.link ? <a href={item.link}>{item.name}</a> : item.name}
+              {item.link ? (
+                <a href={item.link}>{item.description}</a>
+              ) : (
+                item.description
+              )}
             </li>
           ))}
         </ul>
@@ -27,7 +31,11 @@ export const SectionItemList = ({ listType, listItems }) => {
         <ol>
           {listItems.map((item) => (
             <li>
-              {item.link ? <a href={item.link}>{item.name}</a> : item.name}
+              {item.link ? (
+                <a href={item.link}>{item.description}</a>
+              ) : (
+                item.description
+              )}
             </li>
           ))}
         </ol>

@@ -1,94 +1,94 @@
 export const tecnicalCookies = [
   {
-    name: "Goole",
+    description: "Goole",
     link: "http://www.google.es/intl/es/policies/technologies/types/",
   },
   {
-    name: "YouTube",
+    description: "YouTube",
     link: "http://www.google.es/intl/es/policies/technologies/types/",
   },
   {
-    name: "Facebook",
+    description: "Facebook",
     link: "https://www.facebook.com/help/cookies/?ref=sitefooter",
   },
   {
-    name: "Twitter",
+    description: "Twitter",
     link: "https://support.twitter.com/articles/20170514-twitters-use-of-cookies-and-similar-technologies",
   },
   {
-    name: "linkedIn",
+    description: "linkedIn",
     link: "https://www.linkedin.com/legal/cookie_policy",
   },
   {
-    name: "UserVoice",
+    description: "UserVoice",
     link: "https://www.uservoice.com/privacy/",
   },
   {
-    name: "Tealium",
+    description: "Tealium",
     link: "http://tealium.com/privacy/",
   },
 ];
 
 export const customizationCookies = [
   {
-    name: "YouTube",
+    description: "YouTube",
     link: "http://www.google.es/intl/es/policies/technologies/types/",
   },
   {
-    name: "Facebook",
+    description: "Facebook",
     link: "https://www.facebook.com/help/cookies/?ref=sitefooter",
   },
 ];
 
 export const analyticalCookies = [
   {
-    name: "Google Analytics",
+    description: "Google Analytics",
     link: "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?utm_source=devtools",
   },
   {
-    name: "YouTube",
+    description: "YouTube",
     link: "http://www.google.es/intl/es/policies/technologies/types/",
   },
   {
-    name: "Twitter",
+    description: "Twitter",
     link: "https://support.twitter.com/articles/20170514-twitters-use-of-cookies-and-similar-technologies",
   },
   {
-    name: "Adobe Analytics",
+    description: "Adobe Analytics",
     link: "http://www.adobe.com/es/privacy/analytics.html",
   },
 ];
 
 export const advertisingCookies = [
   {
-    name: "DoubleClick",
+    description: "DoubleClick",
     link: "https://support.google.com/adsense/answer/2839090?hl=es",
   },
   {
-    name: "Google",
+    description: "Google",
     link: "http://www.google.es/intl/es/policies/technologies/types/",
   },
   {
-    name: "Criteo",
+    description: "Criteo",
     link: "http://www.criteo.com/es/privacy/",
   },
   {
-    name: "Adgravity",
+    description: "Adgravity",
     link: "http://www.adgravity.com/privacy",
   },
 ];
 
 export const revocationConsent = [
   {
-    name: "Google Analytics",
+    description: "Google Analytics",
     link: "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?utm_source=devtools",
   },
   {
-    name: "DoubleClick",
+    description: "DoubleClick",
     link: "https://support.google.com/adsense/answer/2839090?hl=es",
   },
   {
-    name: "Goole",
+    description: "Goole",
     link: "http://www.google.es/intl/es/policies/technologies/types/",
   },
 ];

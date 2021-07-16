@@ -6,7 +6,7 @@ import {
   analyticalCookies,
   advertisingCookies,
   revocationConsent,
-} from "../utils/CookiesComponent";
+} from "../utils/ComponentCookies";
 
 const Cookies = () => {
   return (
@@ -62,10 +62,12 @@ const Cookies = () => {
           listType="ul"
           listItems={[
             {
-              name: "Customization: These cookies are used to remember the configurationof the selected size in the visualization of the web contents and to be able to show it the next time the user visits it.",
+              description:
+                "Customization: These cookies are used to remember the configurationof the selected size in the visualization of the web contents and to be able to show it the next time the user visits it.",
             },
             {
-              name: "Analysis: Cookies that allow to track the incoming traffic to the website to perform visitor statistics.",
+              description:
+                "Analysis: Cookies that allow to track the incoming traffic to the website to perform visitor statistics.",
             },
           ]}
         />
