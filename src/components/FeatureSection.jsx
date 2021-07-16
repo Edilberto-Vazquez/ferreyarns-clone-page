@@ -28,9 +28,9 @@ const FeatureSection = ({
         {children}
       </div>
       {img ? (
-        <img src={img} alt="" className="feature-img" />
+        <img src={img} alt="" className="feature-media" />
       ) : (
-        <video autoPlay muted loop className="feature-img">
+        <video autoPlay muted loop className="feature-media">
           <source src={video} type="video/mp4" />
         </video>
       )}

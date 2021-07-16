@@ -11,12 +11,12 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Home /> */}
+    <Home />
     {/* <AboutUs /> */}
     {/* <Products /> */}
     {/* <WorkWithUs /> */}
     {/* <Certifications /> */}
-    <CircularProcess />
+    {/* <CircularProcess /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

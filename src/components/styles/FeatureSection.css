@@ -1,6 +1,5 @@
 .feature-section {
   width: 100%;
-  height: max-content;
   display: grid;
   grid-auto-rows: min-content;
   place-items: center;
@@ -17,9 +16,9 @@
   row-gap: 10px;
 }
 
-.feature-img {
+.feature-media {
   width: 100%;
-  height: auto;
+  max-height: 800px;
 }
 
 .feature-description ul li {

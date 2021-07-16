@@ -1,5 +1,5 @@
 .circular-process-items {
-  margin: 64px 10%;
+  padding: 64px 10%;
   display: grid;
   row-gap: 32px;
 }
