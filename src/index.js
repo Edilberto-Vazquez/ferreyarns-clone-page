@@ -6,6 +6,7 @@ import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
 import WorkWithUs from "./pages/WorkWithUs";
 import Certifications from "./pages/Certifications";
+import CircularProcess from "./pages/CircularProcess";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -14,7 +15,8 @@ ReactDOM.render(
     {/* <AboutUs /> */}
     {/* <Products /> */}
     {/* <WorkWithUs /> */}
-    <Certifications />
+    {/* <Certifications /> */}
+    <CircularProcess />
   </React.StrictMode>,
   document.getElementById("root")
 );

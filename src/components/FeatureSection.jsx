@@ -1,7 +1,15 @@
 import React from "react";
 import "./styles/FeatureSection.css";
 
-const FeatureSection = ({ title, subTitle, img, xAxis, yAxis, children }) => {
+const FeatureSection = ({
+  title,
+  subTitle,
+  img,
+  video,
+  xAxis,
+  yAxis,
+  children,
+}) => {
   return (
     <section className="feature-section">
       <div
@@ -19,7 +27,13 @@ const FeatureSection = ({ title, subTitle, img, xAxis, yAxis, children }) => {
         <h2>{title}</h2>
         {children}
       </div>
-      <img src={img} alt="" className="feature-img" />
+      {img ? (
+        <img src={img} alt="" className="feature-img" />
+      ) : (
+        <video autoPlay muted loop className="feature-img">
+          <source src={video} type="video/mp4" />
+        </video>
+      )}
     </section>
   );
 };

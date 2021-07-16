@@ -1,0 +1,33 @@
+.circular-proc-item {
+  padding: 32px 0;
+  display: grid;
+  row-gap: 24px;
+  border-top: 1px solid var(--primary-font);
+}
+
+.circular-proc-title {
+  width: 100%;
+  height: min-content;
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  row-gap: 10px;
+}
+
+.circular-proc-title img {
+  width: 20%;
+  height: auto;
+}
+
+.circular-proc-imgs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  row-gap: 14px;
+  column-gap: 32px;
+}
+
+.circular-proc-imgs img {
+  width: 100%;
+}
