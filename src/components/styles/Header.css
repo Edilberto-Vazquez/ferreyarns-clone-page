@@ -100,7 +100,7 @@ header {
   height: 44px;
   display: grid;
   place-items: center;
-  background: #f26d32;
+  background: var(--secondary);
   color: white;
   font-size: 1.6rem;
 }

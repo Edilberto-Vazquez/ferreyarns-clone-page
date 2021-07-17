@@ -4,7 +4,7 @@
 }
 
 .faqs-question {
-  border-bottom: 1px solid var(--primary-font);
+  border-bottom: 1px solid var(--primary);
 }
 
 .faqs-question button {
@@ -20,5 +20,5 @@
 
 .faqs-question button h5 {
   font-size: 1.8rem;
-  color: var(--primary-font);
+  color: var(--primary);
 }

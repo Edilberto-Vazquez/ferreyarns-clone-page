@@ -15,7 +15,7 @@ footer {
   grid-auto-rows: min-content;
   grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
   row-gap: 14px;
-  border-bottom: 1px solid var(--primary-font);
+  border-bottom: 1px solid var(--primary);
 }
 
 .footer-logo {

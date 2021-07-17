@@ -5,7 +5,7 @@
   display: grid;
   grid-auto-rows: min-content;
   align-items: center;
-  border-top: 1px solid var(--primary-font);
+  border-top: 1px solid var(--primary);
 }
 
 .cert-item img {

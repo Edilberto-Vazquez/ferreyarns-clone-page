@@ -18,15 +18,15 @@
   text-align: left;
 }
 
+.ecological-item__button img {
+  width: auto;
+  height: 15px;
+}
+
 .ecological-item__button span {
   font-size: 1.4rem;
   color: white;
   font-weight: 400;
-}
-
-.ecological-item__button img {
-  width: auto;
-  height: 15px;
 }
 
 .ecological-item__button::after {

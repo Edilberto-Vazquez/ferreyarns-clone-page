@@ -1,5 +1,6 @@
 :root {
-  --primary-font: #06222e;
+  --primary: #06222e;
+  --secondary: #f26d32;
   --secondary-font: #9aa6aa;
   --form-inputs: #97a3a8;
 }
@@ -59,33 +60,17 @@ li {
   line-height: 2.8rem;
 }
 
-input,
-textarea {
-  border: none;
-  border-bottom: 1px solid rgba(6, 34, 46, 0.51);
-}
-
-::selection {
-  background-color: #06222e;
-  color: #ffffff;
-}
-
-::placeholder {
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: var(--form-inputs);
-}
-
-:focus {
-  outline: none;
-}
-
 .sectionOptions {
   width: 100%;
   height: auto;
   display: grid;
   padding-top: 32px;
   row-gap: 14px;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: #ffffff;
 }
 
 @media (min-width: 980px) {

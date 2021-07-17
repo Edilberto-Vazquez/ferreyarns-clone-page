@@ -1,12 +1,16 @@
 .ecological-section {
   padding: 10% 10%;
-  background-color: var(--primary-font);
+  background-color: var(--primary);
 }
 
 .ecological-section-description {
   padding-bottom: 14px;
   display: grid;
   row-gap: 14px;
+}
+
+.ecological-section-description p {
+  color: white;
 }
 
 .ecological-section-description img {

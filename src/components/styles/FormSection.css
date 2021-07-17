@@ -12,7 +12,7 @@
   height: 50px;
   display: grid;
   align-items: center;
-  border-bottom: 1px solid var(--primary-font);
+  border-bottom: 1px solid var(--primary);
 }
 
 .form-content {
@@ -35,12 +35,12 @@
 
 .form-container-terms-conditions span {
   font-size: 1.4rem;
-  color: rgba(6, 34, 46, 0.51);
+  color: var(--secondary-font);
 }
 
 .form-container-terms-conditions span a {
   font-size: 1.4rem;
-  color: rgba(6, 34, 46, 0.51);
+  color: var(--secondary-font);
   text-decoration: underline;
 }
 
@@ -48,7 +48,7 @@
   width: 100%;
   height: 50px;
   border: none;
-  background: #f26d32;
+  background: var(--secondary);
   color: white;
   font-size: 1.6rem;
 }
@@ -66,6 +66,23 @@
 .form-container-inputs__textarea {
   padding: 14px 0;
   width: 100%;
+}
+
+input,
+textarea {
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 1px solid var(--secondary-font);
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--form-inputs);
+}
+
+:focus {
+  outline: none;
 }
 
 @media (min-width: 980px) {

@@ -40,9 +40,7 @@ export const EcologicalSection = ({
         onClick={() => setShowFeature(!showFeature)}
         className="ecological-item__button"
       >
-        <div>
-          <img src={img} alt="" /> <span>{type}</span>
-        </div>
+        <img src={img} alt="" /> <span>{type}</span>
       </button>
       {showFeature ? (
         <div>

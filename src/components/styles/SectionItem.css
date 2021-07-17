@@ -21,7 +21,7 @@
 }
 
 .current-section-color {
-  color: #f26d32;
+  color: var(--secondary);
   font-weight: 700;
 }
 
