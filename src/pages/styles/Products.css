@@ -1,9 +1,5 @@
 .ecological-section {
-  width: 100%;
-  height: auto;
   padding: 10% 10%;
-  display: grid;
-  row-gap: 14px;
   background-color: var(--primary-font);
 }
 
@@ -11,7 +7,6 @@
   padding-bottom: 14px;
   display: grid;
   row-gap: 14px;
-  border-bottom: 1px solid white;
 }
 
 .ecological-section-description img {
@@ -19,24 +14,7 @@
 }
 
 .ecological-section-features {
-  padding-top: 14px;
-  display: grid;
-}
-
-.ecological-section-features__list {
-  padding: 14px 0;
-  border-bottom: 1px solid white;
-}
-
-.ecological-section-features__list ul {
-  display: grid;
-  row-gap: 24px;
-}
-
-.ecological-section-features__list ul li {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: white;
+  border-top: 1px solid white;
 }
 
 .ecological-section-features__description {
@@ -50,8 +28,5 @@
   .ecological-section-features__list {
     padding: 14px 0;
     border-bottom: none;
-  }
-  .ecological-section-features {
-    grid-template-columns: 1fr 4fr;
   }
 }

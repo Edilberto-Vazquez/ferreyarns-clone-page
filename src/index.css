@@ -80,6 +80,14 @@ textarea {
   outline: none;
 }
 
+.sectionOptions {
+  width: 100%;
+  height: auto;
+  display: grid;
+  padding-top: 32px;
+  row-gap: 14px;
+}
+
 @media (min-width: 980px) {
   h2 {
     font-size: 2.8rem;
@@ -87,5 +95,8 @@ textarea {
   p,
   a {
     font-size: 1.6rem;
+  }
+  .sectionOptions {
+    grid-template-columns: 2fr 4fr;
   }
 }

@@ -1,3 +1,5 @@
+/* change section options */
+
 .current-section {
   display: grid;
   grid-auto-rows: min-content;
@@ -7,12 +9,23 @@
 
 .current-section li {
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .current-section-underline {
   text-decoration: underline;
 }
+
+.current-section-font-color {
+  color: white;
+}
+
+.current-section-color {
+  color: #f26d32;
+  font-weight: 700;
+}
+
+/* section main content */
 
 .section-description {
   display: grid;
@@ -23,6 +36,8 @@
   font-size: 1.6rem;
   font-weight: 700;
 }
+
+/* list type in section */
 
 .section-description ul li,
 .section-description ol li {

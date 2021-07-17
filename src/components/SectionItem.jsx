@@ -3,14 +3,29 @@ import "./styles/SectionItem.css";
 
 // change section options
 
-export const SectionOptions = ({ listItems, section, setSection }) => {
+export const SectionOptions = ({
+  listItems,
+  section,
+  setSection,
+  color,
+  focusType,
+}) => {
+  const focusClass = (focusType) => {
+    if (focusType === "underline") {
+      return "current-section-underline";
+    } else if (focusType === "color") {
+      return "current-section-color";
+    }
+  };
   return (
     <aside className="current-section">
       {listItems.map((item) => (
         <li
           key={item}
           onClick={() => setSection(item)}
-          className={`${section === item ? "current-section-underline" : null}`}
+          className={`${
+            color === "secondary" ? "current-section-font-color" : null
+          } ${section === item ? focusClass(focusType) : null}`}
         >
           {item}
         </li>

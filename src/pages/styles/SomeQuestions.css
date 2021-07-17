@@ -3,11 +3,6 @@
 }
 
 .some-questions-container {
-  width: 100%;
-  height: auto;
-  padding-top: 32px;
-  display: grid;
-  row-gap: 14px;
   border-top: 1px solid var(--primary-font);
 }
 
@@ -18,10 +13,4 @@
 .some-questions-section-item {
   display: grid;
   row-gap: 32px;
-}
-
-@media (min-width: 980px) {
-  .some-questions-container {
-    grid-template-columns: 1fr 4fr;
-  }
 }

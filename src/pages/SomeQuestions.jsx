@@ -34,7 +34,7 @@ const SomeQuestions = () => {
           <h4>Ferre / {section}</h4>
           <h2>{section}</h2>
         </div>
-        <div className="some-questions-container">
+        <div className="some-questions-container sectionOptions">
           <SectionOptions
             listItems={[
               "FAQs",
@@ -43,9 +43,9 @@ const SomeQuestions = () => {
               "Legal Notice",
               "Projects",
             ]}
-            itemName="FAQs"
             section={section}
             setSection={setSection}
+            focusType="underline"
           />
           {handleSection()}
         </div>

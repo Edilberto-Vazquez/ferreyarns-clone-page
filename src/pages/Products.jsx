@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FeatureSection from "../components/FeatureSection";
@@ -15,11 +15,13 @@ import {
   EcologicalDescription,
   EcologicalMaterial,
 } from "../components/EcologicalDescription";
+import { SectionOptions } from "../components/SectionItem";
 import products from "../assets/images/products.jpg";
 import logo from "../assets/icons/ferre-yarns.svg";
 import "./styles/Products.css";
 
 const Products = () => {
+  const [section, setSection] = useState("All");
   return (
     <>
       <Header />
@@ -49,20 +51,24 @@ const Products = () => {
               wool or nylon may be identified during final composition testing.
             </p>
           </div>
-          <div className="ecological-section-features">
-            <aside className="ecological-section-features__list">
-              <ul>
-                <li>All</li>
-                <li>Recover™ recycled cotton</li>
-                <li>Recycled Polyester</li>
-                <li>Recycled wool</li>
-                <li>Organic cotton</li>
-                <li>Post-consumer</li>
-                <li>TENCEL™</li>
-                <li>Acrylic</li>
-                <li>Polyester</li>
-              </ul>
-            </aside>
+          <div className="ecological-section-features sectionOptions">
+            <SectionOptions
+              listItems={[
+                "All",
+                "Recover™ recycled cotton",
+                "Recycled Polyester",
+                "Recycled wool",
+                "Organic cotton",
+                "Post-consumer",
+                "TENCEL™",
+                "Acrylic",
+                "Polyester",
+              ]}
+              section={section}
+              setSection={setSection}
+              color="secondary"
+              focusType="color"
+            />
             <div className="ecological-section-features__description">
               <EcologicalSection
                 title="funo"
