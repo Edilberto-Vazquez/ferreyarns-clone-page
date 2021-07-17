@@ -14,11 +14,11 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <Home /> */}
     {/* <AboutUs /> */}
-    <Products />
+    {/* <Products /> */}
     {/* <WorkWithUs /> */}
     {/* <Certifications /> */}
     {/* <CircularProcess /> */}
-    {/* <SomeQuestions /> */}
+    <SomeQuestions />
   </React.StrictMode>,
   document.getElementById("root")
 );

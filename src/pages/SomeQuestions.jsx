@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { FAQs } from "../components/FAQs";
+import FAQs from "../components/FAQs";
 import PrivacyPolicy from "../components/PrivacyPolicy";
 import Cookies from "../components/Cookies";
 import LegalNotice from "../components/LegalNotice";

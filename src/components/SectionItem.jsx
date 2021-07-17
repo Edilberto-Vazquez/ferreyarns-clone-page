@@ -45,36 +45,47 @@ export const SectionItem = ({ title, children }) => {
   );
 };
 
+// paragraph in section
+
+export const SectionPar = ({ strong, content, children }) => {
+  return (
+    <p>
+      {strong ? <strong>{strong}: </strong> : null}
+      {content} {children}
+    </p>
+  );
+};
+
 // list type in section
 
-export const SectionItemList = ({ listType, listItems }) => {
+export const SectionList = ({ listType, listItems }) => {
   const listTag = (listItems) => {
     if (listType === "ul") {
       return (
         <ul>
-          {listItems.map((item, index) => {
+          {listItems.map((item, index) => (
             <li key={index}>
               {item.link ? (
                 <a href={item.link}>{item.description}</a>
               ) : (
                 item.description
               )}
-            </li>;
-          })}
+            </li>
+          ))}
         </ul>
       );
     } else if (listType === "ol") {
       return (
         <ol>
-          {listItems.map((item, index) => {
+          {listItems.map((item, index) => (
             <li key={index}>
               {item.link ? (
                 <a href={item.link}>{item.description}</a>
               ) : (
                 item.description
               )}
-            </li>;
-          })}
+            </li>
+          ))}
         </ol>
       );
     }
