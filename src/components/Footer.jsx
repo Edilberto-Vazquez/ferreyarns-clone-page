@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import certifications from "../assets/images/certifications-footer2.jpg";
 import "./styles/Footer.css";
 
@@ -23,17 +24,17 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-general-information">
-          <a href="#">FAQs</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Legal Notice</a>
-          <a href="#">Projects</a>
+          <Link to="/faqs">FAQs</Link>
+          <Link to="/faqs">Privacy Policy</Link>
+          <Link to="/faqs">Cookie Policy</Link>
+          <Link to="/faqs">Legal Notice</Link>
+          <Link to="/faqs">Projects</Link>
         </div>
         <div className="footer-general-information">
-          <a href="#">About us</a>
-          <a href="#">Products</a>
-          <a href="#">Work with us</a>
-          <a href="#">Contact</a>
+          <Link to="/about-us">About us</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/work-with-us">Work with us</Link>
+          <Link to="#">Contact</Link>
         </div>
         <div className="footer-social-media">
           <p>Follow us</p>

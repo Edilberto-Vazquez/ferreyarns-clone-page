@@ -3,26 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import "./utils/containers.css";
 import "./utils/fonts.css";
-import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
-import Products from "./pages/Products";
-import WorkWithUs from "./pages/WorkWithUs";
-import Certifications from "./pages/Certifications";
-import CircularProcess from "./pages/CircularProcess";
-import SomeQuestions from "./pages/SomeQuestions";
-import PositiveImpact from "./pages/PositiveImpact";
+import App from "./routes/App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Home />
-    <AboutUs />
-    <Products />
-    <WorkWithUs /> */}
-    <PositiveImpact />
-    {/* <Certifications />
-    <CircularProcess />
-    <SomeQuestions /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

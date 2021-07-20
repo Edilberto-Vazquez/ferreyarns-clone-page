@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import FAQs from "../components/FAQs";
 import PrivacyPolicy from "../components/PrivacyPolicy";
 import Cookies from "../components/Cookies";
@@ -27,31 +25,27 @@ const SomeQuestions = () => {
     }
   };
   return (
-    <>
-      <Header />
-      <main className="some-questions">
-        <div className="some-questions-title">
-          <h4 className="subtitle">Ferre / {section}</h4>
-          <h2 className="title-black">{section}</h2>
-        </div>
-        <div className="some-questions-container sectionOptions border-black">
-          <SectionOptions
-            listItems={[
-              "FAQs",
-              "Privacy Policy",
-              "Cookie Policy",
-              "Legal Notice",
-              "Projects",
-            ]}
-            section={section}
-            setSection={setSection}
-            focusType="underline"
-          />
-          {handleSection()}
-        </div>
-      </main>
-      <Footer />
-    </>
+    <main className="some-questions">
+      <div className="some-questions-title">
+        <h4 className="subtitle">Ferre / {section}</h4>
+        <h2 className="title-black">{section}</h2>
+      </div>
+      <div className="some-questions-container sectionOptions border-black">
+        <SectionOptions
+          listItems={[
+            "FAQs",
+            "Privacy Policy",
+            "Cookie Policy",
+            "Legal Notice",
+            "Projects",
+          ]}
+          section={section}
+          setSection={setSection}
+          focusType="underline"
+        />
+        {handleSection()}
+      </div>
+    </main>
   );
 };
 

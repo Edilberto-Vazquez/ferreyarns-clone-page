@@ -1,36 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/icons/logo-ferre.svg";
 import "./styles/Header.css";
 
 const Header = () => {
   return (
     <header>
-      <a href="#" className="ferreyarns-logo">
+      <Link to="/" className="ferreyarns-logo">
         <img src={logo} alt="" />
-      </a>
+      </Link>
       <nav className="navbar-mobile">
         <ul className="navbar-mobile-links">
           <li>
-            <a href="#">About us</a>
+            <Link to="/about-us">About us</Link>
           </li>
           <li>
-            <a href="#">Products</a>
+            <Link to="/products">Products</Link>
           </li>
           <li>
-            <a href="#">Sustainability</a>
+            <Link to="#">Sustainability</Link>
           </li>
           <li>
-            <a href="#">Work with us</a>
+            <Link to="/work-with-us">Work with us</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="#">Contact</Link>
           </li>
           <ul className="navbar-mobile-language">
             <li>
-              <a href="#">EN</a>
+              <Link to="#">EN</Link>
             </li>
             <li>
-              <a href="#">ES</a>
+              <Link to="#">ES</Link>
             </li>
           </ul>
         </ul>
@@ -38,27 +39,27 @@ const Header = () => {
       <nav className="navbar-desktop">
         <ul className="navbar-desktop-links">
           <li>
-            <a href="#">About us</a>
+            <Link to="/about-us">About us</Link>
           </li>
           <li>
-            <a href="#">Products</a>
+            <Link to="/products">Products</Link>
           </li>
           <li>
-            <a href="#">Sustainability</a>
+            <Link to="#">Sustainability</Link>
           </li>
           <li>
-            <a href="#">Work with us</a>
+            <Link to="/work-with-us">Work with us</Link>
           </li>
         </ul>
         <ul className="navbar-desktop-contact navbar-language">
           <li>
-            <a href="#">EN</a>
+            <Link to="#">EN</Link>
           </li>
           <li>
-            <a href="#">ES</a>
+            <Link to="#">ES</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="#">Contact</Link>
           </li>
         </ul>
       </nav>
