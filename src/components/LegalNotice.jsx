@@ -18,9 +18,9 @@ const LegalNotice = () => {
 
           <SectionPar strong="Address" content="Avda. Les Molines, 2" />
           <SectionPar content="(03450) BANYERES DE MARIOLA (Alicante – Spain)" />
-          <SectionPar strong="Telephone" content="+34 966 567 425">
-            <SectionPar strong="Internet" content="http://www.ferreyarns.com" />
-            <SectionPar strong="E-mail" content="info@ferreyarns.com" />
+          <SectionPar strong="Telephone" content="+34 966 567 425" />
+          <SectionPar strong="Internet" content="http://www.ferreyarns.com" />
+          <SectionPar strong="E-mail">
             <a href="mailto:info@ferreyarns.com">info@ferreyarns.com</a>
           </SectionPar>
         </SectionItem>

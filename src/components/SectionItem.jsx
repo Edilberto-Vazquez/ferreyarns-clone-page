@@ -7,27 +7,39 @@ export const SectionOptions = ({
   listItems,
   section,
   setSection,
-  color,
+  fontColor,
   focusType,
 }) => {
-  const focusClass = (focusType) => {
-    if (focusType === "underline") {
-      return "current-section-underline";
-    } else if (focusType === "color") {
-      return "current-section-color";
+  let classStyle = "";
+  const focusClass = (sectionTab, itemTab, focusType) => {
+    if (sectionTab === itemTab) {
+      if (focusType === "underline") {
+        return classStyle + " current-section-underline";
+      } else if (focusType === "color") {
+        return classStyle + " current-section-color";
+      }
+    }
+  };
+  const listColor = (fontColor) => {
+    if (fontColor === "white") {
+      return classStyle + " current-section-font-white";
+    } else if (fontColor === "black") {
+      return classStyle + "current-section-font-black";
     }
   };
   return (
     <aside className="current-section">
       {listItems.map((item) => (
         <li
-          key={item}
-          onClick={() => setSection(item)}
-          className={`${
-            color === "secondary" ? "current-section-font-color" : null
-          } ${section === item ? focusClass(focusType) : null}`}
+          key={item.tab}
+          onClick={() => setSection({ ...item })}
+          className={`${listColor(fontColor)} ${focusClass(
+            section.tab,
+            item.tab,
+            focusType
+          )}`}
         >
-          {item}
+          {item.name}
         </li>
       ))}
     </aside>

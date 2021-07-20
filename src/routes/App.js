@@ -21,7 +21,21 @@ const App = () => (
         <Route exact path="/circular-process" component={CircularProcess} />
         <Route exact path="/certifications" component={Certifications} />
         <Route exact path="/work-with-us" component={WorkWithUs} />
-        <Route exact path="/faqs" component={SomeQuestions} />
+        <Route exact path="/faqs">
+          <SomeQuestions tabSection={{ tab: 0, name: "FAQs" }} />
+        </Route>
+        <Route exact path="/privacy-policy">
+          <SomeQuestions tabSection={{ tab: 1, name: "Privacy Policy" }} />
+        </Route>
+        <Route exact path="/cookie-policy">
+          <SomeQuestions tabSection={{ tab: 2, name: "Cookie Policy" }} />
+        </Route>
+        <Route exact path="/legal-notice">
+          <SomeQuestions tabSection={{ tab: 3, name: "Legal Notice" }} />
+        </Route>
+        <Route exact path="/projects">
+          <SomeQuestions tabSection={{ tab: 4, name: "Projects" }} />
+        </Route>
       </Switch>
     </Layout>
   </BrowserRouter>

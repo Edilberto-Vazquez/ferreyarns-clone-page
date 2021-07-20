@@ -25,10 +25,10 @@ const Footer = () => {
         </div>
         <div className="footer-general-information">
           <Link to="/faqs">FAQs</Link>
-          <Link to="/faqs">Privacy Policy</Link>
-          <Link to="/faqs">Cookie Policy</Link>
-          <Link to="/faqs">Legal Notice</Link>
-          <Link to="/faqs">Projects</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/cookie-policy">Cookie Policy</Link>
+          <Link to="/legal-notice">Legal Notice</Link>
+          <Link to="/projects">Projects</Link>
         </div>
         <div className="footer-general-information">
           <Link to="/about-us">About us</Link>

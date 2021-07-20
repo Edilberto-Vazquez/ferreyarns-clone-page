@@ -10,19 +10,23 @@
 .current-section li {
   cursor: pointer;
   font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.current-section-font-white {
+  color: white;
+}
+
+.current-section-font-black {
+  color: var(--primary);
 }
 
 .current-section-underline {
   text-decoration: underline;
 }
 
-.current-section-font-color {
-  color: white;
-}
-
 .current-section-color {
   color: var(--secondary);
-  font-weight: 700;
 }
 
 /* section main content */

@@ -38,8 +38,11 @@ const PrivacyPolicy = () => {
         <SectionList
           listType="ol"
           listItems={[
-            { name: "Customer and Supplier Management of Hilaturas Ferre" },
-            { name: "Provision of requested services." },
+            {
+              description:
+                "Customer and Supplier Management of Hilaturas Ferre",
+            },
+            { description: "Provision of requested services." },
           ]}
         />
       </SectionItem>
@@ -83,15 +86,23 @@ const PrivacyPolicy = () => {
           listType="ul"
           listItems={[
             {
-              name: "Right to request access to personal data related to the interested party",
+              description:
+                "Right to request access to personal data related to the interested party",
             },
             {
-              name: "Right to request rectification or deletion (right to be forgotten)",
+              description:
+                "Right to request rectification or deletion (right to be forgotten)",
             },
-            { name: "Right to request the limitation of their processing" },
-            { name: "Right to request the limitation of their processing" },
-            { name: "Right to object to processing" },
-            { name: "Right to data portability" },
+            {
+              description:
+                "Right to request the limitation of their processing",
+            },
+            {
+              description:
+                "Right to request the limitation of their processing",
+            },
+            { description: "Right to object to processing" },
+            { description: "Right to data portability" },
           ]}
         />
 

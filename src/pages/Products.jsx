@@ -19,7 +19,7 @@ import logo from "../assets/icons/ferre-yarns.svg";
 import "./styles/Products.css";
 
 const Products = () => {
-  const [section, setSection] = useState("All");
+  const [section, setSection] = useState({ tab: 0, name: "All" });
   return (
     <main className="products">
       <FeatureSection
@@ -50,20 +50,20 @@ const Products = () => {
         <div className="ecological-section-features sectionOptions border-white">
           <SectionOptions
             listItems={[
-              "All",
-              "Recover™ recycled cotton",
-              "Recycled Polyester",
-              "Recycled wool",
-              "Organic cotton",
-              "Post-consumer",
-              "TENCEL™",
-              "Acrylic",
-              "Polyester",
+              { tab: 0, name: "All" },
+              { tab: 1, name: "Recover™ recycled cotton" },
+              { tab: 2, name: "Recycled Polyester" },
+              { tab: 3, name: "Recycled wool" },
+              { tab: 4, name: "Organic cotton" },
+              { tab: 5, name: "Post-consumer" },
+              { tab: 6, name: "TENCEL™" },
+              { tab: 7, name: "Acrylic" },
+              { tab: 8, name: "Polyester" },
             ]}
             section={section}
             setSection={setSection}
-            color="secondary"
             focusType="color"
+            fontColor="white"
           />
           <div className="ecological-section-features__description">
             <EcologicalSection
