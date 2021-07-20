@@ -31,8 +31,8 @@ const SomeQuestions = () => {
       <Header />
       <main className="some-questions">
         <div className="some-questions-title">
-          <h4>Ferre / {section}</h4>
-          <h2>{section}</h2>
+          <h4 className="subtitle">Ferre / {section}</h4>
+          <h2 className="title-black">{section}</h2>
         </div>
         <div className="some-questions-container sectionOptions border-black">
           <SectionOptions

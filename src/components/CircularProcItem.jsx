@@ -7,7 +7,7 @@ const CircularProcItem = ({ title, titleNum, description, imgs }) => {
       <div className="circular-proc-title">
         <img src={titleNum} alt="" />
         <div className="circular-proc-desc">
-          <h2>{title}</h2>
+          <h2 className="title-black">{title}</h2>
           <p>{description}</p>
         </div>
       </div>

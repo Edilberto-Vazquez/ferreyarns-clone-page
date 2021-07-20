@@ -10,7 +10,6 @@ import {
   FormSectionButton,
 } from "../components/FormSection";
 import wwu1 from "../assets/images/work-with-us-1.jpg";
-import "./styles/WorkWithUs.css";
 
 const WorkWithUs = () => {
   return (

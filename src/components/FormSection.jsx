@@ -6,7 +6,7 @@ export const FormSection = ({ title, children }) => {
   return (
     <div className="form">
       <div className="form-title">
-        <h2>{title}</h2>
+        <h2 className="title-black">{title}</h2>
       </div>
       <div className="form-content border-black">
         {children[0]}

@@ -33,7 +33,7 @@ const Certifications = () => {
           </p>
         </FeatureSection>
         <div className="certifications-title">
-          <h2>Certifications</h2>
+          <h2 className="title-black">Certifications</h2>
         </div>
         <div className="certifications-items">
           <CertificationItem title="Standard 100 of OEKO-TEX®" img={certOeko}>
@@ -89,7 +89,7 @@ const Certifications = () => {
           </CertificationItem>
         </div>
         <div className="certifications-title">
-          <h2>Associations and Commitments</h2>
+          <h2 className="title-black">Associations and Commitments</h2>
         </div>
         <div className="associations-items">
           <CertificationItem title="UN Global Compact" img={certReduzco}>

@@ -6,7 +6,7 @@ const CertificationItem = ({ title, img, children }) => {
     <section className="cert-item border-black">
       <img src={img} alt="" />
       <div className="cert-item-description">
-        <h2>{title}</h2>
+        <h2 className="title-black">{title}</h2>
         {children}
       </div>
     </section>

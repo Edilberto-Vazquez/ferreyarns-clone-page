@@ -96,7 +96,7 @@ const Home = () => {
         </FormSection>
         <div className="our-clientes-section">
           <div className="our-clientes-title">
-            <h2>Our clientes</h2>
+            <h2 className="title-black">Our clientes</h2>
           </div>
           <div className="our-clientes-img">
             <img src={brands1} alt="" />

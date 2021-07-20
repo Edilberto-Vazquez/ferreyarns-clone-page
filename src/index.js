@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "./utils/containers.css";
+import "./utils/fonts.css";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
@@ -13,14 +15,14 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Home /> */}
-    {/* <AboutUs /> */}
-    {/* <Products /> */}
-    {/* <WorkWithUs /> */}
+    {/* <Home />
+    <AboutUs />
+    <Products />
+    <WorkWithUs /> */}
     <PositiveImpact />
-    {/* <Certifications /> */}
-    {/* <CircularProcess /> */}
-    {/* <SomeQuestions /> */}
+    {/* <Certifications />
+    <CircularProcess />
+    <SomeQuestions /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

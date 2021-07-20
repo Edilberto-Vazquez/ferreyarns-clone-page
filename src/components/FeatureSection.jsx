@@ -23,8 +23,8 @@ const FeatureSection = ({
             : "feature-description-bottom"
         }`}
       >
-        {subTitle ? <h4>{subTitle}</h4> : null}
-        <h2>{title}</h2>
+        {subTitle ? <h4 className="subtitle">{subTitle}</h4> : null}
+        <h2 className="title-black">{title}</h2>
         {children}
       </div>
       {img ? (

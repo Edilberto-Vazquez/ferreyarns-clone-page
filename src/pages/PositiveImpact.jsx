@@ -47,7 +47,7 @@ const PositiveImpact = () => {
 
         <div className="env-sav">
           <div className="env-sav-title">
-            <h2>Our environmental savings in 2020</h2>
+            <h2 className="title-white">Our environmental savings in 2020</h2>
           </div>
           <div className="env-sav-items border-white">
             {envSavItemEn.map((item, index) => (

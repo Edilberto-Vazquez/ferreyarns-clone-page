@@ -1,0 +1,52 @@
+.title-white,
+.title-black {
+  font-size: 2.2rem;
+  line-height: 4rem;
+  font-weight: 400;
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #8f8f8f;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: var(--primary-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  line-height: 2.8rem;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+@media (min-width: 980px) {
+  .title-white,
+  .title-black {
+    font-size: 2.8rem;
+  }
+  p,
+  a {
+    font-size: 1.6rem;
+  }
+}

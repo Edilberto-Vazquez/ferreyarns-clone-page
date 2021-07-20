@@ -43,7 +43,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="certifications">
+      <div className="certifications border-black">
         <img src={certifications} alt="" />
       </div>
       <div className="all-rights-reserved">
