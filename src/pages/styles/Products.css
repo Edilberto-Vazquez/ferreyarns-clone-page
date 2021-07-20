@@ -17,10 +17,6 @@
   max-width: 380px;
 }
 
-.ecological-section-features {
-  border-top: 1px solid white;
-}
-
 .ecological-section-features__description {
   display: grid;
   grid-auto-rows: min-content;

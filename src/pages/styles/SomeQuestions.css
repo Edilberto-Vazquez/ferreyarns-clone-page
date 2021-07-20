@@ -2,10 +2,6 @@
   padding: 80px 10% 10% 10%;
 }
 
-.some-questions-container {
-  border-top: 1px solid var(--primary);
-}
-
 .some-questions-title {
   margin: 32px 0;
 }

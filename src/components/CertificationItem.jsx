@@ -3,7 +3,7 @@ import "./styles/CertificationItem.css";
 
 const CertificationItem = ({ title, img, children }) => {
   return (
-    <section className="cert-item">
+    <section className="cert-item border-black">
       <img src={img} alt="" />
       <div className="cert-item-description">
         <h2>{title}</h2>

@@ -68,6 +68,16 @@ li {
   row-gap: 14px;
 }
 
+.border-white {
+  padding-top: 14px;
+  border-top: 1px solid white;
+}
+
+.border-black {
+  padding-top: 14px;
+  border-top: 1px solid #06222e;
+}
+
 ::selection {
   background-color: var(--primary);
   color: #ffffff;

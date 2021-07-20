@@ -1,0 +1,44 @@
+.env-sav {
+  padding: 10% 10%;
+  display: grid;
+  row-gap: 14px;
+  background: var(--primary);
+}
+
+.env-sav-title {
+  color: white;
+}
+
+.env-sav-items {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 330px));
+  gap: 24px;
+}
+
+.env-sav-items__desc {
+  min-width: 250px;
+  min-height: 250px;
+  padding: 40px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #01557b 0%, #0c2f3e 100%);
+  color: white;
+}
+
+.env-sav-items__desc img {
+  width: 100px;
+  height: 100px;
+}
+
+.env-sav-items__desc span {
+  font-size: 60px;
+}
+
+.env-sav-items__desc span {
+  font-size: 60px;
+}
+
+.env-sav-items__desc h3 {
+  font-size: 16px;
+}

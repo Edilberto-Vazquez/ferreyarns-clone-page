@@ -34,7 +34,7 @@ const SomeQuestions = () => {
           <h4>Ferre / {section}</h4>
           <h2>{section}</h2>
         </div>
-        <div className="some-questions-container sectionOptions">
+        <div className="some-questions-container sectionOptions border-black">
           <SectionOptions
             listItems={[
               "FAQs",

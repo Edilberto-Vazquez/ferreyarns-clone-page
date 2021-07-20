@@ -1,0 +1,97 @@
+.slide-container {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(4, 100%);
+  overflow-x: scroll;
+  background: var(--primary);
+}
+
+.slide-item {
+  display: grid;
+  grid-auto-rows: min-content;
+}
+
+.slide-item > img {
+  width: 100%;
+  max-height: 800px;
+}
+
+.slide-item-content {
+  padding: 10%;
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 14px;
+}
+
+.slide-title {
+  width: auto;
+  height: 30px;
+}
+
+.slide-section-description {
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 14px;
+  color: white;
+}
+
+.brand-garment {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+}
+
+.composition-materials {
+  display: grid;
+  grid-auto-rows: 126px;
+  grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
+  justify-items: center;
+  row-gap: 14px;
+}
+
+.slide-section-savings {
+  display: grid;
+  row-gap: 14px;
+}
+
+.slide-section-savings h3 {
+  font-size: 22px;
+  color: white;
+}
+
+.tabs-saving {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  column-gap: 14px;
+}
+
+.tab-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.tab-content {
+  display: grid;
+  color: white;
+  font-weight: 700;
+}
+
+.tab-content span:nth-child(1) {
+  font-size: 6rem;
+}
+
+.tab-content span:nth-child(2) {
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+}
+
+.data-source {
+  color: white;
+}
+
+@media (min-width: 980px) {
+  .slide-item {
+    grid-template-columns: 1fr 1fr;
+  }
+}

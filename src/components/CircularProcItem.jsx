@@ -3,7 +3,7 @@ import "./styles/CircularProceItem.css";
 
 const CircularProcItem = ({ title, titleNum, description, imgs }) => {
   return (
-    <div className="circular-proc-item">
+    <div className="circular-proc-item border-black">
       <div className="circular-proc-title">
         <img src={titleNum} alt="" />
         <div className="circular-proc-desc">

@@ -8,7 +8,7 @@ export const FormSection = ({ title, children }) => {
       <div className="form-title">
         <h2>{title}</h2>
       </div>
-      <div className="form-content">
+      <div className="form-content border-black">
         {children[0]}
         <form action="" className="form-container">
           {children[1]}

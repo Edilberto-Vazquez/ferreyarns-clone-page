@@ -8,14 +8,16 @@ import WorkWithUs from "./pages/WorkWithUs";
 import Certifications from "./pages/Certifications";
 import CircularProcess from "./pages/CircularProcess";
 import SomeQuestions from "./pages/SomeQuestions";
+import PositiveImpact from "./pages/PositiveImpact";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Home /> */}
     {/* <AboutUs /> */}
-    <Products />
+    {/* <Products /> */}
     {/* <WorkWithUs /> */}
+    <PositiveImpact />
     {/* <Certifications /> */}
     {/* <CircularProcess /> */}
     {/* <SomeQuestions /> */}

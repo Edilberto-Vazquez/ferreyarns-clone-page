@@ -51,7 +51,7 @@ const Products = () => {
               wool or nylon may be identified during final composition testing.
             </p>
           </div>
-          <div className="ecological-section-features sectionOptions">
+          <div className="ecological-section-features sectionOptions border-white">
             <SectionOptions
               listItems={[
                 "All",
