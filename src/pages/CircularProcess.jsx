@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import FeatureSection from "../components/FeatureSection";
 import CircularProcItem from "../components/CircularProcItem";
 import videoProcess from "../assets/videos/video-process.mp4";

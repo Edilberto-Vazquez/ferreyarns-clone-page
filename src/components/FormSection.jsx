@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/FormSection.css";
 
 export const FormSection = ({ title, children }) => {
-  console.log(children);
   return (
     <div className="form">
       <div className="form-title">
@@ -16,7 +16,8 @@ export const FormSection = ({ title, children }) => {
             <input type="checkbox" name="accept" id="accept" />
             <span>
               {" "}
-              I have read and accept the <a href="#">Privacy Policy</a>
+              I have read and accept the{" "}
+              <Link to="/privacy">Privacy Policy</Link>
             </span>
           </div>
           {children[2]}
@@ -27,7 +28,6 @@ export const FormSection = ({ title, children }) => {
 };
 
 export const FormSectionDescription = ({ children }) => {
-  console.log(`this ${children}`);
   return (
     <div className="form-container-description" type="div">
       {children.map((item) => {

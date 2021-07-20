@@ -24,13 +24,13 @@ const App = () => (
         <Route exact path="/faqs">
           <SomeQuestions tabSection={{ tab: 0, name: "FAQs" }} />
         </Route>
-        <Route exact path="/privacy-policy">
+        <Route exact path="/privacy">
           <SomeQuestions tabSection={{ tab: 1, name: "Privacy Policy" }} />
         </Route>
-        <Route exact path="/cookie-policy">
+        <Route exact path="/cookies">
           <SomeQuestions tabSection={{ tab: 2, name: "Cookie Policy" }} />
         </Route>
-        <Route exact path="/legal-notice">
+        <Route exact path="/legal">
           <SomeQuestions tabSection={{ tab: 3, name: "Legal Notice" }} />
         </Route>
         <Route exact path="/projects">

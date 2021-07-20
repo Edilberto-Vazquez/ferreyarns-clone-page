@@ -8,7 +8,6 @@ import certOrganic from "../assets/images/certifications/certificacion-organic.p
 import certLca from "../assets/images/certifications/icon-lca.svg";
 import certReduzco from "../assets/images/certifications/certificacion-reduzco.png";
 import certCompact from "../assets/images/certifications/certificacion-compact.png";
-import certExchange from "../assets/images/certifications/certificacion-exchange.png";
 import certCircular from "../assets/images/certifications/certificacion-circular.png";
 import "./styles/Certifications.css";
 

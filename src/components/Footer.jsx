@@ -25,9 +25,9 @@ const Footer = () => {
         </div>
         <div className="footer-general-information">
           <Link to="/faqs">FAQs</Link>
-          <Link to="/privacy-policy">Privacy Policy</Link>
-          <Link to="/cookie-policy">Cookie Policy</Link>
-          <Link to="/legal-notice">Legal Notice</Link>
+          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/cookies">Cookie Policy</Link>
+          <Link to="/legal">Legal Notice</Link>
           <Link to="/projects">Projects</Link>
         </div>
         <div className="footer-general-information">

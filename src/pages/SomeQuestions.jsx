@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import FAQs from "../components/FAQs";
 import PrivacyPolicy from "../components/PrivacyPolicy";
 import Cookies from "../components/Cookies";
