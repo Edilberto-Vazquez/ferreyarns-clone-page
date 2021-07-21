@@ -14,7 +14,7 @@ import "./styles/Home.css";
 import { homeEN, homeES } from "../utils/PageContent/Home";
 
 const Home = () => {
-  let { language } = useParams();
+  let language = "en";
   let idiom = {};
 
   // set language

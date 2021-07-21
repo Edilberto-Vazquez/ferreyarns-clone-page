@@ -45,7 +45,10 @@ export const homeEN = {
     privacy: ["I have read and accept the", "Privacy Policy"],
     send: "SEND",
   },
-  ourClients: "Our clients",
+  ourClients: {
+    title: "Our clients",
+    imgList: [brands1, brands2],
+  },
 };
 
 // Spanish language

@@ -8,7 +8,7 @@ const Header = () => {
   const language = ["en", "es"];
   return (
     <header>
-      <Link to={`/${language[0]}`} className="ferreyarns-logo">
+      <Link to="/" className="ferreyarns-logo">
         <img src={logo} alt="" />
       </Link>
       <nav className="navbar-mobile">
