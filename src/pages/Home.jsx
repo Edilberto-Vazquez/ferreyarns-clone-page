@@ -68,7 +68,6 @@ const Home = () => {
             recycled yarn consultants and the most advanced technology to help
             you carry out your sustainable fashion project.
           </p>
-          <br />
           <p>
             Contact us to receive information about our products and to inquire
             about prices and minimum order quantities.
@@ -90,7 +89,7 @@ const Home = () => {
         <div className="our-clientes-title">
           <h2 className="title-black">Our clientes</h2>
         </div>
-        <div className="our-clientes-img">
+        <div className="our-clientes-img border-black">
           <img src={brands1} alt="" />
         </div>
       </div>

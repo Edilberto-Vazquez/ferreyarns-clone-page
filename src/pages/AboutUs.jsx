@@ -11,7 +11,7 @@ const AboutUs = () => {
     <main className="about-us">
       <FeatureSection
         title="Always looking for new and better ways forward"
-        subTitle="Ferre / About us"
+        sectionName="Ferre / About us"
         img={about}
       >
         <p>

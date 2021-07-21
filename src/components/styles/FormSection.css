@@ -4,7 +4,6 @@
   padding: 40px 10%;
   display: grid;
   grid-auto-rows: min-content 1fr;
-  row-gap: 30px;
 }
 
 .form-title {
@@ -28,6 +27,7 @@
 
 .form-container-description {
   display: grid;
+  grid-auto-rows: min-content;
   row-gap: 14px;
 }
 

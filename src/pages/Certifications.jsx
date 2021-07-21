@@ -16,7 +16,7 @@ const Certifications = () => {
     <main className="certifications">
       <FeatureSection
         title="Ensuring transparency"
-        subTitle="Ferre / Sustainability / Certifications"
+        sectionName="Ferre / Sustainability / Certifications"
         img={certifications}
         yAxis="bottom"
       >

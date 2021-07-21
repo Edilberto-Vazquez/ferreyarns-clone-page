@@ -28,7 +28,7 @@ const SomeQuestions = ({ tabSection }) => {
   return (
     <main className="some-questions">
       <div className="some-questions-title">
-        <h4 className="subtitle">Ferre / {section.name}</h4>
+        <h4 className="section-name">Ferre / {section.name}</h4>
         <h2 className="title-black">{section.name}</h2>
       </div>
       <div className="some-questions-container sectionOptions border-black">

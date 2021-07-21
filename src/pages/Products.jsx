@@ -24,7 +24,7 @@ const Products = () => {
     <main className="products">
       <FeatureSection
         title="Building a zero-impact fashion"
-        subTitle="Ferre / Products"
+        sectionName="Ferre / Products"
         img={products}
       >
         <p>

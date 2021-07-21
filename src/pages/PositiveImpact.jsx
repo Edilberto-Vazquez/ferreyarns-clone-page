@@ -19,7 +19,7 @@ const PositiveImpact = () => {
     <main className="positive-impact">
       <FeatureSection
         title="Metrics that matter"
-        subTitle="Ferre / Sustainability / Positive impact"
+        sectionName="Ferre / Sustainability / Positive impact"
         img={pi}
       >
         <SectionPar content="We use the Life Cycle Assessment (LCA) methodology to measure the environmental footprint of all of our products from cradle-to-grave. For this, we observe metrics such as the carbon footprint, the water footprint, the use of chemicals and others. This assessment of the environmental impact of our products has been third-party reviewed by AITEX, Universitat de València and UNESCO, to ensure transparency." />

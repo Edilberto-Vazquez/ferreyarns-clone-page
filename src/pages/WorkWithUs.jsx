@@ -7,6 +7,7 @@ import {
   FormSectionContainer,
   FormSectionButton,
 } from "../components/FormSection";
+import { SectionPar } from "../components/SectionItem";
 import wwu1 from "../assets/images/work-with-us-1.jpg";
 
 const WorkWithUs = () => {
@@ -14,33 +15,32 @@ const WorkWithUs = () => {
     <main className="work-with-us">
       <FeatureSection
         title="Work at Ferre"
-        subTitle="Ferre / Work with us"
+        sectionName="Ferre / Work with us"
         img={wwu1}
         yAxis="top"
       >
-        <p>
-          At Ferre we have a passion for low-impact yarns and a deep knowledge
+        <SectionPar
+          content="At Ferre we have a passion for low-impact yarns and a deep knowledge
           of what a recycled yarn is capable of. We are Yarn Experts and Yarn
           Consultants. We work with brands to understand their needs and help
           them carry out their fashion projects by creating the best sustainable
-          yarn for their garments.
-        </p>
+          yarn for their garments."
+        />
       </FeatureSection>
       <FormSection title="Join our team">
         <FormSectionDescription>
-          <p>
-            We highly value dynamic individuals who make meaningful change
-            happen.
-          </p>
-          <br />
-          <p>Get in touch.</p>
+          <SectionPar
+            content="We highly value dynamic individuals who make meaningful change
+            happen."
+          />
+          <SectionPar content="Get in touch." />
         </FormSectionDescription>
         <FormSectionContainer>
           <FormSectionInput type="text" name="name" placeholder="Name*" />
           <FormSectionInput type="email" name="email" placeholder="Email*" />
           <FormSectionInput type="text" name="phone" placeholder="Phone*" />
           <div className="file-upload">
-            <p>Please upload your resume (.pdf / 1MB max.)</p>
+            <SectionPar content="Please upload your resume (.pdf / 1MB max.)" />
             <FormSectionInput type="file" name="file" />
           </div>
         </FormSectionContainer>

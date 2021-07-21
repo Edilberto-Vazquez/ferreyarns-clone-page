@@ -3,7 +3,7 @@ import "./styles/FeatureSection.css";
 
 const FeatureSection = ({
   title,
-  subTitle,
+  sectionName,
   img,
   video,
   xAxis,
@@ -23,7 +23,7 @@ const FeatureSection = ({
             : "feature-description-bottom"
         }`}
       >
-        {subTitle ? <h4 className="subtitle">{subTitle}</h4> : null}
+        {sectionName ? <h4 className="section-name">{sectionName}</h4> : null}
         <h2 className="title-black">{title}</h2>
         {children}
       </div>

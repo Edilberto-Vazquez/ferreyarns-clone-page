@@ -22,7 +22,7 @@ const CircularProcess = () => {
     <main className="circular-process">
       <FeatureSection
         title="From waste to yarn. A circular process."
-        subTitle="Ferre / Sustainability / Circular process"
+        sectionName="Ferre / Sustainability / Circular process"
         video={videoProcess}
         yAxis="top"
       >
