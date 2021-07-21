@@ -10,10 +10,6 @@ import {
   FormSectionButton,
 } from "../components/FormSection";
 import { SectionPar } from "../components/SectionItem";
-import home1 from "../assets/images/home-1.jpg";
-import home2 from "../assets/images/home-2.jpg";
-import home3 from "../assets/images/home-3.jpg";
-import brands1 from "../assets/images/brands-1.gif";
 import "./styles/Home.css";
 import { homeEN, homeES } from "../utils/PageContent/Home";
 
@@ -101,10 +97,12 @@ const Home = () => {
       {/* Our clientes */}
       <div className="our-clientes-section">
         <div className="our-clientes-title">
-          <h2 className="title-black">{idiom.ourClients}</h2>
+          <h2 className="title-black">{idiom.ourClients.title}</h2>
         </div>
         <div className="our-clientes-img border-black">
-          <img src={brands1} alt="" />
+          {idiom.ourClients.imgList.map((item) => (
+            <img src={item} alt="" />
+          ))}
         </div>
       </div>
     </main>

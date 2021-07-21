@@ -67,7 +67,7 @@ export const homeES = {
   },
   fullyTT: {
     title: "Transparencia y trazabilidad",
-    img: home2,
+    img: home3,
     paragraphs: [
       "Compartimos los datos de trazabilidad y sostenibilidad de cada uno de nuestros productos para satisfacer la demanda de una moda transparente por parte de los consumidores e impulsar el cambio positivo.",
       "Todas nuestras afirmaciones sobre sostenibilidad están respaldadas por las certificaciones más respetadas, así como por estudios que hemos realizado utilizando la metodología LCA (Life Cycle Assessment).",
@@ -89,5 +89,8 @@ export const homeES = {
     privacy: ["He leído y acepto la", "Política de privacidad"],
     send: "ENVIAR",
   },
-  ourClients: "Nuestros clientes",
+  ourClients: {
+    title: "Nuestros clientes",
+    imgList: [brands1, brands2],
+  },
 };
