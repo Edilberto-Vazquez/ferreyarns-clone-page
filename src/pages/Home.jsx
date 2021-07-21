@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import FeatureSection from "../components/FeatureSection";
 import {
@@ -9,6 +9,7 @@ import {
   FormSectionContainer,
   FormSectionButton,
 } from "../components/FormSection";
+import { SectionPar } from "../components/SectionItem";
 import home1 from "../assets/images/home-1.jpg";
 import home2 from "../assets/images/home-2.jpg";
 import home3 from "../assets/images/home-3.jpg";
@@ -20,86 +21,87 @@ const Home = () => {
   let { language } = useParams();
   let idiom = {};
 
+  // set language
   if (language === "en") {
     idiom = homeEN;
   } else if (language === "es") {
     idiom = homeES;
   }
-  console.log(idiom);
 
   return (
     <main>
+      {/* slogan section */}
       <div className="title-section">
         <div className="title-container">
           <h1>{idiom.title}</h1>
         </div>
       </div>
+
       <div className="brand-features">
+        {/* Building a zero-impact fashion */}
         <FeatureSection
-          title="Building a zero-impact fashion"
-          img={home1}
+          title={idiom.buldingFashion.title}
+          img={idiom.buldingFashion.img}
           xAxis="right"
         >
-          <p>
-            We make high-quality recycled yarns for all types of fashion
-            products, accessories and home textiles. Our products are made with
-            Recover™, the lowest-impact recycled cotton fiber in today’s global
-            market, according to the Higg MSI Index.
-          </p>
+          {idiom.buldingFashion.paragraphs.map((item, index) => (
+            <SectionPar key={index} content={item} />
+          ))}
         </FeatureSection>
-        <FeatureSection title="A circular process" img={home2} xAxis="left">
-          <p>
-            Recycled raw material, zero chemicals, zero water and minimal CO2
-            emissions. We keep textile waste out of landfill or incineration and
-            we become less dependent on virgin finite materials. Our resource-
-            and energy-efficient manufacturing process reflects our strong will
-            to minimize our impact.
-          </p>
-        </FeatureSection>
+
+        {/* A circular process */}
         <FeatureSection
-          title="Fully traceable and transparent"
-          img={home3}
+          title={idiom.circularProc.title}
+          img={idiom.circularProc.img}
+          xAxis="left"
+        >
+          {idiom.circularProc.paragraphs.map((item, index) => (
+            <SectionPar key={index} content={item} />
+          ))}
+        </FeatureSection>
+
+        {/* Fully traceable and transparent */}
+        <FeatureSection
+          title={idiom.fullyTT.title}
+          img={idiom.fullyTT.img}
           xAxis="right"
         >
-          <p>
-            We share the traceability and sustainability performance of each of
-            our products to drive positive change and meet consumer demand for
-            true transparency in fashion.
-          </p>
-          <p>
-            All of our sustainability claims are supported by the most respected
-            third-party certifications, as well as by studies we have conducted
-            using LCA (Life Cycle Assessment) methodology.
-          </p>
+          {idiom.fullyTT.paragraphs.map((item, index) => (
+            <SectionPar key={index} content={item} />
+          ))}
         </FeatureSection>
       </div>
-      <FormSection title="How can we help you?">
+
+      {/* How can we help you? form */}
+      <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          <p>
-            Our facilities in Banyeres de Mariola are home to a great team of
-            recycled yarn consultants and the most advanced technology to help
-            you carry out your sustainable fashion project.
-          </p>
-          <p>
-            Contact us to receive information about our products and to inquire
-            about prices and minimum order quantities.
-          </p>
+          {idiom.form.paragraphs.map((item, index) => (
+            <SectionPar key={index} content={item} />
+          ))}
         </FormSectionDescription>
         <FormSectionContainer desktopShort>
-          <FormSectionInput type="text" name="name" placeholder="Name*" />
-          <FormSectionInput type="text" name="company" placeholder="Company*" />
-          <FormSectionInput type="email" name="email" placeholder="Email*" />
-          <FormSectionInput type="text" name="phone" placeholder="Phone" />
-          <FormSectionTextArea
-            name="message"
-            placeholder="Message*"
-          ></FormSectionTextArea>
+          {idiom.form.inputs.map((item, index) =>
+            item.name !== "message" ? (
+              <FormSectionInput
+                type={item.type}
+                name={item.name}
+                placeholder={item.placeholder}
+              />
+            ) : (
+              <FormSectionTextArea
+                name={item.name}
+                placeholder={item.placeholder}
+              ></FormSectionTextArea>
+            )
+          )}
         </FormSectionContainer>
-        <FormSectionButton btnName="SEND" />
+        <FormSectionButton btnName={idiom.form.send} />
       </FormSection>
+
+      {/* Our clientes */}
       <div className="our-clientes-section">
         <div className="our-clientes-title">
-          <h2 className="title-black">Our clientes</h2>
+          <h2 className="title-black">{idiom.ourClients}</h2>
         </div>
         <div className="our-clientes-img border-black">
           <img src={brands1} alt="" />
