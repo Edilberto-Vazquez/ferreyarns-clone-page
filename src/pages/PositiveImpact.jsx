@@ -11,7 +11,7 @@ import {
 } from "../components/PositiveImpactSlider";
 import pi from "../assets/images/positive-impact.jpg";
 import pim from "../assets/images/positive-impact-memory.jpg";
-import { posImpSlide, envSavItemEn } from "../utils/PagePositiveImpact";
+import { posImpSlide, envSavItemEn } from "../utils/PageContent/PositiveImpact";
 import "./styles/PositiveImpact.css";
 
 const PositiveImpact = () => {

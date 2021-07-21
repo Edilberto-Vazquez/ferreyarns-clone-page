@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import FeatureSection from "../components/FeatureSection";
 import {
   FormSection,
@@ -13,13 +14,24 @@ import home2 from "../assets/images/home-2.jpg";
 import home3 from "../assets/images/home-3.jpg";
 import brands1 from "../assets/images/brands-1.gif";
 import "./styles/Home.css";
+import { homeEN, homeES } from "../utils/PageContent/Home";
 
 const Home = () => {
+  let { language } = useParams();
+  let idiom = {};
+
+  if (language === "en") {
+    idiom = homeEN;
+  } else if (language === "es") {
+    idiom = homeES;
+  }
+  console.log(idiom);
+
   return (
     <main>
       <div className="title-section">
         <div className="title-container">
-          <h1>Empowering circular fashion since 1947</h1>
+          <h1>{idiom.title}</h1>
         </div>
       </div>
       <div className="brand-features">

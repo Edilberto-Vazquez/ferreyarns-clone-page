@@ -1,25 +1,25 @@
 // positive impacts slide
 // slide
-import coyuchi from "../assets/images/positive_impact_slide/coyuchi.jpg";
-import kimoaH from "../assets/images/positive_impact_slide/kimoa-hoodie.jpg";
-import kimoaTs from "../assets/images/positive_impact_slide/kimoa-tshirt.jpg";
-import mudJ from "../assets/images/positive_impact_slide/mud-jeans.jpg";
+import coyuchi from "../../assets/images/positive_impact_slide/coyuchi.jpg";
+import kimoaH from "../../assets/images/positive_impact_slide/kimoa-hoodie.jpg";
+import kimoaTs from "../../assets/images/positive_impact_slide/kimoa-tshirt.jpg";
+import mudJ from "../../assets/images/positive_impact_slide/mud-jeans.jpg";
 // title
-import fblue from "../assets/icons/ecological_title/fblue.svg";
-import fjeans from "../assets/icons/ecological_title/fjeans.svg";
-import fearth from "../assets/icons/ecological_title/fearth.svg";
+import fblue from "../../assets/icons/ecological_title/fblue.svg";
+import fjeans from "../../assets/icons/ecological_title/fjeans.svg";
+import fearth from "../../assets/icons/ecological_title/fearth.svg";
 // compositon
-import cottonI from "../assets/icons/ecological_description/cotton-icon-white.svg";
-import poliesterI from "../assets/icons/ecological_description/poliester-icon-white.svg";
-import otherF from "../assets/icons/ecological_description/other-fibers.svg";
-import oraganicC from "../assets/icons/ecological_description/organic-cotton.svg";
+import cottonI from "../../assets/icons/ecological_description/cotton-icon-white.svg";
+import poliesterI from "../../assets/icons/ecological_description/poliester-icon-white.svg";
+import otherF from "../../assets/icons/ecological_description/other-fibers.svg";
+import oraganicC from "../../assets/icons/ecological_description/organic-cotton.svg";
 // envSavItemEn images
-import bi from "../assets/icons/positive_impact/bottle-icon.svg";
-import ci from "../assets/icons/positive_impact/chemical-icon.svg";
-import co2 from "../assets/icons/positive_impact/co2-icon.svg";
-import ei from "../assets/icons/positive_impact/energy-icon.svg";
-import ti from "../assets/icons/positive_impact/textil-icon.svg";
-import wi from "../assets/icons/positive_impact/water-icon.svg";
+import bi from "../../assets/icons/positive_impact/bottle-icon.svg";
+import ci from "../../assets/icons/positive_impact/chemical-icon.svg";
+import co2 from "../../assets/icons/positive_impact/co2-icon.svg";
+import ei from "../../assets/icons/positive_impact/energy-icon.svg";
+import ti from "../../assets/icons/positive_impact/textil-icon.svg";
+import wi from "../../assets/icons/positive_impact/water-icon.svg";
 
 export const posImpSlide = [
   {

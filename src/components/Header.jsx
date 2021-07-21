@@ -5,9 +5,10 @@ import "./styles/Header.css";
 
 const Header = () => {
   const [sustent, setSustent] = useState(false);
+  const language = ["en", "es"];
   return (
     <header>
-      <Link to="/" className="ferreyarns-logo">
+      <Link to={`/${language[0]}`} className="ferreyarns-logo">
         <img src={logo} alt="" />
       </Link>
       <nav className="navbar-mobile">
@@ -45,10 +46,10 @@ const Header = () => {
           </li>
           <ul className="navbar-mobile-language">
             <li>
-              <Link to="#">EN</Link>
+              <Link to={`/${language[0]}`}>EN</Link>
             </li>
             <li>
-              <Link to="#">ES</Link>
+              <Link to={`/${language[1]}`}>ES</Link>
             </li>
           </ul>
         </ul>
@@ -86,10 +87,10 @@ const Header = () => {
         </ul>
         <ul className="navbar-desktop-contact navbar-language">
           <li>
-            <Link to="#">EN</Link>
+            <Link to={`/${language[0]}`}>EN</Link>
           </li>
           <li>
-            <Link to="#">ES</Link>
+            <Link to={`/${language[1]}`}>ES</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>

@@ -3,7 +3,7 @@ import { SectionItem, SectionList, SectionPar } from "./SectionItem";
 import {
   obligationsUse,
   exemptionLiability,
-} from "../utils/ComponentLegalNotice";
+} from "../utils/PageContent/LegalNotice";
 
 const LegalNotice = () => {
   return (

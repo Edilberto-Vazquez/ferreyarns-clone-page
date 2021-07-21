@@ -6,7 +6,7 @@ import {
   analyticalCookies,
   advertisingCookies,
   revocationConsent,
-} from "../utils/ComponentCookies";
+} from "../utils/PageContent/Cookies";
 
 const Cookies = () => {
   return (
