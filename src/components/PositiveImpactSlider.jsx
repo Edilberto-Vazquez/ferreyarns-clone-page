@@ -60,10 +60,10 @@ export const SlideTotalSavings = ({ totalSavings }) => {
           </li>
         ))}
       </div>
-      {totalSavings.map((item) => {
+      {totalSavings.map((item, index) => {
         if (item.title !== tab) return undefined;
         return (
-          <div className="tab-content">
+          <div key={index} className="tab-content">
             <span>{item.number}</span>
             <span>{item.title}</span>
           </div>

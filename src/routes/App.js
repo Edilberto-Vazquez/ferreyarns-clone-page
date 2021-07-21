@@ -9,6 +9,7 @@ import CircularProcess from "../pages/CircularProcess";
 import Certifications from "../pages/Certifications";
 import WorkWithUs from "../pages/WorkWithUs";
 import SomeQuestions from "../pages/SomeQuestions";
+import Contact from "../pages/Contact";
 
 const App = () => (
   <BrowserRouter>
@@ -36,6 +37,7 @@ const App = () => (
         <Route exact path="/projects">
           <SomeQuestions tabSection={{ tab: 4, name: "Projects" }} />
         </Route>
+        <Route exact path="/contact" component={Contact} />
       </Switch>
     </Layout>
   </BrowserRouter>

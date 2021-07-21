@@ -26,6 +26,11 @@
   row-gap: 14px;
 }
 
+.form-container-description {
+  display: grid;
+  row-gap: 14px;
+}
+
 .form-container-inputs {
   width: 100%;
   display: grid;

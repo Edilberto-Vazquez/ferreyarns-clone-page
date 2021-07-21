@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/logo-ferre.svg";
 import "./styles/Header.css";
 
 const Header = () => {
+  const [sustent, setSustent] = useState(false);
   return (
     <header>
       <Link to="/" className="ferreyarns-logo">
@@ -17,14 +18,30 @@ const Header = () => {
           <li>
             <Link to="/products">Products</Link>
           </li>
-          <li>
-            <Link to="#">Sustainability</Link>
+          <li
+            onClick={() => setSustent(!sustent)}
+            className="nav-bar-mobile__sustentainability"
+          >
+            <span>Sustainability</span>
+            {sustent ? (
+              <div className="sustentainability-menu">
+                <li>
+                  <Link to="/positive-impact">Positive Impact</Link>
+                </li>
+                <li>
+                  <Link to="/circular-process">Circular Process</Link>
+                </li>
+                <li>
+                  <Link to="/certifications">Certifications</Link>
+                </li>
+              </div>
+            ) : null}
           </li>
           <li>
             <Link to="/work-with-us">Work with us</Link>
           </li>
           <li>
-            <Link to="#">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
           <ul className="navbar-mobile-language">
             <li>
@@ -44,8 +61,24 @@ const Header = () => {
           <li>
             <Link to="/products">Products</Link>
           </li>
-          <li>
-            <Link to="#">Sustainability</Link>
+          <li
+            onClick={() => setSustent(!sustent)}
+            className="nav-bar-desktop__sustentainability"
+          >
+            <span>Sustainability</span>
+            {sustent ? (
+              <div className="sustentainability-menu">
+                <li>
+                  <Link to="/positive-impact">Positive Impact</Link>
+                </li>
+                <li>
+                  <Link to="/circular-process">Circular Process</Link>
+                </li>
+                <li>
+                  <Link to="/certifications">Certifications</Link>
+                </li>
+              </div>
+            ) : null}
           </li>
           <li>
             <Link to="/work-with-us">Work with us</Link>
@@ -59,7 +92,7 @@ const Header = () => {
             <Link to="#">ES</Link>
           </li>
           <li>
-            <Link to="#">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

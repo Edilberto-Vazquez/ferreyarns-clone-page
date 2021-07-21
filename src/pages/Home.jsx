@@ -78,7 +78,7 @@ const Home = () => {
           <FormSectionInput type="text" name="name" placeholder="Name*" />
           <FormSectionInput type="text" name="company" placeholder="Company*" />
           <FormSectionInput type="email" name="email" placeholder="Email*" />
-          <FormSectionInput type="text" name="phone" placeholder="Phone*" />
+          <FormSectionInput type="text" name="phone" placeholder="Phone" />
           <FormSectionTextArea
             name="message"
             placeholder="Message*"

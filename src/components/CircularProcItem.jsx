@@ -12,8 +12,8 @@ const CircularProcItem = ({ title, titleNum, description, imgs }) => {
         </div>
       </div>
       <div className="circular-proc-imgs">
-        {imgs.map((item) => {
-          return <img src={item} alt="" />;
+        {imgs.map((item, index) => {
+          return <img key={index} src={item} alt="" />;
         })}
       </div>
     </div>
