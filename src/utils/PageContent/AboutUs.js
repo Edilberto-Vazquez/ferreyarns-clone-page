@@ -3,10 +3,10 @@ import slider1 from "../../assets/images/about_us/slider/slider-1-1914.jpg";
 import slider2 from "../../assets/images/about_us/slider/slider-2-1947.jpg";
 import slider3 from "../../assets/images/about_us/slider/slider-3-1957.jpg";
 import slider4 from "../../assets/images/about_us/slider/slider-4-1974.jpg";
-import year1914 from "../../assets/icons/about_us/1914.svg";
-import year1947 from "../../assets/icons/about_us/1947.svg";
-import year1957 from "../../assets/icons/about_us/1957.svg";
-import year1974 from "../../assets/icons/about_us/1974.svg";
+import year1914 from "../../assets/icons/about_us/years/1914.svg";
+import year1947 from "../../assets/icons/about_us/years/1947.svg";
+import year1957 from "../../assets/icons/about_us/years/1957.svg";
+import year1974 from "../../assets/icons/about_us/years/1974.svg";
 import awards from "../../assets/images/about_us/awards.jpg";
 
 export const aboutUsEN = {

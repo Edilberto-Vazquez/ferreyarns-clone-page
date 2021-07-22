@@ -20,8 +20,6 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route exact path="/about-us" component={AboutUs} />
           <Route exact path="/products" component={Products} />
-          <Route exact path="/positive-impact" component={PositiveImpact} />
-          <Route exact path="/circular-process" component={CircularProcess} />
           <Route exact path="/certifications" component={Certifications} />
           <Route exact path="/work-with-us" component={WorkWithUs} />
           <Route exact path="/faqs">

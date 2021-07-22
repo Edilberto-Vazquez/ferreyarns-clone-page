@@ -30,16 +30,16 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="story-slides">
+        <h2 className="title-white">{idiom.aboutSlider.title}</h2>
         <div className="time-line-description">
-          <h2>{idiom.aboutSlider.title}</h2>
           {idiom.aboutSlider.slides.map((item, index) => (
-            <>
+            <div key={index}>
               <img src={item.yearImg} alt="" className="year-img" />
-              <h2>{item.title}</h2>
+              <h2 className="title-white">{item.title}</h2>
               <div>
                 <p>{item.paragraph}</p>
               </div>
-            </>
+            </div>
           ))}
         </div>
         <div className="time-line-image">

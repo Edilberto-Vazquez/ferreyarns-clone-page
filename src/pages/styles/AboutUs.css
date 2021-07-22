@@ -1,5 +1,7 @@
 .about-us {
-  background: url("../../assets/images/slider-1-1914.jpg");
+  background: url("../../assets/images/about_us/slider/slider-1-1914.jpg");
+  background-position: center;
+  background-size: contain;
 }
 
 .slogan {
@@ -25,24 +27,18 @@
 }
 
 .story-slides {
+  padding: 5% 10%;
   display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 32px;
 }
 
 .time-line-description {
   height: auto;
-  padding: 10% 10%;
   display: grid;
-  align-items: center;
-  grid-auto-rows: min-content;
-  row-gap: 14px;
-}
-
-.time-line-description h2 {
-  color: white;
-}
-
-.time-line-description div p {
-  color: white;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: scroll;
 }
 
 .year-img {
@@ -50,12 +46,13 @@
   height: 50px;
 }
 
+.time-line-description div p {
+  color: white;
+}
+
 .time-line-image {
-  width: 100%;
+  width: 50%;
   height: 100%;
-  display: grid;
-  justify-items: center;
-  align-items: flex-end;
 }
 
 .time-line-image img {

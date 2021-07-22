@@ -43,11 +43,6 @@
 
 /* list type in section */
 
-.section-description ul li,
-.section-description ol li {
-  font-size: 1.6rem;
-}
-
 .section-description ul li {
   list-style: disc inside;
 }

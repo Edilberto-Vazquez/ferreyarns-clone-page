@@ -5,7 +5,6 @@ import logo from "../assets/icons/logo-ferre.svg";
 import "./styles/Header.css";
 
 const Header = () => {
-  const [sustent, setSustent] = useState(false);
   const { setLanguage } = useContext(LanguageChanger);
 
   return (
@@ -21,24 +20,8 @@ const Header = () => {
           <li>
             <Link to="/products">Products</Link>
           </li>
-          <li
-            onClick={() => setSustent(!sustent)}
-            className="nav-bar-mobile__sustentainability"
-          >
-            <span>Sustainability</span>
-            {sustent ? (
-              <div className="sustentainability-menu">
-                <li>
-                  <Link to="/positive-impact">Positive Impact</Link>
-                </li>
-                <li>
-                  <Link to="/circular-process">Circular Process</Link>
-                </li>
-                <li>
-                  <Link to="/certifications">Certifications</Link>
-                </li>
-              </div>
-            ) : null}
+          <li>
+            <Link to="/certifications">Certifications</Link>
           </li>
           <li>
             <Link to="/work-with-us">Work with us</Link>
@@ -60,24 +43,8 @@ const Header = () => {
           <li>
             <Link to="/products">Products</Link>
           </li>
-          <li
-            onClick={() => setSustent(!sustent)}
-            className="nav-bar-desktop__sustentainability"
-          >
-            <span>Sustainability</span>
-            {sustent ? (
-              <div className="sustentainability-menu">
-                <li>
-                  <Link to="/positive-impact">Positive Impact</Link>
-                </li>
-                <li>
-                  <Link to="/circular-process">Circular Process</Link>
-                </li>
-                <li>
-                  <Link to="/certifications">Certifications</Link>
-                </li>
-              </div>
-            ) : null}
+          <li>
+            <Link to="/certifications">Certifications</Link>
           </li>
           <li>
             <Link to="/work-with-us">Work with us</Link>
