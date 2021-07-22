@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Layout from "../components/Layout";
 import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
 import Products from "../pages/Products";
-import PositiveImpact from "../pages/PositiveImpact";
-import CircularProcess from "../pages/CircularProcess";
 import Certifications from "../pages/Certifications";
 import WorkWithUs from "../pages/WorkWithUs";
 import SomeQuestions from "../pages/SomeQuestions";

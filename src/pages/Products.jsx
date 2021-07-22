@@ -72,7 +72,7 @@ const Products = () => {
               aplication="Knitting, weaving and hosiery."
               specs={["Nm 28", "Ne 17"]}
             >
-              <EcologicalDescription key={1}>
+              <EcologicalDescription>
                 <EcologicalMaterial material="rrCotton" percentage="50%" />
               </EcologicalDescription>
               <EcologicalDescription>
@@ -88,7 +88,7 @@ const Products = () => {
               aplication="Knitting, weaving and hosiery."
               specs={["Nm 40", "Ne 24"]}
             >
-              <EcologicalDescription key={2}>
+              <EcologicalDescription>
                 <EcologicalMaterial material="rrCotton" percentage="52%" />
               </EcologicalDescription>
               <EcologicalDescription>
@@ -104,7 +104,7 @@ const Products = () => {
               aplication="Knitting, weaving and hosiery."
               specs={["Nm 30", "Ne 18"]}
             >
-              <EcologicalDescription key={3}>
+              <EcologicalDescription>
                 <EcologicalMaterial material="rrCotton" percentage="60%" />
               </EcologicalDescription>
               <EcologicalDescription>

@@ -1,4 +1,6 @@
+// about us image
 import about from "../../assets/images/about_us/about.jpg";
+// sliders images
 import slider1 from "../../assets/images/about_us/slider/slider-1-1914.jpg";
 import slider2 from "../../assets/images/about_us/slider/slider-2-1947.jpg";
 import slider3 from "../../assets/images/about_us/slider/slider-3-1957.jpg";
@@ -7,6 +9,7 @@ import year1914 from "../../assets/icons/about_us/years/1914.svg";
 import year1947 from "../../assets/icons/about_us/years/1947.svg";
 import year1957 from "../../assets/icons/about_us/years/1957.svg";
 import year1974 from "../../assets/icons/about_us/years/1974.svg";
+// awards and honours image
 import awards from "../../assets/images/about_us/awards.jpg";
 
 export const aboutUsEN = {

@@ -79,12 +79,14 @@ const Home = () => {
           {idiom.form.inputs.map((item, index) =>
             item.name !== "message" ? (
               <FormSectionInput
+                key={index}
                 type={item.type}
                 name={item.name}
                 placeholder={item.placeholder}
               />
             ) : (
               <FormSectionTextArea
+                key={index}
                 name={item.name}
                 placeholder={item.placeholder}
               ></FormSectionTextArea>
@@ -100,8 +102,8 @@ const Home = () => {
           <h2 className="title-black">{idiom.ourClients.title}</h2>
         </div>
         <div className="our-clientes-img border-black">
-          {idiom.ourClients.imgList.map((item) => (
-            <img src={item} alt="" />
+          {idiom.ourClients.imgList.map((item, index) => (
+            <img key={index} src={item} alt="" />
           ))}
         </div>
       </div>

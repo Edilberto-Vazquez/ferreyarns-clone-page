@@ -1,119 +1,60 @@
-// positive impacts slide
-// slide
-import coyuchi from "../../assets/images/positive_impact_slide/coyuchi.jpg";
-import kimoaH from "../../assets/images/positive_impact_slide/kimoa-hoodie.jpg";
-import kimoaTs from "../../assets/images/positive_impact_slide/kimoa-tshirt.jpg";
-import mudJ from "../../assets/images/positive_impact_slide/mud-jeans.jpg";
-// title
-import fblue from "../../assets/icons/ecological_title/fblue.svg";
-import fjeans from "../../assets/icons/ecological_title/fjeans.svg";
-import fearth from "../../assets/icons/ecological_title/fearth.svg";
-// compositon
-import cottonI from "../../assets/icons/ecological_description/cotton-icon-white.svg";
-import poliesterI from "../../assets/icons/ecological_description/poliester-icon-white.svg";
-import otherF from "../../assets/icons/ecological_description/other-fibers.svg";
-import oraganicC from "../../assets/icons/ecological_description/organic-cotton.svg";
-// envSavItemEn images
-import bi from "../../assets/icons/positive_impact/bottle-icon.svg";
-import ci from "../../assets/icons/positive_impact/chemical-icon.svg";
-import co2 from "../../assets/icons/positive_impact/co2-icon.svg";
-import ei from "../../assets/icons/positive_impact/energy-icon.svg";
-import ti from "../../assets/icons/positive_impact/textil-icon.svg";
-import wi from "../../assets/icons/positive_impact/water-icon.svg";
+// building zero impact image
+import products from "../../assets/images/products/products.jpg";
 
-export const posImpSlide = [
-  {
-    sectionImg: kimoaTs,
-    titleImg: fblue,
-    brand: "Kimoa",
-    garment: "T-SHIRT",
-    compositions: [
-      { percentage: "50%", material: "rrCotton" },
-      { percentage: "47%", material: "rPolyester" },
-      { percentage: "3%", material: "oFibers" },
-    ],
-    totalSavings: [
-      { title: "liters of water saved", number: "1,343", timg: wi },
-      { title: "kg of CO_2 saved", number: "2", timg: co2 },
-      { title: "kg of chemicals saved", number: "0.1", timg: ci },
-      { title: "kWh of energy saved", number: "5", timg: ei },
-      { title: "PET bottle units saved", number: "4", timg: bi },
-    ],
-    dataSource:
-      "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO.",
-  },
-  {
-    sectionImg: kimoaH,
-    titleImg: fblue,
-    brand: "Kimoa",
-    garment: "Hoodie",
-    compositions: [
-      { percentage: "50%", material: "rrCotton" },
-      { percentage: "47%", material: "rPolyester" },
-      { percentage: "3%", material: "oFibers" },
-    ],
-    totalSavings: [
-      { title: "liters of water saved", number: "2,090", timg: wi },
-      { title: "kg of 〖CO〗_2 saved", number: "3", timg: co2 },
-      { title: "kg of chemicals saved", number: "0.2", timg: ci },
-      { title: "kWh of energy saved", number: "8", timg: ei },
-      { title: "PET bottle units saved", number: "6", timg: bi },
-    ],
-    dataSource:
-      "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO.",
-  },
-  {
-    sectionImg: mudJ,
-    titleImg: fjeans,
-    brand: "Mud Jeans",
-    garment: "Denim",
-    compositions: [
-      { percentage: "50%", material: "rrCotton" },
-      { percentage: "50%", material: "oCotton" },
-    ],
-    totalSavings: [
-      { title: "liters of water saved", number: "5,971", timg: wi },
-      { title: "kg of 〖CO〗_2 saved", number: "9", timg: co2 },
-      { title: "kg of chemicals saved", number: "0.5", timg: ci },
-      { title: "kWh of energy saved", number: "22", timg: ei },
-    ],
-    dataSource:
-      "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO.",
-  },
-  {
-    sectionImg: coyuchi,
-    titleImg: fblue,
-    brand: "Coyuchi",
-    garment: "Blanket",
-    compositions: [
-      { percentage: "45%", material: "rrCotton" },
-      { percentage: "50%", material: "oCotton" },
-      { percentage: "3%", material: "oFibers" },
-    ],
-    totalSavings: [
-      { title: "liters of water saved", number: "16,420", timg: wi },
-      { title: "kg of 〖CO〗_2 saved", number: "25", timg: co2 },
-      { title: "kg of chemicals saved", number: "1.2", timg: ci },
-      { title: "kWh of energy saved", number: "62", timg: ei },
-    ],
-    dataSource:
-      "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO.",
-  },
-];
+// procucts section
+import ferreYarns from "../../assets/icons/products/ferre-yarns.svg";
+import fblue from "../../assets/icons/products/f_images/fblue.svg";
+import fearth from "../../assets/icons/products/f_images/fearth.svg";
+import fjeans from "../../assets/icons/products/f_images/fjeans.svg";
+import funo from "../../assets/icons/products/f_images/funo.svg";
 
-export const envSavItemEn = [
-  { img: bi, number: 28, title: "billion liters of water saved" },
-  {
-    img: ci,
-    number: 40.2,
-    title: "million kg of CO2 emissions saved",
+export const productsEN = {
+  zeroImpact: {
+    sectionName: "Ferre / Products",
+    title: "Building a zero-impact fashion",
+    img: "",
+    paragraph: [
+      "We make high-quality recycled yarns for all types of fashion products, accessories and home textiles. Our products are made with Recover™, the lowest-impact recycled cotton fiber in today’s global market, according to the Higg MSI Index. We have a passion for low-impact yarns and a deep knowledge of what a recycled yarn is capable of. Our Yarn Consultants work with you to understand your brand’s needs and help you carry out your fashion projects by creating the best blend for your garments.",
+    ],
   },
-  { img: co2, number: 2.1, title: "million kg of chemicals saved" },
-  {
-    img: ei,
-    number: 1.9,
-    title: "million kg textile waste recycled",
+  ecologicalSection: {
+    img: ferreYarns,
+    paragraph: [
+      "Ferre yarns are made from recycled cotton textile waste, thus a percentage of other fibers such as polyester, viscose, acrylic, wool or nylon may be identified during final composition testing.",
+    ],
+    materialSection: [
+      { tab: 0, name: "All" },
+      { tab: 1, name: "Recover™ recycled cotton" },
+      { tab: 2, name: "Recycled Polyester" },
+      { tab: 3, name: "Recycled wool" },
+      { tab: 4, name: "Organic cotton" },
+      { tab: 5, name: "Post-consumer" },
+      { tab: 6, name: "TENCEL™" },
+      { tab: 7, name: "Acrylic" },
+      { tab: 8, name: "Polyester" },
+    ],
+    
+    materialItem: [
+      { 
+        tabs: [0], 
+        img=funo, 
+        type :"COPAC", 
+        aplication:"Knitting, weaving and hosiery.", 
+        specs: ["Nm 28", "Ne 17"], 
+        materials: ["Recover™ recycled cotton", "Acrylic", "Other fibers"],
+      },
+      
+    ],
   },
-  { img: ti, number: 102.7, title: "million kWh of energy saved" },
-  { img: wi, number: 5.8, title: "million PET bottle units saved" },
-];
+};
+
+// { key: "rrCotton", name: "Recover™ recycled cotton", img: rrCotton },
+    // { key: "rPolyester", name: "Recycled Polyester", img: rPolyester },
+    // { key: "rWool", name: "Recycled wool", img: rWool },
+    // { key: "oCotton", name: "Organic cotton", img: oCotton },
+    // { key: "tencel", name: "TENCEL™", img: tencel },
+    // { key: "acrylic", name: "Acrylic", img: acrylic },
+    // { key: "polyester", name: "Polyester", img: polyester },
+    // { key: "polyamide", name: "Polyamide", img: polyamide },
+    // { key: "oFibers", name: "Other fibers", img: oFibers },
+    // { key: "rrDenim", name: "Recover™ recycled denim", img: rrDenim },
