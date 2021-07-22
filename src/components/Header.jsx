@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { LanguageChanger } from "../utils/LanguageChanger";
 import logo from "../assets/icons/logo-ferre.svg";
 import "./styles/Header.css";
 
 const Header = () => {
   const [sustent, setSustent] = useState(false);
-  const language = ["en", "es"];
+  const { setLanguage } = useContext(LanguageChanger);
+
   return (
     <header>
       <Link to="/" className="ferreyarns-logo">
@@ -45,12 +47,8 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <ul className="navbar-mobile-language">
-            <li>
-              <Link to={`/${language[0]}`}>EN</Link>
-            </li>
-            <li>
-              <Link to={`/${language[1]}`}>ES</Link>
-            </li>
+            <li onClick={() => setLanguage("en")}>EN</li>
+            <li onClick={() => setLanguage("es")}>ES</li>
           </ul>
         </ul>
       </nav>
@@ -86,12 +84,8 @@ const Header = () => {
           </li>
         </ul>
         <ul className="navbar-desktop-contact navbar-language">
-          <li>
-            <Link to={`/${language[0]}`}>EN</Link>
-          </li>
-          <li>
-            <Link to={`/${language[1]}`}>ES</Link>
-          </li>
+          <li onClick={() => setLanguage("en")}>EN</li>
+          <li onClick={() => setLanguage("es")}>ES</li>
           <li>
             <Link to="/contact">Contact</Link>
           </li>

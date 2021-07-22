@@ -1,8 +1,8 @@
-import home1 from "../../assets/images/home-1.jpg";
-import home2 from "../../assets/images/home-2.jpg";
-import home3 from "../../assets/images/home-3.jpg";
-import brands1 from "../../assets/images/brands-1.gif";
-import brands2 from "../../assets/images/brands-2.gif";
+import home1 from "../../assets/images/home/home-1.jpg";
+import home2 from "../../assets/images/home/home-2.jpg";
+import home3 from "../../assets/images/home/home-3.jpg";
+import brands1 from "../../assets/images/home/brands-1.gif";
+import brands2 from "../../assets/images/home/brands-2.gif";
 
 // English language
 export const homeEN = {

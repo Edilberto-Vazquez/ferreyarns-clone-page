@@ -31,9 +31,7 @@ const Footer = () => {
           <Link to="/projects">Projects</Link>
         </div>
         <div className="footer-general-information">
-          <Link to="/about-us">About us</Link>
           <Link to="/products">Products</Link>
-          <Link to="/work-with-us">Work with us</Link>
           <Link to="/contact">Contact</Link>
         </div>
         <div className="footer-social-media">

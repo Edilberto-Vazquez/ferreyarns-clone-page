@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useContext } from "react";
+import { LanguageChanger } from "../utils/LanguageChanger";
 import FeatureSection from "../components/FeatureSection";
 import {
   FormSection,
@@ -10,11 +10,11 @@ import {
   FormSectionButton,
 } from "../components/FormSection";
 import { SectionPar } from "../components/SectionItem";
-import "./styles/Home.css";
 import { homeEN, homeES } from "../utils/PageContent/Home";
+import "./styles/Home.css";
 
 const Home = () => {
-  let language = "en";
+  const { language } = useContext(LanguageChanger);
   let idiom = {};
 
   // set language
