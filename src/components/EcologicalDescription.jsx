@@ -38,6 +38,7 @@ export const EcologicalSection = ({
         </div>
       );
     }
+    return null;
   });
   return <>{display}</>;
 };
