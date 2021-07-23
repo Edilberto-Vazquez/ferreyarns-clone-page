@@ -22,8 +22,8 @@ const Footer = () => {
         </div>
         <div className="footer-contac">
           <p>{idiom.contact.paragraphs}</p>
-          {idiom.contact.links.map((item) => (
-            <p>
+          {idiom.contact.links.map((item, index) => (
+            <p key={index}>
               {item.type}
               <a href={item.link}>{item.name}</a>
             </p>
@@ -45,8 +45,10 @@ const Footer = () => {
         </div>
         <div className="footer-social-media">
           <p>{idiom.follow.title}</p>
-          {idiom.follow.socialMedia.map((item) => (
-            <a href={item.link}>{item.name}</a>
+          {idiom.follow.socialMedia.map((item, index) => (
+            <a key={index} href={item.link}>
+              {item.name}
+            </a>
           ))}
         </div>
       </div>

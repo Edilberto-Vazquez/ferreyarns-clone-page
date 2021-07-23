@@ -9,8 +9,6 @@ import {
   FormSectionButton,
 } from "../components/FormSection";
 import { SectionItem, SectionPar } from "../components/SectionItem.jsx";
-import FeatureSection from "../components/FeatureSection";
-import contactF from "../assets/images/contact-ferre.jpg";
 import { contacEN, contacES } from "../utils/PageContent/Contact";
 import "./styles/Contact.css";
 

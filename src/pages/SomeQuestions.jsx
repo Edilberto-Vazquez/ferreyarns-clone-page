@@ -22,6 +22,8 @@ const SomeQuestions = ({ tabSection }) => {
         return <LegalNotice />;
       case 4:
         return <Projects />;
+      default:
+        return null;
     }
   };
 
