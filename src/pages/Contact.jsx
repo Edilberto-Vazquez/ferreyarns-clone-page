@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageChanger } from "../utils/LanguageChanger";
 import {
   FormSection,
   FormSectionDescription,
@@ -10,79 +11,60 @@ import {
 import { SectionItem, SectionPar } from "../components/SectionItem.jsx";
 import FeatureSection from "../components/FeatureSection";
 import contactF from "../assets/images/contact-ferre.jpg";
+import { contacEN, contacES } from "../utils/PageContent/Contact";
 import "./styles/Contact.css";
 
 const Contact = () => {
+  const { language } = useContext(LanguageChanger);
+  let idiom = {};
+
+  // set language
+  if (language === "en") {
+    idiom = contacEN;
+  } else if (language === "es") {
+    idiom = contacES;
+  }
   return (
     <main className="contac">
-      <FormSection title="How can we help you?">
+      <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          <SectionPar content="Contact us to receive information about our products and to inquire about prices and minimum order quantities." />
-          <SectionItem title="Headquarters">
-            <SectionPar content="HILATURAS FERRE, S.A." />
-            <SectionPar content="Calle Les Molines, 2" />
-            <SectionPar content="03450, Banyeres de Mariola – España" />
+          <SectionPar content={idiom.form.paragraphs} />
+          <SectionItem title={idiom.form.sectionPar.title}>
+            {idiom.form.sectionPar.paragraphs.map((item) => (
+              <SectionPar content={item} />
+            ))}
             <SectionPar content="Ph. ">
-              <a href="tel:+34965567425">+34 965 567 425</a>
+              <a href={idiom.form.sectionPar.links[0].link}>
+                {idiom.form.sectionPar.links[0].name}
+              </a>
             </SectionPar>
-            <SectionPar content="E.">
-              <a href="mailto:hola@ferreyarns.com">hola@ferreyarns.com</a>
-            </SectionPar>
-          </SectionItem>
-          <SectionItem title="Warehouse">
-            <SectionPar content="Calle Les Molines, 77" />
-            <SectionPar content="03450, Banyeres de Mariola – España" />
-            <SectionPar content="Ph. ">
-              <a href="tel:+34965567425">+34 965 567 425</a>
+            <SectionPar content="E. ">
+              <a href={idiom.form.sectionPar.links[1].link}>
+                {idiom.form.sectionPar.links[1].name}
+              </a>
             </SectionPar>
           </SectionItem>
         </FormSectionDescription>
         <FormSectionContainer desktopShort>
-          <FormSectionInputs type="text" name="name" placeholder="Name*" />
-          <FormSectionInputs
-            type="text"
-            name="company"
-            placeholder="Company*"
-          />
-          <FormSectionInputs type="email" name="email" placeholder="Email*" />
-          <FormSectionInputs type="text" name="phone" placeholder="Phone" />
-          <FormSectionInputs type="text" name="country" placeholder="Country" />
-          <FormSectionInputs type="text" name="website" placeholder="Website" />
-          <FormSectionTextArea
-            name="message"
-            placeholder="Message*"
-          ></FormSectionTextArea>
+          {idiom.form.inputs.map((item, index) =>
+            item.name !== "message" ? (
+              <FormSectionInputs
+                key={index}
+                type={item.type}
+                name={item.name}
+                placeholder={item.placeholder}
+              />
+            ) : (
+              <FormSectionTextArea
+                key={index}
+                name={item.name}
+                placeholder={item.placeholder}
+              ></FormSectionTextArea>
+            )
+          )}
         </FormSectionContainer>
         <FormSectionButton btnName="SEND" />
       </FormSection>
-      <div className="google-maps">
-        <h2 className="title-white">google maps here</h2>
-      </div>
-      <FeatureSection img={contactF} yAxis="top">
-        <SectionItem title="USA">
-          <SectionPar content="FERRE HICKORY" />
-          <SectionPar content="520 20th SE, Hickory, NC 28602" />
-          <SectionPar content="Ph. ">
-            <a href="tel:+18283221158">+1 828 322 1158</a>
-          </SectionPar>
-          <SectionPar content="E. ">
-            <a href="mailto:marty.anderson@ferreyarns.com">
-              marty.anderson@ferreyarns.com
-            </a>
-          </SectionPar>
-        </SectionItem>
-        <SectionItem title="Mexico">
-          <SectionPar content="HILOS FERRE DE ESPAÑA, SA DE CV" />
-          <SectionPar content="Aquiles Serdán 416-2" />
-          <SectionPar content="San Felipe Hueyotiplan Puebla, Pue. CP 72062" />
-          <SectionPar content="Ph. ">
-            <a href="tel:+522222685761">+52 (222) 268 5761</a>
-          </SectionPar>
-          <SectionPar content="E. ">
-            <a href="mailto:info@hilosferre.com">info@hilosferre.com</a>
-          </SectionPar>
-        </SectionItem>
-      </FeatureSection>
     </main>
   );
 };
