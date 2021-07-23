@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageChanger } from "../utils/LanguageChanger";
 import { Link } from "react-router-dom";
 import certifications from "../assets/images/certifications-footer2.jpg";
+import { footerEN, footerES } from "../utils/PageContent/Footer";
 import "./styles/Footer.css";
 
 const Footer = () => {
+  const { language } = useContext(LanguageChanger);
+  let idiom = {};
+
+  // set language
+  if (language === "en") {
+    idiom = footerEN;
+  } else if (language === "es") {
+    idiom = footerES;
+  }
   return (
     <footer>
       <div className="footer-information">
@@ -11,42 +22,40 @@ const Footer = () => {
           <div></div>
         </div>
         <div className="footer-contac">
-          <p>
-            Avda. Les Molines, 2 (03450)
-            <br />
-            Banyeres de Mariola, Alicante – Spain
-          </p>
-          <p>
-            Ph: <a href="tel:+34 966 567 425">+34 966 567 425</a>
-          </p>
-          <p>
-            E: <a href="mailto:hola@ferreyarns.com">hola@ferreyarns.com</a>
-          </p>
+          <p>{idiom.contact.paragraphs}</p>
+          {idiom.contact.links.map((item) => (
+            <p>
+              {item.type}
+              <a href={item.link}>{item.name}</a>
+            </p>
+          ))}
         </div>
         <div className="footer-general-information">
-          <Link to="/faqs">FAQs</Link>
-          <Link to="/privacy">Privacy Policy</Link>
-          <Link to="/cookies">Cookie Policy</Link>
-          <Link to="/legal">Legal Notice</Link>
-          <Link to="/projects">Projects</Link>
+          {idiom.someQuestions.map((item, index) => (
+            <Link key={index} to={item.link}>
+              {item.name}
+            </Link>
+          ))}
         </div>
         <div className="footer-general-information">
-          <Link to="/products">Products</Link>
-          <Link to="/contact">Contact</Link>
+          {idiom.pages.map((item, index) => (
+            <Link key={index} to={item.link}>
+              {item.name}
+            </Link>
+          ))}
         </div>
         <div className="footer-social-media">
-          <p>Follow us</p>
-          <a href="https://www.instagram.com/ferreyarns/">instagram</a>
-          <a href="https://www.linkedin.com/company/ferreyarns/?viewAsMember=true">
-            linkedin
-          </a>
+          <p>{idiom.follow.title}</p>
+          {idiom.follow.socialMedia.map((item) => (
+            <a href={item.link}>{item.name}</a>
+          ))}
         </div>
       </div>
       <div className="certifications border-black">
         <img src={certifications} alt="" />
       </div>
       <div className="all-rights-reserved">
-        <p>© Ferre 2021 | All rights reserved</p>
+        <p>{idiom.reserved}</p>
       </div>
     </footer>
   );
