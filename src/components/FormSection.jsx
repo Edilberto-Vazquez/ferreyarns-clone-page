@@ -51,7 +51,7 @@ export const FormSectionContainer = ({ children, desktopShort }) => {
   );
 };
 
-export const FormSectionInput = ({ type, name, placeholder }) => {
+export const FormSectionInputs = ({ type, name, placeholder }) => {
   return (
     <input
       type={type}

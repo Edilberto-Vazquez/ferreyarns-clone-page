@@ -3,7 +3,7 @@ import {
   FormSection,
   FormSectionDescription,
   FormSectionContainer,
-  FormSectionInput,
+  FormSectionInputs,
   FormSectionTextArea,
   FormSectionButton,
 } from "../components/FormSection";
@@ -38,12 +38,16 @@ const Contact = () => {
           </SectionItem>
         </FormSectionDescription>
         <FormSectionContainer desktopShort>
-          <FormSectionInput type="text" name="name" placeholder="Name*" />
-          <FormSectionInput type="text" name="company" placeholder="Company*" />
-          <FormSectionInput type="email" name="email" placeholder="Email*" />
-          <FormSectionInput type="text" name="phone" placeholder="Phone" />
-          <FormSectionInput type="text" name="country" placeholder="Country" />
-          <FormSectionInput type="text" name="website" placeholder="Website" />
+          <FormSectionInputs type="text" name="name" placeholder="Name*" />
+          <FormSectionInputs
+            type="text"
+            name="company"
+            placeholder="Company*"
+          />
+          <FormSectionInputs type="email" name="email" placeholder="Email*" />
+          <FormSectionInputs type="text" name="phone" placeholder="Phone" />
+          <FormSectionInputs type="text" name="country" placeholder="Country" />
+          <FormSectionInputs type="text" name="website" placeholder="Website" />
           <FormSectionTextArea
             name="message"
             placeholder="Message*"

@@ -3,7 +3,7 @@ import FeatureSection from "../components/FeatureSection";
 import {
   FormSection,
   FormSectionDescription,
-  FormSectionInput,
+  FormSectionInputs,
   FormSectionContainer,
   FormSectionButton,
 } from "../components/FormSection";
@@ -36,12 +36,12 @@ const WorkWithUs = () => {
           <SectionPar content="Get in touch." />
         </FormSectionDescription>
         <FormSectionContainer>
-          <FormSectionInput type="text" name="name" placeholder="Name*" />
-          <FormSectionInput type="email" name="email" placeholder="Email*" />
-          <FormSectionInput type="text" name="phone" placeholder="Phone*" />
+          <FormSectionInputs type="text" name="name" placeholder="Name*" />
+          <FormSectionInputs type="email" name="email" placeholder="Email*" />
+          <FormSectionInputs type="text" name="phone" placeholder="Phone*" />
           <div className="file-upload">
             <SectionPar content="Please upload your resume (.pdf / 1MB max.)" />
-            <FormSectionInput type="file" name="file" />
+            <FormSectionInputs type="file" name="file" />
           </div>
         </FormSectionContainer>
         <FormSectionButton btnName="SEND" />

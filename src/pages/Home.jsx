@@ -4,7 +4,7 @@ import FeatureSection from "../components/FeatureSection";
 import {
   FormSection,
   FormSectionDescription,
-  FormSectionInput,
+  FormSectionInputs,
   FormSectionTextArea,
   FormSectionContainer,
   FormSectionButton,
@@ -78,7 +78,7 @@ const Home = () => {
         <FormSectionContainer desktopShort>
           {idiom.form.inputs.map((item, index) =>
             item.name !== "message" ? (
-              <FormSectionInput
+              <FormSectionInputs
                 key={index}
                 type={item.type}
                 name={item.name}
