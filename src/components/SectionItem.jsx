@@ -62,7 +62,7 @@ export const SectionItem = ({ title, children }) => {
 export const SectionPar = ({ strong, content, children }) => {
   return (
     <p>
-      {strong ? <strong>{strong}: </strong> : null}
+      {strong ? <strong>{strong}</strong> : null}
       {content} {children}
     </p>
   );

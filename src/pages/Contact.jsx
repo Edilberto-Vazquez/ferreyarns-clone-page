@@ -28,8 +28,8 @@ const Contact = () => {
         <FormSectionDescription>
           <SectionPar content={idiom.form.paragraphs} />
           <SectionItem title={idiom.form.sectionPar.title}>
-            {idiom.form.sectionPar.paragraphs.map((item) => (
-              <SectionPar content={item} />
+            {idiom.form.sectionPar.paragraphs.map((item, index) => (
+              <SectionPar key={index} content={item} />
             ))}
             <SectionPar content="Ph. ">
               <a href={idiom.form.sectionPar.links[0].link}>
