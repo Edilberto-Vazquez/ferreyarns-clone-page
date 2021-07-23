@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageChanger } from "../utils/LanguageChanger";
 import FeatureSection from "../components/FeatureSection";
 import {
   FormSection,
@@ -8,43 +9,52 @@ import {
   FormSectionButton,
 } from "../components/FormSection";
 import { SectionPar } from "../components/SectionItem";
-import wwu1 from "../assets/images/work-with-us-1.jpg";
+import { workWithUsEN, workWithUsES } from "../utils/PageContent/WorkWithUs";
 
 const WorkWithUs = () => {
+  const { language } = useContext(LanguageChanger);
+  let idiom = {};
+
+  // set language
+  if (language === "en") {
+    idiom = workWithUsEN;
+  } else if (language === "es") {
+    idiom = workWithUsES;
+  }
   return (
     <main className="work-with-us">
       <FeatureSection
-        title="Work at Ferre"
-        sectionName="Ferre / Work with us"
-        img={wwu1}
+        title={idiom.workFerre.title}
+        sectionName={idiom.workFerre.sectionName}
+        img={idiom.workFerre.img}
         yAxis="top"
       >
-        <SectionPar
-          content="At Ferre we have a passion for low-impact yarns and a deep knowledge
-          of what a recycled yarn is capable of. We are Yarn Experts and Yarn
-          Consultants. We work with brands to understand their needs and help
-          them carry out their fashion projects by creating the best sustainable
-          yarn for their garments."
-        />
+        <SectionPar content={idiom.workFerre.paragraphs} />
       </FeatureSection>
-      <FormSection title="Join our team">
+      <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          <SectionPar
-            content="We highly value dynamic individuals who make meaningful change
-            happen."
-          />
-          <SectionPar content="Get in touch." />
+          {idiom.form.paragraphs.map((item, index) => (
+            <SectionPar key={index} content={item} />
+          ))}
         </FormSectionDescription>
         <FormSectionContainer>
-          <FormSectionInputs type="text" name="name" placeholder="Name*" />
-          <FormSectionInputs type="email" name="email" placeholder="Email*" />
-          <FormSectionInputs type="text" name="phone" placeholder="Phone*" />
+          {idiom.form.inputs.map((item, index) => (
+            <FormSectionInputs
+              key={index}
+              type={item.type}
+              name={item.name}
+              placeholder={item.placeholder}
+            />
+          ))}
           <div className="file-upload">
-            <SectionPar content="Please upload your resume (.pdf / 1MB max.)" />
-            <FormSectionInputs type="file" name="file" />
+            <SectionPar content={idiom.form.loadFile.resume} />
+            <FormSectionInputs
+              type={idiom.form.loadFile.load.type}
+              name={idiom.form.loadFile.load.name}
+            />
           </div>
         </FormSectionContainer>
-        <FormSectionButton btnName="SEND" />
+        <FormSectionButton btnName={idiom.form.send} />
       </FormSection>
     </main>
   );

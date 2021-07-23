@@ -545,6 +545,6 @@ export const productsES = {
       { type: "text", name: "message", placeholder: "Mensaje*" },
     ],
     privacy: ["He leído y acepto la", "Política de privacidad"],
-    send: "SEND",
+    send: "ENVIAR",
   },
 };
