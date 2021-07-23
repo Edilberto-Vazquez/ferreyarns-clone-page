@@ -1,33 +1,41 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import logo from "../assets/icons/logo-ferre.svg";
+import { headerEN, headerES } from "../utils/PageContent/Header";
 import "./styles/Header.css";
 
 const Header = () => {
-  const { setLanguage } = useContext(LanguageChanger);
+  const { setLanguage, language } = useContext(LanguageChanger);
+  let idiom = {};
+
+  // set language
+  if (language === "en") {
+    idiom = headerEN;
+  } else if (language === "es") {
+    idiom = headerES;
+  }
 
   return (
     <header>
-      <Link to="/" className="ferreyarns-logo">
-        <img src={logo} alt="" />
+      <Link to={idiom.logo[1]} className="ferreyarns-logo">
+        <img src={idiom.logo[0]} alt="" />
       </Link>
       <nav className="navbar-mobile">
         <ul className="navbar-mobile-links">
           <li>
-            <Link to="/about-us">About us</Link>
+            <Link to={idiom.aboutUs[1]}>{idiom.aboutUs[0]}</Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to={idiom.products[1]}>{idiom.products[0]}</Link>
           </li>
           <li>
-            <Link to="/certifications">Certifications</Link>
+            <Link to={idiom.certifications[1]}>{idiom.certifications[0]}</Link>
           </li>
           <li>
-            <Link to="/work-with-us">Work with us</Link>
+            <Link to={idiom.workWithUs[1]}>{idiom.workWithUs[0]}</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to={idiom.contact[1]}>{idiom.contact[0]}</Link>
           </li>
           <ul className="navbar-mobile-language">
             <li onClick={() => setLanguage("en")}>EN</li>
@@ -38,23 +46,23 @@ const Header = () => {
       <nav className="navbar-desktop">
         <ul className="navbar-desktop-links">
           <li>
-            <Link to="/about-us">About us</Link>
+            <Link to={idiom.aboutUs[1]}>{idiom.aboutUs[0]}</Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to={idiom.products[1]}>{idiom.products[0]}</Link>
           </li>
           <li>
-            <Link to="/certifications">Certifications</Link>
+            <Link to={idiom.certifications[1]}>{idiom.certifications[0]}</Link>
           </li>
           <li>
-            <Link to="/work-with-us">Work with us</Link>
+            <Link to={idiom.workWithUs[1]}>{idiom.workWithUs[0]}</Link>
           </li>
         </ul>
         <ul className="navbar-desktop-contact navbar-language">
           <li onClick={() => setLanguage("en")}>EN</li>
           <li onClick={() => setLanguage("es")}>ES</li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to={idiom.contact[1]}>{idiom.contact[0]}</Link>
           </li>
         </ul>
       </nav>

@@ -19,7 +19,7 @@ import polyamide from "../../assets/icons/products/materials/polyamide.svg";
 import oFibers from "../../assets/icons/products/materials/other-fibers.svg";
 import rrDenim from "../../assets/icons/products/materials/denim.svg";
 
-// -----------english-----------
+// -----------Products english-----------
 export const productsEN = {
   zeroImpact: {
     sectionName: "Ferre / Products",
@@ -284,7 +284,7 @@ export const productsEN = {
   },
 };
 
-// -----------spanish-----------
+// -----------Products spanish-----------
 export const productsES = {
   zeroImpact: {
     sectionName: "Ferre / Productos",

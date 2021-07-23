@@ -8,7 +8,7 @@ import certCompact from "../../assets/images/certifications/certificacion-compac
 import certEx from "../../assets/images/certifications/certificacion-exchange.png";
 import certCircular from "../../assets/images/certifications/certificacion-circular.png";
 
-// certifications english
+// -----------Certifications english-----------
 export const certificationsEN = {
   ensuringTrans: {
     sectionName: "Ferre / Sustainability / Certifications",
@@ -87,7 +87,7 @@ export const certificationsEN = {
   },
 };
 
-// certifications panish
+// -----------Certifications panish-----------
 export const certificationsES = {
   ensuringTrans: {
     sectionName: "Ferre / Sostenibilidad / Certificaciones",

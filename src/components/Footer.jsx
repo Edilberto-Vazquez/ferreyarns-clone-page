@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import { Link } from "react-router-dom";
-import certifications from "../assets/images/certifications-footer2.jpg";
 import { footerEN, footerES } from "../utils/PageContent/Footer";
 import "./styles/Footer.css";
 
@@ -52,7 +51,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="certifications border-black">
-        <img src={certifications} alt="" />
+        <img src={idiom.img} alt="" />
       </div>
       <div className="all-rights-reserved">
         <p>{idiom.reserved}</p>

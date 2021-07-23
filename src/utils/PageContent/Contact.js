@@ -1,3 +1,4 @@
+// -----------Contact english-----------
 export const contacEN = {
   form: {
     title: "How can we help you?",
@@ -30,6 +31,7 @@ export const contacEN = {
   },
 };
 
+// -----------Contact spanish-----------
 export const contacES = {
   form: {
     title: "¿En qué podemos ayudarte?",

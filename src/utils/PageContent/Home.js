@@ -4,7 +4,7 @@ import home3 from "../../assets/images/home/home-3.jpg";
 import brands1 from "../../assets/images/home/brands-1.gif";
 import brands2 from "../../assets/images/home/brands-2.gif";
 
-// English language
+// -----------Home english-----------
 export const homeEN = {
   title: "Empowering circular fashion since 1947",
   buldingFashion: {
@@ -51,7 +51,7 @@ export const homeEN = {
   },
 };
 
-// Spanish language
+// -----------Home spanish-----------
 export const homeES = {
   title: "Impulsando la moda circular desde 1947",
   buldingFashion: {

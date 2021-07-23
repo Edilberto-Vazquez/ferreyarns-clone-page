@@ -1,6 +1,6 @@
 import wwu from "../../assets/images/work-with-us-1.jpg";
 
-// work with us english
+// ----------work with us english----------
 export const workWithUsEN = {
   workFerre: {
     sectionName: "Ferre / Work with us",
@@ -30,7 +30,7 @@ export const workWithUsEN = {
   },
 };
 
-// work with us spanish
+// ----------work with us spanish----------
 export const workWithUsES = {
   workFerre: {
     sectionName: "Ferre / Trabaja con nosotros",

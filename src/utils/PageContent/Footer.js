@@ -1,4 +1,8 @@
+import certImg from "../../assets/images/certifications-footer2.jpg";
+
+// -----------Footer english-----------
 export const footerEN = {
+  img: certImg,
   contact: {
     paragraphs: [
       "HILOS FERRE DE ESPAÑA, SA DE CV Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062",
@@ -37,7 +41,9 @@ export const footerEN = {
   reserved: "© Ferre 2021 | All rights reserved",
 };
 
+// -----------Footer spanish-----------
 export const footerES = {
+  img: certImg,
   contact: {
     paragraphs: [
       "HILOS FERRE DE ESPAÑA, SA DE CV Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062",

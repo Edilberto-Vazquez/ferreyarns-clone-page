@@ -12,6 +12,7 @@ import year1974 from "../../assets/icons/about_us/years/1974.svg";
 // awards and honours image
 import awards from "../../assets/images/about_us/awards.jpg";
 
+// -----------About us english-----------
 export const aboutUsEN = {
   alwaysLook: {
     sectionName: "Ferre / About us",
@@ -88,6 +89,7 @@ export const aboutUsEN = {
   },
 };
 
+// -----------About us spanish-----------
 export const aboutUsES = {
   alwaysLook: {
     sectionName: "Ferre / Sobre nosotros",
