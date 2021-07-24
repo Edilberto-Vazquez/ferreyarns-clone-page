@@ -44,10 +44,16 @@ const Footer = () => {
           ))}
         </div>
         <div className="footer-social-media">
-          <p>{idiom.follow.title}</p>
+          <p>
+            <strong>{idiom.follow.title}</strong>
+          </p>
           {idiom.follow.socialMedia.map((item, index) => (
             <a key={index} href={item.link}>
-              {item.name}
+              <img
+                src={item.img}
+                alt=""
+                className="footer-social-media_icons"
+              />
             </a>
           ))}
         </div>

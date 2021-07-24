@@ -52,6 +52,11 @@ footer .certifications img {
   text-decoration: underline;
 }
 
+.footer-social-media_icons {
+  width: 40px;
+  height: 40px;
+}
+
 @media (min-width: 980px) {
   .footer-information {
     justify-items: center;

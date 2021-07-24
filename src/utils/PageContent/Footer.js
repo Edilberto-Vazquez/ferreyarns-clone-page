@@ -1,4 +1,6 @@
 import certImg from "../../assets/images/certifications-footer2.jpg";
+import instagram from "../../assets/icons/footer/instagram.svg";
+import linkedIn from "../../assets/icons/footer/linkedin.svg";
 
 // -----------Footer english-----------
 export const footerEN = {
@@ -31,9 +33,9 @@ export const footerEN = {
   follow: {
     title: "Follow us",
     socialMedia: [
-      { name: "Instagram", link: "https://www.instagram.com/ferreyarns/" },
+      { img: instagram, link: "https://www.instagram.com/ferreyarns/" },
       {
-        name: "LinkedIn",
+        img: linkedIn,
         link: "https://www.linkedin.com/company/ferreyarns/?viewAsMember=true",
       },
     ],
@@ -66,11 +68,11 @@ export const footerES = {
     { name: "Contacto", link: "/contact" },
   ],
   follow: {
-    title: "Follow us",
+    title: "Síguenos",
     socialMedia: [
-      { name: "Instagram", link: "https://www.instagram.com/ferreyarns/" },
+      { img: instagram, link: "https://www.instagram.com/ferreyarns/" },
       {
-        name: "LinkedIn",
+        img: linkedIn,
         link: "https://www.linkedin.com/company/ferreyarns/?viewAsMember=true",
       },
     ],
