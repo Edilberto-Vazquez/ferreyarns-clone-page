@@ -9,6 +9,23 @@ export const legalNoticeEN = {
         "In compliance with Article 10 of Law 34/2002, of July 11, on Information Society Services and Electronic Commerce.",
         "This portal is owned by: Hilaturas Ferre SA tax I.D number: A-03008836",
       ],
+      address: {
+        title: "Address: ",
+        description:
+          "Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062",
+      },
+      links: [
+        {
+          type: "Phone ",
+          link: "tel:+522222685761",
+          name: "+52 (222) 268 5761",
+        },
+        {
+          type: "E-mail ",
+          link: "mailto:info@ferreyarns.com",
+          name: "info@ferreyarns.com",
+        },
+      ],
     },
     legalNotice1_2: {
       title:
@@ -113,6 +130,23 @@ export const legalNoticeES = {
       paragraphs: [
         "En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico.",
         "Este portal es titularidad de: Hilaturas Ferre CIF: A-03008836",
+      ],
+      address: {
+        title: "Domicilio: ",
+        description:
+          "Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062",
+      },
+      links: [
+        {
+          type: "Télefono ",
+          link: "tel:+522222685761",
+          name: "+52 (222) 268 5761",
+        },
+        {
+          type: "E-mail ",
+          link: "mailto:info@ferreyarns.com",
+          name: "info@ferreyarns.com",
+        },
       ],
     },
     legalNotice1_2: {

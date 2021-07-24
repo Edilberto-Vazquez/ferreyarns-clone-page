@@ -20,6 +20,16 @@ const LegalNotice = () => {
           <SectionPar
             paragraphs={idiom.legalNotice.legalNotice1_1.paragraphs}
           />
+          <p>
+            <strong>{idiom.legalNotice.legalNotice1_1.address.title}</strong>
+            {idiom.legalNotice.legalNotice1_1.address.description}
+          </p>
+          {idiom.legalNotice.legalNotice1_1.links.map((item, index) => (
+            <p key={index}>
+              <strong>{item.type}</strong>
+              <a href={item.link}>{item.name}</a>
+            </p>
+          ))}
         </SectionItem>
         <SectionItem title={idiom.legalNotice.legalNotice1_2.title}>
           <SectionPar

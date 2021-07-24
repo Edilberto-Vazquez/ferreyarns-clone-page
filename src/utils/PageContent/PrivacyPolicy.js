@@ -9,7 +9,7 @@ export const privacyPEN = {
     title: "CONTROLLER",
     paragraphs: [
       "The Controller of personal data is: Hilaturas Ferre",
-      "SA DE CV Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062",
+      "Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062",
     ],
     links: {
       paragraphs: ["Telephone:", "E-mail:"],
@@ -109,7 +109,7 @@ export const privacyPES = {
     title: "CONTROLLER",
     paragraphs: [
       "El responsable del tratamiento de los datos de carácter personal es Hilaturas Ferre.",
-      "SA DE CV Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062",
+      "Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062",
     ],
     links: {
       paragraphs: ["Telephone:", "E-mail:"],
