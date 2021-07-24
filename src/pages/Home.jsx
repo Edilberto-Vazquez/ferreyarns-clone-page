@@ -40,9 +40,7 @@ const Home = () => {
           img={idiom.buldingFashion.img}
           xAxis="right"
         >
-          {idiom.buldingFashion.paragraphs.map((item, index) => (
-            <SectionPar key={index} content={item} />
-          ))}
+          <SectionPar paragraphs={idiom.buldingFashion.paragraphs} />
         </FeatureSection>
 
         {/* A circular process */}
@@ -51,9 +49,7 @@ const Home = () => {
           img={idiom.circularProc.img}
           xAxis="left"
         >
-          {idiom.circularProc.paragraphs.map((item, index) => (
-            <SectionPar key={index} content={item} />
-          ))}
+          <SectionPar paragraphs={idiom.circularProc.paragraphs} />
         </FeatureSection>
 
         {/* Fully traceable and transparent */}
@@ -62,18 +58,14 @@ const Home = () => {
           img={idiom.fullyTT.img}
           xAxis="right"
         >
-          {idiom.fullyTT.paragraphs.map((item, index) => (
-            <SectionPar key={index} content={item} />
-          ))}
+          <SectionPar paragraphs={idiom.fullyTT.paragraphs} />
         </FeatureSection>
       </div>
 
       {/* How can we help you? form */}
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          {idiom.form.paragraphs.map((item, index) => (
-            <SectionPar key={index} content={item} />
-          ))}
+          <SectionPar paragraphs={idiom.form.paragraphs} />
         </FormSectionDescription>
         <FormSectionContainer desktopShort>
           {idiom.form.inputs.map((item, index) =>

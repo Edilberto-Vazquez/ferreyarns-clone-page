@@ -29,9 +29,7 @@ export const FAQs = () => {
   return (
     <div className="faqs some-questions-section-item">
       <SectionItem>
-        {idiom.paragraphs.map((item, index) => (
-          <SectionPar key={index} strong={item.strong} content={item.content} />
-        ))}
+        <SectionPar paragraphs={idiom.paragraphs} />
       </SectionItem>
       <div className="faqs-questions">
         {idiom.questions.map((item, index) => {

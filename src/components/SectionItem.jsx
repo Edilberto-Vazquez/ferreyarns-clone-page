@@ -59,12 +59,16 @@ export const SectionItem = ({ title, children }) => {
 
 // paragraph in section
 
-export const SectionPar = ({ strong, content, children }) => {
+export const SectionPar = ({ paragraphs, children }) => {
   return (
-    <p>
-      {strong ? <strong>{strong}</strong> : null}
-      {content} {children}
-    </p>
+    <>
+      {paragraphs.map((item, index) => (
+        <p key={index}>
+          {/* {item.strong ? <strong>{item.strong}</strong> : null} */}
+          {item} {children}
+        </p>
+      ))}
+    </>
   );
 };
 

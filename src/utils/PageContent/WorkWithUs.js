@@ -22,7 +22,7 @@ export const workWithUsEN = {
       { type: "text", name: "phone", placeholder: "Phone" },
     ],
     loadFile: {
-      resume: "Please upload your resume (.pdf / 1MB max.)",
+      resume: ["Please upload your resume (.pdf / 1MB max.)"],
       load: { type: "file", name: "file" },
     },
     privacy: ["I have read and accept the", "Privacy Policy"],
@@ -52,7 +52,7 @@ export const workWithUsES = {
       { type: "text", name: "phone", placeholder: "Télefono" },
     ],
     loadFile: {
-      resume: "Por favor, adjunta tu CV (.pdf / 1MB max.)",
+      resume: ["Por favor, adjunta tu CV (.pdf / 1MB max.)"],
       load: { type: "file", name: "file" },
     },
     privacy: ["He leído y acepto la", "Política de privacidad"],

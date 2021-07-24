@@ -39,18 +39,14 @@ const Products = () => {
         img={idiom.zeroImpact.img}
         sectionName={idiom.zeroImpact.sectionName}
       >
-        {idiom.zeroImpact.paragraphs.map((item, index) => (
-          <SectionPar key={index} content={item} />
-        ))}
+        <SectionPar paragraphs={idiom.zeroImpact.paragraphs} />
       </FeatureSection>
 
       {/* ecological section */}
       <section className="ecological-section">
         <div className="ecological-section-description">
           <img src={idiom.ecologicalSection.img} alt="" />
-          {idiom.ecologicalSection.paragraphs.map((item, index) => (
-            <SectionPar key={index} content={item} />
-          ))}
+          <SectionPar paragraphs={idiom.ecologicalSection.paragraphs} />
         </div>
         <div className="ecological-section-features sectionOptions border-white">
           <SectionOptions
@@ -81,9 +77,7 @@ const Products = () => {
       {/* Request our Color Book form */}
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          {idiom.form.paragraphs.map((item, index) => (
-            <SectionPar key={index} content={item} />
-          ))}
+          <SectionPar paragraphs={idiom.form.paragraphs} />
         </FormSectionDescription>
         <FormSectionContainer desktopShort>
           {idiom.form.inputs.map((item, index) =>

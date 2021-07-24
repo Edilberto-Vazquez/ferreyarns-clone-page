@@ -30,9 +30,7 @@ export const FormSection = ({ title, children }) => {
 export const FormSectionDescription = ({ children }) => {
   return (
     <div className="form-container-description" type="div">
-      {children.map((item) => {
-        return item;
-      })}
+      {children}
     </div>
   );
 };

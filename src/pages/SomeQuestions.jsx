@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { LanguageChanger } from "../utils/LanguageChanger";
 import FAQs from "../components/FAQs";
 import PrivacyPolicy from "../components/PrivacyPolicy";
 import Cookies from "../components/Cookies";
@@ -6,9 +7,22 @@ import LegalNotice from "../components/LegalNotice";
 import Projects from "../components/Projects";
 import { SectionOptions } from "../components/SectionItem";
 import "./styles/SomeQuestions.css";
+import {
+  someQuestionsEN,
+  someQuestionsES,
+} from "../utils/PageContent/someQuestions";
 
 const SomeQuestions = ({ tabSection }) => {
   const [section, setSection] = useState(tabSection);
+  const { language } = useContext(LanguageChanger);
+  let idiom = {};
+
+  // set language
+  if (language === "en") {
+    idiom = someQuestionsEN;
+  } else if (language === "es") {
+    idiom = someQuestionsES;
+  }
 
   const handleSection = (section) => {
     switch (section) {
@@ -35,13 +49,7 @@ const SomeQuestions = ({ tabSection }) => {
       </div>
       <div className="some-questions-container sectionOptions border-black">
         <SectionOptions
-          listItems={[
-            { tab: 0, name: "FAQs" },
-            { tab: 1, name: "Privacy Policy" },
-            { tab: 2, name: "Cookie Policy" },
-            { tab: 3, name: "Legal Notice" },
-            { tab: 4, name: "Projects" },
-          ]}
+          listItems={idiom.sections}
           section={section}
           setSection={setSection}
           focusType="underline"

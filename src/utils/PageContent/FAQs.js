@@ -1,29 +1,11 @@
 // ----------FAQs english----------
 export const faqsEN = {
   paragraphs: [
-    {
-      strong: "FERRE: ",
-      content:
-        "has been proudly producing recycled cotton, wool and polyester yarns in Europe since 1947. This has given us an extensive expertise in this challenging industry.",
-    },
-    {
-      content:
-        "Our O.E. spinning house is based in Banyeres de Mariola, Spain, and it’s GRS and Oeko-tex certified.",
-    },
-    {
-      content:
-        "Most of our colors are delivered against stock position, and we have in-house twisting capacity.",
-    },
-    {
-      strong: "Ferre: ",
-      content:
-        "uses cotton and other recycled fibres in the manufacture of its yarns. Due to this nature Ferre yarns may contain small imperfections which are characteristics as a result of the mechanical recycling process.",
-    },
-    {
-      strong: "Ferre: ",
-      content:
-        "yarns are made from recycled textile waste, thus a percentage of other fibres such as polyester, viscose, acrylic, wool or nylon may be identified during final composition testing.",
-    },
+    "FERRE has been proudly producing recycled cotton, wool and polyester yarns in Europe since 1947. This has given us an extensive expertise in this challenging industry.",
+    "Our O.E. spinning house is based in Banyeres de Mariola, Spain, and it’s GRS and Oeko-tex certified.",
+    "Most of our colors are delivered against stock position, and we have in-house twisting capacity.",
+    "Ferre uses cotton and other recycled fibres in the manufacture of its yarns. Due to this nature Ferre yarns may contain small imperfections which are characteristics as a result of the mechanical recycling process.",
+    "Ferre yarns are made from recycled textile waste, thus a percentage of other fibres such as polyester, viscose, acrylic, wool or nylon may be identified during final composition testing.",
   ],
   questions: [
     {
@@ -95,28 +77,11 @@ export const faqsEN = {
 // ----------FAQs spanish----------
 export const faqsES = {
   paragraphs: [
-    {
-      strong: "FERRE: ",
-      content:
-        "produce hilos de algodón, lana y poliéster reciclados en Europa desde 1947. Esto nos ha proporcionado una amplia experiencia en esta desafiante industria.",
-    },
-    {
-      content:
-        " Nuestra factoría de hilados Open End tiene su sede en Banyeres de Mariola, España, y cuenta con la certificación GRS y Oeko-tex.",
-    },
-    {
-      content:
-        "Tenemos una amplia gama de productos en stock para servicio inmediato.",
-    },
-    {
-      strong: "Ferre: ",
-      content:
-        "utiliza algodón y otras fibras recicladas en la fabricación de sus hilos. Debido a esta naturaleza, los hilos Ferre pueden contener pequeñas imperfecciones que son características producto del proceso de reciclaje mecánico.",
-    },
-    {
-      content:
-        "Los hilos Ferre están hechos de residuos textiles reciclados, por lo que un porcentaje de otras fibras como poliéster, viscosa, acrílico, lana o nailon puede identificarse durante las pruebas de composición final.",
-    },
+    "FERRE produce hilos de algodón, lana y poliéster reciclados en Europa desde 1947. Esto nos ha proporcionado una amplia experiencia en esta desafiante industria.",
+    "Nuestra factoría de hilados Open End tiene su sede en Banyeres de Mariola, España, y cuenta con la certificación GRS y Oeko-tex.",
+    "Tenemos una amplia gama de productos en stock para servicio inmediato.",
+    "Ferre utiliza algodón y otras fibras recicladas en la fabricación de sus hilos. Debido a esta naturaleza, los hilos Ferre pueden contener pequeñas imperfecciones que son características producto del proceso de reciclaje mecánico.",
+    "Ferre Los hilos Ferre están hechos de residuos textiles reciclados, por lo que un porcentaje de otras fibras como poliéster, viscosa, acrílico, lana o nailon puede identificarse durante las pruebas de composición final.",
   ],
   questions: [
     {

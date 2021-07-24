@@ -22,7 +22,7 @@ const AboutUs = () => {
         sectionName={idiom.alwaysLook.sectionName}
         img={idiom.alwaysLook.img}
       >
-        <SectionPar content={idiom.alwaysLook.paragraphs} />
+        <SectionPar paragraphs={idiom.alwaysLook.paragraphs} />
       </FeatureSection>
       <div className="slogan">
         <div>

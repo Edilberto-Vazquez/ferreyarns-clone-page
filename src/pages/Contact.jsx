@@ -26,17 +26,16 @@ const Contact = () => {
     <main className="contac">
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          <SectionPar content={idiom.form.paragraphs} />
+          <SectionPar paragraphs={idiom.form.paragraphs} />
           <SectionItem title={idiom.form.sectionPar.title}>
-            {idiom.form.sectionPar.paragraphs.map((item, index) => (
-              <SectionPar key={index} content={item} />
-            ))}
-            <SectionPar content="Ph. ">
+            <SectionPar paragraphs={idiom.form.sectionPar.paragraphs} />
+
+            <SectionPar paragraphs={["Ph. "]}>
               <a href={idiom.form.sectionPar.links[0].link}>
                 {idiom.form.sectionPar.links[0].name}
               </a>
             </SectionPar>
-            <SectionPar content="E. ">
+            <SectionPar paragraphs={["E. "]}>
               <a href={idiom.form.sectionPar.links[1].link}>
                 {idiom.form.sectionPar.links[1].name}
               </a>

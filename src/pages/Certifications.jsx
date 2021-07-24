@@ -27,7 +27,7 @@ const Certifications = () => {
         img={idiom.ensuringTrans.img}
         yAxis="bottom"
       >
-        <SectionPar content={idiom.ensuringTrans.paragraphs} />
+        <SectionPar paragraphs={idiom.ensuringTrans.paragraphs} />
       </FeatureSection>
       <div className="certifications-title">
         <h2 className="title-black">{idiom.cert.title}</h2>
@@ -35,7 +35,7 @@ const Certifications = () => {
       <div className="certifications-items">
         {idiom.cert.certsItem.map((item, index) => (
           <CertificationItem key={index} title={item.title} img={item.img}>
-            <SectionPar content={item.paragraphs} />
+            <SectionPar paragraphs={item.paragraphs} />
           </CertificationItem>
         ))}
       </div>
@@ -45,7 +45,7 @@ const Certifications = () => {
       <div className="associations-items">
         {idiom.assoCommit.assoCommitsItem.map((item, index) => (
           <CertificationItem key={index} title={item.title} img={item.img}>
-            <SectionPar content={item.paragraphs} />
+            <SectionPar paragraphs={item.paragraphs} />
           </CertificationItem>
         ))}
       </div>

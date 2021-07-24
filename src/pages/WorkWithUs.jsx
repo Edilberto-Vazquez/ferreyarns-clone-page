@@ -29,13 +29,11 @@ const WorkWithUs = () => {
         img={idiom.workFerre.img}
         yAxis="top"
       >
-        <SectionPar content={idiom.workFerre.paragraphs} />
+        <SectionPar paragraphs={idiom.workFerre.paragraphs} />
       </FeatureSection>
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          {idiom.form.paragraphs.map((item, index) => (
-            <SectionPar key={index} content={item} />
-          ))}
+          <SectionPar paragraphs={idiom.form.paragraphs} />
         </FormSectionDescription>
         <FormSectionContainer>
           {idiom.form.inputs.map((item, index) => (
@@ -47,7 +45,7 @@ const WorkWithUs = () => {
             />
           ))}
           <div className="file-upload">
-            <SectionPar content={idiom.form.loadFile.resume} />
+            <SectionPar paragraphs={idiom.form.loadFile.resume} />
             <FormSectionInputs
               type={idiom.form.loadFile.load.type}
               name={idiom.form.loadFile.load.name}

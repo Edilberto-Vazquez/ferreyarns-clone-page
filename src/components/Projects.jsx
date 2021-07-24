@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageChanger } from "../utils/LanguageChanger";
 import { SectionItem, SectionPar } from "./SectionItem";
+import { projectsEN, projectsES } from "../utils/PageContent/Projects";
 
 const Projects = () => {
+  const { language } = useContext(LanguageChanger);
+  let idiom = {};
+
+  // set language
+  if (language === "en") {
+    idiom = projectsEN;
+  } else if (language === "es") {
+    idiom = projectsES;
+  }
   return (
     <div className="projects some-questions-section-item">
-      <SectionItem title="Projects">
-        <SectionItem title="FINANCIAL SUPPORT FOR REINDUSTRIALISATION AND PROMOTION OF INDUSTRIAL COMPETITIVENESS">
-          <SectionPar
-            content="HILATURAS FERRE, S.A. has developed the project “INCORPORACIÓN DE
-            NUEVA TECNOLOGIA PARA AMPLIACIÓN DE LINEA PRODUCTIVA” with file
-            number: RCI-040000-2016-337, financed with support from the Ministry
-            of Industry, Trade and Tourism, within the framework of the public
-            policy of reindustrialisation and promotion of industrial
-            competitiveness."
-          />
+      <SectionItem title={idiom.title}>
+        <SectionItem title={idiom.financialSup.title}>
+          <SectionPar paragraphs={idiom.financialSup.paragraphs} />
         </SectionItem>
       </SectionItem>
     </div>
