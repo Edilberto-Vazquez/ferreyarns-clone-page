@@ -57,11 +57,6 @@
   font-size: 1.6rem;
 }
 
-.form-container-inputs__button::after {
-  content: "->";
-  margin-left: 10px;
-}
-
 .form-container-inputs__input {
   height: 64px;
   width: 100%;
