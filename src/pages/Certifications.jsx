@@ -25,6 +25,7 @@ const Certifications = () => {
         title={idiom.ensuringTrans.title}
         sectionName={idiom.ensuringTrans.sectionName}
         img={idiom.ensuringTrans.img}
+        xAxis="left"
         yAxis="bottom"
       >
         <SectionPar paragraphs={idiom.ensuringTrans.paragraphs} />

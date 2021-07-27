@@ -27,6 +27,7 @@ const WorkWithUs = () => {
         title={idiom.workFerre.title}
         sectionName={idiom.workFerre.sectionName}
         img={idiom.workFerre.img}
+        xAxis="left"
         yAxis="top"
       >
         <SectionPar paragraphs={idiom.workFerre.paragraphs} />

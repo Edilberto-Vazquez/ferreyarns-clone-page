@@ -1,4 +1,5 @@
 import React from "react";
+import useFSAnimation from "../utils/useFeatureSectionAnimation";
 import "./styles/FeatureSection.css";
 
 const FeatureSection = ({
@@ -10,9 +11,14 @@ const FeatureSection = ({
   yAxis,
   children,
 }) => {
+  // this secction handle the animation with useEffect
+  const { refImg, refText } = useFSAnimation(xAxis);
+
+  // return the component
   return (
     <section className="feature-section">
       <div
+        ref={refText}
         className={`feature-description ${
           xAxis === "right"
             ? "feature-description-right"
@@ -28,9 +34,9 @@ const FeatureSection = ({
         {children}
       </div>
       {img ? (
-        <img src={img} alt="" className="feature-media" />
+        <img ref={refImg} src={img} alt="" className="feature-media" />
       ) : (
-        <video autoPlay muted loop className="feature-media">
+        <video ref={refImg} autoPlay muted loop className="feature-media">
           <source src={video} type="video/mp4" />
         </video>
       )}

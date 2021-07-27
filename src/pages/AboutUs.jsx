@@ -15,12 +15,14 @@ const AboutUs = () => {
   } else if (language === "es") {
     idiom = aboutUsES;
   }
+
   return (
     <main className="about-us">
       <FeatureSection
         title={idiom.alwaysLook.title}
         sectionName={idiom.alwaysLook.sectionName}
         img={idiom.alwaysLook.img}
+        xAxis="left"
       >
         <SectionPar paragraphs={idiom.alwaysLook.paragraphs} />
       </FeatureSection>

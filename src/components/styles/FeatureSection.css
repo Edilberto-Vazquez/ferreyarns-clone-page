@@ -54,3 +54,48 @@
     font-size: 1.6rem;
   }
 }
+
+/* animation */
+
+.imgLeft {
+  animation: imgLeft 2000ms ease-in-out 0ms;
+}
+
+@keyframes imgLeft {
+  0% {
+    transform: translate3d(10%, 0px, 0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0%, 0px, 0px);
+    opacity: 1;
+  }
+}
+
+.imgRight {
+  animation: imgRight 2000ms ease-in-out 0ms;
+}
+
+@keyframes imgRight {
+  0% {
+    transform: translate3d(-10%, 0px, 0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0%, 0px, 0px);
+    opacity: 1;
+  }
+}
+
+.text {
+  animation: text 4000ms ease-in-out 0ms;
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

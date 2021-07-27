@@ -38,6 +38,7 @@ const Products = () => {
         title={idiom.zeroImpact.title}
         img={idiom.zeroImpact.img}
         sectionName={idiom.zeroImpact.sectionName}
+        xAxis="left"
       >
         <SectionPar paragraphs={idiom.zeroImpact.paragraphs} />
       </FeatureSection>
