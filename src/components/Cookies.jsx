@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import { SectionItem, SectionList, SectionPar } from "./SectionItem";
 import { cookiesEN, cookiesES } from "../utils/PageContent/Cookies";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
 const Cookies = () => {
   const { language } = useContext(LanguageChanger);
+  const [refOpc] = useOpacityAnm();
   let idiom = {};
 
   // set language
@@ -14,7 +16,7 @@ const Cookies = () => {
     idiom = cookiesES;
   }
   return (
-    <div className="cookies some-questions-section-item">
+    <div ref={refOpc} className="cookies some-questions-section-item">
       <SectionItem title={idiom.whatCookies.title}>
         <SectionPar paragraphs={idiom.whatCookies.paragraphs} />
       </SectionItem>

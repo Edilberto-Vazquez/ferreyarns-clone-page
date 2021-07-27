@@ -16,6 +16,7 @@ import {
 } from "../components/EcologicalDescription";
 import { SectionOptions } from "../components/SectionItem";
 import { productsEN, productsES } from "../utils/PageContent/Products";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/Products.css";
 
 const Products = () => {
@@ -31,6 +32,9 @@ const Products = () => {
     idiom = productsES;
   }
 
+  const [refOpcTitle] = useOpacityAnm();
+  const [refOpc2Items] = useOpacityAnm();
+
   return (
     <main className="products">
       {/* Building a zero-impact fashion section */}
@@ -45,11 +49,14 @@ const Products = () => {
 
       {/* ecological section */}
       <section className="ecological-section">
-        <div className="ecological-section-description">
+        <div ref={refOpcTitle} className="ecological-section-description">
           <img src={idiom.ecologicalSection.img} alt="" />
           <SectionPar paragraphs={idiom.ecologicalSection.paragraphs} />
         </div>
-        <div className="ecological-section-features sectionOptions border-white">
+        <div
+          ref={refOpc2Items}
+          className="ecological-section-features sectionOptions border-white"
+        >
           <SectionOptions
             listItems={idiom.ecologicalSection.materialSection}
             section={section}

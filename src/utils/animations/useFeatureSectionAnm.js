@@ -31,7 +31,7 @@ const useFeatureSectionAnm = (xAxis) => {
     //   }
     // };
   }, [refImg, xAxis]);
-  return { refImg };
+  return [refImg];
 };
 
 export default useFeatureSectionAnm;

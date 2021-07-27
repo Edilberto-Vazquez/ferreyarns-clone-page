@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import { faqsEN, faqsES } from "../utils/PageContent/FAQs";
 import { SectionItem, SectionPar } from "./SectionItem";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/FAQs.css";
 
 const FAQsQuestions = ({ question, answer }) => {
@@ -17,6 +18,7 @@ const FAQsQuestions = ({ question, answer }) => {
 };
 
 export const FAQs = () => {
+  const [refOpc] = useOpacityAnm();
   const { language } = useContext(LanguageChanger);
   let idiom = {};
 
@@ -26,8 +28,9 @@ export const FAQs = () => {
   } else if (language === "es") {
     idiom = faqsES;
   }
+
   return (
-    <div className="faqs some-questions-section-item">
+    <div ref={refOpc} className="faqs some-questions-section-item">
       <SectionItem>
         <SectionPar paragraphs={idiom.paragraphs} />
       </SectionItem>

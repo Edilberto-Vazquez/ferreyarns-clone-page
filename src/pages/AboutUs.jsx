@@ -3,10 +3,12 @@ import { LanguageChanger } from "../utils/LanguageChanger";
 import FeatureSection from "../components/FeatureSection";
 import { SectionPar } from "../components/SectionItem";
 import { aboutUsEN, aboutUsES } from "../utils/PageContent/AboutUs";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/AboutUs.css";
 
 const AboutUs = () => {
   const { language } = useContext(LanguageChanger);
+  const [refOpc] = useOpacityAnm();
   let idiom = {};
 
   // set language
@@ -27,7 +29,7 @@ const AboutUs = () => {
         <SectionPar paragraphs={idiom.alwaysLook.paragraphs} />
       </FeatureSection>
       <div className="slogan">
-        <div>
+        <div ref={refOpc}>
           <p>{idiom.aboutSlogan}</p>
         </div>
       </div>

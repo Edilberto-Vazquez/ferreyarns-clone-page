@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import { SectionItem, SectionList, SectionPar } from "./SectionItem";
 import { legalNoticeEN, legalNoticeES } from "../utils/PageContent/LegalNotice";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
 const LegalNotice = () => {
   const { language } = useContext(LanguageChanger);
+  const [refOpc] = useOpacityAnm();
   let idiom = {};
 
   // set language
@@ -14,7 +16,7 @@ const LegalNotice = () => {
     idiom = legalNoticeES;
   }
   return (
-    <div className="legal-notice some-questions-section-item">
+    <div ref={refOpc} className="legal-notice some-questions-section-item">
       <SectionItem title={idiom.legalNotice.title}>
         <SectionItem title={idiom.legalNotice.legalNotice1_1.title}>
           <SectionPar

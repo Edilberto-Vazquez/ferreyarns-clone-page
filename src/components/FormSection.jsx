@@ -4,7 +4,7 @@ import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/FormSection.css";
 
 export const FormSection = ({ title, children }) => {
-  const { refOpc } = useOpacityAnm();
+  const [refOpc] = useOpacityAnm();
   return (
     <div ref={refOpc} className="form">
       <div className="form-title">

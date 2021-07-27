@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import { SectionItem, SectionList, SectionPar } from "./SectionItem";
 import { privacyPEN, privacyPES } from "../utils/PageContent/PrivacyPolicy";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
 const PrivacyPolicy = () => {
   const { language } = useContext(LanguageChanger);
+  const [refOpc] = useOpacityAnm();
   let idiom = {};
 
   // set language
@@ -14,7 +16,7 @@ const PrivacyPolicy = () => {
     idiom = privacyPES;
   }
   return (
-    <div className="privacy-policy some-questions-section-item">
+    <div ref={refOpc} className="privacy-policy some-questions-section-item">
       <SectionItem>
         <SectionPar paragraphs={idiom.paragraphs} />
       </SectionItem>

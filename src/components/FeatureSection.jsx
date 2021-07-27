@@ -13,8 +13,8 @@ const FeatureSection = ({
   children,
 }) => {
   // this secction handle the animation with useEffect
-  const { refImg } = useFeatureSectionAnm(xAxis);
-  const { refOpc } = useOpacityAnm();
+  const [refImg] = useFeatureSectionAnm(xAxis);
+  const [refOpc] = useOpacityAnm();
 
   // return the component
   return (

@@ -29,7 +29,7 @@ const useOpacityAnm = () => {
     //   }
     // };
   }, [refOpc]);
-  return { refOpc };
+  return [refOpc];
 };
 
 export default useOpacityAnm;

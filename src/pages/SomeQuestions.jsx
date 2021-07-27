@@ -11,9 +11,12 @@ import {
   someQuestionsEN,
   someQuestionsES,
 } from "../utils/PageContent/someQuestions";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
 const SomeQuestions = ({ tabSection }) => {
   const [section, setSection] = useState(tabSection);
+  const [refOpcTitle] = useOpacityAnm();
+  const [refOpcSection] = useOpacityAnm();
   const { language } = useContext(LanguageChanger);
   let idiom = {};
 
@@ -43,11 +46,14 @@ const SomeQuestions = ({ tabSection }) => {
 
   return (
     <main className="some-questions">
-      <div className="some-questions-title">
+      <div ref={refOpcTitle} className="some-questions-title">
         <h4 className="section-name">Ferre / {section.name}</h4>
         <h2 className="title-black">{section.name}</h2>
       </div>
-      <div className="some-questions-container sectionOptions border-black">
+      <div
+        ref={refOpcSection}
+        className="some-questions-container sectionOptions border-black"
+      >
         <SectionOptions
           listItems={idiom.sections}
           section={section}
