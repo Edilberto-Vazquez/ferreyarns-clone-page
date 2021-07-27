@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useFormSectionAnm from "../utils/useFormSectionAnm";
 import "./styles/FormSection.css";
 
 export const FormSection = ({ title, children }) => {
+  const { refForm } = useFormSectionAnm();
   return (
-    <div className="form">
+    <div ref={refForm} className="form">
       <div className="form-title">
         <h2 className="title-black">{title}</h2>
       </div>

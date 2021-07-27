@@ -1,6 +1,6 @@
 import { createRef, useEffect } from "react";
 
-const useFSAnimation = (xAxis) => {
+const useFeatureSectionAnm = (xAxis) => {
   const refImg = createRef();
   const refText = createRef();
   useEffect(() => {
@@ -16,7 +16,7 @@ const useFSAnimation = (xAxis) => {
     const childrenCallback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          return entry.target.classList.add("text");
+          return entry.target.classList.add("opacity-animation");
         }
       });
     };
@@ -48,4 +48,4 @@ const useFSAnimation = (xAxis) => {
   return { refImg, refText };
 };
 
-export default useFSAnimation;
+export default useFeatureSectionAnm;

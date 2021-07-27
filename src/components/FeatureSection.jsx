@@ -1,5 +1,5 @@
 import React from "react";
-import useFSAnimation from "../utils/useFeatureSectionAnimation";
+import useFeatureSectionAnm from "../utils/useFeatureSectionAnm";
 import "./styles/FeatureSection.css";
 
 const FeatureSection = ({
@@ -12,7 +12,7 @@ const FeatureSection = ({
   children,
 }) => {
   // this secction handle the animation with useEffect
-  const { refImg, refText } = useFSAnimation(xAxis);
+  const { refImg, refText } = useFeatureSectionAnm(xAxis);
 
   // return the component
   return (
