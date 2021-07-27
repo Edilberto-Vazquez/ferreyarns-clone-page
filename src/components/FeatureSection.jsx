@@ -1,5 +1,6 @@
 import React from "react";
-import useFeatureSectionAnm from "../utils/useFeatureSectionAnm";
+import useFeatureSectionAnm from "../utils/animations/useFeatureSectionAnm";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/FeatureSection.css";
 
 const FeatureSection = ({
@@ -12,13 +13,14 @@ const FeatureSection = ({
   children,
 }) => {
   // this secction handle the animation with useEffect
-  const { refImg, refText } = useFeatureSectionAnm(xAxis);
+  const { refImg } = useFeatureSectionAnm(xAxis);
+  const { refOpc } = useOpacityAnm();
 
   // return the component
   return (
     <section className="feature-section">
       <div
-        ref={refText}
+        ref={refOpc}
         className={`feature-description ${
           xAxis === "right"
             ? "feature-description-right"

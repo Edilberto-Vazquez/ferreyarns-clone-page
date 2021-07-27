@@ -1,7 +1,7 @@
 import { createRef, useEffect } from "react";
 
-const useFormSectionAnm = () => {
-  const refForm = createRef();
+const useCertificationItem = () => {
+  const refCertItem = createRef();
   useEffect(() => {
     const formCallback = (entries) => {
       const [entry] = entries;
@@ -16,10 +16,10 @@ const useFormSectionAnm = () => {
       threshold: 0,
     };
 
-    const formObserver = new IntersectionObserver(formCallback, options);
+    const certItemObserver = new IntersectionObserver(formCallback, options);
 
-    if (refForm.current) {
-      formObserver.observe(refForm.current);
+    if (refCertItem.current) {
+      certItemObserver.observe(refCertItem.current);
     }
 
     // return () => {

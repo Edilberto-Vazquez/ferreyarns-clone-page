@@ -2,7 +2,6 @@ import { createRef, useEffect } from "react";
 
 const useFeatureSectionAnm = (xAxis) => {
   const refImg = createRef();
-  const refText = createRef();
   useEffect(() => {
     const imgCallback = (entries) => {
       const [entry] = entries;
@@ -13,14 +12,6 @@ const useFeatureSectionAnm = (xAxis) => {
       }
     };
 
-    const childrenCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          return entry.target.classList.add("opacity-animation");
-        }
-      });
-    };
-
     const options = {
       root: null,
       rootMargin: "0px",
@@ -28,14 +19,9 @@ const useFeatureSectionAnm = (xAxis) => {
     };
 
     const imgObserver = new IntersectionObserver(imgCallback, options);
-    const childrenObserver = new IntersectionObserver(
-      childrenCallback,
-      options
-    );
 
-    if (refImg.current && refText.current) {
+    if (refImg.current) {
       imgObserver.observe(refImg.current);
-      childrenObserver.observe(refText.current);
     }
 
     // return () => {
@@ -44,8 +30,8 @@ const useFeatureSectionAnm = (xAxis) => {
     //     childrenObserver.unobserve(refText.current);
     //   }
     // };
-  }, [refImg, refText, xAxis]);
-  return { refImg, refText };
+  }, [refImg, xAxis]);
+  return { refImg };
 };
 
 export default useFeatureSectionAnm;
