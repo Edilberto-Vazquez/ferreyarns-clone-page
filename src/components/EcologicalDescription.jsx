@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import useDisplayAnm from "../utils/animations/useDisplayAnm";
 import "./styles/EcologicalDescription.css";
 
 export const EcologicalSection = ({
@@ -10,31 +11,32 @@ export const EcologicalSection = ({
   tabs,
   section,
 }) => {
-  const [showFeature, setShowFeature] = useState(false);
+  const [refDisplay, refButton, show, setShow] = useDisplayAnm("white");
+
   const display = tabs.map((tab, index) => {
     if (tab === section) {
       return (
         <div key={index} className="ecological-item">
           <button
-            onClick={() => setShowFeature(!showFeature)}
+            ref={refButton}
+            aria-expanded={!show}
+            onClick={() => setShow(!show)}
             className="ecological-item__button"
           >
             <img src={title} alt="" /> <span>{type}</span>
           </button>
-          {showFeature ? (
-            <div>
-              <p className="ecological-item__applications">
-                <b>Applications: </b>
-                <span>{aplication}</span>
-              </p>
-              <div className="ecological-item__features">{children}</div>
-              <p className="ecological-section__especifications">
-                {specs.map((item, index) => {
-                  return <span key={index}>{item}</span>;
-                })}
-              </p>
-            </div>
-          ) : null}
+          <div ref={refDisplay} aria-expanded={!show}>
+            <p className="ecological-item__applications">
+              <b>Applications: </b>
+              <span>{aplication}</span>
+            </p>
+            <div className="ecological-item__features">{children}</div>
+            <p className="ecological-section__especifications">
+              {specs.map((item, index) => {
+                return <span key={index}>{item}</span>;
+              })}
+            </p>
+          </div>
         </div>
       );
     }

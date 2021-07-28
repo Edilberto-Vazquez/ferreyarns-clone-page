@@ -29,18 +29,6 @@
   font-weight: 400;
 }
 
-.ecological-item__button::after {
-  content: "+";
-  width: 35px;
-  height: 35px;
-  display: grid;
-  place-items: center;
-  font-size: 3.2rem;
-  font-weight: 500;
-  border-radius: 50%;
-  background: white;
-}
-
 .ecological-item__applications {
   color: white;
 }
@@ -58,12 +46,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(auto-fill, 20px);
-}
-
-/* ecological description */
-
-.ecological-descr {
-  display: grid;
 }
 
 /* ecological material */

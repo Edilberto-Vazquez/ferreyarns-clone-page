@@ -3,16 +3,23 @@ import { LanguageChanger } from "../utils/LanguageChanger";
 import { faqsEN, faqsES } from "../utils/PageContent/FAQs";
 import { SectionItem, SectionPar } from "./SectionItem";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useDisplayAnm from "../utils/animations/useDisplayAnm";
 import "./styles/FAQs.css";
 
 const FAQsQuestions = ({ question, answer }) => {
-  const [showQuestion, setShowQuestion] = useState(false);
+  const [refDisplay, refButton, show, setShow] = useDisplayAnm("black");
   return (
     <div className="faqs-question">
-      <button onClick={() => setShowQuestion(!showQuestion)}>
+      <button
+        ref={refButton}
+        aria-expanded={!show}
+        onClick={() => setShow(!show)}
+      >
         <h5>{question}</h5>
       </button>
-      {showQuestion ? <p>{answer}</p> : null}
+      <p ref={refDisplay} aria-expanded={!show}>
+        {answer}
+      </p>
     </div>
   );
 };
