@@ -37,9 +37,19 @@ const Header = () => {
           <li>
             <Link to={idiom.contact[1]}>{idiom.contact[0]}</Link>
           </li>
-          <ul className="navbar-mobile-language">
-            <li onClick={() => setLanguage("en")}>EN</li>
-            <li onClick={() => setLanguage("es")}>ES</li>
+          <ul className="navbar-mobile-language navbar-language">
+            <li
+              onClick={() => setLanguage("en")}
+              className={`${language === "en" && "navbar-language__current"}`}
+            >
+              EN
+            </li>
+            <li
+              onClick={() => setLanguage("es")}
+              className={`${language === "es" && "navbar-language__current"}`}
+            >
+              ES
+            </li>
           </ul>
         </ul>
       </nav>
@@ -59,8 +69,18 @@ const Header = () => {
           </li>
         </ul>
         <ul className="navbar-desktop-contact navbar-language">
-          <li onClick={() => setLanguage("en")}>EN</li>
-          <li onClick={() => setLanguage("es")}>ES</li>
+          <li
+            onClick={() => setLanguage("en")}
+            className={`${language === "en" && "navbar-language__current"}`}
+          >
+            EN
+          </li>
+          <li
+            onClick={() => setLanguage("es")}
+            className={`${language === "es" && "navbar-language__current"}`}
+          >
+            ES
+          </li>
           <li>
             <Link to={idiom.contact[1]}>{idiom.contact[0]}</Link>
           </li>

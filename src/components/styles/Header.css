@@ -63,9 +63,12 @@ header {
   column-gap: 25px;
 }
 
-.navbar-mobile-language li {
-  list-style: none;
-  font-size: 1.4rem;
+.navbar-language {
+  color: var(--secondary-font);
+}
+
+.navbar-language__current {
+  color: var(--primary);
 }
 
 .navbar-language li:nth-child(2) a {
