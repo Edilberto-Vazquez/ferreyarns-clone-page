@@ -16,12 +16,14 @@ import {
 } from "../components/EcologicalDescription";
 import { SectionOptions } from "../components/SectionItem";
 import { productsEN, productsES } from "../utils/PageContent/Products";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+// import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/Products.css";
 
 const Products = () => {
   // set type ecological section
   const [section, setSection] = useState({ tab: 0, name: "All" });
+  // const [refOpcTitle] = useOpacityAnm();
+  // const [refOpcItems] = useOpacityAnm();
 
   // set language
   const { language } = useContext(LanguageChanger);
@@ -34,8 +36,6 @@ const Products = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [refOpcTitle] = useOpacityAnm();
-  const [refOpc2Items] = useOpacityAnm();
 
   return (
     <main className="products">
@@ -51,14 +51,11 @@ const Products = () => {
 
       {/* ecological section */}
       <section className="ecological-section">
-        <div ref={refOpcTitle} className="ecological-section-description">
+        <div className="ecological-section-description">
           <img src={idiom.ecologicalSection.img} alt="" />
           <SectionPar paragraphs={idiom.ecologicalSection.paragraphs} />
         </div>
-        <div
-          ref={refOpc2Items}
-          className="ecological-section-features sectionOptions border-white"
-        >
+        <div className="ecological-section-features sectionOptions border-white">
           <SectionOptions
             listItems={idiom.ecologicalSection.materialSection}
             section={section}

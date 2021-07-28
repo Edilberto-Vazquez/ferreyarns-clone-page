@@ -3,6 +3,7 @@ main {
   height: auto;
   display: grid;
   padding-top: 78px;
+  overflow: hidden;
 }
 
 .sectionOptions {
