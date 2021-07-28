@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import { faqsEN, faqsES } from "../utils/PageContent/FAQs";
 import { SectionItem, SectionPar } from "./SectionItem";

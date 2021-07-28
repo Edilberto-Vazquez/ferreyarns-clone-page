@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import FeatureSection from "../components/FeatureSection";
 import {
@@ -23,7 +23,9 @@ const Home = () => {
   } else if (language === "es") {
     idiom = homeES;
   }
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main>
       {/* slogan section */}

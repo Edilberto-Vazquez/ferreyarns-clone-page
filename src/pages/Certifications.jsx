@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import FeatureSection from "../components/FeatureSection";
 import { SectionPar } from "../components/SectionItem";
@@ -24,6 +24,9 @@ const Certifications = () => {
   } else if (language === "es") {
     idiom = certificationsES;
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className="certifications">
       <FeatureSection

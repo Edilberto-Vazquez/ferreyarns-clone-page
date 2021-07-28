@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import FeatureSection from "../components/FeatureSection";
 import { SectionPar } from "../components/SectionItem";
@@ -11,12 +11,15 @@ const AboutUs = () => {
   const [refOpc] = useOpacityAnm();
   let idiom = {};
 
-  // set language
   if (language === "en") {
     idiom = aboutUsEN;
   } else if (language === "es") {
     idiom = aboutUsES;
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className="about-us">

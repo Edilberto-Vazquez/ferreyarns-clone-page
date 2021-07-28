@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import { Route } from "react-router-dom";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import FAQs from "../components/FAQs";
 import PrivacyPolicy from "../components/PrivacyPolicy";
@@ -14,7 +15,7 @@ import {
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
 const SomeQuestions = ({ tabSection }) => {
-  const [section, setSection] = useState(tabSection);
+  const [section, setSection] = useState("");
   const [refOpcTitle] = useOpacityAnm();
   const [refOpcSection] = useOpacityAnm();
   const { language } = useContext(LanguageChanger);
@@ -26,6 +27,10 @@ const SomeQuestions = ({ tabSection }) => {
   } else if (language === "es") {
     idiom = someQuestionsES;
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setSection(tabSection);
+  }, [tabSection]);
 
   const handleSection = (section) => {
     switch (section) {

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import {
   FormSection,
@@ -22,6 +22,9 @@ const Contact = () => {
   } else if (language === "es") {
     idiom = contacES;
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className="contac">
       <FormSection title={idiom.form.title}>

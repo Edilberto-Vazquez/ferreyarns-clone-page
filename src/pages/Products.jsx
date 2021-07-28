@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import FeatureSection from "../components/FeatureSection";
 import { SectionPar } from "../components/SectionItem";
@@ -31,7 +31,9 @@ const Products = () => {
   } else if (language === "es") {
     idiom = productsES;
   }
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [refOpcTitle] = useOpacityAnm();
   const [refOpc2Items] = useOpacityAnm();
 
