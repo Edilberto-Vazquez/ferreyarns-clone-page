@@ -51,7 +51,7 @@ export const SectionOptions = ({
 export const SectionItem = ({ title, children }) => {
   return (
     <div className="section-description">
-      {title ? <h2>{title}</h2> : null}
+      {title && <h2>{title}</h2>}
       {children}
     </div>
   );
