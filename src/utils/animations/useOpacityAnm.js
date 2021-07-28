@@ -21,13 +21,6 @@ const useOpacityAnm = () => {
     if (refOpc.current) {
       formObserver.observe(refOpc.current);
     }
-
-    // return () => {
-    //   if (refImg && refText) {
-    //     imgObserver.unobserve(refImg.current);
-    //     childrenObserver.unobserve(refText.current);
-    //   }
-    // };
   }, [refOpc]);
   return [refOpc];
 };

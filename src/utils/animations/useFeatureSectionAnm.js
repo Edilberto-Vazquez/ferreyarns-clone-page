@@ -23,13 +23,6 @@ const useFeatureSectionAnm = (xAxis) => {
     if (refImg.current) {
       imgObserver.observe(refImg.current);
     }
-
-    // return () => {
-    //   if (refImg && refText) {
-    //     imgObserver.unobserve(refImg.current);
-    //     childrenObserver.unobserve(refText.current);
-    //   }
-    // };
   }, [refImg, xAxis]);
   return [refImg];
 };
