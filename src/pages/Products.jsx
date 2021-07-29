@@ -50,12 +50,12 @@ const Products = () => {
       </FeatureSection>
 
       {/* ecological section */}
-      <section className="ecological-section">
+      <section className="materials">
         <div className="ecological-section-description">
           <img src={idiom.ecologicalSection.img} alt="" />
           <SectionPar paragraphs={idiom.ecologicalSection.paragraphs} />
         </div>
-        <div className="ecological-section-features sectionOptions border-white">
+        <div className="section-options border-white">
           <SectionOptions
             listItems={idiom.ecologicalSection.materialSection}
             section={section}
@@ -63,7 +63,7 @@ const Products = () => {
             focusType="color"
             fontColor="white"
           />
-          <div className="ecological-section-features__description">
+          <div className="materials__items">
             {idiom.ecologicalSection.materialItem.map((item, index) => (
               <EcologicalSection
                 key={index}

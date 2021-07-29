@@ -6,7 +6,7 @@ main {
   overflow: hidden;
 }
 
-.sectionOptions {
+.section-options {
   width: 100%;
   height: auto;
   display: grid;
@@ -25,7 +25,7 @@ main {
 }
 
 @media (min-width: 980px) {
-  .sectionOptions {
+  .section-options {
     grid-template-columns: 2fr 4fr;
   }
 }

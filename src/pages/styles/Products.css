@@ -1,4 +1,4 @@
-.ecological-section {
+.materials {
   padding: 10% 10%;
   background-color: var(--primary);
 }
@@ -17,16 +17,9 @@
   max-width: 380px;
 }
 
-.ecological-section-features__description {
+.materials__items {
   display: grid;
   grid-auto-rows: min-content;
   row-gap: 14px;
   padding: 14px 0;
-}
-
-@media (min-width: 980px) {
-  .ecological-section-features__list {
-    padding: 14px 0;
-    border-bottom: none;
-  }
 }
