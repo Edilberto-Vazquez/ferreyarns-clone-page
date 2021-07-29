@@ -90,13 +90,15 @@
   }
   .time-line-image {
     width: 100%;
-    height: 100%;
-    display: block;
+    height: min-content;
+    display: grid;
+    grid-auto-rows: min-content;
+    justify-items: center;
     position: absolute;
-    left: 0;
-    right: 0;
     top: 80%;
     z-index: 3;
-    object-fit: cover;
+  }
+  .time-line-image img {
+    width: 100%;
   }
 }

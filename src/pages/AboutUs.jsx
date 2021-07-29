@@ -12,6 +12,7 @@ const AboutUs = () => {
   const [refOpc] = useOpacityAnm();
   let idiom = {};
   const [numSlide, setNumSlide] = useState(0);
+  let timeLine = 0;
 
   if (language === "en") {
     idiom = aboutUsEN;
@@ -19,9 +20,14 @@ const AboutUs = () => {
     idiom = aboutUsES;
   }
 
-  const lengthSlide = idiom.aboutSlider.slides.length - 1;
+  if (numSlide >= 9) {
+    timeLine = 1;
+  } else {
+    timeLine = 0;
+  }
 
   const handleClick = (count) => {
+    const lengthSlide = idiom.aboutSlider.slides.length - 1;
     if (count < 0) {
       setNumSlide(lengthSlide);
     } else if (count > lengthSlide) {
@@ -32,7 +38,7 @@ const AboutUs = () => {
   };
 
   const sliderSection = (numSlide) => {
-    const slide = idiom.aboutSlider.slides.map((item, index) => {
+    return idiom.aboutSlider.slides.map((item, index) => {
       return (
         index === numSlide && (
           <StorySlides
@@ -45,7 +51,6 @@ const AboutUs = () => {
         )
       );
     });
-    return slide;
   };
 
   useEffect(() => {
@@ -72,7 +77,7 @@ const AboutUs = () => {
         {sliderSection(numSlide)}
         <div className="time-line-image">
           <img
-            src={idiom.aboutSlider.timeLineImg[0]}
+            src={idiom.aboutSlider.timeLineImg[timeLine]}
             alt=""
             className="time-line"
           />
