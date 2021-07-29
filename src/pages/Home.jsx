@@ -27,7 +27,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <main>
+    <main className="home">
       {/* slogan section */}
       <div className="title-section">
         <video autoPlay muted loop className="title-section__video">

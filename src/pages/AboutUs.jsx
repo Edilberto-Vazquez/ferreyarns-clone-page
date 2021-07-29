@@ -67,20 +67,16 @@ const AboutUs = () => {
       >
         <SectionPar paragraphs={idiom.alwaysLook.paragraphs} />
       </FeatureSection>
-      <div className="slogan">
-        <div ref={refOpc}>
-          <p>{idiom.aboutSlogan}</p>
-        </div>
+      <div className="about-us-phrase">
+        <p ref={refOpc}>{idiom.aboutSlogan}</p>
       </div>
       <div className="story-slides">
-        <h2 className="title-white">{idiom.aboutSlider.title}</h2>
+        <h2 className="story-slides__title title-white">
+          {idiom.aboutSlider.title}
+        </h2>
         {sliderSection(numSlide)}
-        <div className="time-line-image">
-          <img
-            src={idiom.aboutSlider.timeLineImg[timeLine]}
-            alt=""
-            className="time-line"
-          />
+        <div className="story-slides__time-line">
+          <img src={idiom.aboutSlider.timeLineImg[timeLine]} alt="" />
         </div>
         <div className="story-slides__arrow-butons">
           <button type="button" onClick={() => handleClick(numSlide - 1)}>
