@@ -30,6 +30,9 @@ const Home = () => {
     <main>
       {/* slogan section */}
       <div className="title-section">
+        <video autoPlay muted loop className="title-section__video">
+          <source src={idiom.video} type="video/mp4" />
+        </video>
         <div className="title-container">
           <h1>{idiom.title}</h1>
         </div>
