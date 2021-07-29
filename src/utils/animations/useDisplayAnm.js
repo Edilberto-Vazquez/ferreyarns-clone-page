@@ -5,20 +5,22 @@ const useDisplayAnm = (color) => {
   const refButton = createRef();
   const [show, setShow] = useState(false);
   useEffect(() => {
-    refDisplay.current.classList.add("display-animation");
-    refDisplay.current.ariaexpanded = !show;
-    if (color === "black") {
-      refButton.current.classList.add(
-        "display-animation-button",
-        "display-animation-button-black"
-      );
-    } else if (color === "white") {
-      refButton.current.classList.add(
-        "display-animation-button",
-        "display-animation-button-white"
-      );
+    if (refDisplay.current) {
+      refDisplay.current.classList.add("display-animation");
+      refDisplay.current.ariaexpanded = !show;
+      if (color === "black") {
+        refButton.current.classList.add(
+          "display-animation-button",
+          "display-animation-button-black"
+        );
+      } else if (color === "white") {
+        refButton.current.classList.add(
+          "display-animation-button",
+          "display-animation-button-white"
+        );
+      }
+      refButton.current.ariaexpanded = !show;
     }
-    refButton.current.ariaexpanded = !show;
   }, [refDisplay, refButton, show, color]);
   return [refDisplay, refButton, show, setShow];
 };
