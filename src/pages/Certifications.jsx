@@ -38,12 +38,12 @@ const Certifications = () => {
       >
         <SectionPar paragraphs={idiom.ensuringTrans.paragraphs} />
       </FeatureSection>
-      <div className="certifications-title">
+      <div className="certifications__title">
         <h2 ref={refOpcTitleCert} className="title-black">
           {idiom.cert.title}
         </h2>
       </div>
-      <div ref={refOpcItemCert} className="certifications-items">
+      <div ref={refOpcItemCert} className="certifications__items">
         {idiom.cert.certsItem.map((item, index) => (
           <CertificationItem key={index} title={item.title} img={item.img}>
             <SectionPar paragraphs={item.paragraphs} />
@@ -55,7 +55,7 @@ const Certifications = () => {
           {idiom.assoCommit.title}
         </h2>
       </div>
-      <div ref={refOpcItemAsc} className="associations-items">
+      <div ref={refOpcItemAsc} className="associations__items">
         {idiom.assoCommit.assoCommitsItem.map((item, index) => (
           <CertificationItem key={index} title={item.title} img={item.img}>
             <SectionPar paragraphs={item.paragraphs} />

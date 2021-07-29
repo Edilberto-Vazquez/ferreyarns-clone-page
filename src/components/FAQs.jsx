@@ -11,13 +11,18 @@ const FAQsQuestions = ({ question, answer }) => {
   return (
     <div className="faqs-question">
       <button
+        className="faqs-question__item-button"
         ref={refButton}
         aria-expanded={!show}
         onClick={() => setShow(!show)}
       >
-        <h5>{question}</h5>
+        {question}
       </button>
-      <p ref={refDisplay} aria-expanded={!show}>
+      <p
+        className="faqs-question__item-content"
+        ref={refDisplay}
+        aria-expanded={!show}
+      >
         {answer}
       </p>
     </div>
@@ -37,21 +42,19 @@ export const FAQs = () => {
   }
 
   return (
-    <div ref={refOpc} className="faqs some-questions-section-item">
+    <div ref={refOpc} className="faqs some-questions__item">
       <SectionItem>
         <SectionPar paragraphs={idiom.paragraphs} />
       </SectionItem>
-      <div className="faqs-questions">
-        {idiom.questions.map((item, index) => {
-          return (
-            <FAQsQuestions
-              key={index}
-              question={item.question}
-              answer={item.answer}
-            />
-          );
-        })}
-      </div>
+      {idiom.questions.map((item, index) => {
+        return (
+          <FAQsQuestions
+            key={index}
+            question={item.question}
+            answer={item.answer}
+          />
+        );
+      })}
     </div>
   );
 };

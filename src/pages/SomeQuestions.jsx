@@ -50,14 +50,11 @@ const SomeQuestions = ({ tabSection }) => {
 
   return (
     <main className="some-questions">
-      <div ref={refOpcTitle} className="some-questions-title">
+      <div ref={refOpcTitle} className="some-questions__title">
         <h4 className="section-name">Ferre / {section.name}</h4>
         <h2 className="title-black">{section.name}</h2>
       </div>
-      <div
-        ref={refOpcSection}
-        className="some-questions-container sectionOptions border-black"
-      >
+      <div ref={refOpcSection} className="section-options border-black">
         <SectionOptions
           listItems={idiom.sections}
           section={section}

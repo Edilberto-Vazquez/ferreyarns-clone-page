@@ -1,13 +1,10 @@
-.faqs-questions {
+.faqs-question {
   display: grid;
   row-gap: 24px;
-}
-
-.faqs-question {
   border-bottom: 1px solid var(--primary);
 }
 
-.faqs-question button {
+.faqs-question__item-button {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -16,9 +13,7 @@
   border: none;
   text-align: left;
   padding-bottom: 14px;
-}
-
-.faqs-question button h5 {
   font-size: 1.8rem;
+  font-weight: 700;
   color: var(--primary);
 }

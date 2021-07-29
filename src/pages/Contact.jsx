@@ -10,7 +10,6 @@ import {
 } from "../components/FormSection";
 import { SectionItem, SectionPar } from "../components/SectionItem.jsx";
 import { contacEN, contacES } from "../utils/PageContent/Contact";
-import "./styles/Contact.css";
 
 const Contact = () => {
   const { language } = useContext(LanguageChanger);
