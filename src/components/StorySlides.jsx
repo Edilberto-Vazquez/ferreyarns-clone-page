@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import "./styles/Storyslide.css";
 
 const StorySlides = ({ img, paragraph, title, yearImg }) => {
   const [refOpc] = useOpacityAnm();
