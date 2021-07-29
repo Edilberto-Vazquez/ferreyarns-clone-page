@@ -72,7 +72,7 @@ const AboutUs = () => {
         {sliderSection(numSlide)}
         <div className="time-line-image">
           <img
-            src={idiom.aboutSlider.timeLineImg}
+            src={idiom.aboutSlider.timeLineImg[0]}
             alt=""
             className="time-line"
           />
