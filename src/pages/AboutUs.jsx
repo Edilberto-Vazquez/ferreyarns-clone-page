@@ -1,7 +1,8 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import FeatureSection from "../components/FeatureSection";
 import { SectionPar } from "../components/SectionItem";
+import StorySlides from "../components/StorySlides";
 import { aboutUsEN, aboutUsES } from "../utils/PageContent/AboutUs";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/AboutUs.css";
@@ -10,12 +11,42 @@ const AboutUs = () => {
   const { language } = useContext(LanguageChanger);
   const [refOpc] = useOpacityAnm();
   let idiom = {};
+  const [numSlide, setNumSlide] = useState(0);
 
   if (language === "en") {
     idiom = aboutUsEN;
   } else if (language === "es") {
     idiom = aboutUsES;
   }
+
+  const lengthSlide = idiom.aboutSlider.slides.length - 1;
+
+  const handleClick = (count) => {
+    if (count < 0) {
+      setNumSlide(lengthSlide);
+    } else if (count > lengthSlide) {
+      setNumSlide(0);
+    } else {
+      setNumSlide(count);
+    }
+  };
+
+  const sliderSection = (numSlide) => {
+    const slide = idiom.aboutSlider.slides.map((item, index) => {
+      return (
+        index === numSlide && (
+          <StorySlides
+            key={index}
+            img={item.img}
+            paragraph={item.paragraph}
+            title={item.title}
+            yearImg={item.yearImg}
+          />
+        )
+      );
+    });
+    return slide;
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -38,19 +69,21 @@ const AboutUs = () => {
       </div>
       <div className="story-slides">
         <h2 className="title-white">{idiom.aboutSlider.title}</h2>
-        <div className="time-line-description">
-          {idiom.aboutSlider.slides.map((item, index) => (
-            <div key={index}>
-              <img src={item.yearImg} alt="" className="year-img" />
-              <h2 className="title-white">{item.title}</h2>
-              <div>
-                <p>{item.paragraph}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        {sliderSection(numSlide)}
         <div className="time-line-image">
-          <img src="" alt="" className="time-line" />
+          <img
+            src={idiom.aboutSlider.timeLineImg}
+            alt=""
+            className="time-line"
+          />
+        </div>
+        <div className="story-slides__arrow-butons">
+          <button type="button" onClick={() => handleClick(numSlide - 1)}>
+            {"<"}
+          </button>
+          <button type="button" onClick={() => handleClick(numSlide + 1)}>
+            {">"}
+          </button>
         </div>
       </div>
       <FeatureSection

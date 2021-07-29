@@ -1,5 +1,4 @@
 import React, { useContext, useState, useEffect } from "react";
-import { Route } from "react-router-dom";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import FAQs from "../components/FAQs";
 import PrivacyPolicy from "../components/PrivacyPolicy";

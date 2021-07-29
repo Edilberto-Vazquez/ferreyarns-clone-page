@@ -9,6 +9,8 @@ import year1914 from "../../assets/icons/about_us/years/1914.svg";
 import year1947 from "../../assets/icons/about_us/years/1947.svg";
 import year1957 from "../../assets/icons/about_us/years/1957.svg";
 import year1974 from "../../assets/icons/about_us/years/1974.svg";
+// time line image
+import timeLine from "../../assets/icons/about_us/about-timeline-1.svg";
 // awards and honours image
 import awards from "../../assets/images/about_us/awards.jpg";
 
@@ -56,6 +58,7 @@ export const aboutUsEN = {
           "Our circular spirit is reflected in this super machine that will allow us to convert large amounts of textile waste into the best recycled fiber.",
       },
     ],
+    timeLineImg: [timeLine],
   },
   awardsHonours: {
     title: "Awards and honours",
