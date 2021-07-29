@@ -33,7 +33,7 @@ const Home = () => {
         <video autoPlay muted loop className="title-section__video">
           <source src={idiom.video} type="video/mp4" />
         </video>
-        <div className="title-container">
+        <div className="title-section__title">
           <h1>{idiom.title}</h1>
         </div>
       </div>
@@ -94,11 +94,11 @@ const Home = () => {
       </FormSection>
 
       {/* Our clientes */}
-      <div className="our-clientes-section">
-        <div className="our-clientes-title">
+      <div className="our-clientes">
+        <div className="our-clientes__title">
           <h2 className="title-black">{idiom.ourClients.title}</h2>
         </div>
-        <div className="our-clientes-img border-black">
+        <div className="our-clientes__img border-black">
           {idiom.ourClients.imgList.map((item, index) => (
             <img key={index} src={item} alt="" />
           ))}
