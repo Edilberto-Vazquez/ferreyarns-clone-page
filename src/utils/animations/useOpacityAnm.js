@@ -3,7 +3,7 @@ import { createRef, useEffect } from "react";
 const useOpacityAnm = () => {
   const refOpc = createRef();
   useEffect(() => {
-    const formCallback = (entries) => {
+    const opacityCallback = (entries) => {
       const [entry] = entries;
       if (entry.isIntersecting) {
         return entry.target.classList.add("opacity-animation");
@@ -16,10 +16,10 @@ const useOpacityAnm = () => {
       threshold: 0,
     };
 
-    const formObserver = new IntersectionObserver(formCallback, options);
+    const opacityObserver = new IntersectionObserver(opacityCallback, options);
 
     if (refOpc.current) {
-      formObserver.observe(refOpc.current);
+      opacityObserver.observe(refOpc.current);
     }
   }, [refOpc]);
   return [refOpc];
