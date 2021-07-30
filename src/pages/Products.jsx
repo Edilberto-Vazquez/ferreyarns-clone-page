@@ -13,19 +13,13 @@ import {
   FormSectionTextArea,
   FormSectionButton,
 } from "../components/FormSection";
-import {
-  EcologicalSection,
-  EcologicalMaterial,
-} from "../components/EcologicalDescription";
+import { MaterialsContainer, MaterialsTypes } from "../components/Materials";
 import { productsEN, productsES } from "../utils/PageContent/Products";
-// import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/Products.css";
 
 const Products = () => {
   // set type ecological section
   const [section, setSection] = useState({ tab: 0, name: "All" });
-  // const [refOpcTitle] = useOpacityAnm();
-  // const [refOpcItems] = useOpacityAnm();
 
   // set language
   const { language } = useContext(LanguageChanger);
@@ -51,7 +45,7 @@ const Products = () => {
         <MultipleParagraphs paragraphs={idiom.zeroImpact.paragraphs} />
       </SectionDropDown>
 
-      {/* ecological section */}
+      {/* materials section */}
       <section className="materials">
         <div className="ecological-section-description">
           <img src={idiom.ecologicalSection.img} alt="" />
@@ -67,7 +61,7 @@ const Products = () => {
           />
           <div className="materials__items">
             {idiom.ecologicalSection.materialItem.map((item, index) => (
-              <EcologicalSection
+              <MaterialsContainer
                 key={index}
                 title={item.img}
                 type={item.type}
@@ -76,8 +70,8 @@ const Products = () => {
                 tabs={item.tabs}
                 section={section.tab}
               >
-                <EcologicalMaterial materials={item.materials} />
-              </EcologicalSection>
+                <MaterialsTypes materials={item.materials} />
+              </MaterialsContainer>
             ))}
           </div>
         </div>

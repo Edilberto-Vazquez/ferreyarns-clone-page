@@ -32,19 +32,17 @@ const Contact = () => {
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
           <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
-          <ContainerWithTitle title={idiom.form.MultipleParagraphs.title}>
-            <MultipleParagraphs
-              paragraphs={idiom.form.MultipleParagraphs.paragraphs}
-            />
+          <ContainerWithTitle title={idiom.form.sectionPar.title}>
+            <MultipleParagraphs paragraphs={idiom.form.sectionPar.paragraphs} />
 
             <MultipleParagraphs paragraphs={["Ph. "]}>
-              <a href={idiom.form.MultipleParagraphs.links[0].link}>
-                {idiom.form.MultipleParagraphs.links[0].name}
+              <a href={idiom.form.sectionPar.links[0].link}>
+                {idiom.form.sectionPar.links[0].name}
               </a>
             </MultipleParagraphs>
             <MultipleParagraphs paragraphs={["E. "]}>
-              <a href={idiom.form.MultipleParagraphs.links[1].link}>
-                {idiom.form.MultipleParagraphs.links[1].name}
+              <a href={idiom.form.sectionPar.links[1].link}>
+                {idiom.form.sectionPar.links[1].name}
               </a>
             </MultipleParagraphs>
           </ContainerWithTitle>

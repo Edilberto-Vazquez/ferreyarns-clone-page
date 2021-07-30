@@ -11,7 +11,7 @@ import certCircular from "../../assets/images/certifications/certificacion-circu
 // -----------Certifications english-----------
 export const certificationsEN = {
   ensuringTrans: {
-    sectionName: "Ferre / Sustainability / Certifications",
+    sectionName: "Ferre / Certifications",
     title: "Ensuring transparency",
     img: certifications,
     paragraphs: [
@@ -90,7 +90,7 @@ export const certificationsEN = {
 // -----------Certifications panish-----------
 export const certificationsES = {
   ensuringTrans: {
-    sectionName: "Ferre / Sostenibilidad / Certificaciones",
+    sectionName: "Ferre / Certificaciones",
     title: "Asegurar la transparencia",
     img: certifications,
     paragraphs: [

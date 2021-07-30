@@ -28,6 +28,7 @@ export const footerEN = {
 
   pages: [
     { name: "Products", link: "/products" },
+    { name: "Certifications", link: "/certifications" },
     { name: "Contact", link: "/contact" },
   ],
   follow: {
@@ -65,6 +66,7 @@ export const footerES = {
 
   pages: [
     { name: "Productos", link: "/products" },
+    { name: "Certificaciones", link: "/certifications" },
     { name: "Contacto", link: "/contact" },
   ],
   follow: {

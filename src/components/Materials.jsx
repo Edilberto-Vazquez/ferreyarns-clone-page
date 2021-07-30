@@ -1,8 +1,8 @@
 import React from "react";
 import useDisplayAnm from "../utils/animations/useDisplayAnm";
-import "./styles/EcologicalDescription.css";
+import "./styles/Materials.css";
 
-export const EcologicalSection = ({
+export const MaterialsContainer = ({
   title,
   type,
   children,
@@ -16,22 +16,22 @@ export const EcologicalSection = ({
   const display = tabs.map((tab, index) => {
     if (tab === section) {
       return (
-        <div key={index} className="ecological-item">
+        <div key={index} className="materials-container">
           <button
             ref={refButton}
             aria-expanded={!show}
             onClick={() => setShow(!show)}
-            className="ecological-item__button"
+            className="materials-container__button"
           >
             <img src={title} alt="" /> <span>{type}</span>
           </button>
           <div ref={refDisplay} aria-expanded={!show}>
-            <p className="ecological-item__applications">
+            <p className="materials-container__applications">
               <b>Applications: </b>
               <span>{aplication}</span>
             </p>
-            <div className="ecological-item__features">{children}</div>
-            <p className="ecological-section__especifications">
+            <div className="materials-container__features">{children}</div>
+            <p className="materials-container__especifications">
               {specs.map((item, index) => {
                 return <span key={index}>{item}</span>;
               })}
@@ -45,13 +45,13 @@ export const EcologicalSection = ({
   return <>{display}</>;
 };
 
-export const EcologicalMaterial = ({ materials }) => {
+export const MaterialsTypes = ({ materials }) => {
   return (
     <>
       {materials.map((material, index) => (
-        <div key={index} className="ecological-material">
+        <div key={index} className="material-type">
           <img src={material.img} alt="" />
-          <div className="percentage-material">
+          <div className="material-type__percentage">
             <span>{material.percentage}</span>
             <p>{material.name}</p>
           </div>

@@ -57,7 +57,7 @@ export const contacES = {
       { type: "text", name: "phone", placeholder: "Télefono" },
       { type: "text", name: "country", placeholder: "País" },
       { type: "text", name: "website", placeholder: "Sitio web" },
-      { type: "text", name: "message", placeholder: "Mensage*" },
+      { type: "text", name: "message", placeholder: "Mensaje*" },
     ],
     privacy: ["I have read and accept the", "Privacy Policy"],
     send: "SEND",

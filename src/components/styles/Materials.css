@@ -1,6 +1,6 @@
 /* ecological container */
 
-.ecological-item {
+.materials-container {
   height: min-content;
   padding: 14px 0;
   display: grid;
@@ -8,7 +8,7 @@
   border-bottom: 1px solid white;
 }
 
-.ecological-item__button {
+.materials-container__button {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -18,29 +18,29 @@
   text-align: left;
 }
 
-.ecological-item__button img {
+.materials-container__button img {
   width: auto;
   height: 15px;
 }
 
-.ecological-item__button span {
+.materials-container__button span {
   font-size: 1.4rem;
   color: white;
   font-weight: 400;
 }
 
-.ecological-item__applications {
+.materials-container__applications {
   color: white;
 }
 
-.ecological-item__features {
+.materials-container__features {
   display: grid;
   grid-auto-rows: 126px;
   grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
   row-gap: 14px;
 }
 
-.ecological-section__especifications {
+.materials-container__especifications {
   width: 100px;
   color: white;
   display: grid;
@@ -50,7 +50,7 @@
 
 /* ecological material */
 
-.ecological-material {
+.material-type {
   width: 180px;
   height: auto;
   display: grid;
@@ -59,30 +59,30 @@
   column-gap: 20px;
 }
 
-.ecological-material img {
+.material-type img {
   max-width: 120px;
   height: 84px;
 }
 
-.percentage-material {
+.material-type__percentage {
   width: 80px;
 }
 
-.percentage-material span {
+.material-type__percentage span {
   font-size: 3.6rem;
   color: white;
 }
 
-.percentage-material p {
+.material-type__percentage p {
   display: grid;
   color: white;
 }
 
 @media (min-width: 780px) {
-  .ecological-item__button span {
+  .materials-container__button span {
     font-size: 2.4rem;
   }
-  .ecological-item__button img {
+  .materials-container__button img {
     width: auto;
     height: 30px;
   }
