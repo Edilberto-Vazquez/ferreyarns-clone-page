@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import FeatureSection from "../components/FeatureSection";
-import { SectionPar } from "../components/SectionItem";
+import SectionDropDown from "../components/SectionDropDown";
+import { MultipleParagraphs } from "../components/SectionItem";
 import CertificationItem from "../components/CertificationItem";
 import {
   certificationsEN,
@@ -29,15 +29,15 @@ const Certifications = () => {
   }, []);
   return (
     <main className="certifications">
-      <FeatureSection
+      <SectionDropDown
         title={idiom.ensuringTrans.title}
         sectionName={idiom.ensuringTrans.sectionName}
         img={idiom.ensuringTrans.img}
         xAxis="left"
         yAxis="bottom"
       >
-        <SectionPar paragraphs={idiom.ensuringTrans.paragraphs} />
-      </FeatureSection>
+        <MultipleParagraphs paragraphs={idiom.ensuringTrans.paragraphs} />
+      </SectionDropDown>
       <div className="certifications__title">
         <h2 ref={refOpcTitleCert} className="title-black">
           {idiom.cert.title}
@@ -46,7 +46,7 @@ const Certifications = () => {
       <div ref={refOpcItemCert} className="certifications__items">
         {idiom.cert.certsItem.map((item, index) => (
           <CertificationItem key={index} title={item.title} img={item.img}>
-            <SectionPar paragraphs={item.paragraphs} />
+            <MultipleParagraphs paragraphs={item.paragraphs} />
           </CertificationItem>
         ))}
       </div>
@@ -58,7 +58,7 @@ const Certifications = () => {
       <div ref={refOpcItemAsc} className="associations__items">
         {idiom.assoCommit.assoCommitsItem.map((item, index) => (
           <CertificationItem key={index} title={item.title} img={item.img}>
-            <SectionPar paragraphs={item.paragraphs} />
+            <MultipleParagraphs paragraphs={item.paragraphs} />
           </CertificationItem>
         ))}
       </div>

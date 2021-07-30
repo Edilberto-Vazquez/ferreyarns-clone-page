@@ -5,7 +5,7 @@ import PrivacyPolicy from "../components/PrivacyPolicy";
 import Cookies from "../components/Cookies";
 import LegalNotice from "../components/LegalNotice";
 import Projects from "../components/Projects";
-import { SectionOptions } from "../components/SectionItem";
+import { SectionMenu } from "../components/SectionItem";
 import "./styles/SomeQuestions.css";
 import {
   someQuestionsEN,
@@ -55,7 +55,7 @@ const SomeQuestions = ({ tabSection }) => {
         <h2 className="title-black">{section.name}</h2>
       </div>
       <div ref={refOpcSection} className="section-options border-black">
-        <SectionOptions
+        <SectionMenu
           listItems={idiom.sections}
           section={section}
           setSection={setSection}

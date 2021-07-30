@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import { SectionItem, SectionList, SectionPar } from "./SectionItem";
+import { SectionItem, SectionList, MultipleParagraphs } from "./SectionItem";
 import { cookiesEN, cookiesES } from "../utils/PageContent/Cookies";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
@@ -19,12 +19,12 @@ const Cookies = () => {
     <div ref={refOpc} className="cookies some-questions__item">
       {/* What are cookies? section */}
       <SectionItem title={idiom.whatCookies.title}>
-        <SectionPar paragraphs={idiom.whatCookies.paragraphs} />
+        <MultipleParagraphs paragraphs={idiom.whatCookies.paragraphs} />
       </SectionItem>
 
       {/* Why Hilaturas Ferre uses cookies? section */}
       <SectionItem title={idiom.hilaturasFC.title}>
-        <SectionPar paragraphs={idiom.hilaturasFC.paragraphs} />
+        <MultipleParagraphs paragraphs={idiom.hilaturasFC.paragraphs} />
       </SectionItem>
 
       {/* What we do with the different types of cookies? section */}
@@ -53,7 +53,9 @@ const Cookies = () => {
           <strong>{idiom.differentCookies.thirdParty.title}</strong>
           {idiom.differentCookies.thirdParty.description}
         </p>
-        <SectionPar paragraphs={idiom.differentCookies.thirdParty.paragraphs} />
+        <MultipleParagraphs
+          paragraphs={idiom.differentCookies.thirdParty.paragraphs}
+        />
         {/* Technical cookies */}
         <p>
           <strong>{idiom.differentCookies.tecnicalCookies.title}</strong>
@@ -95,7 +97,7 @@ const Cookies = () => {
           <strong>{idiom.differentCookies.flasCookies.title}</strong>
           {idiom.differentCookies.flasCookies.description}
         </p>
-        <SectionPar
+        <MultipleParagraphs
           paragraphs={idiom.differentCookies.flasCookies.paragraphs}
         />
       </SectionItem>
@@ -106,13 +108,13 @@ const Cookies = () => {
             {item.name}
           </a>
         ))}
-        <SectionPar paragraphs={idiom.howChangeCookieSet.paragraphs} />
+        <MultipleParagraphs paragraphs={idiom.howChangeCookieSet.paragraphs} />
       </SectionItem>
       {/* Revocation of consent */}
       <SectionItem title={idiom.revocationConsent.title}>
-        <SectionPar paragraphs={idiom.revocationConsent.paragraphs1} />
+        <MultipleParagraphs paragraphs={idiom.revocationConsent.paragraphs1} />
         <SectionList listType="ul" listItems={idiom.revocationConsent.list} />
-        <SectionPar paragraphs={idiom.revocationConsent.paragraphs2} />
+        <MultipleParagraphs paragraphs={idiom.revocationConsent.paragraphs2} />
       </SectionItem>
     </div>
   );

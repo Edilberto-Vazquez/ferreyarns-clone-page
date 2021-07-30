@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import FeatureSection from "../components/FeatureSection";
-import { SectionPar } from "../components/SectionItem";
+import SectionDropDown from "../components/SectionDropDown";
+import { MultipleParagraphs } from "../components/SectionItem";
 import StorySlides from "../components/StorySlides";
 import { aboutUsEN, aboutUsES } from "../utils/PageContent/AboutUs";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
@@ -59,14 +59,14 @@ const AboutUs = () => {
 
   return (
     <main className="about-us">
-      <FeatureSection
+      <SectionDropDown
         title={idiom.alwaysLook.title}
         sectionName={idiom.alwaysLook.sectionName}
         img={idiom.alwaysLook.img}
         xAxis="left"
       >
-        <SectionPar paragraphs={idiom.alwaysLook.paragraphs} />
-      </FeatureSection>
+        <MultipleParagraphs paragraphs={idiom.alwaysLook.paragraphs} />
+      </SectionDropDown>
       <div className="about-us-phrase">
         <p ref={refOpc}>{idiom.aboutSlogan}</p>
       </div>
@@ -87,7 +87,7 @@ const AboutUs = () => {
           </button>
         </div>
       </div>
-      <FeatureSection
+      <SectionDropDown
         title={idiom.awardsHonours.title}
         img={idiom.awardsHonours.img}
         xAxis="right"
@@ -100,7 +100,7 @@ const AboutUs = () => {
             </li>
           ))}
         </ul>
-      </FeatureSection>
+      </SectionDropDown>
     </main>
   );
 };

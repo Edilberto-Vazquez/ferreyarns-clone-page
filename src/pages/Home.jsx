@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import FeatureSection from "../components/FeatureSection";
+import SectionDropDown from "../components/SectionDropDown";
 import {
   FormSection,
   FormSectionDescription,
@@ -9,7 +9,7 @@ import {
   FormSectionContainer,
   FormSectionButton,
 } from "../components/FormSection";
-import { SectionPar } from "../components/SectionItem";
+import { MultipleParagraphs } from "../components/SectionItem";
 import { homeEN, homeES } from "../utils/PageContent/Home";
 import "./styles/Home.css";
 
@@ -40,37 +40,37 @@ const Home = () => {
 
       <div className="brand-features">
         {/* Building a zero-impact fashion */}
-        <FeatureSection
+        <SectionDropDown
           title={idiom.buldingFashion.title}
           img={idiom.buldingFashion.img}
           xAxis="right"
         >
-          <SectionPar paragraphs={idiom.buldingFashion.paragraphs} />
-        </FeatureSection>
+          <MultipleParagraphs paragraphs={idiom.buldingFashion.paragraphs} />
+        </SectionDropDown>
 
         {/* A circular process */}
-        <FeatureSection
+        <SectionDropDown
           title={idiom.circularProc.title}
           img={idiom.circularProc.img}
           xAxis="left"
         >
-          <SectionPar paragraphs={idiom.circularProc.paragraphs} />
-        </FeatureSection>
+          <MultipleParagraphs paragraphs={idiom.circularProc.paragraphs} />
+        </SectionDropDown>
 
         {/* Fully traceable and transparent */}
-        <FeatureSection
+        <SectionDropDown
           title={idiom.fullyTT.title}
           img={idiom.fullyTT.img}
           xAxis="right"
         >
-          <SectionPar paragraphs={idiom.fullyTT.paragraphs} />
-        </FeatureSection>
+          <MultipleParagraphs paragraphs={idiom.fullyTT.paragraphs} />
+        </SectionDropDown>
       </div>
 
       {/* How can we help you? form */}
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          <SectionPar paragraphs={idiom.form.paragraphs} />
+          <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
         </FormSectionDescription>
         <FormSectionContainer desktopShort>
           {idiom.form.inputs.map((item, index) =>

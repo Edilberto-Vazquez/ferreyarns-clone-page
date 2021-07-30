@@ -8,7 +8,7 @@ import {
   FormSectionTextArea,
   FormSectionButton,
 } from "../components/FormSection";
-import { SectionItem, SectionPar } from "../components/SectionItem.jsx";
+import { SectionItem, MultipleParagraphs } from "../components/SectionItem.jsx";
 import { contacEN, contacES } from "../utils/PageContent/Contact";
 
 const Contact = () => {
@@ -28,20 +28,22 @@ const Contact = () => {
     <main className="contac">
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          <SectionPar paragraphs={idiom.form.paragraphs} />
-          <SectionItem title={idiom.form.sectionPar.title}>
-            <SectionPar paragraphs={idiom.form.sectionPar.paragraphs} />
+          <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
+          <SectionItem title={idiom.form.MultipleParagraphs.title}>
+            <MultipleParagraphs
+              paragraphs={idiom.form.MultipleParagraphs.paragraphs}
+            />
 
-            <SectionPar paragraphs={["Ph. "]}>
-              <a href={idiom.form.sectionPar.links[0].link}>
-                {idiom.form.sectionPar.links[0].name}
+            <MultipleParagraphs paragraphs={["Ph. "]}>
+              <a href={idiom.form.MultipleParagraphs.links[0].link}>
+                {idiom.form.MultipleParagraphs.links[0].name}
               </a>
-            </SectionPar>
-            <SectionPar paragraphs={["E. "]}>
-              <a href={idiom.form.sectionPar.links[1].link}>
-                {idiom.form.sectionPar.links[1].name}
+            </MultipleParagraphs>
+            <MultipleParagraphs paragraphs={["E. "]}>
+              <a href={idiom.form.MultipleParagraphs.links[1].link}>
+                {idiom.form.MultipleParagraphs.links[1].name}
               </a>
-            </SectionPar>
+            </MultipleParagraphs>
           </SectionItem>
         </FormSectionDescription>
         <FormSectionContainer desktopShort>

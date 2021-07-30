@@ -1,5 +1,5 @@
 import React from "react";
-import FeatureSection from "../components/FeatureSection";
+import SectionDropDown from "../components/SectionDropDown";
 import CircularProcItem from "../components/CircularProcItem";
 import videoProcess from "../assets/videos/video-process.mp4";
 import circP1 from "../assets/icons/circular_procces/icon-01.svg";
@@ -20,7 +20,7 @@ import "./styles/CircularProcess.css";
 const CircularProcess = () => {
   return (
     <main className="circular-process">
-      <FeatureSection
+      <SectionDropDown
         title="From waste to yarn. A circular process."
         sectionName="Ferre / Sustainability / Circular process"
         video={videoProcess}
@@ -33,7 +33,7 @@ const CircularProcess = () => {
           models have always fueled our resource- and energy-efficient yarn
           manufacturing process and helped us minimize our impact.
         </p>
-      </FeatureSection>
+      </SectionDropDown>
       <div className="circular-process-items">
         <CircularProcItem
           title="Textile waste is our raw material"

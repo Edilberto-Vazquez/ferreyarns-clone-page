@@ -3,7 +3,7 @@ import "./styles/SectionItem.css";
 
 // change section options
 
-export const SectionOptions = ({
+export const SectionMenu = ({
   listItems,
   section,
   setSection,
@@ -59,7 +59,7 @@ export const SectionItem = ({ title, children }) => {
 
 // paragraph in section
 
-export const SectionPar = ({ paragraphs, children }) => {
+export const MultipleParagraphs = ({ paragraphs, children }) => {
   return (
     <>
       {paragraphs.map((item, index) => (

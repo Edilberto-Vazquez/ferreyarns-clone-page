@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import FeatureSection from "../components/FeatureSection";
-import { SectionPar } from "../components/SectionItem";
+import SectionDropDown from "../components/SectionDropDown";
+import { MultipleParagraphs } from "../components/SectionItem";
 import {
   FormSection,
   FormSectionDescription,
@@ -14,7 +14,7 @@ import {
   EcologicalSection,
   EcologicalMaterial,
 } from "../components/EcologicalDescription";
-import { SectionOptions } from "../components/SectionItem";
+import { SectionMenu } from "../components/SectionItem";
 import { productsEN, productsES } from "../utils/PageContent/Products";
 // import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/Products.css";
@@ -40,23 +40,23 @@ const Products = () => {
   return (
     <main className="products">
       {/* Building a zero-impact fashion section */}
-      <FeatureSection
+      <SectionDropDown
         title={idiom.zeroImpact.title}
         img={idiom.zeroImpact.img}
         sectionName={idiom.zeroImpact.sectionName}
         xAxis="left"
       >
-        <SectionPar paragraphs={idiom.zeroImpact.paragraphs} />
-      </FeatureSection>
+        <MultipleParagraphs paragraphs={idiom.zeroImpact.paragraphs} />
+      </SectionDropDown>
 
       {/* ecological section */}
       <section className="materials">
         <div className="ecological-section-description">
           <img src={idiom.ecologicalSection.img} alt="" />
-          <SectionPar paragraphs={idiom.ecologicalSection.paragraphs} />
+          <MultipleParagraphs paragraphs={idiom.ecologicalSection.paragraphs} />
         </div>
         <div className="section-options border-white">
-          <SectionOptions
+          <SectionMenu
             listItems={idiom.ecologicalSection.materialSection}
             section={section}
             setSection={setSection}
@@ -84,7 +84,7 @@ const Products = () => {
       {/* Request our Color Book form */}
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          <SectionPar paragraphs={idiom.form.paragraphs} />
+          <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
         </FormSectionDescription>
         <FormSectionContainer desktopShort>
           {idiom.form.inputs.map((item, index) =>

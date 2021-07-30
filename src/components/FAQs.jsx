@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import { faqsEN, faqsES } from "../utils/PageContent/FAQs";
-import { SectionItem, SectionPar } from "./SectionItem";
+import { SectionItem, MultipleParagraphs } from "./SectionItem";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import useDisplayAnm from "../utils/animations/useDisplayAnm";
 import "./styles/FAQs.css";
@@ -50,7 +50,7 @@ export const FAQs = () => {
     <div ref={refOpc} className="faqs some-questions__item">
       {/* Faqs description section */}
       <SectionItem>
-        <SectionPar paragraphs={idiom.paragraphs} />
+        <MultipleParagraphs paragraphs={idiom.paragraphs} />
       </SectionItem>
       {/* Faqs questions section*/}
       {idiom.questions.map((item, index) => {

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import FeatureSection from "../components/FeatureSection";
+import SectionDropDown from "../components/SectionDropDown";
 import {
   FormSection,
   FormSectionDescription,
@@ -8,7 +8,7 @@ import {
   FormSectionContainer,
   FormSectionButton,
 } from "../components/FormSection";
-import { SectionPar } from "../components/SectionItem";
+import { MultipleParagraphs } from "../components/SectionItem";
 import { workWithUsEN, workWithUsES } from "../utils/PageContent/WorkWithUs";
 
 const WorkWithUs = () => {
@@ -26,18 +26,18 @@ const WorkWithUs = () => {
   }, []);
   return (
     <main className="work-with-us">
-      <FeatureSection
+      <SectionDropDown
         title={idiom.workFerre.title}
         sectionName={idiom.workFerre.sectionName}
         img={idiom.workFerre.img}
         xAxis="left"
         yAxis="top"
       >
-        <SectionPar paragraphs={idiom.workFerre.paragraphs} />
-      </FeatureSection>
+        <MultipleParagraphs paragraphs={idiom.workFerre.paragraphs} />
+      </SectionDropDown>
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
-          <SectionPar paragraphs={idiom.form.paragraphs} />
+          <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
         </FormSectionDescription>
         <FormSectionContainer>
           {idiom.form.inputs.map((item, index) => (
@@ -49,7 +49,7 @@ const WorkWithUs = () => {
             />
           ))}
           <div className="file-upload">
-            <SectionPar paragraphs={idiom.form.loadFile.resume} />
+            <MultipleParagraphs paragraphs={idiom.form.loadFile.resume} />
             <FormSectionInputs
               type={idiom.form.loadFile.load.type}
               name={idiom.form.loadFile.load.name}

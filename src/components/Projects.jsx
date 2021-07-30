@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import { SectionItem, SectionPar } from "./SectionItem";
+import { SectionItem, MultipleParagraphs } from "./SectionItem";
 import { projectsEN, projectsES } from "../utils/PageContent/Projects";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
@@ -21,7 +21,7 @@ const Projects = () => {
       <SectionItem title={idiom.title}>
         {/* FINANCIAL SUPPORT FOR REINDUSTRIALISATION AND PROMOTION OF INDUSTRIAL COMPETITIVENESS*/}
         <SectionItem title={idiom.financialSup.title}>
-          <SectionPar paragraphs={idiom.financialSup.paragraphs} />
+          <MultipleParagraphs paragraphs={idiom.financialSup.paragraphs} />
         </SectionItem>
       </SectionItem>
     </div>
