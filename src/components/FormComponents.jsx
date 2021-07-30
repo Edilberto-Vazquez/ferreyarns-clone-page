@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/FormComponents.css";
 
-export const FormSection = ({ title, children }) => {
+export const FormSection = ({ title, children, privacy }) => {
   const [refOpc] = useOpacityAnm();
   return (
     <div ref={refOpc} className="form-section">
@@ -18,8 +18,8 @@ export const FormSection = ({ title, children }) => {
             <input type="checkbox" name="accept" id="accept" />
             <span>
               {" "}
-              I have read and accept the{" "}
-              <Link to="/privacy">Privacy Policy</Link>
+              {privacy.paragraph}{" "}
+              <Link to={privacy.link.link}>{privacy.link.name}</Link>
             </span>
           </div>
           {children[2]}

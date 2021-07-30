@@ -76,7 +76,7 @@ const Products = () => {
       </section>
 
       {/* Request our Color Book form section3 */}
-      <FormSection title={section3.title}>
+      <FormSection title={section3.title} privacy={section3.privacy}>
         <FormDescription>
           <MultipleParagraphs paragraphs={section3.paragraphs} />
         </FormDescription>

@@ -376,7 +376,10 @@
       { "type": "text", "name": "phone", "placeholder": "Teléfono" },
       { "type": "text", "name": "message", "placeholder": "Mensaje*" }
     ],
-    "privacy": ["He leído y acepto la", "Política de privacidad"],
+    "privacy": {
+      "paragraph": "He leído y acepto la",
+      "link": { "name": "Política de privacidad", "link": "/privacy" }
+    },
     "send": "ENVIAR"
   }
 ]

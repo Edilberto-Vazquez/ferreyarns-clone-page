@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <main className="contac">
       {/* How can we help you? section1 */}
-      <FormSection title={section1.title}>
+      <FormSection title={section1.title} privacy={section1.privacy}>
         <FormDescription>
           <MultipleParagraphs paragraphs={section1.paragraphs} />
           <ContainerWithTitle title={section1.sectionPar.title}>

@@ -62,7 +62,7 @@ const Home = () => {
       </div>
 
       {/* How can we help you? form section5 */}
-      <FormSection title={section5.title}>
+      <FormSection title={section5.title} privacy={section5.privacy}>
         <FormDescription>
           <MultipleParagraphs paragraphs={section5.paragraphs} />
         </FormDescription>

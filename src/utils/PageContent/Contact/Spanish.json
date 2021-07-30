@@ -26,7 +26,10 @@
       { "type": "text", "name": "website", "placeholder": "Sitio web" },
       { "type": "text", "name": "message", "placeholder": "Mensaje*" }
     ],
-    "privacy": ["I have read and accept the", "Privacy Policy"],
+    "privacy": {
+      "paragraph": "He leído y acepto la",
+      "link": { "name": "Política de privacidad", "link": "/privacy" }
+    },
     "send": "SEND"
   }
 ]
