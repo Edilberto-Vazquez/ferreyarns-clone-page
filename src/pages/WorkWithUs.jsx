@@ -3,11 +3,11 @@ import { LanguageChanger } from "../utils/LanguageChanger";
 import SectionDropDown from "../components/SectionDropDown";
 import {
   FormSection,
-  FormSectionDescription,
-  FormSectionInputs,
-  FormSectionContainer,
-  FormSectionButton,
-} from "../components/FormSection";
+  FormDescription,
+  FormInputs,
+  FormInputsContainer,
+  FormButton,
+} from "../components/FormComponents";
 import { MultipleParagraphs } from "../components/GeneralComponents";
 import { workWithUsEN, workWithUsES } from "../utils/PageContent/WorkWithUs";
 
@@ -36,12 +36,12 @@ const WorkWithUs = () => {
         <MultipleParagraphs paragraphs={idiom.workFerre.paragraphs} />
       </SectionDropDown>
       <FormSection title={idiom.form.title}>
-        <FormSectionDescription>
+        <FormDescription>
           <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
-        </FormSectionDescription>
-        <FormSectionContainer>
+        </FormDescription>
+        <FormInputsContainer>
           {idiom.form.inputs.map((item, index) => (
-            <FormSectionInputs
+            <FormInputs
               key={index}
               type={item.type}
               name={item.name}
@@ -50,13 +50,13 @@ const WorkWithUs = () => {
           ))}
           <div className="file-upload">
             <MultipleParagraphs paragraphs={idiom.form.loadFile.resume} />
-            <FormSectionInputs
+            <FormInputs
               type={idiom.form.loadFile.load.type}
               name={idiom.form.loadFile.load.name}
             />
           </div>
-        </FormSectionContainer>
-        <FormSectionButton btnName={idiom.form.send} />
+        </FormInputsContainer>
+        <FormButton btnName={idiom.form.send} />
       </FormSection>
     </main>
   );

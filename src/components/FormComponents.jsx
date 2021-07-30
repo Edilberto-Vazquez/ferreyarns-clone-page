@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
-import "./styles/FormSection.css";
+import "./styles/FormComponents.css";
 
 export const FormSection = ({ title, children }) => {
   const [refOpc] = useOpacityAnm();
   return (
-    <div ref={refOpc} className="form">
-      <div className="form-title">
+    <div ref={refOpc} className="form-section">
+      <div className="form-section__title">
         <h2 className="title-black">{title}</h2>
       </div>
-      <div className="form-content border-black">
+      <div className="form-section__content border-black">
         {children[0]}
-        <form action="" className="form-container">
+        <form action="" className="form-section__container">
           {children[1]}
-          <div className="form-container-terms-conditions">
+          <div className="form-section__terms-conditions">
             <input type="checkbox" name="accept" id="accept" />
             <span>
               {" "}
@@ -29,19 +29,19 @@ export const FormSection = ({ title, children }) => {
   );
 };
 
-export const FormSectionDescription = ({ children }) => {
+export const FormDescription = ({ children }) => {
   return (
-    <div className="form-container-description" type="div">
+    <div className="form-description" type="div">
       {children}
     </div>
   );
 };
 
-export const FormSectionContainer = ({ children, desktopShort }) => {
+export const FormInputsContainer = ({ children, desktopShort }) => {
   return (
     <div
-      className={`form-container-inputs ${
-        desktopShort ? "form-container-inputs-short" : ""
+      className={`form-inputs-container ${
+        desktopShort && "form-inputs-container-short"
       }`}
     >
       {children.map((item) => {
@@ -51,19 +51,19 @@ export const FormSectionContainer = ({ children, desktopShort }) => {
   );
 };
 
-export const FormSectionInputs = ({ type, name, placeholder }) => {
+export const FormInputs = ({ type, name, placeholder }) => {
   return (
     <input
       type={type}
       name={name}
       id={name}
       placeholder={placeholder}
-      className="form-container-inputs__input"
+      className="form-inputs-container__input"
     />
   );
 };
 
-export const FormSectionTextArea = ({ name, placeholder }) => {
+export const FormTextArea = ({ name, placeholder }) => {
   return (
     <textarea
       name={name}
@@ -71,14 +71,14 @@ export const FormSectionTextArea = ({ name, placeholder }) => {
       cols="40"
       rows="10"
       placeholder={placeholder}
-      className="form-container-inputs__textarea"
+      className="form-inputs-container__textarea"
     />
   );
 };
 
-export const FormSectionButton = ({ btnName }) => {
+export const FormButton = ({ btnName }) => {
   return (
-    <button type="submit" className="form-container-inputs__button">
+    <button type="submit" className="form-inputs-container__button">
       {btnName}
     </button>
   );

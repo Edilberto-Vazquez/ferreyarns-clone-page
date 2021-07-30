@@ -3,12 +3,12 @@ import { LanguageChanger } from "../utils/LanguageChanger";
 import SectionDropDown from "../components/SectionDropDown";
 import {
   FormSection,
-  FormSectionDescription,
-  FormSectionInputs,
-  FormSectionTextArea,
-  FormSectionContainer,
-  FormSectionButton,
-} from "../components/FormSection";
+  FormDescription,
+  FormInputs,
+  FormTextArea,
+  FormInputsContainer,
+  FormButton,
+} from "../components/FormComponents";
 import { MultipleParagraphs } from "../components/GeneralComponents";
 import { homeEN, homeES } from "../utils/PageContent/Home";
 import "./styles/Home.css";
@@ -69,28 +69,28 @@ const Home = () => {
 
       {/* How can we help you? form */}
       <FormSection title={idiom.form.title}>
-        <FormSectionDescription>
+        <FormDescription>
           <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
-        </FormSectionDescription>
-        <FormSectionContainer desktopShort>
+        </FormDescription>
+        <FormInputsContainer desktopShort>
           {idiom.form.inputs.map((item, index) =>
             item.name !== "message" ? (
-              <FormSectionInputs
+              <FormInputs
                 key={index}
                 type={item.type}
                 name={item.name}
                 placeholder={item.placeholder}
               />
             ) : (
-              <FormSectionTextArea
+              <FormTextArea
                 key={index}
                 name={item.name}
                 placeholder={item.placeholder}
-              ></FormSectionTextArea>
+              ></FormTextArea>
             )
           )}
-        </FormSectionContainer>
-        <FormSectionButton btnName={idiom.form.send} />
+        </FormInputsContainer>
+        <FormButton btnName={idiom.form.send} />
       </FormSection>
 
       {/* Our clientes */}

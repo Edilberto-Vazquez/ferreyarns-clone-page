@@ -2,12 +2,12 @@ import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import {
   FormSection,
-  FormSectionDescription,
-  FormSectionContainer,
-  FormSectionInputs,
-  FormSectionTextArea,
-  FormSectionButton,
-} from "../components/FormSection";
+  FormDescription,
+  FormInputsContainer,
+  FormInputs,
+  FormTextArea,
+  FormButton,
+} from "../components/FormComponents";
 import {
   ContainerWithTitle,
   MultipleParagraphs,
@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <main className="contac">
       <FormSection title={idiom.form.title}>
-        <FormSectionDescription>
+        <FormDescription>
           <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
           <ContainerWithTitle title={idiom.form.sectionPar.title}>
             <MultipleParagraphs paragraphs={idiom.form.sectionPar.paragraphs} />
@@ -46,26 +46,26 @@ const Contact = () => {
               </a>
             </MultipleParagraphs>
           </ContainerWithTitle>
-        </FormSectionDescription>
-        <FormSectionContainer desktopShort>
+        </FormDescription>
+        <FormInputsContainer desktopShort>
           {idiom.form.inputs.map((item, index) =>
             item.name !== "message" ? (
-              <FormSectionInputs
+              <FormInputs
                 key={index}
                 type={item.type}
                 name={item.name}
                 placeholder={item.placeholder}
               />
             ) : (
-              <FormSectionTextArea
+              <FormTextArea
                 key={index}
                 name={item.name}
                 placeholder={item.placeholder}
-              ></FormSectionTextArea>
+              ></FormTextArea>
             )
           )}
-        </FormSectionContainer>
-        <FormSectionButton btnName="SEND" />
+        </FormInputsContainer>
+        <FormButton btnName="SEND" />
       </FormSection>
     </main>
   );

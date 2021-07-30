@@ -7,12 +7,12 @@ import {
 } from "../components/GeneralComponents";
 import {
   FormSection,
-  FormSectionDescription,
-  FormSectionInputs,
-  FormSectionContainer,
-  FormSectionTextArea,
-  FormSectionButton,
-} from "../components/FormSection";
+  FormDescription,
+  FormInputs,
+  FormInputsContainer,
+  FormTextArea,
+  FormButton,
+} from "../components/FormComponents";
 import { MaterialsContainer, MaterialsTypes } from "../components/Materials";
 import { productsEN, productsES } from "../utils/PageContent/Products";
 import "./styles/Products.css";
@@ -79,28 +79,28 @@ const Products = () => {
 
       {/* Request our Color Book form */}
       <FormSection title={idiom.form.title}>
-        <FormSectionDescription>
+        <FormDescription>
           <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
-        </FormSectionDescription>
-        <FormSectionContainer desktopShort>
+        </FormDescription>
+        <FormInputsContainer desktopShort>
           {idiom.form.inputs.map((item, index) =>
             item.name !== "message" ? (
-              <FormSectionInputs
+              <FormInputs
                 key={index}
                 type={item.type}
                 name={item.name}
                 placeholder={item.placeholder}
               />
             ) : (
-              <FormSectionTextArea
+              <FormTextArea
                 key={index}
                 name={item.name}
                 placeholder={item.placeholder}
-              ></FormSectionTextArea>
+              ></FormTextArea>
             )
           )}
-        </FormSectionContainer>
-        <FormSectionButton btnName={idiom.form.send} />
+        </FormInputsContainer>
+        <FormButton btnName={idiom.form.send} />
       </FormSection>
     </main>
   );
