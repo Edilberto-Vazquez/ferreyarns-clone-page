@@ -1,42 +1,40 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import { headerEN, headerES } from "../utils/PageContent/Header";
+import useChangeLanguage from "../utils/hooks/useChangeLanguage";
+import English from "../utils/PageContent/Header/English.json";
+import Spanish from "../utils/PageContent/Header/Spanish.json";
 import "./styles/Header.css";
 
 const Header = () => {
   const { setLanguage, language } = useContext(LanguageChanger);
-  let idiom = {};
-
-  // set language
-  if (language === "en") {
-    idiom = headerEN;
-  } else if (language === "es") {
-    idiom = headerES;
-  }
+  const [idiom] = useChangeLanguage(language, English, Spanish);
+  const [header] = idiom;
 
   return (
     <header>
-      <Link to={idiom.logo[1]} className="ferreyarns-logo">
-        <img src={idiom.logo[0]} alt="" />
+      <Link to={header.logo[1]} className="ferreyarns-logo">
+        <img src={header.logo[0]} alt="" />
       </Link>
       <nav className="navbar-mobile">
         <ul className="navbar-mobile-links">
           {/* <li>
-            <Link to={idiom.aboutUs[1]}>{idiom.aboutUs[0]}</Link>
+            <Link to={header.aboutUs[1]}>{header.aboutUs[0]}</Link>
           </li> */}
           <li>
-            <Link to={idiom.products[1]}>{idiom.products[0]}</Link>
+            <Link to={header.products[1]}>{header.products[0]}</Link>
           </li>
           <li>Sustainability</li>
           <li>
-            <Link to={idiom.certifications[1]}>{idiom.certifications[0]}</Link>
+            <Link to={header.certifications[1]}>
+              {header.certifications[0]}
+            </Link>
           </li>
           {/* <li>
-            <Link to={idiom.workWithUs[1]}>{idiom.workWithUs[0]}</Link>
+            <Link to={header.workWithUs[1]}>{header.workWithUs[0]}</Link>
           </li> */}
           <li>
-            <Link to={idiom.contact[1]}>{idiom.contact[0]}</Link>
+            <Link to={header.contact[1]}>{header.contact[0]}</Link>
           </li>
           <ul className="navbar-mobile-language navbar-language">
             <li
@@ -57,17 +55,19 @@ const Header = () => {
       <nav className="navbar-desktop">
         <ul className="navbar-desktop-links">
           {/* <li>
-            <Link to={idiom.aboutUs[1]}>{idiom.aboutUs[0]}</Link>
+            <Link to={header.aboutUs[1]}>{header.aboutUs[0]}</Link>
           </li> */}
           <li>
-            <Link to={idiom.products[1]}>{idiom.products[0]}</Link>
+            <Link to={header.products[1]}>{header.products[0]}</Link>
           </li>
           <li>Sustainability</li>
           <li>
-            <Link to={idiom.certifications[1]}>{idiom.certifications[0]}</Link>
+            <Link to={header.certifications[1]}>
+              {header.certifications[0]}
+            </Link>
           </li>
           {/* <li>
-            <Link to={idiom.workWithUs[1]}>{idiom.workWithUs[0]}</Link>
+            <Link to={header.workWithUs[1]}>{header.workWithUs[0]}</Link>
           </li> */}
         </ul>
         <ul className="navbar-desktop-contact navbar-language">
@@ -84,7 +84,7 @@ const Header = () => {
             ES
           </li>
           <li>
-            <Link to={idiom.contact[1]}>{idiom.contact[0]}</Link>
+            <Link to={header.contact[1]}>{header.contact[0]}</Link>
           </li>
         </ul>
       </nav>

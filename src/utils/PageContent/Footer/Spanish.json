@@ -1,0 +1,42 @@
+[
+  {
+    "id": "footer",
+    "img": "/assets/images/certifications-footer2.jpg",
+    "contact": {
+      "paragraphs": [
+        "HILOS FERRE DE ESPAÑA, SA DE CV Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062"
+      ],
+      "links": [
+        { "name": "+52 (222) 268 5761", "link": "tel:+522222685761" },
+        { "name": "info@hilosferre.com", "link": "mailto:info@hilosferre.com" }
+      ]
+    },
+    "someQuestions": [
+      { "name": "Preguntas Frecuentes", "link": "/faqs" },
+      { "name": "Política de Privacidad", "link": "/privacy" },
+      { "name": "Política de Cookies", "link": "/cookies" },
+      { "name": "Aviso Legal", "link": "/legal" },
+      { "name": "Proyectos", "link": "/projects" }
+    ],
+
+    "pages": [
+      { "name": "Productos", "link": "/products" },
+      { "name": "Certificaciones", "link": "/certifications" },
+      { "name": "Contacto", "link": "/contact" }
+    ],
+    "follow": {
+      "title": "Síguenos",
+      "socialMedia": [
+        {
+          "img": "/assets/icons/footer/instagram.svg",
+          "link": "https://www.instagram.com/ferreyarns/"
+        },
+        {
+          "img": "/assets/icons/footer/linkedin.svg",
+          "link": "https://www.linkedin.com/company/ferreyarns/?viewAsMember=true"
+        }
+      ]
+    },
+    "reserved": "© Ferre 2021 | Todos los derechos reservados"
+  }
+]

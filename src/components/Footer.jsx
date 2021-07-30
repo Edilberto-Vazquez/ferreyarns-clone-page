@@ -1,19 +1,15 @@
 import React, { useContext } from "react";
-import { LanguageChanger } from "../utils/LanguageChanger";
 import { Link } from "react-router-dom";
-import { footerEN, footerES } from "../utils/PageContent/Footer";
+import { LanguageChanger } from "../utils/LanguageChanger";
+import useChangeLanguage from "../utils/hooks/useChangeLanguage";
+import English from "../utils/PageContent/Footer/English.json";
+import Spanish from "../utils/PageContent/Footer/Spanish.json";
 import "./styles/Footer.css";
 
 const Footer = () => {
   const { language } = useContext(LanguageChanger);
-  let idiom = {};
-
-  // set language
-  if (language === "en") {
-    idiom = footerEN;
-  } else if (language === "es") {
-    idiom = footerES;
-  }
+  const [idiom] = useChangeLanguage(language, English, Spanish);
+  const [footer] = idiom;
   return (
     <footer>
       <div className="footer-information">
@@ -21,8 +17,8 @@ const Footer = () => {
           <div></div>
         </div>
         <div className="footer-contac">
-          <p>{idiom.contact.paragraphs}</p>
-          {idiom.contact.links.map((item, index) => (
+          <p>{footer.contact.paragraphs}</p>
+          {footer.contact.links.map((item, index) => (
             <p key={index}>
               {item.type}
               <a href={item.link}>{item.name}</a>
@@ -30,14 +26,14 @@ const Footer = () => {
           ))}
         </div>
         <div className="footer-general-information">
-          {idiom.someQuestions.map((item, index) => (
+          {footer.someQuestions.map((item, index) => (
             <Link key={index} to={item.link}>
               {item.name}
             </Link>
           ))}
         </div>
         <div className="footer-general-information">
-          {idiom.pages.map((item, index) => (
+          {footer.pages.map((item, index) => (
             <Link key={index} to={item.link}>
               {item.name}
             </Link>
@@ -45,9 +41,9 @@ const Footer = () => {
         </div>
         <div className="footer-social-media">
           <p>
-            <strong>{idiom.follow.title}</strong>
+            <strong>{footer.follow.title}</strong>
           </p>
-          {idiom.follow.socialMedia.map((item, index) => (
+          {footer.follow.socialMedia.map((item, index) => (
             <a key={index} href={item.link}>
               <img
                 src={item.img}
@@ -59,10 +55,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="certifications border-black">
-        <img src={idiom.img} alt="" />
+        <img src={footer.img} alt="" />
       </div>
       <div className="all-rights-reserved">
-        <p>{idiom.reserved}</p>
+        <p>{footer.reserved}</p>
       </div>
     </footer>
   );

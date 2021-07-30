@@ -1,0 +1,13 @@
+[
+  {
+    "id": "header",
+    "logo": ["/assets/icons/logo-ferre.svg", "/"],
+    "aboutUs": ["About us", "/about-us"],
+    "products": ["Products", "/products"],
+    "certifications": ["Certifications", "/certifications"],
+    "workWithUs": ["Work with us", "/work-with-us"],
+    "en": "EN",
+    "es": "ES",
+    "contact": ["Contact", "/contact"]
+  }
+]
