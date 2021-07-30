@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { EcologicalMaterial } from "./EcologicalDescription";
+import { MaterialsTypes } from "./Materials";
 import "./styles/PositiveImpactSlider.css";
 
 // slider container
@@ -23,21 +23,20 @@ export const SlideTitle = ({ titleImg }) => {
 };
 
 export const SlideDescription = ({ brand, garment, compositions }) => {
+  console.log();
   return (
     <div className="slide-section-description border-white">
       <div className="brand-garment">
-        <p>Brand: {brand}</p>
-        <p>Garment: {garment}</p>
+        <p>
+          {brand.title}: {brand.brand}
+        </p>
+        <p>
+          {garment.title}: {garment.garment}
+        </p>
       </div>
-      <p className="composition">Composition: </p>
+      <p className="composition">{compositions.title} </p>
       <div className="composition-materials">
-        {compositions.map((item, index) => (
-          <EcologicalMaterial
-            key={index}
-            material={item.material}
-            percentage={item.percentage}
-          />
-        ))}
+        <MaterialsTypes materials={compositions.materials} />
       </div>
     </div>
   );
@@ -45,27 +44,27 @@ export const SlideDescription = ({ brand, garment, compositions }) => {
 
 // total savings section tabs
 export const SlideTotalSavings = ({ totalSavings }) => {
-  const [tab, setTab] = useState(totalSavings[0].title);
+  const [tab, setTab] = useState(totalSavings.elements[0]);
   return (
     <div className="slide-section-savings border-white">
-      <h3>Total savings</h3>
+      <h3>{totalSavings.title}</h3>
       <div className="tabs-saving">
-        {totalSavings.map((item, index) => (
+        {totalSavings.elements.map((item, index) => (
           <li
             key={index}
             className="tab-item"
-            onClick={() => setTab(item.title)}
+            onClick={() => setTab(item.element)}
           >
-            <img src={item.timg} alt="" />
+            <img src={item.img} alt="" />
           </li>
         ))}
       </div>
-      {totalSavings.map((item, index) => {
-        if (item.title !== tab) return undefined;
+      {totalSavings.elements.map((item, index) => {
+        if (item.element !== tab) return undefined;
         return (
           <div key={index} className="tab-content">
-            <span>{item.number}</span>
-            <span>{item.title}</span>
+            <span>{item.amount}</span>
+            <span>{item.element}</span>
           </div>
         );
       })}

@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Home from "../pages/Home";
 // import AboutUs from "../pages/AboutUs";
 import Products from "../pages/Products";
+import PositiveImpact from "../pages/PositiveImpact";
 import CircularProcess from "../pages/CircularProcess";
 import Certifications from "../pages/Certifications";
 // import WorkWithUs from "../pages/WorkWithUs";
@@ -19,6 +20,7 @@ const App = () => {
           {/* <Route exact path="/about-us" component={AboutUs} /> */}
           <Route exact path="/products" component={Products} />
           <Route exact path="/certifications" component={Certifications} />
+          <Route exact path="/positive-impact" component={PositiveImpact} />
           <Route exact path="/circular-process" component={CircularProcess} />
           {/* <Route exact path="/work-with-us" component={WorkWithUs} /> */}
           <Route exact path="/faqs">

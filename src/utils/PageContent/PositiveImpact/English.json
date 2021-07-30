@@ -1,0 +1,273 @@
+[
+  {
+    "id": "section1",
+    "sectionName": "Ferre / Sustainability / Positive impact",
+    "title": "Metrics that matter",
+    "img": "/assets/images/positive_impact/positive-impact.jpg",
+    "paragraphs": [
+      "After more than seven decades supplying recycled yarns to the fashion industry, circularity is in our DNA. Recycled raw material, zero chemicals, zero water and minimal CO2 emissions. Circular business models have always fueled our resource- and energy-efficient yarn manufacturing process and helped us minimize our impact."
+    ]
+  },
+  {
+    "id": "section2",
+    "slides": [
+      {
+        "img": "assets/images/positive_impact/kimoa-tshirt.jpg",
+        "imgTitle": "/assets/icons/products/f_images/fblue.svg",
+        "brand": { "title": "Brand", "brand": "Kimoa" },
+        "garment": { "title": "Garment", "garment": "T-SHIRT" },
+        "composition": {
+          "title": "Composition",
+          "materials": [
+            {
+              "name": "Recover™ recycled cotton",
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "percentage": "50%"
+            },
+            {
+              "name": "Recycled Polyester",
+              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "percentage": "47%"
+            },
+            {
+              "name": "Other fibers",
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "percentage": "3%"
+            }
+          ]
+        },
+        "totalSavings": {
+          "title": "Total savings",
+          "elements": [
+            {
+              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "amount": "1,343",
+              "element": "liters of water saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "amount": "2",
+              "element": "kg of CO2 saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "amount": "0.1",
+              "element": "kg of chemicals saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "amount": "5",
+              "element": "kWh of energy saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/bottle-icon.svg",
+              "amount": "4",
+              "element": "PET bottle units saved"
+            }
+          ]
+        },
+        "dataSource": "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO."
+      },
+      {
+        "img": "assets/images/positive_impact/kimoa-hoodie.jpg",
+        "imgTitle": "/assets/icons/products/f_images/fblue.svg",
+        "brand": { "title": "Brand", "brand": "Kimoa" },
+        "garment": { "title": "Garment", "garment": "Hoodie" },
+        "composition": {
+          "title": "Composition",
+          "materials": [
+            {
+              "name": "Recover™ recycled cotton",
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "percentage": "50%"
+            },
+            {
+              "name": "Recycled Polyester",
+              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "percentage": "47%"
+            },
+            {
+              "name": "Other fibers",
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "percentage": "3%"
+            }
+          ]
+        },
+        "totalSavings": {
+          "title": "Total savings",
+          "elements": [
+            {
+              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "amount": "2,090",
+              "element": "liters of water saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "amount": "3",
+              "element": "kg of CO2 saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "amount": "0.2",
+              "element": "kg of chemicals saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "amount": "8",
+              "element": "kWh of energy saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/bottle-icon.svg",
+              "amount": "6",
+              "element": "PET bottle units saved"
+            }
+          ]
+        },
+        "dataSource": "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO."
+      },
+      {
+        "img": "assets/images/positive_impact/mud-jeans.jpg",
+        "imgTitle": "/assets/icons/products/f_images/fjeans.svg",
+        "brand": { "title": "Brand", "brand": "Mud Jeans" },
+        "garment": { "title": "Garment", "garment": "Denim" },
+        "composition": {
+          "title": "Composition",
+          "materials": [
+            {
+              "name": "Recover™ recycled cotton",
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "percentage": "50%"
+            },
+            {
+              "name": "Organic cotton",
+              "img": "/assets/icons/products/materials/organic-cotton.svg",
+              "percentage": "50%"
+            }
+          ]
+        },
+        "totalSavings": {
+          "title": "Total savings",
+          "elements": [
+            {
+              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "amount": "5,917",
+              "element": "liters of water saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "amount": "9",
+              "element": "kg of CO2 saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "amount": "0.5",
+              "element": "kg of chemicals saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "amount": "22",
+              "element": "kWh of energy saved"
+            }
+          ]
+        },
+        "dataSource": "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO."
+      },
+      {
+        "img": "assets/images/positive_impact/coyuchi.jpg",
+        "imgTitle": "/assets/icons/products/f_images/fearth.svg",
+        "brand": { "title": "Brand", "brand": "Coyuchi" },
+        "garment": { "title": "Garment", "garment": "Blanket" },
+        "composition": {
+          "title": "Composition",
+          "materials": [
+            {
+              "name": "Recover™ recycled cotton",
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "percentage": "45%"
+            },
+            {
+              "name": "Organic cotton",
+              "img": "/assets/icons/products/materials/organic-cotton.svg",
+              "percentage": "50%"
+            },
+            {
+              "name": "Other fibers",
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "percentage": "5%"
+            }
+          ]
+        },
+        "totalSavings": {
+          "title": "Total savings",
+          "elements": [
+            {
+              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "amount": "16,420",
+              "element": "liters of water saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "amount": "25",
+              "element": "kg of CO2 saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "amount": "1.2",
+              "element": "kg of chemicals saved"
+            },
+            {
+              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "amount": "62",
+              "element": "kWh of energy saved"
+            }
+          ]
+        },
+        "dataSource": "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO."
+      }
+    ]
+  },
+  {
+    "id": "section3",
+    "title": "Our environmental savings in 2020",
+    "environmentalSavings": [
+      {
+        "img": "/assets/icons/positive_impact/water-icon.svg",
+        "number": 28,
+        "element": "billion liters of water saved"
+      },
+      {
+        "img": "/assets/icons/positive_impact/co2-icon.svg",
+        "number": 40.2,
+        "element": "million kg of CO2 emissions saved"
+      },
+      {
+        "img": "/assets/icons/positive_impact/chemical-icon.svg",
+        "number": 2.1,
+        "element": "million kg of chemicals saved"
+      },
+      {
+        "img": "/assets/icons/positive_impact/co2-icon.svg",
+        "number": 1.9,
+        "element": "million kg textile waste recycled"
+      },
+      {
+        "img": "/assets/icons/positive_impact/textil-icon.svg",
+        "number": 102.7,
+        "element": "million kWh of energy saved"
+      },
+      {
+        "img": "/assets/icons/positive_impact/bottle-icon.svg",
+        "number": 5.8,
+        "element": "million PET bottle units saved"
+      }
+    ]
+  },
+  {
+    "id": "section4",
+    "title": "Sustainability report",
+    "img": "/assets/images/positive_impact/positive-impact-memory.jpg",
+    "paragraphs": [
+      "At Ferre we guarantee the highest standards of corporate governance. We are committed to protecting the rights and well-being of our employees, as well as reducing our environmental impact and promoting the progress of our community and the whole society."
+    ]
+  }
+]

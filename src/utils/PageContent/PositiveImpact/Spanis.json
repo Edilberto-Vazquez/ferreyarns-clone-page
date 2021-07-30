@@ -1,0 +1,274 @@
+[
+  {
+    "id": "section1",
+    "sectionName": "Ferre / Sostenibilidad / Impacto Positivo",
+    "title": "Métricas que importan",
+    "img": "/assets/images/positive_impact/positive-impact.jpg",
+    "paragraphs": [
+      "Utilizamos la metodología Life Cycle Assessment (LCA) para medir la huella medioambiental de nuestros productos a lo largo de todo su ciclo de vida. Para ello observamos métricas como la huella de carbono, la huella hídrica, el uso de químicos y otras. Esta evaluación del impacto ambiental de nuestros productos ha sido revisada por organismos independientes -AITEX, Universitat de València y UNESCO-, para garantizar la transparencia.",
+      "Compartimos nuestras métricas con fabricantes y marcas porque, no solo se trata de reducir nuestros impactos, sino también de crear cadenas de suministro sostenibles y satisfacer la demanda de los consumidores de una moda totalmente transparente."
+    ]
+  },
+  {
+    "id": "section2",
+    "slides": [
+      {
+        "img": "assets/images/positive_impact/kimoa-tshirt.jpg",
+        "imgTitle": "/assets/icons/products/f_images/fblue.svg",
+        "brand": { "title": "Marca", "brand": "Kimoa" },
+        "garment": { "title": "Prenda", "garment": "T-SHIRT" },
+        "composition": {
+          "title": "Composición",
+          "materials": [
+            {
+              "name": "Algodón reciclado Recover™",
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "percentage": "50%"
+            },
+            {
+              "name": "Poliéster reciclado",
+              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "percentage": "47%"
+            },
+            {
+              "name": "Otras fibras",
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "percentage": "3%"
+            }
+          ]
+        },
+        "totalSavings": {
+          "title": "Ahorros totales",
+          "elements": [
+            {
+              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "amount": "1,343",
+              "element": "litros de agua ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "amount": "2",
+              "element": "kg de CO2 ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "amount": "0.1",
+              "element": "kg de químicos ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "amount": "5",
+              "element": "kWh de energía ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/bottle-icon.svg",
+              "amount": "4",
+              "element": "uds botellas PET ahorradas"
+            }
+          ]
+        },
+        "dataSource": "Datos calculados utilizando la metodología LCA y verificados por AITEX, Universitat de València y UNESCO."
+      },
+      {
+        "img": "assets/images/positive_impact/kimoa-hoodie.jpg",
+        "imgTitle": "/assets/icons/products/f_images/fblue.svg",
+        "brand": { "title": "Marca", "brand": "Kimoa" },
+        "garment": { "title": "Prenda", "garment": "Hoodie" },
+        "composition": {
+          "title": "Composición",
+          "materials": [
+            {
+              "name": "Algodón reciclado Recover™",
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "percentage": "50%"
+            },
+            {
+              "name": "Poliéster reciclado",
+              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "percentage": "47%"
+            },
+            {
+              "name": "Otras fibras",
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "percentage": "3%"
+            }
+          ]
+        },
+        "totalSavings": {
+          "title": "Ahorros totales",
+          "elements": [
+            {
+              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "amount": "2,090",
+              "element": "litros de agua ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "amount": "3",
+              "element": "kg de CO2 ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "amount": "0.2",
+              "element": "kg de químicos ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "amount": "8",
+              "element": "kWh de energía ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/bottle-icon.svg",
+              "amount": "6",
+              "element": "uds botellas PET ahorradas"
+            }
+          ]
+        },
+        "dataSource": "Datos calculados utilizando la metodología LCA y verificados por AITEX, Universitat de València y UNESCO."
+      },
+      {
+        "img": "assets/images/positive_impact/mud-jeans.jpg",
+        "imgTitle": "/assets/icons/products/f_images/fjeans.svg",
+        "brand": { "title": "Marca", "brand": "Mud Jeans" },
+        "garment": { "title": "Prenda", "garment": "Denim" },
+        "composition": {
+          "title": "Composición",
+          "materials": [
+            {
+              "name": "Algodón reciclado Recover™",
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "percentage": "50%"
+            },
+            {
+              "name": "Algodón orgánico",
+              "img": "/assets/icons/products/materials/organic-cotton.svg",
+              "percentage": "50%"
+            }
+          ]
+        },
+        "totalSavings": {
+          "title": "Ahorros totales",
+          "elements": [
+            {
+              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "amount": "5,917",
+              "element": "litros de agua ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "amount": "9",
+              "element": "kg de CO2 ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "amount": "0.5",
+              "element": "kg de químicos ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "amount": "22",
+              "element": "kWh de energía ahorrados"
+            }
+          ]
+        },
+        "dataSource": "Datos calculados utilizando la metodología LCA y verificados por AITEX, Universitat de València y UNESCO."
+      },
+      {
+        "img": "assets/images/positive_impact/coyuchi.jpg",
+        "imgTitle": "/assets/icons/products/f_images/fearth.svg",
+        "brand": { "title": "Marca", "brand": "Coyuchi" },
+        "garment": { "title": "Prenda", "garment": "Blanket" },
+        "composition": {
+          "title": "Composición",
+          "materials": [
+            {
+              "name": "Algodón reciclado Recover™",
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "percentage": "45%"
+            },
+            {
+              "name": "Algodón orgánico",
+              "img": "/assets/icons/products/materials/organic-cotton.svg",
+              "percentage": "50%"
+            },
+            {
+              "name": "Otras fibras",
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "percentage": "5%"
+            }
+          ]
+        },
+        "totalSavings": {
+          "title": "Ahorros totales",
+          "elements": [
+            {
+              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "amount": "16,420",
+              "element": "litros de agua ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "amount": "25",
+              "element": "kg de CO2 ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "amount": "1.2",
+              "element": "kg de químicos ahorrados"
+            },
+            {
+              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "amount": "62",
+              "element": "kWh de energía ahorrados"
+            }
+          ]
+        },
+        "dataSource": "Datos calculados utilizando la metodología LCA y verificados por AITEX, Universitat de València y UNESCO."
+      }
+    ]
+  },
+  {
+    "id": "section3",
+    "title": "Nuestros ahorros medioambientales en 2020",
+    "environmentalSavings": [
+      {
+        "img": "/assets/icons/positive_impact/water-icon.svg",
+        "number": 28244,
+        "element": "millones de litros de agua ahorrados"
+      },
+      {
+        "img": "/assets/icons/positive_impact/co2-icon.svg",
+        "number": 40.2,
+        "element": "millones de kg de emisiones de CO2 ahorrados"
+      },
+      {
+        "img": "/assets/icons/positive_impact/chemical-icon.svg",
+        "number": 2.1,
+        "element": "millones de kg de químicos ahorrados"
+      },
+      {
+        "img": "/assets/icons/positive_impact/texttil-icon.svg",
+        "number": 1.9,
+        "element": "millones de kg de residuo textil reciclados"
+      },
+      {
+        "img": "/assets/icons/positive_impact/energy-icon.svg",
+        "number": 102.7,
+        "element": "millones de kWh de energía ahorrados"
+      },
+      {
+        "img": "/assets/icons/positive_impact/bottle-icon.svg",
+        "number": 5.8,
+        "element": "millones de botellas PET recicladas"
+      }
+    ]
+  },
+  {
+    "id": "section4",
+    "title": "Memoria de sostenibilidad",
+    "img": "/assets/images/positive_impact/positive-impact-memory.jpg",
+    "paragraphs": [
+      "En Ferre garantizamos los más altos estándares de gobierno corporativo. Estamos comprometidos con la protección de los derechos y el bienestar de nuestros empleados, así como con la reducción de nuestro impacto ambiental y el apoyo a nuestra comunidad y a toda la sociedad."
+    ]
+  }
+]

@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageChanger } from "../utils/LanguageChanger";
+import useChangeLanguage from "../utils/hooks/useChangeLanguage";
+import English from "../utils/PageContent/PositiveImpact/English.json";
+import Spanish from "../utils/PageContent/PositiveImpact/Spanis.json";
 import SectionDropDown from "../components/SectionDropDown";
 import { MultipleParagraphs } from "../components/GeneralComponents";
 import {
@@ -9,31 +13,34 @@ import {
   SlideTotalSavings,
   SlideDataSource,
 } from "../components/PositiveImpactSlider";
-import pi from "../assets/images/positive-impact.jpg";
-import pim from "../assets/images/positive-impact-memory.jpg";
-import { posImpSlide, envSavItemEn } from "../utils/PageContent/PositiveImpact";
 import "./styles/PositiveImpact.css";
 
 const PositiveImpact = () => {
+  // set language
+  const { language } = useContext(LanguageChanger);
+  const [idiom] = useChangeLanguage(language, English, Spanish);
+  const [section1, section2, section3, section4] = idiom;
+  console.log(section1, section2, section3, section4);
   return (
     <main className="positive-impact">
+      {/* Metrics that matter section1 */}
       <SectionDropDown
-        title="Metrics that matter"
-        sectionName="Ferre / Sustainability / Positive impact"
-        img={pi}
+        title={section1.title}
+        sectionName={section1.sectionName}
+        img={section1.img}
       >
-        <MultipleParagraphs content="We use the Life Cycle Assessment (LCA) methodology to measure the environmental footprint of all of our products from cradle-to-grave. For this, we observe metrics such as the carbon footprint, the water footprint, the use of chemicals and others. This assessment of the environmental impact of our products has been third-party reviewed by AITEX, Universitat de València and UNESCO, to ensure transparency." />
-        <MultipleParagraphs content="We share our metrics with manufacturers and brands because this is not just about reducing our impacts, this is also about creating sustainable supply chains and meeting consumer demand for true transparency in fashion." />
+        <MultipleParagraphs paragraphs={section1.paragraphs} />
       </SectionDropDown>
 
+      {/* slider section2 */}
       <SliderContainer className="positive-impact-slide">
-        {posImpSlide.map((item, index) => (
-          <SlideItem key={index} sectionImg={item.sectionImg}>
-            <SlideTitle titleImg={item.titleImg} />
+        {section2.slides.map((item, index) => (
+          <SlideItem key={index} sectionImg={item.img}>
+            <SlideTitle titleImg={item.imgTitle} />
             <SlideDescription
               brand={item.brand}
               garment={item.garment}
-              compositions={item.compositions}
+              compositions={item.composition}
             />
             <SlideTotalSavings totalSavings={item.totalSavings} />
             <SlideDataSource dataSource={item.dataSource} />
@@ -41,28 +48,29 @@ const PositiveImpact = () => {
         ))}
       </SliderContainer>
 
+      {/* Our environmental savings in 2020 section3 */}
       <div className="env-sav">
         <div className="env-sav-title">
-          <h2 className="title-white">Our environmental savings in 2020</h2>
+          <h2 className="title-white">{section3.title}</h2>
         </div>
         <div className="env-sav-items border-white">
-          {envSavItemEn.map((item, index) => (
+          {section3.environmentalSavings.map((item, index) => (
             <div key={index} className="env-sav-items__desc">
               <img src={item.img} alt="" />
               <span>{item.number}</span>
-              <h3>{item.title}</h3>
+              <h3>{item.element}</h3>
             </div>
           ))}
         </div>
       </div>
-
+      {/* Sustainability report section4 */}
       <SectionDropDown
-        title="Sustainability report"
-        img={pim}
+        title={section4.title}
+        img={section4.img}
         xAxis="right"
         yAxis="top"
       >
-        <MultipleParagraphs content="At Ferre we guarantee the highest standards of corporate governance. We are committed to protecting the rights and well-being of our employees, as well as reducing our environmental impact and promoting the progress of our community and the whole society." />
+        <MultipleParagraphs paragraphs={section4.paragraphs} />
       </SectionDropDown>
     </main>
   );
