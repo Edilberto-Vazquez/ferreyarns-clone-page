@@ -1,0 +1,382 @@
+[
+  {
+    "id": "section1",
+    "sectionName": "Ferre / Products",
+    "title": "Building a zero-impact fashion",
+    "img": "/assets/images/products/products.jpg",
+    "paragraphs": [
+      "We make high-quality recycled yarns for all types of fashion products, accessories and home textiles. Our products are made with Recover™, the lowest-impact recycled cotton fiber in today’s global market, according to the Higg MSI Index.",
+      "We have a passion for low-impact yarns and a deep knowledge of what a recycled yarn is capable of. Our Yarn Consultants work with you to understand your brand’s needs and help you carry out your fashion projects by creating the best blend for your garments."
+    ]
+  },
+  {
+    "id": "section2",
+    "img": "/assets/icons/products/ferre-yarns.svg",
+    "paragraphs": [
+      "Ferre yarns are made from recycled cotton textile waste, thus a percentage of other fibers such as polyester, viscose, acrylic, wool or nylon may be identified during final composition testing."
+    ],
+    "materialSection": [
+      { "tab": 0, "name": "All" },
+      { "tab": 1, "name": "Recover™ recycled cotton" },
+      { "tab": 2, "name": "Recycled Polyester" },
+      { "tab": 3, "name": "Recycled wool" },
+      { "tab": 4, "name": "Organic cotton" },
+      { "tab": 5, "name": "Post-consumer" },
+      { "tab": 6, "name": "TENCEL™" },
+      { "tab": 7, "name": "Acrylic" },
+      { "tab": 8, "name": "Polyester" }
+    ],
+
+    "materialItem": [
+      {
+        "tabs": [0, 1, 7],
+        "img": "/assets/icons/products/f_images/funo.svg",
+        "type": "COPAC",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 28", "Ne 17"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "50%"
+          },
+
+          {
+            "name": "Acrylic",
+            "img": "/assets/icons/products/materials/acrylic.svg",
+            "percentage": "45%"
+          },
+
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "5%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 8],
+        "img": "/assets/icons/products/f_images/funo.svg",
+        "type": "POLICOTON",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 40", "Ne 24"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "52%"
+          },
+          {
+            "name": "Polyester",
+            "img": "/assets/icons/products/materials/polyester.svg",
+            "percentage": "45%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "3%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 8],
+        "img": "/assets/icons/products/f_images/funo.svg",
+        "type": "COTOPOL 30",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 30", "Ne 18"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "60%"
+          },
+          {
+            "name": "Polyester",
+            "img": "/assets/icons/products/materials/polyester.svg",
+            "percentage": "35%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "5%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 8],
+        "img": "/assets/icons/products/f_images/funo.svg",
+        "type": "COTOTAP",
+        "aplication": "Weaving.",
+        "specs": ["Nm 15", "Ne 9"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "70%"
+          },
+          {
+            "name": "Polyester",
+            "img": "/assets/icons/products/materials/polyester.svg",
+            "percentage": "25%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "5%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 8],
+        "img": "/assets/icons/products/f_images/funo.svg",
+        "type": "COTOPOL 20",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 20", "Ne 12"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "70%"
+          },
+          {
+            "name": "Polyester",
+            "img": "/assets/icons/products/materials/polyester.svg",
+            "percentage": "25%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "5%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 8],
+        "img": "/assets/icons/products/f_images/funo.svg",
+        "type": "COTOPOL 90/10",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 20", "Ne 12"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "87%"
+          },
+          {
+            "name": "Polyester",
+            "img": "/assets/icons/products/materials/polyester.svg",
+            "percentage": "10%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "3%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 2],
+        "img": "/assets/icons/products/f_images/fblue.svg",
+        "type": "B-52",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 34", "Ne 20", "Nm 50", "Ne 30", "Nm28", "Ne 17"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "50%"
+          },
+          {
+            "name": "Recycled Polyester",
+            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "percentage": "47%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "3%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 2],
+        "img": "/assets/icons/products/f_images/fblue.svg",
+        "type": "B-75",
+        "aplication": "Weaving.",
+        "specs": ["Nm 13.5", "Ne 8"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "70%"
+          },
+          {
+            "name": "Recycled Polyester",
+            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "percentage": "25%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "5%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 4],
+        "img": "/assets/icons/products/f_images/fearth.svg",
+        "type": "E-50",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 44", "Ne 26", "Nm 28", "Ne 17"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "50%"
+          },
+          {
+            "name": "Organic cotton",
+            "img": "/assets/icons/products/materials/organic-cotton.svg",
+            "percentage": "50%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 2, 3],
+        "img": "/assets/icons/products/f_images/fearth.svg",
+        "type": "W-25",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 28", "Ne 17"],
+        "materials": [
+          {
+            "name": "Recycled post-industrial wool",
+            "img": "/assets/icons/products/materials/wool.svg",
+            "percentage": "25%"
+          },
+          {
+            "name": "Recycled Polyester",
+            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "percentage": "55%"
+          },
+          {
+            "name": "Polyamide",
+            "img": "/assets/icons/products/materials/polyamide.svg",
+            "percentage": "17%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "5%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 4, 5],
+        "img": "/assets/icons/products/f_images/fjeans.svg",
+        "type": "J-30",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 15", "Ne 9"],
+        "materials": [
+          {
+            "name": "Recover™ recycled denim",
+            "img": "/assets/icons/products/materials/denim.svg",
+            "percentage": "27%"
+          },
+          {
+            "name": "Organic cotton",
+            "img": "/assets/icons/products/materials/organic-cotton.svg",
+            "percentage": "70%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "3%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 4, 5],
+        "img": "/assets/icons/products/f_images/fjeans.svg",
+        "type": "j-50",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 15", "Ne 9"],
+        "materials": [
+          {
+            "name": "Recover™ recycled denim",
+            "img": "/assets/icons/products/materials/denim.svg",
+            "percentage": "45%"
+          },
+          {
+            "name": "Organic cotton",
+            "img": "/assets/icons/products/materials/organic-cotton.svg",
+            "percentage": "50%"
+          },
+          {
+            "name": "Other fibers",
+            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "percentage": "5%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 2],
+        "img": "/assets/icons/products/f_images/fearth.svg",
+        "type": "T-25",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 50", "Ne 30"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "25%"
+          },
+          {
+            "name": "Recycled Polyester",
+            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "percentage": "75%"
+          }
+        ]
+      },
+      {
+        "tabs": [0, 1, 2, 6],
+        "img": "/assets/icons/products/f_images/funo.svg",
+        "type": "3-25",
+        "aplication": "Knitting, weaving and hosiery.",
+        "specs": ["Nm 50", "Ne 30"],
+        "materials": [
+          {
+            "name": "Recover™ recycled cotton",
+            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "percentage": "25%"
+          },
+          {
+            "name": "Recycled Polyester",
+            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "percentage": "45%"
+          },
+          {
+            "name": "TENCEL™",
+            "img": "/assets/icons/products/materials/tecnel.svg",
+            "percentage": "30%"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section3",
+    "title": "Request our Color Book",
+    "paragraphs": [
+      "In it you will find our stock service products, applications and technical information for all of our yarn families and subfamilies. The Color Book perfectly embodies our passion for beautiful, accurate colors and our constant pursuit of a zero-impact fashion."
+    ],
+    "inputs": [
+      { "type": "text", "name": "name", "placeholder": "Name*" },
+      { "type": "text", "name": "company", "placeholder": "Company*" },
+      { "type": "email", "name": "email", "placeholder": "Email*" },
+      { "type": "text", "name": "phone", "placeholder": "Phone" },
+      { "type": "text", "name": "message", "placeholder": "Message*" }
+    ],
+    "privacy": ["I have read and accept the", "Privacy Policy"],
+    "send": "SEND"
+  }
+]

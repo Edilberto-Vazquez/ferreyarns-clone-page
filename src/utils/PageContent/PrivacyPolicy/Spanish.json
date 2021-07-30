@@ -1,0 +1,107 @@
+[
+  {
+    "id": "section1",
+    "paragraphs": [
+      "La Empresa, está especialmente sensibilizado en la protección de datos de carácter personal de los Usuarios de los servicios del sitio Web. Mediante la presente Política de Privacidad (en adelante, la Política) La Empresa informa a los USUARIOS de los sitios web: http://www.ferreyarns.com, de los usos a los que se someten los datos de carácter personal que se recaban en sitio Web, con el fin de que decidan, libre y voluntariamente, si desean facilitar la información solicitada.",
+      "La Empresa, se reserva la facultad de modificar esta Política con el objeto de adaptarla a novedades legislativas, criterios jurisprudenciales, prácticas del sector, o intereses de la entidad. Cualquier modificación en la misma será anunciada con la debida antelación, a fin de que tenga perfecto conocimiento de su contenido."
+    ]
+  },
+  {
+    "id": "section2",
+    "title": "CONTROLLER",
+    "paragraphs": [
+      "El responsable del tratamiento de los datos de carácter personal es Hilaturas Ferre.",
+      "Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062"
+    ],
+    "links": {
+      "paragraphs": ["Telephone:", "E-mail:"],
+      "hyper": [
+        {
+          "name": "info@ferreyarns.com",
+          "link": "mailto:info@ferreyarns.com"
+        },
+        {
+          "name": "+52 (222) 268 5761",
+          "link": "tel:+522222685761"
+        }
+      ]
+    }
+  },
+  {
+    "id": "section3",
+    "title": "FINALIDAD DEL TRATAMIENTO",
+    "paragraphs": [
+      "Los datos de carácter personal de los colegiados son objeto de tratamiento por parte Hilaturas Ferre. La finalidad de la recogida de estos datos consiste en:"
+    ],
+    "list": [
+      { "description": "Gestión de Clientes y Proveedores de Hilaturas Ferre" },
+      { "description": "Prestación de servicios solicitados." }
+    ]
+  },
+  {
+    "id": "section4",
+    "title": "PLAZO DE CONSERVACIÓN",
+    "paragraphs": [
+      "Los datos personales proporcionados se conservarán durante el plazo correspondiente para cumplir con las obligaciones legales, o se solicite su supresión por el interesado y este esté legitimado para ello."
+    ]
+  },
+  {
+    "id": "section5",
+    "title": "LEGITIMACIÓN",
+    "paragraphs": [
+      "La Empresa, está legitimada al tratamiento de datos personales, en base al consentimiento otorgado por el interesado para uno o varios fines específicos, tal y como recoge el artículo 6.1. a) del Reglamento General de Protección de datos personales.",
+      "El presente sitio web incluye hipervínculos (links) que permiten al visitante trasladarse a otras páginas. La Empresa no asume responsabilidad alguna en cuanto a la política de protección de datos que pudiera haberse adoptado en los mismos."
+    ]
+  },
+  {
+    "id": "section6",
+    "title": "DESTINATARIOS",
+    "paragraphs": [
+      "La Empresa no cede a terceras entidades sus datos en general, salvo en los casos en que ésta sea necesaria para la organización de determinadas actividades, o la prestación de servicios. En todo caso, las cesiones previstas son regularizadas mediante la suscripción de contratos, no pudiendo la entidad cesionaria emplear la información cedida para otros fines que los establecidos por La Empresa."
+    ]
+  },
+  {
+    "id": "section7",
+    "title": "DERECHOS DE LOS USUARIOS",
+    "paragraphs1": [
+      "El interesado de los datos personales, en todo caso podrá ejercitar los derechos que le asisten, de acuerdo con el RGPD, y que son:"
+    ],
+    "list": [
+      {
+        "description": "Derecho a solicitar el acceso a los datos personales relativos al interesado,"
+      },
+      {
+        "description": "Derecho a solicitar su rectificación o supresión (derecho al olvido)"
+      },
+      { "description": "Derecho a solicitar la limitación de su tratamiento," },
+      { "description": "Derecho a oponerse al tratamiento," },
+      { "description": "Derecho a la portabilidad de los datos" }
+    ],
+    "paragraphs2": [
+      "El interesado podrá ejercitar tales derechos mediante solicitud acompañada de una fotocopia de su D.N.I, y en la que especificará cuál de éstos solicita sea satisfecho, remitida a la dirección: Avda. Les Molines, 2 (03450) BANYERES DE MARIOLA Alicante – Spain"
+    ]
+  },
+  {
+    "id": "section8",
+    "title": "MEDIDAS DE SEGURIDAD",
+    "paragraphs": [
+      "El responsable del tratamiento Hilaturas Ferre aplicará medidas técnicas y organizativas apropiadas para garantizar un nivel de seguridad adecuado al riesgo del mismo."
+    ]
+  },
+  {
+    "id": "section9",
+    "title": "USO DE COOKIES",
+    "paragraphs": [
+      "Le informamos que nuestro servidor no utiliza cookies ni otros procedimientos invisibles de recogida de información, no almacenando ningún tipo de archivo en su equipo informático."
+    ]
+  },
+  {
+    "id": "section10",
+    "title": "CAMBIO DE NORMATIVA",
+    "paragraphs": [
+      "La Empresa se reserva el derecho de modificar la presente política con el objeto de adaptarla a las novedades legislativas o jurisprudenciales, así como las que pudieran derivarse de códigos tipo existentes en la materia o por motivos corporativos.",
+      "Tales cambios serán comunicados con la antelación que fuera necesaria en nuestra página Web, sin perjuicio de reclamar el consentimiento necesario de los afectados cuando éste no se considerase otorgado con arreglo a los términos de la presente política.",
+      "Cualquier duda, preguntas o comentarios que pudiera albergar con referencia a la presente normativa, puede consultarla dirigiendo su comunicación al respecto a hifesa@hifesa.com"
+    ]
+  }
+]

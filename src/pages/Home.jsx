@@ -1,5 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
+import useChangeLanguage from "../utils/hooks/useChangeLanguage";
+import English from "../utils/PageContent/Home/English.json";
+import Spanish from "../utils/PageContent/Home/Spanish.json";
 import SectionDropDown from "../components/SectionDropDown";
 import {
   FormSection,
@@ -10,70 +13,61 @@ import {
   FormButton,
 } from "../components/FormComponents";
 import { MultipleParagraphs } from "../components/GeneralComponents";
-import { homeEN, homeES } from "../utils/PageContent/Home";
 import "./styles/Home.css";
 
 const Home = () => {
-  const { language } = useContext(LanguageChanger);
-  let idiom = {};
-
   // set language
-  if (language === "en") {
-    idiom = homeEN;
-  } else if (language === "es") {
-    idiom = homeES;
-  }
+  const { language } = useContext(LanguageChanger);
+  const [idiom] = useChangeLanguage(language, English, Spanish);
+  const [section1, section2, section3, section4, section5, section6] = idiom;
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <main className="home">
-      {/* slogan section */}
+      {/* slogan section1 */}
       <div className="title-section">
         <video autoPlay muted loop className="title-section__video">
-          <source src={idiom.video} type="video/mp4" />
+          <source src={section1.video} type="video/mp4" />
         </video>
         <div className="title-section__title">
-          <h1>{idiom.title}</h1>
+          <h1>{section1.title}</h1>
         </div>
       </div>
 
       <div className="brand-features">
-        {/* Building a zero-impact fashion */}
+        {/* Building a zero-impact fashion section2 */}
         <SectionDropDown
-          title={idiom.buldingFashion.title}
-          img={idiom.buldingFashion.img}
+          title={section2.title}
+          img={section2.img}
           xAxis="right"
         >
-          <MultipleParagraphs paragraphs={idiom.buldingFashion.paragraphs} />
+          <MultipleParagraphs paragraphs={section2.paragraphs} />
         </SectionDropDown>
 
-        {/* A circular process */}
-        <SectionDropDown
-          title={idiom.circularProc.title}
-          img={idiom.circularProc.img}
-          xAxis="left"
-        >
-          <MultipleParagraphs paragraphs={idiom.circularProc.paragraphs} />
+        {/* A circular process section3*/}
+        <SectionDropDown title={section3.title} img={section3.img} xAxis="left">
+          <MultipleParagraphs paragraphs={section3.paragraphs} />
         </SectionDropDown>
 
-        {/* Fully traceable and transparent */}
+        {/* Fully traceable and transparent section4 */}
         <SectionDropDown
-          title={idiom.fullyTT.title}
-          img={idiom.fullyTT.img}
+          title={section4.title}
+          img={section4.img}
           xAxis="right"
         >
-          <MultipleParagraphs paragraphs={idiom.fullyTT.paragraphs} />
+          <MultipleParagraphs paragraphs={section4.paragraphs} />
         </SectionDropDown>
       </div>
 
-      {/* How can we help you? form */}
-      <FormSection title={idiom.form.title}>
+      {/* How can we help you? form section5 */}
+      <FormSection title={section5.title}>
         <FormDescription>
-          <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
+          <MultipleParagraphs paragraphs={section5.paragraphs} />
         </FormDescription>
         <FormInputsContainer desktopShort>
-          {idiom.form.inputs.map((item, index) =>
+          {section5.inputs.map((item, index) =>
             item.name !== "message" ? (
               <FormInputs
                 key={index}
@@ -90,16 +84,16 @@ const Home = () => {
             )
           )}
         </FormInputsContainer>
-        <FormButton btnName={idiom.form.send} />
+        <FormButton btnName={section5.send} />
       </FormSection>
 
-      {/* Our clientes */}
+      {/* Our clientes section6 */}
       <div className="our-clientes">
         <div className="our-clientes__title">
-          <h2 className="title-black">{idiom.ourClients.title}</h2>
+          <h2 className="title-black">{section6.title}</h2>
         </div>
         <div className="our-clientes__img border-black">
-          {idiom.ourClients.imgList.map((item, index) => (
+          {section6.brandImgs.map((item, index) => (
             <img key={index} src={item} alt="" />
           ))}
         </div>

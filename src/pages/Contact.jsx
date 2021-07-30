@@ -1,5 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
+import useChangeLanguage from "../utils/hooks/useChangeLanguage";
+import English from "../utils/PageContent/Contact/English.json";
+import Spanish from "../utils/PageContent/Contact/Spanish.json";
 import {
   FormSection,
   FormDescription,
@@ -12,43 +15,38 @@ import {
   ContainerWithTitle,
   MultipleParagraphs,
 } from "../components/GeneralComponents.jsx";
-import { contacEN, contacES } from "../utils/PageContent/Contact";
 
 const Contact = () => {
   const { language } = useContext(LanguageChanger);
-  let idiom = {};
+  const [idiom] = useChangeLanguage(language, English, Spanish);
+  const [section1] = idiom;
 
-  // set language
-  if (language === "en") {
-    idiom = contacEN;
-  } else if (language === "es") {
-    idiom = contacES;
-  }
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <main className="contac">
-      <FormSection title={idiom.form.title}>
+      {/* How can we help you? section1 */}
+      <FormSection title={section1.title}>
         <FormDescription>
-          <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
-          <ContainerWithTitle title={idiom.form.sectionPar.title}>
-            <MultipleParagraphs paragraphs={idiom.form.sectionPar.paragraphs} />
+          <MultipleParagraphs paragraphs={section1.paragraphs} />
+          <ContainerWithTitle title={section1.sectionPar.title}>
+            <MultipleParagraphs paragraphs={section1.sectionPar.paragraphs} />
 
             <MultipleParagraphs paragraphs={["Ph. "]}>
-              <a href={idiom.form.sectionPar.links[0].link}>
-                {idiom.form.sectionPar.links[0].name}
+              <a href={section1.sectionPar.links[0].link}>
+                {section1.sectionPar.links[0].name}
               </a>
             </MultipleParagraphs>
             <MultipleParagraphs paragraphs={["E. "]}>
-              <a href={idiom.form.sectionPar.links[1].link}>
-                {idiom.form.sectionPar.links[1].name}
+              <a href={section1.sectionPar.links[1].link}>
+                {section1.sectionPar.links[1].name}
               </a>
             </MultipleParagraphs>
           </ContainerWithTitle>
         </FormDescription>
         <FormInputsContainer desktopShort>
-          {idiom.form.inputs.map((item, index) =>
+          {section1.inputs.map((item, index) =>
             item.name !== "message" ? (
               <FormInputs
                 key={index}

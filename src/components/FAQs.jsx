@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import { faqsEN, faqsES } from "../utils/PageContent/FAQs";
+import useChangeLanguage from "../utils/hooks/useChangeLanguage";
+import English from "../utils/PageContent/Faqs/English.json";
+import Spanish from "../utils/PageContent/Faqs/Spanish.json";
 import { ContainerWithTitle, MultipleParagraphs } from "./GeneralComponents";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import useDisplayAnm from "../utils/animations/useDisplayAnm";
@@ -35,25 +37,19 @@ const FAQsQuestions = ({ question, answer }) => {
 export const FAQs = () => {
   // hook to get the animation
   const [refOpc] = useOpacityAnm();
-  // hook to get the type language
+  // hook to set the type language
   const { language } = useContext(LanguageChanger);
-  let idiom = {};
-
-  // set language
-  if (language === "en") {
-    idiom = faqsEN;
-  } else if (language === "es") {
-    idiom = faqsES;
-  }
+  const [idiom] = useChangeLanguage(language, English, Spanish);
+  const [section1, section2] = idiom;
 
   return (
     <div ref={refOpc} className="faqs some-questions__item">
       {/* Faqs description section */}
       <ContainerWithTitle>
-        <MultipleParagraphs paragraphs={idiom.paragraphs} />
+        <MultipleParagraphs paragraphs={section1.paragraphs} />
       </ContainerWithTitle>
       {/* Faqs questions section*/}
-      {idiom.questions.map((item, index) => {
+      {section2.questions.map((item, index) => {
         return (
           <FAQsQuestions
             key={index}

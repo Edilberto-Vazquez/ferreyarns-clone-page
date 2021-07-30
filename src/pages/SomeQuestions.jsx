@@ -1,31 +1,25 @@
 import React, { useContext, useState, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
+import useChangeLanguage from "../utils/hooks/useChangeLanguage";
+import English from "../utils/PageContent/SomeQuestions/English.json";
+import Spanish from "../utils/PageContent/SomeQuestions/Spanish.json";
 import FAQs from "../components/FAQs";
 import PrivacyPolicy from "../components/PrivacyPolicy";
 import Cookies from "../components/Cookies";
 import LegalNotice from "../components/LegalNotice";
 import Projects from "../components/Projects";
 import { SectionMenu } from "../components/GeneralComponents";
-import "./styles/SomeQuestions.css";
-import {
-  someQuestionsEN,
-  someQuestionsES,
-} from "../utils/PageContent/someQuestions";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import "./styles/SomeQuestions.css";
 
 const SomeQuestions = ({ tabSection }) => {
+  const { language } = useContext(LanguageChanger);
+  const [idiom] = useChangeLanguage(language, English, Spanish);
+  const [section1] = idiom;
   const [section, setSection] = useState("");
   const [refOpcTitle] = useOpacityAnm();
   const [refOpcSection] = useOpacityAnm();
-  const { language } = useContext(LanguageChanger);
-  let idiom = {};
 
-  // set language
-  if (language === "en") {
-    idiom = someQuestionsEN;
-  } else if (language === "es") {
-    idiom = someQuestionsES;
-  }
   useEffect(() => {
     window.scrollTo(0, 0);
     setSection(tabSection);
@@ -56,7 +50,7 @@ const SomeQuestions = ({ tabSection }) => {
       </div>
       <div ref={refOpcSection} className="section-options border-black">
         <SectionMenu
-          listItems={idiom.sections}
+          listItems={section1.sections}
           section={section}
           setSection={setSection}
           focusType="underline"

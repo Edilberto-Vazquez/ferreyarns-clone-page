@@ -1,124 +1,110 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
+import useChangeLanguage from "../utils/hooks/useChangeLanguage";
+import English from "../utils/PageContent/Cookies/English.json";
+import Spanish from "../utils/PageContent/Cookies/Spanish.json";
 import {
   ContainerWithTitle,
   MultipleList,
   MultipleParagraphs,
 } from "./GeneralComponents";
-import { cookiesEN, cookiesES } from "../utils/PageContent/Cookies";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
 const Cookies = () => {
   const { language } = useContext(LanguageChanger);
+  const [idiom] = useChangeLanguage(language, English, Spanish);
+  const [section1, section2, section3, section4, section5] = idiom;
   const [refOpc] = useOpacityAnm();
-  let idiom = {};
-
-  // set language
-  if (language === "en") {
-    idiom = cookiesEN;
-  } else if (language === "es") {
-    idiom = cookiesES;
-  }
   return (
     <div ref={refOpc} className="cookies some-questions__item">
-      {/* What are cookies? section */}
-      <ContainerWithTitle title={idiom.whatCookies.title}>
-        <MultipleParagraphs paragraphs={idiom.whatCookies.paragraphs} />
+      {/* What are cookies? section1 */}
+      <ContainerWithTitle title={section1.title}>
+        <MultipleParagraphs paragraphs={section1.paragraphs} />
       </ContainerWithTitle>
 
-      {/* Why Hilaturas Ferre uses cookies? section */}
-      <ContainerWithTitle title={idiom.hilaturasFC.title}>
-        <MultipleParagraphs paragraphs={idiom.hilaturasFC.paragraphs} />
+      {/* Why Hilaturas Ferre uses cookies? section2 */}
+      <ContainerWithTitle title={section2.title}>
+        <MultipleParagraphs paragraphs={section2.paragraphs} />
       </ContainerWithTitle>
 
-      {/* What we do with the different types of cookies? section */}
-      <ContainerWithTitle title={idiom.differentCookies.title}>
+      {/* What we do with the different types of cookies? section3 */}
+      <ContainerWithTitle title={section3.title}>
         {/* Session cookies */}
         <p>
-          <strong>{idiom.differentCookies.sessionCookies.title}</strong>
-          {idiom.differentCookies.sessionCookies.description}
+          <strong>{section3.sessionCookies.title}</strong>
+          {section3.sessionCookies.description}
         </p>
         {/* Persistent cookies */}
         <p>
-          <strong>{idiom.differentCookies.persistentCookies.title}</strong>
-          {idiom.differentCookies.persistentCookies.description}
+          <strong>{section3.persistentCookies.title}</strong>
+          {section3.persistentCookies.description}
         </p>
         {/* Own cookies */}
         <p>
-          <strong>{idiom.differentCookies.ownCookies.title}</strong>
-          {idiom.differentCookies.ownCookies.description}
+          <strong>{section3.ownCookies.title}</strong>
+          {section3.ownCookies.description}
         </p>
-        <MultipleList
-          listType="ul"
-          listItems={idiom.differentCookies.ownCookies.list}
-        />
+        <MultipleList listType="ul" listItems={section3.ownCookies.list} />
         {/* Third-party statistics */}
         <p>
-          <strong>{idiom.differentCookies.thirdParty.title}</strong>
-          {idiom.differentCookies.thirdParty.description}
+          <strong>{section3.thirdParty.title}</strong>
+          {section3.thirdParty.description}
         </p>
-        <MultipleParagraphs
-          paragraphs={idiom.differentCookies.thirdParty.paragraphs}
-        />
+        <MultipleParagraphs paragraphs={section3.thirdParty.paragraphs} />
         {/* Technical cookies */}
         <p>
-          <strong>{idiom.differentCookies.tecnicalCookies.title}</strong>
-          {idiom.differentCookies.tecnicalCookies.description}
+          <strong>{section3.tecnicalCookies.title}</strong>
+          {section3.tecnicalCookies.description}
         </p>
-        <MultipleList
-          listType="ul"
-          listItems={idiom.differentCookies.tecnicalCookies.list}
-        />
+        <MultipleList listType="ul" listItems={section3.tecnicalCookies.list} />
         {/* Customization cookies */}
         <p>
-          <strong>{idiom.differentCookies.customizationCookies.title}</strong>
-          {idiom.differentCookies.customizationCookies.description}
+          <strong>{section3.customizationCookies.title}</strong>
+          {section3.customizationCookies.description}
         </p>
         <MultipleList
           listType="ul"
-          listItems={idiom.differentCookies.customizationCookies.list}
+          listItems={section3.customizationCookies.list}
         />
         {/* Analytical cookies */}
         <p>
-          <strong>{idiom.differentCookies.analyticalCookies.title}</strong>
-          {idiom.differentCookies.analyticalCookies.description}
+          <strong>{section3.analyticalCookies.title}</strong>
+          {section3.analyticalCookies.description}
         </p>
         <MultipleList
           listType="ul"
-          listItems={idiom.differentCookies.analyticalCookies.list}
+          listItems={section3.analyticalCookies.list}
         />
         {/* Advertising cookies */}
         <p>
-          <strong>{idiom.differentCookies.adversitingCookies.title}</strong>
-          {idiom.differentCookies.adversitingCookies.description}
+          <strong>{section3.adversitingCookies.title}</strong>
+          {section3.adversitingCookies.description}
         </p>
         <MultipleList
           listType="ul"
-          listItems={idiom.differentCookies.adversitingCookies.list}
+          listItems={section3.adversitingCookies.list}
         />
         {/* Flash cookies */}
         <p>
-          <strong>{idiom.differentCookies.flasCookies.title}</strong>
-          {idiom.differentCookies.flasCookies.description}
+          <strong>{section3.flasCookies.title}</strong>
+          {section3.flasCookies.description}
         </p>
-        <MultipleParagraphs
-          paragraphs={idiom.differentCookies.flasCookies.paragraphs}
-        />
+        <MultipleParagraphs paragraphs={section3.flasCookies.paragraphs} />
       </ContainerWithTitle>
-      {/* How do I change cookie settings? */}
-      <ContainerWithTitle title={idiom.howChangeCookieSet.title}>
-        {idiom.howChangeCookieSet.links.map((item, index) => (
+      {/* How do I change cookie settings? section4 */}
+      <ContainerWithTitle title={section4.title}>
+        {section4.links.map((item, index) => (
           <a key={index} href={item.link}>
             {item.name}
           </a>
         ))}
-        <MultipleParagraphs paragraphs={idiom.howChangeCookieSet.paragraphs} />
+        <MultipleParagraphs paragraphs={section4.paragraphs} />
       </ContainerWithTitle>
-      {/* Revocation of consent */}
-      <ContainerWithTitle title={idiom.revocationConsent.title}>
-        <MultipleParagraphs paragraphs={idiom.revocationConsent.paragraphs1} />
-        <MultipleList listType="ul" listItems={idiom.revocationConsent.list} />
-        <MultipleParagraphs paragraphs={idiom.revocationConsent.paragraphs2} />
+      {/* Revocation of consent section5 */}
+      <ContainerWithTitle title={section5.title}>
+        <MultipleParagraphs paragraphs={section5.paragraphs1} />
+        <MultipleList listType="ul" listItems={section5.list} />
+        <MultipleParagraphs paragraphs={section5.paragraphs2} />
       </ContainerWithTitle>
     </div>
   );

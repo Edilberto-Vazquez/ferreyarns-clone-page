@@ -1,0 +1,81 @@
+[
+  {
+    "id": "section1",
+    "sectionName": "Ferre / Certificaciones",
+    "title": "Asegurar la transparencia",
+    "img": "/assets/images/certifications/certifications.jpg",
+    "paragraphs": [
+      "Todas nuestras afirmaciones sobre Sustentabilidad están respaldadas por las certificaciones más respetadas, así como por los estudios que hemos realizado utilizando la metodología LCA (Life Cycle Assessment), que a su vez han sido revisados por organismos independientes."
+    ]
+  },
+  {
+    "id": "section2",
+    "title": "Certificaciones",
+    "certsItem": [
+      {
+        "img": "/assets/images/certifications/certificacion-oeko.png",
+        "title": "Standard 100 of OEKO-TEX®",
+        "paragraphs": [
+          "Ferre tiene la certificación STANDARD 100 de OEKO-TEX®. Esta es una de las certificaciones más conocidas dentro de los tests de sustancias nocivas en productos textiles. Avala la confianza del cliente y la alta seguridad del producto. La prueba es realizada por institutos asociados independientes OEKO-TEX® y se tienen en cuenta numerosas sustancias reguladas y no reguladas que pueden ser perjudiciales para la salud humana. En muchos casos, las exigencias del STANDARD 100 superan los requisitos nacionales e internacionales."
+        ]
+      },
+      {
+        "img": "/assets/images/certifications/certificacion-standard.png",
+        "title": "Global Recycled Standard (GRS)",
+        "paragraphs": [
+          "Ferre tiene la certificación Global Recycled Standard (GRS). El Estándar Global de Reciclaje es un estándar de producto internacional, voluntario y completo, que fija requisitos para la certificación por parte de terceros de contenido reciclado, cadena de custodia, prácticas sociales y medioambientales, y restricciones químicas. El GRS está pensado para satisfacer las necesidades de empresas que buscan verificar el contenido reciclado de sus productos y para verificar prácticas sociales, medioambientales y químicas responsables en su producción."
+        ]
+      },
+      {
+        "img": "/assets/images/certifications/certificacion-organic.png",
+        "title": "OCS Blended – Organic Content Standard",
+        "paragraphs": [
+          "Ferre tiene la certificación OCS. El Estándar de Contenido Orgánico (OCS por sus siglas en inglés) se aplica a productos no alimentarios que contengan un 5-100% de materia orgánica. Verifica la presencia y cantidad de materia orgánica en un producto final. Además, OCS hace un seguimiento del flujo de una materia prima desde su origen al producto final. Una vez realizado el seguimiento, este proceso es certificado por un tercero acreditado."
+        ]
+      },
+
+      {
+        "img": "/assets/images/certifications/certificacion-reduzco.png",
+        "title": "Calculo, compenso, reduzco",
+        "paragraphs": [
+          "Ferre tiene la certificación “Calculo, compenso, reduzco”. Este registro de huella de carbono, creado por el gobierno de España, recoge los esfuerzos de las organizaciones españolas en el cálculo y reducción de las emisiones de gases de efecto invernadero que genera su actividad. A su vez, les facilita la posibilidad de compensar toda o parte de su huella de carbono, mediante una serie de proyectos forestales ubicados en territorio nacional. Estos proyectos, integran numerosos beneficios ambientales y sociales, entre los que se encuentra la absorción de dióxido de carbono de la atmósfera, también conocida como secuestro de carbono."
+        ]
+      },
+
+      {
+        "img": "/assets/images/certifications/icon-lca.svg",
+        "title": "LCA",
+        "paragraphs": [
+          "En Ferre utilizamos la metodología Life Cycle Assessment (LCA) para medir la huella medioambiental de nuestros productos a lo largo de todo su ciclo de vida. Para ello observamos métricas como la huella de carbono, la huella hídrica, el uso de químicos y otras. Esta evaluación del impacto ambiental de nuestros productos ha sido revisada por organismos independientes -AITEX, Universitat de València y UNESCO-, para garantizar la transparencia."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section3",
+    "title": "Asociaciones y Compromisos",
+    "assoCommitsItem": [
+      {
+        "img": "/assets/images/certifications/certificacion-compact.png",
+        "title": "Pacto Mundial de la ONU",
+        "paragraphs": [
+          "Ferre es firmante del Pacto Mundial de la ONU, una iniciativa de las Naciones Unidas para llamar a las empresas de todo el mundo a alinear sus estrategias y operaciones con los principios universales sobre derechos humanos, trabajo, medio ambiente y anticorrupción, y tomar acciones que promuevan los objetivos sociales."
+        ]
+      },
+      {
+        "img": "/assets/images/certifications/certificacion-exchange.png",
+        "title": "Textile Exchange",
+        "paragraphs": [
+          "Ferre es miembro de Textile Exchange, una organización global sin ánimo de lucro cuyo objetivo es minimizar los impactos negativos de la industria textil global y maximizar sus efectos positivos, así como ayudar a establecer buenas prácticas y modelos de negocio justos en toda la cadena de suministro."
+        ]
+      },
+      {
+        "img": "/assets/images/certifications/certificacion-circular.png",
+        "title": "Circular Fashion",
+        "paragraphs": [
+          "Ferre es miembro de Circular Fashion, una agencia de cambio Sustentable que crea productos y sistemas innovadores para impulsar la economía circular en la moda y la industria textil."
+        ]
+      }
+    ]
+  }
+]

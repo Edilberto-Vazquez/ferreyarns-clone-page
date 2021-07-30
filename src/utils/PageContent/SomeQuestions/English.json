@@ -1,0 +1,12 @@
+[
+  {
+    "id": "section1",
+    "sections": [
+      { "tab": 0, "name": "FAQs" },
+      { "tab": 1, "name": "Privacy Policy" },
+      { "tab": 2, "name": "Cookie Policy" },
+      { "tab": 3, "name": "Legal Notice" },
+      { "tab": 4, "name": "Projects" }
+    ]
+  }
+]

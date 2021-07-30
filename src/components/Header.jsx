@@ -28,6 +28,7 @@ const Header = () => {
           <li>
             <Link to={idiom.products[1]}>{idiom.products[0]}</Link>
           </li>
+          <li>Sustainability</li>
           <li>
             <Link to={idiom.certifications[1]}>{idiom.certifications[0]}</Link>
           </li>
@@ -61,6 +62,7 @@ const Header = () => {
           <li>
             <Link to={idiom.products[1]}>{idiom.products[0]}</Link>
           </li>
+          <li>Sustainability</li>
           <li>
             <Link to={idiom.certifications[1]}>{idiom.certifications[0]}</Link>
           </li>

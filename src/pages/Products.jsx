@@ -1,5 +1,8 @@
 import React, { useState, useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
+import useChangeLanguage from "../utils/hooks/useChangeLanguage";
+import English from "../utils/PageContent/Products/English.json";
+import Spanish from "../utils/PageContent/Products/Spanish.json";
 import SectionDropDown from "../components/SectionDropDown";
 import {
   MultipleParagraphs,
@@ -14,53 +17,48 @@ import {
   FormButton,
 } from "../components/FormComponents";
 import { MaterialsContainer, MaterialsTypes } from "../components/Materials";
-import { productsEN, productsES } from "../utils/PageContent/Products";
 import "./styles/Products.css";
 
 const Products = () => {
-  // set type ecological section
-  const [section, setSection] = useState({ tab: 0, name: "All" });
-
   // set language
   const { language } = useContext(LanguageChanger);
-  let idiom = {};
-  if (language === "en") {
-    idiom = productsEN;
-  } else if (language === "es") {
-    idiom = productsES;
-  }
+  const [idiom] = useChangeLanguage(language, English, Spanish);
+  const [section1, section2, section3] = idiom;
+  // set materials section
+  const [section, setSection] = useState({ tab: 0, name: "All" });
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <main className="products">
-      {/* Building a zero-impact fashion section */}
+      {/* Building a zero-impact fashion section1 */}
       <SectionDropDown
-        title={idiom.zeroImpact.title}
-        img={idiom.zeroImpact.img}
-        sectionName={idiom.zeroImpact.sectionName}
+        title={section1.title}
+        img={section1.img}
+        sectionName={section1.sectionName}
         xAxis="left"
       >
-        <MultipleParagraphs paragraphs={idiom.zeroImpact.paragraphs} />
+        <MultipleParagraphs paragraphs={section1.paragraphs} />
       </SectionDropDown>
 
-      {/* materials section */}
+      {/* materials section2 */}
       <section className="materials">
         <div className="ecological-section-description">
-          <img src={idiom.ecologicalSection.img} alt="" />
-          <MultipleParagraphs paragraphs={idiom.ecologicalSection.paragraphs} />
+          <img src={section2.img} alt="" />
+          <MultipleParagraphs paragraphs={section2.paragraphs} />
         </div>
         <div className="section-options border-white">
           <SectionMenu
-            listItems={idiom.ecologicalSection.materialSection}
+            listItems={section2.materialSection}
             section={section}
             setSection={setSection}
             focusType="color"
             fontColor="white"
           />
           <div className="materials__items">
-            {idiom.ecologicalSection.materialItem.map((item, index) => (
+            {section2.materialItem.map((item, index) => (
               <MaterialsContainer
                 key={index}
                 title={item.img}
@@ -77,13 +75,13 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Request our Color Book form */}
-      <FormSection title={idiom.form.title}>
+      {/* Request our Color Book form section3 */}
+      <FormSection title={section3.title}>
         <FormDescription>
-          <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
+          <MultipleParagraphs paragraphs={section3.paragraphs} />
         </FormDescription>
         <FormInputsContainer desktopShort>
-          {idiom.form.inputs.map((item, index) =>
+          {section3.inputs.map((item, index) =>
             item.name !== "message" ? (
               <FormInputs
                 key={index}
@@ -100,7 +98,7 @@ const Products = () => {
             )
           )}
         </FormInputsContainer>
-        <FormButton btnName={idiom.form.send} />
+        <FormButton btnName={section3.send} />
       </FormSection>
     </main>
   );

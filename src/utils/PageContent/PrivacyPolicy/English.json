@@ -1,0 +1,107 @@
+[
+  {
+    "id": "section1",
+    "paragraphs": [
+      "The Company is particularly conscious with regards to the data protection of users of the service of the Website. By means of this Privacy Policy (hereinafter, the Policy) The Company informs the USERS of the websites: http://www.ferreyarns.com, of the uses to which the personal data collected in the Website are subject to, in order to decide, freely and voluntarily, if they wish to provide the requested information.",
+      "The Company reserves the right to modify this Policy in order to adapt it to new legislation, jurisprudential criteria, industry practices, or interests of the entity. Any modification in it will be announced in due time, so that you have perfect knowledge of its content."
+    ]
+  },
+  {
+    "id": "section2",
+    "title": "CONTROLLER",
+    "paragraphs": [
+      "The Controller of personal data is: Hilaturas Ferre",
+      "Aquiles Serdán 416-2 San Felipe Hueyotiplan Puebla, Pue. CP 72062"
+    ],
+    "links": {
+      "paragraphs": ["Telephone:", "E-mail:"],
+      "hyper": [
+        {
+          "name": "info@ferreyarns.com",
+          "link": "mailto:info@ferreyarns.com"
+        },
+        {
+          "name": "+52 (222) 268 5761",
+          "link": "tel:+522222685761"
+        }
+      ]
+    }
+  },
+  {
+    "id": "section3",
+    "title": "PURPOSE OF DATA PROCESSING",
+    "paragraphs": [
+      "The personal data of the members are subject to processing by Hilaturas Ferre. The purpose of collecting this data is for:"
+    ],
+    "list": [
+      { "description": "Customer and Supplier Management of Hilaturas Ferre" },
+      { "description": "Provision of requested services." }
+    ]
+  },
+  {
+    "id": "section4",
+    "title": "CONSERVATION PERIOD",
+    "paragraphs": [
+      "The provided personal data will be kept for the corresponding period to comply with legal obligations, or its deletion is requested by the interested party and he or she is entitled to do so."
+    ]
+  },
+  {
+    "id": "section5",
+    "title": "LEGAL STANDING",
+    "paragraphs": [
+      "The Company is entitled to the processing of personal data, based on the consent granted by the interested party for one or more specific purposes, as set forth in article 6.1. a) of the General Regulation of Protection of personal data.",
+      "This website includes hyperlinks (links) that allow visitors to move to other pages. The Company assumes no responsibility whatsoever for the data protection policy that may have been adopted in them."
+    ]
+  },
+  {
+    "id": "section6",
+    "title": "RECIPIENTS",
+    "paragraphs": [
+      "The Company does not transfer its data to third parties in general, except in cases where it is necessary for the organization of certain activities, or the provision of services. In any case, the proposed transfers are regularized by signing contracts, and the transferor cannot use the granted information for other purposes than those established by the Company."
+    ]
+  },
+  {
+    "id": "section7",
+    "title": "USER RIGHTS",
+    "paragraphs1": [
+      "The person interested in personal data, in any case may exercise the rights corresponding to him/her, in accordance with the GDPR, and which are:"
+    ],
+    "list": [
+      {
+        "description": "Right to request access to personal data related to the interested party"
+      },
+      {
+        "description": "Right to request rectification or deletion (right to be forgotten)"
+      },
+      { "description": "Right to request the limitation of their processing" },
+      { "description": "Right to object to processing" },
+      { "description": "Right to data portability" }
+    ],
+    "paragraphs2": [
+      "The interested party may exercise such rights by request accompanied by a photocopy of his/her ID, and in which he/she shall specify which of these rights wants to be satisfied, sending it to the address: Avda. Les Molines, 2 (03450) BANYERES DE MARIOLA Alicante – Spain"
+    ]
+  },
+  {
+    "id": "section8",
+    "title": "SECURITY MEASURES",
+    "paragraphs": [
+      "The Controller of Hilaturas Ferre shall apply appropriate technical and organizational measures to ensure a level of security appropriate to the risk presented."
+    ]
+  },
+  {
+    "id": "section9",
+    "title": "USE OF COOKIES",
+    "paragraphs": [
+      "We inform you that our server does not use cookies or other invisible procedures for collecting information and does not store any type of file on your computer equipment."
+    ]
+  },
+  {
+    "id": "section10",
+    "title": "CHANGE IN REGULATION",
+    "paragraphs": [
+      "The Company reserves the right to modify this policy to bring it into conformity with any new developments in legislation or case law in standard codes of conduct on data protection or in the Company’s strategy.",
+      "Such changes will be communicated as necessary in advance on our Webpage, without detriment to asking for the necessary consent of those affected when it is not considered granted in accordance with the terms of this policy.",
+      "Any doubt, question or comment you may have with reference to these regulations, you can ask about it by sending your communication to info@ferreyarns.com"
+    ]
+  }
+]

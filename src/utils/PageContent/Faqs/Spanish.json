@@ -1,0 +1,69 @@
+[
+  {
+    "id": "section1",
+    "paragraphs": [
+      "FERRE produce hilos de algodón, lana y poliéster reciclados en Europa desde 1947. Esto nos ha proporcionado una amplia experiencia en esta desafiante industria.",
+      "Nuestra factoría de hilados Open End tiene su sede en Banyeres de Mariola, España, y cuenta con la certificación GRS y Oeko-tex.",
+      "Tenemos una amplia gama de productos en stock para servicio inmediato.",
+      "Ferre utiliza algodón y otras fibras recicladas en la fabricación de sus hilos. Debido a esta naturaleza, los hilos Ferre pueden contener pequeñas imperfecciones que son características producto del proceso de reciclaje mecánico.",
+      "Ferre Los hilos Ferre están hechos de residuos textiles reciclados, por lo que un porcentaje de otras fibras como poliéster, viscosa, acrílico, lana o nailon puede identificarse durante las pruebas de composición final."
+    ]
+  },
+  {
+    "id": "section2",
+    "questions": [
+      {
+        "question": "¿Dónde se realiza el reciclaje y el hilado?",
+        "answer": "El reciclaje de los residuos textiles y el hilado se realizan en España, en Banyeres de Mariola, Alicante."
+      },
+      {
+        "question": "¿Qué certificaciones tiene Hilaturas Ferre?",
+        "answer": "Ferre tiene el certificado Global Recycled Standard (GRS), Oeko-tex Standard 100 y Organic Content Standard (OCS)."
+      },
+      {
+        "question": "¿Qué tipo de materia prima utiliza para producir sus hilos?",
+        "answer": "Utilizamos algodón reciclado Recover ™ pre y posconsumo, lana reciclada y RPet principalmente."
+      },
+      {
+        "question": "¿Qué aplicaciones son posibles?",
+        "answer": "Géneros de punto, tejidos y calcetería. Nuestros hilos están indicados para moda, complementos y textiles para el hogar."
+      },
+      {
+        "question": "¿Cuál es el tiempo de entrega promedio para los productos que no mantenemos en servicio de stock?",
+        "answer": "3-4 semanas."
+      },
+      {
+        "question": "¿Se tiñe el algodón reciclado?",
+        "answer": "El algodón reciclado Recover ™ que utilizamos para producir nuestros hilos NO utiliza tintes, ya que utilizamos residuos de algodón reciclado de colores lo que nos permite no tener que usar agua ni tintes."
+      },
+      {
+        "question": "Productos químicos y tóxicos",
+        "answer": "En lo que respecta a los productos químicos y productos tóxicos, todos nuestros hilos están certificados por el estándar Oeko-Tex 100 ampliamente conocido, en la categoría más estricta clase I (bebé)."
+      },
+      {
+        "question": "¿Cuáles son las cantidades mínimas para colores especiales de nuestras calidades en servicio Stock?",
+        "answer": "2.000 kg por referencia."
+      },
+      {
+        "question": "¿Cuáles son las cantidades mínimas por color de servicio de stock?",
+        "answer": "90 kg. Cantidades inferiores están disponibles con su correspondiente recargo."
+      },
+      {
+        "question": "¿Cuáles son las cantidades mínimas para colores personalizados de hilos y/o títulos que son Stock Service?",
+        "answer": "2.000 kg por color."
+      },
+      {
+        "question": "¿Cuáles son las cantidades mínimas para hilos con títulos que no son Servicio de stock?",
+        "answer": "Entre 4.000 y 2.000 kg. dependiendo del título del hilo."
+      },
+      {
+        "question": "¿Qué servicios adicionales ofrecen?",
+        "answer": "Retorcido, vaporizado y trascanado."
+      },
+      {
+        "question": "¿Cuáles son las cantidades mínimas para colores personalizados de hilos y/o títulos que son Stock Service?",
+        "answer": "6.000 kg con un mínimo de 2.000 por color (3 colores x 2.000 kg)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "homesection1",
+    "title": "Empowering circular fashion since 1947",
+    "video": "/assets/videos/video-ferre-home.mp4"
+  },
+  {
+    "id": "homesection2",
+    "title": "Building a zero-impact fashion",
+    "img": "/assets/images/home/home-1.jpg",
+    "paragraphs": [
+      "We make high-quality recycled yarns for all types of fashion products, accessories and home textiles. Our products are made with Recover™, the lowest-impact recycled cotton fiber in today’s global market, according to the Higg MSI Index."
+    ]
+  },
+  {
+    "id": "homesection3",
+    "title": "A circular process",
+    "img": "/assets/images/home/home-2.jpg",
+    "paragraphs": [
+      "Recycled raw material, zero chemicals, zero water and minimal CO2 emissions. We keep textile waste out of landfill or incineration and we become less dependent on virgin finite materials. Our resource- and energy-efficient manufacturing process reflects our strong will to minimize our impact."
+    ]
+  },
+  {
+    "id": "homesection4",
+    "title": "Fully traceable and transparent",
+    "img": "/assets/images/home/home-3.jpg",
+    "paragraphs": [
+      "We share the traceability and sustainability performance of each of our products to drive positive change and meet consumer demand for true transparency in fashion.",
+      "All of our sustainability claims are supported by the most respected third-party certifications, as well as by studies we have conducted using LCA (Life Cycle Assessment) methodology."
+    ]
+  },
+  {
+    "id": "homesection5",
+    "title": "How can we help you?",
+    "paragraphs": [
+      "Our facilities in Banyeres de Mariola are home to a great team of recycled yarn consultants and the most advanced technology to help you carry out your sustainable fashion project.",
+      "Contact us to receive information about our products and to inquire about prices and minimum order quantities."
+    ],
+    "inputs": [
+      { "type": "text", "name": "name", "placeholder": "Name*" },
+      { "type": "text", "name": "company", "placeholder": "Company*" },
+      { "type": "email", "name": "email", "placeholder": "Email*" },
+      { "type": "text", "name": "phone", "placeholder": "Phone" },
+      { "type": "text", "name": "message", "placeholder": "Message*" }
+    ],
+    "privacy": ["I have read and accept the", "Privacy Policy"],
+    "send": "SEND"
+  },
+  {
+    "id": "homesection6",
+    "title": "Our clients",
+    "brandImgs": [
+      "/assets/images/home/brands-1.gif",
+      "/assets/images/home/brands-2.gif"
+    ]
+  }
+]
