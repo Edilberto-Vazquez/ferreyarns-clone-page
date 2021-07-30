@@ -50,7 +50,7 @@ const Certifications = () => {
           </CertificationItem>
         ))}
       </div>
-      <div className="certifications-title">
+      <div className="certifications__title">
         <h2 ref={refOpcTitleAsc} className="title-black">
           {idiom.assoCommit.title}
         </h2>

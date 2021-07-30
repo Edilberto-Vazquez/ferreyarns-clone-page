@@ -3,10 +3,10 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Layout from "../components/Layout";
 import Home from "../pages/Home";
-import AboutUs from "../pages/AboutUs";
+// import AboutUs from "../pages/AboutUs";
 import Products from "../pages/Products";
 import Certifications from "../pages/Certifications";
-import WorkWithUs from "../pages/WorkWithUs";
+// import WorkWithUs from "../pages/WorkWithUs";
 import SomeQuestions from "../pages/SomeQuestions";
 import Contact from "../pages/Contact";
 

@@ -18,7 +18,7 @@ const useOpacityAnm = () => {
 
     const opacityObserver = new IntersectionObserver(opacityCallback, options);
 
-    if (refOpc.current && refOpc.current !== null) {
+    if (refOpc.current) {
       opacityObserver.observe(refOpc.current);
     }
   }, [refOpc]);
