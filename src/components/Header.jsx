@@ -24,7 +24,13 @@ const Header = () => {
           <li>
             <Link to={header.products[1]}>{header.products[0]}</Link>
           </li>
-          <li>Sustainability</li>
+          <li>
+            <details>
+              <summary>Sustainability</summary>
+              <li>Positive impact</li>
+              <li>Circular process</li>
+            </details>
+          </li>
           <li>
             <Link to={header.certifications[1]}>
               {header.certifications[0]}
@@ -60,11 +66,21 @@ const Header = () => {
           <li>
             <Link to={header.products[1]}>{header.products[0]}</Link>
           </li>
-          <li>Sustainability</li>
           <li>
             <Link to={header.certifications[1]}>
               {header.certifications[0]}
             </Link>
+          </li>
+          <li className="dropdown-menu">
+            <details className="dropdown-menu__details">
+              <summary className="dropdown-menu__details-title">
+                Sustainability
+              </summary>
+              <div className="dropdown-menu__details-items">
+                <li>Positive impact</li>
+                <li>Circular process</li>
+              </div>
+            </details>
           </li>
           {/* <li>
             <Link to={header.workWithUs[1]}>{header.workWithUs[0]}</Link>

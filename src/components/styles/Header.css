@@ -96,6 +96,11 @@ header {
   column-gap: 22px;
 }
 
+.navbar-desktop-links ul li,
+.navbar-desktop-contact li {
+  cursor: pointer;
+}
+
 .navbar-desktop-contact li:nth-child(3) {
   width: 144px;
   height: 44px;
@@ -103,6 +108,43 @@ header {
   place-items: center;
   background: var(--secondary);
   color: white;
+}
+
+.dropdown-menu__details {
+  position: relative;
+}
+
+.dropdown-menu__details-title {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.dropdown-menu__details-items {
+  width: 240px;
+  height: 120px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 20px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
+
+.dropdown-menu__details-items li {
+  width: 80%;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.dropdown-menu__details-items li:hover {
+  background: rgb(0, 0, 0, 0.03);
+}
+
+.dropdown-menu__details[open] {
+  top: 60px;
 }
 
 @media (min-width: 980px) {
