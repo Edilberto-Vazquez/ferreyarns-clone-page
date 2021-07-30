@@ -25,8 +25,9 @@ const CircularProcess = () => {
         <MultipleParagraphs paragraphs={section1.paragraphs} />
       </SectionDropDown>
       <div className="circular-process-items">
-        {section2.process.map((item) => (
+        {section2.process.map((item, index) => (
           <CircularProcItem
+            key={index}
             title={item.title}
             titleNum={item.imgNumber}
             description={item.paragraphs}
