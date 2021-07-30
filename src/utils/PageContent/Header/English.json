@@ -5,6 +5,13 @@
     "aboutUs": ["About us", "/about-us"],
     "products": ["Products", "/products"],
     "certifications": ["Certifications", "/certifications"],
+    "sustainability": {
+      "title": "Sustainability",
+      "items": [
+        { "name": "Positive impact", "link": "/positive-impact" },
+        { "name": "Circular process", "link": "/circular-process" }
+      ]
+    },
     "workWithUs": ["Work with us", "/work-with-us"],
     "en": "EN",
     "es": "ES",

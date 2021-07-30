@@ -26,9 +26,14 @@ const Header = () => {
           </li>
           <li>
             <details>
-              <summary>Sustainability</summary>
-              <li>Positive impact</li>
-              <li>Circular process</li>
+              <summary>{header.sustainability.title}</summary>
+              <div>
+                {header.sustainability.items.map((item, index) => (
+                  <li key={index}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
+              </div>
             </details>
           </li>
           <li>
@@ -74,11 +79,14 @@ const Header = () => {
           <li className="dropdown-menu">
             <details className="dropdown-menu__details">
               <summary className="dropdown-menu__details-title">
-                Sustainability
+                {header.sustainability.title}
               </summary>
               <div className="dropdown-menu__details-items">
-                <li>Positive impact</li>
-                <li>Circular process</li>
+                {header.sustainability.items.map((item, index) => (
+                  <li key={index}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
               </div>
             </details>
           </li>
