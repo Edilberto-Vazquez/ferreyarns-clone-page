@@ -1,7 +1,7 @@
 /* opacity animation */
 
 .opacity-animation {
-  animation: opacity 4000ms linear 0ms;
+  animation: opacity 1000ms linear 0ms;
 }
 
 @keyframes opacity {

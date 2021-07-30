@@ -3,6 +3,7 @@ import { LanguageChanger } from "../utils/LanguageChanger";
 import useChangeLanguage from "../utils/hooks/useChangeLanguage";
 import English from "../utils/PageContent/CircularProcess/English.json";
 import Spanish from "../utils/PageContent/CircularProcess/Spanish.json";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import SectionDropDown from "../components/SectionDropDown";
 import CircularProcItem from "../components/CircularProcItem";
 import { MultipleParagraphs } from "../components/GeneralComponents";
@@ -13,6 +14,7 @@ const CircularProcess = () => {
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1, section2] = idiom;
+  const [refOpc] = useOpacityAnm();
 
   return (
     <main className="circular-process">
@@ -24,7 +26,7 @@ const CircularProcess = () => {
       >
         <MultipleParagraphs paragraphs={section1.paragraphs} />
       </SectionDropDown>
-      <div className="circular-process-items">
+      <div ref={refOpc} className="circular-process-items">
         {section2.process.map((item, index) => (
           <CircularProcItem
             key={index}
