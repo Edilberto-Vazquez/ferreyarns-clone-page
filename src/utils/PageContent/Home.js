@@ -77,14 +77,14 @@ export const homeES = {
     title: "Transparencia y trazabilidad",
     img: home3,
     paragraphs: [
-      "Compartimos los datos de trazabilidad y sostenibilidad de cada uno de nuestros productos para satisfacer la demanda de una moda transparente por parte de los consumidores e impulsar el cambio positivo.",
-      "Todas nuestras afirmaciones sobre sostenibilidad están respaldadas por las certificaciones más respetadas, así como por estudios que hemos realizado utilizando la metodología LCA (Life Cycle Assessment).",
+      "Compartimos los datos de trazabilidad y Sustentabilidad de cada uno de nuestros productos para satisfacer la demanda de una moda transparente por parte de los consumidores e impulsar el cambio positivo.",
+      "Todas nuestras afirmaciones sobre Sustentabilidad están respaldadas por las certificaciones más respetadas, así como por estudios que hemos realizado utilizando la metodología LCA (Life Cycle Assessment).",
     ],
   },
   form: {
     title: "¿En qué podemos ayudarte?",
     paragraphs: [
-      "Un gran equipo de consultores de hilo reciclado y la más avanzada tecnología en nuestras instalaciones de Banyeres de Mariola te ayudarán a hacer realidad tu proyecto de moda sostenible.",
+      "Un gran equipo de consultores de hilo reciclado y la más avanzada tecnología en nuestras instalaciones de Banyeres de Mariola te ayudarán a hacer realidad tu proyecto de moda Sustentable.",
       "Contáctanos para recibir información sobre nuestros productos, precios y cantidades mínimas de pedido.",
     ],
     inputs: [

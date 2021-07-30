@@ -37,7 +37,7 @@ export const workWithUsES = {
     title: "Trabajar en Ferre",
     img: wwu,
     paragraphs: [
-      "En Ferre tenemos pasión por los hilos de bajo impacto y un profundo conocimiento de las posibilidades del hilo reciclado. Somos Expertos en Hilo y Consultores de Hilo. Trabajamos con las marcas para entender sus necesidades y ayudarles a llevar a cabo sus proyectos de moda, creando el mejor hilo sostenible para sus prendas.",
+      "En Ferre tenemos pasión por los hilos de bajo impacto y un profundo conocimiento de las posibilidades del hilo reciclado. Somos Expertos en Hilo y Consultores de Hilo. Trabajamos con las marcas para entender sus necesidades y ayudarles a llevar a cabo sus proyectos de moda, creando el mejor hilo Sustentable para sus prendas.",
     ],
   },
   form: {

@@ -16,10 +16,10 @@ const App = () => {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about-us" component={AboutUs} />
+          {/* <Route exact path="/about-us" component={AboutUs} /> */}
           <Route exact path="/products" component={Products} />
           <Route exact path="/certifications" component={Certifications} />
-          <Route exact path="/work-with-us" component={WorkWithUs} />
+          {/* <Route exact path="/work-with-us" component={WorkWithUs} /> */}
           <Route exact path="/faqs">
             <SomeQuestions tabSection={{ tab: 0, name: "FAQs" }} />
           </Route>

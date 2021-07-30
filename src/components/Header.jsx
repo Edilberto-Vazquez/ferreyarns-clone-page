@@ -22,18 +22,18 @@ const Header = () => {
       </Link>
       <nav className="navbar-mobile">
         <ul className="navbar-mobile-links">
-          <li>
+          {/* <li>
             <Link to={idiom.aboutUs[1]}>{idiom.aboutUs[0]}</Link>
-          </li>
+          </li> */}
           <li>
             <Link to={idiom.products[1]}>{idiom.products[0]}</Link>
           </li>
           <li>
             <Link to={idiom.certifications[1]}>{idiom.certifications[0]}</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={idiom.workWithUs[1]}>{idiom.workWithUs[0]}</Link>
-          </li>
+          </li> */}
           <li>
             <Link to={idiom.contact[1]}>{idiom.contact[0]}</Link>
           </li>
@@ -55,18 +55,18 @@ const Header = () => {
       </nav>
       <nav className="navbar-desktop">
         <ul className="navbar-desktop-links">
-          <li>
+          {/* <li>
             <Link to={idiom.aboutUs[1]}>{idiom.aboutUs[0]}</Link>
-          </li>
+          </li> */}
           <li>
             <Link to={idiom.products[1]}>{idiom.products[0]}</Link>
           </li>
           <li>
             <Link to={idiom.certifications[1]}>{idiom.certifications[0]}</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={idiom.workWithUs[1]}>{idiom.workWithUs[0]}</Link>
-          </li>
+          </li> */}
         </ul>
         <ul className="navbar-desktop-contact navbar-language">
           <li

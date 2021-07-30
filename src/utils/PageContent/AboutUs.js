@@ -234,11 +234,11 @@ export const aboutUsES = {
     title: "Siempre buscando nuevas y mejores formas de avanzar",
     img: about,
     paragraphs: [
-      "Hacer hilos reciclados de la máxima calidad para fabricantes y marcas sostenibles y satisfacer sus necesidades cambiantes. Esto es el alma y el corazón de nuestro negocio. Trabajamos cada día para mejorar nuestros productos y ayudar a nuestros clientes a sacar el máximo partido de nuestros hilos de bajo impacto, siempre guiados por el espíritu de hacer más con menos.",
+      "Hacer hilos reciclados de la máxima calidad para fabricantes y marcas Sustentables y satisfacer sus necesidades cambiantes. Esto es el alma y el corazón de nuestro negocio. Trabajamos cada día para mejorar nuestros productos y ayudar a nuestros clientes a sacar el máximo partido de nuestros hilos de bajo impacto, siempre guiados por el espíritu de hacer más con menos.",
     ],
   },
   aboutSlogan:
-    "Lo que hacemos tiene un impacto en la vida de la gente porque impulsa el avance hacia una industria de la moda sostenible y hacia un planeta sostenible – así es cómo cambiamos el mundo.",
+    "Lo que hacemos tiene un impacto en la vida de la gente porque impulsa el avance hacia una industria de la moda Sustentable y hacia un planeta Sustentable – así es cómo cambiamos el mundo.",
   aboutSlider: {
     title: "La búsqueda de un futuro de impacto cero. Un viaje continuo.",
     slides: [
@@ -279,7 +279,7 @@ export const aboutUsES = {
       },
       {
         yearImg: year1985,
-        title: "Llega el color perfecto. Es sostenible.",
+        title: "Llega el color perfecto. Es Sustentable.",
         img: slider6,
         paragraph:
           "Ferre crea su propio sistema para lograr colores precisos y únicos sin usar agua ni productos químicos. Esta perfección en el color insufla nueva vida al negocio a la vez que nos acerca más al impacto cero.",
@@ -307,7 +307,7 @@ export const aboutUsES = {
       },
       {
         yearImg: year2002,
-        title: "Defendiendo la sostenibilidad",
+        title: "Defendiendo la Sustentabilidad",
         img: slider10,
         paragraph:
           "Tras más de 50 años reciclando, Ferre se atreve a utilizar el término «reciclado» para referirse a sus productos cuando nadie más lo hacía, y se convierte en líder del cambio.",
@@ -331,7 +331,7 @@ export const aboutUsES = {
         title: "Lanzamiento mundial de Recover™",
         img: slider13,
         paragraph:
-          "La marca Recover™ engloba los productos más sostenibles de Ferre y rápidamente se convierte en referencia mundial de los hilos reciclados de calidad.",
+          "La marca Recover™ engloba los productos más Sustentables de Ferre y rápidamente se convierte en referencia mundial de los hilos reciclados de calidad.",
       },
       {
         yearImg: year2015,
@@ -356,10 +356,10 @@ export const aboutUsES = {
       },
       {
         yearImg: year2018,
-        title: "Premio de Sostenibilidad AITEX",
+        title: "Premio de Sustentabilidad AITEX",
         img: slider17,
         paragraph:
-          "Ferre recibe el Premio Empresarial que otorga el Instituto Tecnológico AITEX, en la categoría de sostenibilidad.",
+          "Ferre recibe el Premio Empresarial que otorga el Instituto Tecnológico AITEX, en la categoría de Sustentabilidad.",
       },
       {
         yearImg: year2020,
@@ -373,7 +373,7 @@ export const aboutUsES = {
         title: "Recover inicia su propia andadura",
         img: slider19,
         paragraph:
-          "Los negocios de fibra e hilo se separan. Recover™ comienza una nueva andadura como marca global líder en el reciclaje mecánico de fibra de algodón y Ferre continua siendo el mejor hilador de hilos reciclados, capaz de sacar el mayor provecho de la fibra reciclada Recover™. Ferre y Recover™ son ahora socios estratégicos en la cadena de valor sostenible.",
+          "Los negocios de fibra e hilo se separan. Recover™ comienza una nueva andadura como marca global líder en el reciclaje mecánico de fibra de algodón y Ferre continua siendo el mejor hilador de hilos reciclados, capaz de sacar el mayor provecho de la fibra reciclada Recover™. Ferre y Recover™ son ahora socios estratégicos en la cadena de valor Sustentable.",
       },
     ],
     timeLineImg: [timeLine1, timeLine2],
@@ -390,7 +390,7 @@ export const aboutUsES = {
       {
         strong: "2018",
         paragraph:
-          "Premio Empresarial AITEX, en la categoría de sostenibilidad.",
+          "Premio Empresarial AITEX, en la categoría de Sustentabilidad.",
       },
       {
         strong: "2017",

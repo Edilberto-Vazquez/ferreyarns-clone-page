@@ -292,7 +292,7 @@ export const productsES = {
     img: products,
     paragraphs: [
       "Fabricamos hilos reciclados de alta calidad para todo tipo de productos de moda, accesorios y textil hogar. Nuestros productos están hechos con Recover™, la fibra de algodón reciclado de menor impacto del mercado global, según el Indice Higg MSI.",
-      "Tenemos pasión por los hilos de bajo impacto y un profundo conocimiento de las posibilidades del hilo reciclado. Nuestros Consultores de Hilo trabajarán contigo para comprender las necesidades de tu marca y ayudarte a llevar a cabo tus proyectos de moda, creando el mejor hilo sostenible para tus prendas.",
+      "Tenemos pasión por los hilos de bajo impacto y un profundo conocimiento de las posibilidades del hilo reciclado. Nuestros Consultores de Hilo trabajarán contigo para comprender las necesidades de tu marca y ayudarte a llevar a cabo tus proyectos de moda, creando el mejor hilo Sustentable para tus prendas.",
     ],
   },
   ecologicalSection: {

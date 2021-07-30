@@ -94,7 +94,7 @@ export const certificationsES = {
     title: "Asegurar la transparencia",
     img: certifications,
     paragraphs: [
-      "Todas nuestras afirmaciones sobre sostenibilidad están respaldadas por las certificaciones más respetadas, así como por los estudios que hemos realizado utilizando la metodología LCA (Life Cycle Assessment), que a su vez han sido revisados por organismos independientes.",
+      "Todas nuestras afirmaciones sobre Sustentabilidad están respaldadas por las certificaciones más respetadas, así como por los estudios que hemos realizado utilizando la metodología LCA (Life Cycle Assessment), que a su vez han sido revisados por organismos independientes.",
     ],
   },
   cert: {
@@ -160,7 +160,7 @@ export const certificationsES = {
         img: certCircular,
         title: "Circular Fashion",
         paragraphs: [
-          "Ferre es miembro de Circular Fashion, una agencia de cambio sostenible que crea productos y sistemas innovadores para impulsar la economía circular en la moda y la industria textil.",
+          "Ferre es miembro de Circular Fashion, una agencia de cambio Sustentable que crea productos y sistemas innovadores para impulsar la economía circular en la moda y la industria textil.",
         ],
       },
     ],
