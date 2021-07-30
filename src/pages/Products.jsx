@@ -1,7 +1,10 @@
 import React, { useState, useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import SectionDropDown from "../components/SectionDropDown";
-import { MultipleParagraphs } from "../components/SectionItem";
+import {
+  MultipleParagraphs,
+  SectionMenu,
+} from "../components/GeneralComponents";
 import {
   FormSection,
   FormSectionDescription,
@@ -14,7 +17,6 @@ import {
   EcologicalSection,
   EcologicalMaterial,
 } from "../components/EcologicalDescription";
-import { SectionMenu } from "../components/SectionItem";
 import { productsEN, productsES } from "../utils/PageContent/Products";
 // import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/Products.css";

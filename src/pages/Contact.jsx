@@ -11,7 +11,7 @@ import {
 import {
   ContainerWithTitle,
   MultipleParagraphs,
-} from "../components/SectionItem.jsx";
+} from "../components/GeneralComponents.jsx";
 import { contacEN, contacES } from "../utils/PageContent/Contact";
 
 const Contact = () => {

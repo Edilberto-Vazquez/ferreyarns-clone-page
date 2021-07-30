@@ -1,56 +1,56 @@
 /* change section options */
 
-.current-section {
+.section-menu {
   display: grid;
   grid-auto-rows: min-content;
   row-gap: 24px;
   padding: 14px 0;
 }
 
-.current-section li {
+.section-menu li {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-.current-section-font-white {
+.section-menu-font__li-white {
   color: white;
 }
 
-.current-section-font-black {
+.section-menu-font__li-black {
   color: var(--primary);
 }
 
-.current-section-underline {
+.section-menu__li-underline {
   text-decoration: underline;
 }
 
-.current-section-color {
+.section-menu__li-color {
   color: var(--secondary);
 }
 
 /* section main content */
 
-.section-description {
+.container-with-title {
   display: grid;
   row-gap: 14px;
 }
 
-.section-description h2 {
+.container-with-title a {
+  text-decoration: underline;
+}
+
+.container-with-title__title {
   font-size: 1.6rem;
   font-weight: 700;
 }
 
 /* list type in section */
 
-.section-description ul li {
+.multiple-ul-list__item {
   list-style: disc inside;
 }
 
-.section-description ol li {
+.multiple-ol-list__item {
   list-style: decimal inside;
-}
-
-.section-description a {
-  text-decoration: underline;
 }

@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import SectionDropDown from "../components/SectionDropDown";
-import { MultipleParagraphs } from "../components/SectionItem";
-import StorySlides from "../components/StorySlides";
+import { MultipleParagraphs } from "../components/GeneralComponents";
+import StorySlide from "../components/StorySlide";
 import { aboutUsEN, aboutUsES } from "../utils/PageContent/AboutUs";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/AboutUs.css";
@@ -41,7 +41,7 @@ const AboutUs = () => {
     return idiom.aboutSlider.slides.map((item, index) => {
       return (
         index === numSlide && (
-          <StorySlides
+          <StorySlide
             key={index}
             img={item.img}
             paragraph={item.paragraph}

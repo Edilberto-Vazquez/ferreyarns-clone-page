@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import SectionDropDown from "../components/SectionDropDown";
-import { MultipleParagraphs } from "../components/SectionItem";
+import { MultipleParagraphs } from "../components/GeneralComponents";
 import CertificationItem from "../components/CertificationItem";
 import {
   certificationsEN,

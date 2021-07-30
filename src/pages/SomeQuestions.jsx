@@ -5,7 +5,7 @@ import PrivacyPolicy from "../components/PrivacyPolicy";
 import Cookies from "../components/Cookies";
 import LegalNotice from "../components/LegalNotice";
 import Projects from "../components/Projects";
-import { SectionMenu } from "../components/SectionItem";
+import { SectionMenu } from "../components/GeneralComponents";
 import "./styles/SomeQuestions.css";
 import {
   someQuestionsEN,

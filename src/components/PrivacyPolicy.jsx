@@ -4,7 +4,7 @@ import {
   ContainerWithTitle,
   MultipleList,
   MultipleParagraphs,
-} from "./SectionItem";
+} from "./GeneralComponents";
 import { privacyPEN, privacyPES } from "../utils/PageContent/PrivacyPolicy";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/SectionItem.css";
+import "./styles/GeneralComponents.css";
 
 // change section options
 
@@ -11,29 +11,29 @@ export const SectionMenu = ({
   focusType,
 }) => {
   let classStyle = "";
-  const focusClass = (sectionTab, itemTab, focusType) => {
+  const currentSectionColor = (sectionTab, itemTab, focusType) => {
     if (sectionTab === itemTab) {
       if (focusType === "underline") {
-        return classStyle + " current-section-underline";
+        return classStyle + " section-menu__li-underline";
       } else if (focusType === "color") {
-        return classStyle + " current-section-color";
+        return classStyle + " section-menu__li-color";
       }
     }
   };
   const listColor = (fontColor) => {
     if (fontColor === "white") {
-      return classStyle + " current-section-font-white";
+      return classStyle + " section-menu-font__li-white";
     } else if (fontColor === "black") {
-      return classStyle + "current-section-font-black";
+      return classStyle + "section-menu-font__li-black";
     }
   };
   return (
-    <aside className="current-section">
+    <aside className="section-menu">
       {listItems.map((item) => (
         <li
           key={item.tab}
           onClick={() => setSection({ ...item })}
-          className={`${listColor(fontColor)} ${focusClass(
+          className={`${listColor(fontColor)} ${currentSectionColor(
             section.tab,
             item.tab,
             focusType
@@ -50,8 +50,8 @@ export const SectionMenu = ({
 
 export const ContainerWithTitle = ({ title, children }) => {
   return (
-    <div className="section-description">
-      {title && <h2>{title}</h2>}
+    <div className="container-with-title">
+      {title && <h2 className="container-with-title__title">{title}</h2>}
       {children}
     </div>
   );
@@ -78,9 +78,9 @@ export const MultipleList = ({ listType, listItems }) => {
   const listTag = (listItems) => {
     if (listType === "ul") {
       return (
-        <ul>
+        <ul className="multiple-ul-list">
           {listItems.map((item, index) => (
-            <li key={index}>
+            <li className="multiple-ul-list__item" key={index}>
               {item.link ? (
                 <a href={item.link}>{item.description}</a>
               ) : (
@@ -92,9 +92,9 @@ export const MultipleList = ({ listType, listItems }) => {
       );
     } else if (listType === "ol") {
       return (
-        <ol>
+        <ol className="multiple-ol-list">
           {listItems.map((item, index) => (
-            <li key={index}>
+            <li className="multiple-ol-list__item" key={index}>
               {item.link ? (
                 <a href={item.link}>{item.description}</a>
               ) : (

@@ -4,7 +4,7 @@ import {
   ContainerWithTitle,
   MultipleList,
   MultipleParagraphs,
-} from "./SectionItem";
+} from "./GeneralComponents";
 import { legalNoticeEN, legalNoticeES } from "../utils/PageContent/LegalNotice";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 

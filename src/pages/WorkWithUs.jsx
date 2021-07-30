@@ -8,7 +8,7 @@ import {
   FormSectionContainer,
   FormSectionButton,
 } from "../components/FormSection";
-import { MultipleParagraphs } from "../components/SectionItem";
+import { MultipleParagraphs } from "../components/GeneralComponents";
 import { workWithUsEN, workWithUsES } from "../utils/PageContent/WorkWithUs";
 
 const WorkWithUs = () => {

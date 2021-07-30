@@ -1,6 +1,6 @@
 import React from "react";
 import SectionDropDown from "../components/SectionDropDown";
-import { MultipleParagraphs } from "../components/SectionItem";
+import { MultipleParagraphs } from "../components/GeneralComponents";
 import {
   SliderContainer,
   SlideItem,

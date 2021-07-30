@@ -4,7 +4,7 @@ import {
   ContainerWithTitle,
   MultipleList,
   MultipleParagraphs,
-} from "./SectionItem";
+} from "./GeneralComponents";
 import { cookiesEN, cookiesES } from "../utils/PageContent/Cookies";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 

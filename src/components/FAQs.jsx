@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
 import { faqsEN, faqsES } from "../utils/PageContent/FAQs";
-import { ContainerWithTitle, MultipleParagraphs } from "./SectionItem";
+import { ContainerWithTitle, MultipleParagraphs } from "./GeneralComponents";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import useDisplayAnm from "../utils/animations/useDisplayAnm";
 import "./styles/FAQs.css";

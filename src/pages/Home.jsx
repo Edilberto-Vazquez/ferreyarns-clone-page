@@ -9,7 +9,7 @@ import {
   FormSectionContainer,
   FormSectionButton,
 } from "../components/FormSection";
-import { MultipleParagraphs } from "../components/SectionItem";
+import { MultipleParagraphs } from "../components/GeneralComponents";
 import { homeEN, homeES } from "../utils/PageContent/Home";
 import "./styles/Home.css";
 

@@ -1,8 +1,8 @@
-.slide-item {
+.story-slide-item {
   height: 100%;
 }
 
-.story-slides__background {
+.story-slide-item__background {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -13,7 +13,7 @@
   z-index: 1;
 }
 
-.time-line-description {
+.story-slide-item__time-line {
   height: auto;
   display: grid;
   overflow-x: scroll;
@@ -22,17 +22,17 @@
   color: white;
 }
 
-.time-line-description::-webkit-scrollbar {
+.story-slide-item__time-line::-webkit-scrollbar {
   display: none;
 }
 
-.year-img {
+.story-slide-item__time-line img {
   width: 150px;
   height: 50px;
 }
 
 @media (min-width: 980px) {
-  .slide-item {
+  .story-slide-item {
     height: min-content;
   }
 }

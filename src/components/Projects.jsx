@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import { ContainerWithTitle, MultipleParagraphs } from "./SectionItem";
+import { ContainerWithTitle, MultipleParagraphs } from "./GeneralComponents";
 import { projectsEN, projectsES } from "../utils/PageContent/Projects";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
