@@ -8,7 +8,10 @@ import {
   FormSectionTextArea,
   FormSectionButton,
 } from "../components/FormSection";
-import { SectionItem, MultipleParagraphs } from "../components/SectionItem.jsx";
+import {
+  ContainerWithTitle,
+  MultipleParagraphs,
+} from "../components/SectionItem.jsx";
 import { contacEN, contacES } from "../utils/PageContent/Contact";
 
 const Contact = () => {
@@ -29,7 +32,7 @@ const Contact = () => {
       <FormSection title={idiom.form.title}>
         <FormSectionDescription>
           <MultipleParagraphs paragraphs={idiom.form.paragraphs} />
-          <SectionItem title={idiom.form.MultipleParagraphs.title}>
+          <ContainerWithTitle title={idiom.form.MultipleParagraphs.title}>
             <MultipleParagraphs
               paragraphs={idiom.form.MultipleParagraphs.paragraphs}
             />
@@ -44,7 +47,7 @@ const Contact = () => {
                 {idiom.form.MultipleParagraphs.links[1].name}
               </a>
             </MultipleParagraphs>
-          </SectionItem>
+          </ContainerWithTitle>
         </FormSectionDescription>
         <FormSectionContainer desktopShort>
           {idiom.form.inputs.map((item, index) =>

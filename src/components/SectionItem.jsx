@@ -48,7 +48,7 @@ export const SectionMenu = ({
 
 // section main content
 
-export const SectionItem = ({ title, children }) => {
+export const ContainerWithTitle = ({ title, children }) => {
   return (
     <div className="section-description">
       {title && <h2>{title}</h2>}
@@ -74,7 +74,7 @@ export const MultipleParagraphs = ({ paragraphs, children }) => {
 
 // list type in section
 
-export const SectionList = ({ listType, listItems }) => {
+export const MultipleList = ({ listType, listItems }) => {
   const listTag = (listItems) => {
     if (listType === "ul") {
       return (

@@ -1,7 +1,7 @@
 import React from "react";
 import useFeatureSectionAnm from "../utils/animations/useFeatureSectionAnm";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
-import "./styles/FeatureSection.css";
+import "./styles/SectionDropDown.css";
 
 const SectionDropDown = ({
   title,

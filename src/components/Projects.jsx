@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import { SectionItem, MultipleParagraphs } from "./SectionItem";
+import { ContainerWithTitle, MultipleParagraphs } from "./SectionItem";
 import { projectsEN, projectsES } from "../utils/PageContent/Projects";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
@@ -18,12 +18,12 @@ const Projects = () => {
   return (
     <div ref={refOpc} className="projects some-questions-section-item">
       {/* Projects*/}
-      <SectionItem title={idiom.title}>
+      <ContainerWithTitle title={idiom.title}>
         {/* FINANCIAL SUPPORT FOR REINDUSTRIALISATION AND PROMOTION OF INDUSTRIAL COMPETITIVENESS*/}
-        <SectionItem title={idiom.financialSup.title}>
+        <ContainerWithTitle title={idiom.financialSup.title}>
           <MultipleParagraphs paragraphs={idiom.financialSup.paragraphs} />
-        </SectionItem>
-      </SectionItem>
+        </ContainerWithTitle>
+      </ContainerWithTitle>
     </div>
   );
 };

@@ -1,6 +1,10 @@
 import React, { useContext } from "react";
 import { LanguageChanger } from "../utils/LanguageChanger";
-import { SectionItem, SectionList, MultipleParagraphs } from "./SectionItem";
+import {
+  ContainerWithTitle,
+  MultipleList,
+  MultipleParagraphs,
+} from "./SectionItem";
 import { cookiesEN, cookiesES } from "../utils/PageContent/Cookies";
 import useOpacityAnm from "../utils/animations/useOpacityAnm";
 
@@ -18,17 +22,17 @@ const Cookies = () => {
   return (
     <div ref={refOpc} className="cookies some-questions__item">
       {/* What are cookies? section */}
-      <SectionItem title={idiom.whatCookies.title}>
+      <ContainerWithTitle title={idiom.whatCookies.title}>
         <MultipleParagraphs paragraphs={idiom.whatCookies.paragraphs} />
-      </SectionItem>
+      </ContainerWithTitle>
 
       {/* Why Hilaturas Ferre uses cookies? section */}
-      <SectionItem title={idiom.hilaturasFC.title}>
+      <ContainerWithTitle title={idiom.hilaturasFC.title}>
         <MultipleParagraphs paragraphs={idiom.hilaturasFC.paragraphs} />
-      </SectionItem>
+      </ContainerWithTitle>
 
       {/* What we do with the different types of cookies? section */}
-      <SectionItem title={idiom.differentCookies.title}>
+      <ContainerWithTitle title={idiom.differentCookies.title}>
         {/* Session cookies */}
         <p>
           <strong>{idiom.differentCookies.sessionCookies.title}</strong>
@@ -44,7 +48,7 @@ const Cookies = () => {
           <strong>{idiom.differentCookies.ownCookies.title}</strong>
           {idiom.differentCookies.ownCookies.description}
         </p>
-        <SectionList
+        <MultipleList
           listType="ul"
           listItems={idiom.differentCookies.ownCookies.list}
         />
@@ -61,7 +65,7 @@ const Cookies = () => {
           <strong>{idiom.differentCookies.tecnicalCookies.title}</strong>
           {idiom.differentCookies.tecnicalCookies.description}
         </p>
-        <SectionList
+        <MultipleList
           listType="ul"
           listItems={idiom.differentCookies.tecnicalCookies.list}
         />
@@ -70,7 +74,7 @@ const Cookies = () => {
           <strong>{idiom.differentCookies.customizationCookies.title}</strong>
           {idiom.differentCookies.customizationCookies.description}
         </p>
-        <SectionList
+        <MultipleList
           listType="ul"
           listItems={idiom.differentCookies.customizationCookies.list}
         />
@@ -79,7 +83,7 @@ const Cookies = () => {
           <strong>{idiom.differentCookies.analyticalCookies.title}</strong>
           {idiom.differentCookies.analyticalCookies.description}
         </p>
-        <SectionList
+        <MultipleList
           listType="ul"
           listItems={idiom.differentCookies.analyticalCookies.list}
         />
@@ -88,7 +92,7 @@ const Cookies = () => {
           <strong>{idiom.differentCookies.adversitingCookies.title}</strong>
           {idiom.differentCookies.adversitingCookies.description}
         </p>
-        <SectionList
+        <MultipleList
           listType="ul"
           listItems={idiom.differentCookies.adversitingCookies.list}
         />
@@ -100,22 +104,22 @@ const Cookies = () => {
         <MultipleParagraphs
           paragraphs={idiom.differentCookies.flasCookies.paragraphs}
         />
-      </SectionItem>
+      </ContainerWithTitle>
       {/* How do I change cookie settings? */}
-      <SectionItem title={idiom.howChangeCookieSet.title}>
+      <ContainerWithTitle title={idiom.howChangeCookieSet.title}>
         {idiom.howChangeCookieSet.links.map((item, index) => (
           <a key={index} href={item.link}>
             {item.name}
           </a>
         ))}
         <MultipleParagraphs paragraphs={idiom.howChangeCookieSet.paragraphs} />
-      </SectionItem>
+      </ContainerWithTitle>
       {/* Revocation of consent */}
-      <SectionItem title={idiom.revocationConsent.title}>
+      <ContainerWithTitle title={idiom.revocationConsent.title}>
         <MultipleParagraphs paragraphs={idiom.revocationConsent.paragraphs1} />
-        <SectionList listType="ul" listItems={idiom.revocationConsent.list} />
+        <MultipleList listType="ul" listItems={idiom.revocationConsent.list} />
         <MultipleParagraphs paragraphs={idiom.revocationConsent.paragraphs2} />
-      </SectionItem>
+      </ContainerWithTitle>
     </div>
   );
 };
