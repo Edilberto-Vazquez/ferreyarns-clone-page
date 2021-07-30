@@ -16,8 +16,10 @@ const LegalNotice = () => {
     idiom = legalNoticeES;
   }
   return (
-    <div ref={refOpc} className="legal-notice some-questions-section-item">
+    <div ref={refOpc} className="legal-notice some-questions__item">
+      {/* general aspects legal notice section */}
       <SectionItem title={idiom.legalNotice.title}>
+        {/* 1.1. Identification data of the Information Society Service Provider */}
         <SectionItem title={idiom.legalNotice.legalNotice1_1.title}>
           <SectionPar
             paragraphs={idiom.legalNotice.legalNotice1_1.paragraphs}
@@ -33,13 +35,17 @@ const LegalNotice = () => {
             </p>
           ))}
         </SectionItem>
+        {/* 1.2 Acceptance and validity of the general and particular conditions */}
         <SectionItem title={idiom.legalNotice.legalNotice1_2.title}>
           <SectionPar
             paragraphs={idiom.legalNotice.legalNotice1_2.paragraphs}
           />
         </SectionItem>
       </SectionItem>
+
+      {/* general conditions of use for this wbsite section */}
       <SectionItem title={idiom.genCond.title}>
+        {/* 2.1. Obligations of use */}
         <SectionItem title={idiom.genCond.genCond2_1.title}>
           <SectionPar paragraphs={idiom.genCond.genCond2_1.paragraphs1} />
           <SectionList
@@ -48,6 +54,7 @@ const LegalNotice = () => {
           />
           <SectionPar paragraphs={idiom.genCond.genCond2_1.paragraphs2} />
         </SectionItem>
+        {/* 2.2. Exemption of liability */}
         <SectionItem title={idiom.genCond.genCond2_2.title}>
           <SectionPar paragraphs={idiom.genCond.genCond2_2.paragraphs} />
           <SectionList
@@ -55,12 +62,15 @@ const LegalNotice = () => {
             listItems={idiom.genCond.genCond2_2.list}
           />
         </SectionItem>
+        {/* 2.3. Use of hyperlinks */}
         <SectionItem title={idiom.genCond.genCond2_3.title}>
           <SectionPar paragraphs={idiom.genCond.genCond2_3.paragraphs} />
         </SectionItem>
+        {/* 2.4. Intellectual Property */}
         <SectionItem title={idiom.genCond.genCond2_4.title}>
           <SectionPar paragraphs={idiom.genCond.genCond2_4.paragraphs} />
         </SectionItem>
+        {/* 2.5. Jurisdiction and applicable law */}
         <SectionItem title={idiom.genCond.genCond2_5.title}>
           <SectionPar paragraphs={idiom.genCond.genCond2_5.paragraphs} />
         </SectionItem>

@@ -16,10 +16,15 @@ const PrivacyPolicy = () => {
     idiom = privacyPES;
   }
   return (
-    <div ref={refOpc} className="privacy-policy some-questions-section-item">
+    <div
+      ref={refOpc}
+      className="privacy-policy some-questions__item container-row-gap"
+    >
+      {/* first paragraph */}
       <SectionItem>
         <SectionPar paragraphs={idiom.paragraphs} />
       </SectionItem>
+      {/* controller section */}
       <SectionItem title={idiom.controller.title}>
         <SectionPar paragraphs={idiom.controller.paragraphs} />
         <SectionPar paragraphs={[idiom.controller.links.paragraphs[0]]}>
@@ -33,30 +38,38 @@ const PrivacyPolicy = () => {
           </a>
         </SectionPar>
       </SectionItem>
+      {/* purpose of data processing section */}
       <SectionItem title={idiom.purposeDP.title}>
         <SectionPar paragraphs={idiom.purposeDP.paragraphs} />
         <SectionList listType="ol" listItems={idiom.purposeDP.list} />
       </SectionItem>
+      {/* conservation period section */}
       <SectionItem title={idiom.conservPeriod.title}>
         <SectionPar paragraphs={idiom.conservPeriod.paragraphs} />
       </SectionItem>
+      {/* legal standing section */}
       <SectionItem title={idiom.legalStanding.title}>
         <SectionPar paragraphs={idiom.legalStanding.paragraphs} />
       </SectionItem>
+      {/* recipients section */}
       <SectionItem title={idiom.recipients.title}>
         <SectionPar paragraphs={idiom.recipients.paragraphs} />
       </SectionItem>
+      {/* user rights section */}
       <SectionItem title={idiom.userRights.title}>
         <SectionPar paragraphs={idiom.userRights.paragraphs1} />
         <SectionList listType="ul" listItems={idiom.userRights.list} />
         <SectionPar paragraphs={idiom.userRights.paragraphs2} />
       </SectionItem>
+      {/* securyty measures section */}
       <SectionItem title={idiom.securityMesures.title}>
         <SectionPar paragraphs={idiom.securityMesures.paragraphs} />
       </SectionItem>
+      {/* use of cookies section */}
       <SectionItem title={idiom.useCookies.title}>
         <SectionPar paragraphs={idiom.useCookies.paragraphs} />
       </SectionItem>
+      {/* change in regulation section */}
       <SectionItem title={idiom.changeRegulation.title}>
         <SectionPar paragraphs={idiom.changeRegulation.paragraphs} />
       </SectionItem>

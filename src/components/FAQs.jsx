@@ -6,7 +6,9 @@ import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import useDisplayAnm from "../utils/animations/useDisplayAnm";
 import "./styles/FAQs.css";
 
+// component to display the question
 const FAQsQuestions = ({ question, answer }) => {
+  // animation to display the answer of the questions
   const [refDisplay, refButton, show, setShow] = useDisplayAnm("black");
   return (
     <div className="faqs-question">
@@ -29,8 +31,11 @@ const FAQsQuestions = ({ question, answer }) => {
   );
 };
 
+// main component of the section Faqs
 export const FAQs = () => {
+  // hook to get the animation
   const [refOpc] = useOpacityAnm();
+  // hook to get the type language
   const { language } = useContext(LanguageChanger);
   let idiom = {};
 
@@ -43,9 +48,11 @@ export const FAQs = () => {
 
   return (
     <div ref={refOpc} className="faqs some-questions__item">
+      {/* Faqs description section */}
       <SectionItem>
         <SectionPar paragraphs={idiom.paragraphs} />
       </SectionItem>
+      {/* Faqs questions section*/}
       {idiom.questions.map((item, index) => {
         return (
           <FAQsQuestions

@@ -17,7 +17,9 @@ const Projects = () => {
   }
   return (
     <div ref={refOpc} className="projects some-questions-section-item">
+      {/* Projects*/}
       <SectionItem title={idiom.title}>
+        {/* FINANCIAL SUPPORT FOR REINDUSTRIALISATION AND PROMOTION OF INDUSTRIAL COMPETITIVENESS*/}
         <SectionItem title={idiom.financialSup.title}>
           <SectionPar paragraphs={idiom.financialSup.paragraphs} />
         </SectionItem>

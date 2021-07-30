@@ -1,6 +1,4 @@
 .faqs-question {
-  display: grid;
-  row-gap: 24px;
   border-bottom: 1px solid var(--primary);
 }
 
