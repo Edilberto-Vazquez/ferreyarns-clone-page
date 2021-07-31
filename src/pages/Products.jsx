@@ -3,6 +3,7 @@ import { LanguageChanger } from "../utils/LanguageChanger";
 import useChangeLanguage from "../utils/hooks/useChangeLanguage";
 import English from "../utils/PageContent/Products/English.json";
 import Spanish from "../utils/PageContent/Products/Spanish.json";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import SectionDropDown from "../components/SectionDropDown";
 import {
   MultipleParagraphs,
@@ -24,6 +25,10 @@ const Products = () => {
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1, section2, section3] = idiom;
+
+  // animation hook
+  const [refOpc] = useOpacityAnm();
+
   // set materials section
   const [section, setSection] = useState({ tab: 0, name: "All" });
 
@@ -44,7 +49,11 @@ const Products = () => {
       </SectionDropDown>
 
       {/* materials section2 */}
-      <section className="materials">
+      <section
+        ref={refOpc}
+        className="materials opacity-animation"
+        aria-expanded={false}
+      >
         <div className="ecological-section-description">
           <img src={section2.img} alt="" />
           <MultipleParagraphs paragraphs={section2.paragraphs} />

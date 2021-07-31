@@ -13,7 +13,11 @@ const Projects = () => {
   const [refOpc] = useOpacityAnm();
 
   return (
-    <div ref={refOpc} className="projects some-questions-section-item">
+    <div
+      ref={refOpc}
+      className="projects some-questions-section-item opacity-animation"
+      aria-expanded={false}
+    >
       {/* Projects*/}
       <ContainerWithTitle title={section1.title}>
         {/* FINANCIAL SUPPORT FOR REINDUSTRIALISATION AND PROMOTION OF INDUSTRIAL COMPETITIVENESS*/}

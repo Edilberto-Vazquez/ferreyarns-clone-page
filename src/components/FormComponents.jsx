@@ -6,7 +6,11 @@ import "./styles/FormComponents.css";
 export const FormSection = ({ title, children, privacy }) => {
   const [refOpc] = useOpacityAnm();
   return (
-    <div ref={refOpc} className="form-section">
+    <div
+      ref={refOpc}
+      className="form-section opacity-animation"
+      aria-expanded={false}
+    >
       <div className="form-section__title">
         <h2 className="title-black">{title}</h2>
       </div>

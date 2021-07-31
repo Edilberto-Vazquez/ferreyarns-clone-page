@@ -20,7 +20,7 @@ const PositiveImpact = () => {
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1, section2, section3, section4] = idiom;
-  console.log(section1, section2, section3, section4);
+
   return (
     <main className="positive-impact">
       {/* Metrics that matter section1 */}
@@ -28,6 +28,8 @@ const PositiveImpact = () => {
         title={section1.title}
         sectionName={section1.sectionName}
         img={section1.img}
+        xAxis="left"
+        aria-expanded={false}
       >
         <MultipleParagraphs paragraphs={section1.paragraphs} />
       </SectionDropDown>

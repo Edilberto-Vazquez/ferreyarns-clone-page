@@ -36,9 +36,10 @@ const SectionDropDown = ({
     <section className="section-dropdown">
       <div
         ref={refOpc}
-        className={`section-dropdown__text ${handleTextPositionHorizontal(
+        className={`section-dropdown__text opacity-animation ${handleTextPositionHorizontal(
           xAxis
         )} ${handleTextPositionVertical(yAxis)}`}
+        aria-expanded={false}
       >
         {sectionName ? <h4 className="section-name">{sectionName}</h4> : null}
         <h2 className="title-black">{title}</h2>

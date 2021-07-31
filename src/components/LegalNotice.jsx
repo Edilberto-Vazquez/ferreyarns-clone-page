@@ -16,7 +16,11 @@ const LegalNotice = () => {
   const [section1, section2] = idiom;
   const [refOpc] = useOpacityAnm();
   return (
-    <div ref={refOpc} className="legal-notice some-questions__item">
+    <div
+      ref={refOpc}
+      className="legal-notice some-questions__item opacity-animation"
+      aria-expanded={false}
+    >
       {/* general aspects legal notice section1 */}
       <ContainerWithTitle title={section1.title}>
         {/* 1.1. Identification data of the Information Society Service Provider */}

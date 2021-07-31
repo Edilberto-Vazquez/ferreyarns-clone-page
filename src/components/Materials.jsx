@@ -1,5 +1,6 @@
 import React from "react";
 import useDisplayAnm from "../utils/animations/useDisplayAnm";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/Materials.css";
 
 export const MaterialsContainer = ({
@@ -12,11 +13,17 @@ export const MaterialsContainer = ({
   section,
 }) => {
   const [refDisplay, refButton, show, setShow] = useDisplayAnm("white");
+  const [refOpc] = useOpacityAnm();
 
   const display = tabs.map((tab, index) => {
     if (tab === section) {
       return (
-        <div key={index} className="materials-container">
+        <div
+          ref={refOpc}
+          key={index}
+          className="materials-container opacity-animation"
+          aria-expanded={false}
+        >
           <button
             ref={refButton}
             aria-expanded={!show}

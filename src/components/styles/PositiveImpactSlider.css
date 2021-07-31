@@ -89,6 +89,9 @@
 .data-source {
   color: white;
 }
+.no-current-tab {
+  filter: invert(0.5);
+}
 
 @media (min-width: 980px) {
   .slide-item {

@@ -26,7 +26,11 @@ const CircularProcess = () => {
       >
         <MultipleParagraphs paragraphs={section1.paragraphs} />
       </SectionDropDown>
-      <div ref={refOpc} className="circular-process-items">
+      <div
+        ref={refOpc}
+        className="circular-process-items opacity-animation"
+        aria-expanded={false}
+      >
         {section2.process.map((item, index) => (
           <CircularProcItem
             key={index}

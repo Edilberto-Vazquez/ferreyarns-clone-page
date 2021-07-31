@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MaterialsTypes } from "./Materials";
+import useOpacityAnm from "../utils/animations/useOpacityAnm";
 import "./styles/PositiveImpactSlider.css";
 
 // slider container
@@ -44,7 +45,8 @@ export const SlideDescription = ({ brand, garment, compositions }) => {
 
 // total savings section tabs
 export const SlideTotalSavings = ({ totalSavings }) => {
-  const [tab, setTab] = useState(totalSavings.elements[0]);
+  const [tab, setTab] = useState(totalSavings.elements[0].element);
+  const [refOpc] = useOpacityAnm();
   return (
     <div className="slide-section-savings border-white">
       <h3>{totalSavings.title}</h3>
@@ -55,14 +57,23 @@ export const SlideTotalSavings = ({ totalSavings }) => {
             className="tab-item"
             onClick={() => setTab(item.element)}
           >
-            <img src={item.img} alt="" />
+            <img
+              src={item.img}
+              alt=""
+              className={`${item.element !== tab && "no-current-tab"}`}
+            />
           </li>
         ))}
       </div>
       {totalSavings.elements.map((item, index) => {
         if (item.element !== tab) return undefined;
         return (
-          <div key={index} className="tab-content">
+          <div
+            ref={refOpc}
+            key={index}
+            className="tab-content opacity-animation"
+            aria-expanded={false}
+          >
             <span>{item.amount}</span>
             <span>{item.element}</span>
           </div>

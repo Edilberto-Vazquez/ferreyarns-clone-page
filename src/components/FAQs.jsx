@@ -43,7 +43,11 @@ export const FAQs = () => {
   const [section1, section2] = idiom;
 
   return (
-    <div ref={refOpc} className="faqs some-questions__item">
+    <div
+      ref={refOpc}
+      className="faqs some-questions__item opacity-animation"
+      aria-expanded={false}
+    >
       {/* Faqs description section */}
       <ContainerWithTitle>
         <MultipleParagraphs paragraphs={section1.paragraphs} />

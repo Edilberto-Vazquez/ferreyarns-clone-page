@@ -29,7 +29,8 @@ const PrivacyPolicy = () => {
   return (
     <div
       ref={refOpc}
-      className="privacy-policy some-questions__item container-row-gap"
+      className="privacy-policy some-questions__item container-row-gap opacity-animation"
+      aria-expanded={false}
     >
       {/* first paragraph section1 */}
       <ContainerWithTitle>

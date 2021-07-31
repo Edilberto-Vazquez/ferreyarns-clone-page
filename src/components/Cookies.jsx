@@ -16,7 +16,11 @@ const Cookies = () => {
   const [section1, section2, section3, section4, section5] = idiom;
   const [refOpc] = useOpacityAnm();
   return (
-    <div ref={refOpc} className="cookies some-questions__item">
+    <div
+      ref={refOpc}
+      className="cookies some-questions__item opacity-animation"
+      aria-expanded={false}
+    >
       {/* What are cookies? section1 */}
       <ContainerWithTitle title={section1.title}>
         <MultipleParagraphs paragraphs={section1.paragraphs} />

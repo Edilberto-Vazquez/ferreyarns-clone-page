@@ -6,7 +6,7 @@ const useOpacityAnm = () => {
     const opacityCallback = (entries) => {
       const [entry] = entries;
       if (entry.isIntersecting) {
-        return entry.target.classList.add("opacity-animation");
+        return (entry.target.ariaExpanded = true);
       }
     };
 
@@ -17,8 +17,7 @@ const useOpacityAnm = () => {
     };
 
     const opacityObserver = new IntersectionObserver(opacityCallback, options);
-
-    if (refOpc.current) {
+    if (refOpc.current && refOpc !== null) {
       opacityObserver.observe(refOpc.current);
     }
   }, [refOpc]);

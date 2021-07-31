@@ -246,12 +246,12 @@
         "element": "million kg of chemicals saved"
       },
       {
-        "img": "/assets/icons/positive_impact/co2-icon.svg",
+        "img": "/assets/icons/positive_impact/textil-icon.svg",
         "number": 1.9,
         "element": "million kg textile waste recycled"
       },
       {
-        "img": "/assets/icons/positive_impact/textil-icon.svg",
+        "img": "/assets/icons/positive_impact/energy-icon.svg",
         "number": 102.7,
         "element": "million kWh of energy saved"
       },

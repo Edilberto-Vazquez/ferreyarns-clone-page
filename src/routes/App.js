@@ -35,9 +35,9 @@ const App = () => {
           <Route exact path="/legal">
             <SomeQuestions tabSection={{ tab: 3, name: "Legal Notice" }} />
           </Route>
-          <Route exact path="/projects">
+          {/* <Route exact path="/projects">
             <SomeQuestions tabSection={{ tab: 4, name: "Projects" }} />
-          </Route>
+          </Route> */}
           <Route exact path="/contact" component={Contact} />
         </Switch>
       </Layout>
