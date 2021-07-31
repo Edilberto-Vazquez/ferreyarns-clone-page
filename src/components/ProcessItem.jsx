@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/CircularProceItem.css";
 
-const CircularProcItem = ({ title, titleNum, description, imgs }) => {
+const ProcessItem = ({ title, titleNum, description, imgs }) => {
   return (
     <div className="circular-proc-item border-black">
       <div className="circular-proc-title">
@@ -20,4 +20,4 @@ const CircularProcItem = ({ title, titleNum, description, imgs }) => {
   );
 };
 
-export default CircularProcItem;
+export default ProcessItem;

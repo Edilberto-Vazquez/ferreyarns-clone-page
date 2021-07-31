@@ -6,17 +6,17 @@ import Spanish from "../utils/PageContent//Certifications/Spanish.json";
 import SectionDropDown from "../components/SectionDropDown";
 import { MultipleParagraphs } from "../components/GeneralComponents";
 import CertificationItem from "../components/CertificationItem";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 import "./styles/Certifications.css";
 
 const Certifications = () => {
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1, section2, section3] = idiom;
-  const [refOpcTitleCert] = useOpacityAnm();
-  const [refOpcTitleAsc] = useOpacityAnm();
-  const [refOpcItemCert] = useOpacityAnm();
-  const [refOpcItemAsc] = useOpacityAnm();
+  const [refOpcTitleCert] = useOpacityAnmOnScroll();
+  const [refOpcTitleAsc] = useOpacityAnmOnScroll();
+  const [refOpcItemCert] = useOpacityAnmOnScroll();
+  const [refOpcItemAsc] = useOpacityAnmOnScroll();
 
   useEffect(() => {
     window.scrollTo(0, 0);

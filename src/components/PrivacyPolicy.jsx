@@ -8,7 +8,7 @@ import {
   MultipleList,
   MultipleParagraphs,
 } from "./GeneralComponents";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 
 const PrivacyPolicy = () => {
   const { language } = useContext(LanguageChanger);
@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
     section9,
     section10,
   ] = idiom;
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useOpacityAnmOnScroll();
   return (
     <div
       ref={refOpc}

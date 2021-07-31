@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MaterialsTypes } from "./Materials";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 import "./styles/PositiveImpactSlider.css";
 
 // slider container
@@ -46,7 +46,7 @@ export const SlideDescription = ({ brand, garment, compositions }) => {
 // total savings section tabs
 export const SlideTotalSavings = ({ totalSavings }) => {
   const [tab, setTab] = useState(totalSavings.elements[0].element);
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useOpacityAnmOnScroll();
   return (
     <div className="slide-section-savings border-white">
       <h3>{totalSavings.title}</h3>

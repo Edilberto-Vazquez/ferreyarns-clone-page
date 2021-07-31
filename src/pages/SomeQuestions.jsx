@@ -9,7 +9,7 @@ import Cookies from "../components/Cookies";
 import LegalNotice from "../components/LegalNotice";
 // import Projects from "../components/Projects";
 import { SectionMenu } from "../components/GeneralComponents";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 import "./styles/SomeQuestions.css";
 
 const SomeQuestions = ({ tabSection }) => {
@@ -17,8 +17,8 @@ const SomeQuestions = ({ tabSection }) => {
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1] = idiom;
   const [section, setSection] = useState("");
-  const [refOpcTitle] = useOpacityAnm();
-  const [refOpcSection] = useOpacityAnm();
+  const [refOpcTitle] = useOpacityAnmOnScroll();
+  const [refOpcSection] = useOpacityAnmOnScroll();
 
   useEffect(() => {
     window.scrollTo(0, 0);

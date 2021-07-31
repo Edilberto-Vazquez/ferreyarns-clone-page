@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 import "./styles/FormComponents.css";
 
 export const FormSection = ({ title, children, privacy }) => {
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useOpacityAnmOnScroll();
   return (
     <div
       ref={refOpc}

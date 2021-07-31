@@ -3,9 +3,9 @@ import { LanguageChanger } from "../utils/LanguageChanger";
 import useChangeLanguage from "../utils/hooks/useChangeLanguage";
 import English from "../utils/PageContent/CircularProcess/English.json";
 import Spanish from "../utils/PageContent/CircularProcess/Spanish.json";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 import SectionDropDown from "../components/SectionDropDown";
-import CircularProcItem from "../components/CircularProcItem";
+import ProcessItem from "../components/ProcessItem";
 import { MultipleParagraphs } from "../components/GeneralComponents";
 import "./styles/CircularProcess.css";
 
@@ -14,7 +14,7 @@ const CircularProcess = () => {
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1, section2] = idiom;
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useOpacityAnmOnScroll();
 
   return (
     <main className="circular-process">
@@ -32,13 +32,13 @@ const CircularProcess = () => {
         aria-expanded={false}
       >
         {section2.process.map((item, index) => (
-          <CircularProcItem
+          <ProcessItem
             key={index}
             title={item.title}
             titleNum={item.imgNumber}
             description={item.paragraphs}
             imgs={item.imgs}
-          ></CircularProcItem>
+          ></ProcessItem>
         ))}
       </div>
     </main>

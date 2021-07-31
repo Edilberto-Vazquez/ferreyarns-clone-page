@@ -4,12 +4,12 @@ import SectionDropDown from "../components/SectionDropDown";
 import { MultipleParagraphs } from "../components/GeneralComponents";
 import StorySlide from "../components/StorySlide";
 import { aboutUsEN, aboutUsES } from "../utils/PageContent/AboutUs";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 import "./styles/AboutUs.css";
 
 const AboutUs = () => {
   const { language } = useContext(LanguageChanger);
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useOpacityAnmOnScroll();
   let idiom = {};
   const [numSlide, setNumSlide] = useState(0);
   let timeLine = 0;

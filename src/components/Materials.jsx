@@ -1,6 +1,6 @@
 import React from "react";
 import useDisplayAnm from "../utils/animations/useDisplayAnm";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 import "./styles/Materials.css";
 
 export const MaterialsContainer = ({
@@ -13,7 +13,7 @@ export const MaterialsContainer = ({
   section,
 }) => {
   const [refDisplay, refButton, show, setShow] = useDisplayAnm("white");
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useOpacityAnmOnScroll();
 
   const display = tabs.map((tab, index) => {
     if (tab === section) {

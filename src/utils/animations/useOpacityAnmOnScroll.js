@@ -1,6 +1,6 @@
 import { createRef, useEffect } from "react";
 
-const useOpacityAnm = () => {
+const useOpacityAnmOnScroll = () => {
   const refOpc = createRef();
   useEffect(() => {
     const opacityCallback = (entries) => {
@@ -24,4 +24,4 @@ const useOpacityAnm = () => {
   return [refOpc];
 };
 
-export default useOpacityAnm;
+export default useOpacityAnmOnScroll;

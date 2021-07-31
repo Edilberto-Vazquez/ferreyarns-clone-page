@@ -3,7 +3,7 @@ import { LanguageChanger } from "../utils/LanguageChanger";
 import useChangeLanguage from "../utils/hooks/useChangeLanguage";
 import English from "../utils/PageContent/Products/English.json";
 import Spanish from "../utils/PageContent/Products/Spanish.json";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 import SectionDropDown from "../components/SectionDropDown";
 import {
   MultipleParagraphs,
@@ -27,7 +27,7 @@ const Products = () => {
   const [section1, section2, section3] = idiom;
 
   // animation hook
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useOpacityAnmOnScroll();
 
   // set materials section
   const [section, setSection] = useState({ tab: 0, name: "All" });
@@ -49,7 +49,7 @@ const Products = () => {
       </SectionDropDown>
 
       {/* materials section2 */}
-      <section
+      <div
         ref={refOpc}
         className="materials opacity-animation"
         aria-expanded={false}
@@ -82,7 +82,7 @@ const Products = () => {
             ))}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Request our Color Book form section3 */}
       <FormSection title={section3.title} privacy={section3.privacy}>

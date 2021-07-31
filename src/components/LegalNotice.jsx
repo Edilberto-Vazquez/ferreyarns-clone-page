@@ -8,13 +8,13 @@ import {
   MultipleList,
   MultipleParagraphs,
 } from "./GeneralComponents";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 
 const LegalNotice = () => {
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1, section2] = idiom;
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useOpacityAnmOnScroll();
   return (
     <div
       ref={refOpc}

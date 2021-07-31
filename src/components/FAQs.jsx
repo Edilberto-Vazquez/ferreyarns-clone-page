@@ -4,7 +4,7 @@ import useChangeLanguage from "../utils/hooks/useChangeLanguage";
 import English from "../utils/PageContent/Faqs/English.json";
 import Spanish from "../utils/PageContent/Faqs/Spanish.json";
 import { ContainerWithTitle, MultipleParagraphs } from "./GeneralComponents";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
 import useDisplayAnm from "../utils/animations/useDisplayAnm";
 import "./styles/FAQs.css";
 
@@ -36,7 +36,7 @@ const FAQsQuestions = ({ question, answer }) => {
 // main component of the section Faqs
 export const FAQs = () => {
   // hook to get the animation
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useOpacityAnmOnScroll();
   // hook to set the type language
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
