@@ -12,8 +12,9 @@
 .env-sav-items {
   display: grid;
   grid-auto-rows: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 330px));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 400px));
+  justify-content: center;
+  gap: 32px;
 }
 
 .env-sav-items__desc {

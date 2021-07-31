@@ -61,8 +61,8 @@ const Home = () => {
         <SectionDropDown
           title={section4.title}
           img={section4.img}
-          vTextPosition="right"
-          hTextPosition="top"
+          hTextPosition="right"
+          vTextPosition="top"
         >
           <MultipleParagraphs paragraphs={section4.paragraphs} />
         </SectionDropDown>
