@@ -50,11 +50,7 @@ const Products = () => {
       </SectionDropDown>
 
       {/* materials section2 */}
-      <div
-        ref={refOpc}
-        className="materials scrolling-animation-opacity"
-        aria-expanded={false}
-      >
+      <div ref={refOpc} className="materials scrolling-animation-opacity">
         <div className="ecological-section-description">
           <img src={section2.img} alt="" />
           <MultipleParagraphs paragraphs={section2.paragraphs} />

@@ -19,7 +19,6 @@ const Cookies = () => {
     <div
       ref={refOpc}
       className="cookies some-questions__item section-change-animation"
-      aria-expanded={false}
     >
       {/* What are cookies? section1 */}
       <ContainerWithTitle title={section1.title}>

@@ -46,7 +46,6 @@ export const FAQs = () => {
     <div
       ref={refOpc}
       className="faqs some-questions__item section-change-animation"
-      aria-expanded={false}
     >
       {/* Faqs description section */}
       <ContainerWithTitle>

@@ -19,7 +19,6 @@ const LegalNotice = () => {
     <div
       ref={refOpc}
       className="legal-notice some-questions__item section-change-animation"
-      aria-expanded={false}
     >
       {/* general aspects legal notice section1 */}
       <ContainerWithTitle title={section1.title}>

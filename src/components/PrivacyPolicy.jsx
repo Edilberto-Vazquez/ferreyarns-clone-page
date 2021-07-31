@@ -30,7 +30,6 @@ const PrivacyPolicy = () => {
     <div
       ref={refOpc}
       className="privacy-policy some-questions__item section-change-animation"
-      aria-expanded={false}
     >
       {/* first paragraph section1 */}
       <ContainerWithTitle>

@@ -47,7 +47,6 @@ const SomeQuestions = ({ tabSection }) => {
       <div
         ref={refOpcTitle}
         className="some-questions__title scrolling-animation-opacity"
-        aria-expanded={false}
       >
         <h4 className="section-name">Ferre / {section.name}</h4>
         <h2 className="title-black">{section.name}</h2>
@@ -55,7 +54,6 @@ const SomeQuestions = ({ tabSection }) => {
       <div
         ref={refOpcSection}
         className="section-options border-black scrolling-animation-opacity"
-        aria-expanded={false}
       >
         <SectionMenu
           listItems={section1.sections}

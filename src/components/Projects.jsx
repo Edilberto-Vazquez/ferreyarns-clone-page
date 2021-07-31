@@ -16,7 +16,6 @@ const Projects = () => {
     <div
       ref={refOpc}
       className="projects some-questions-section-item section-change-animation"
-      aria-expanded={false}
     >
       {/* Projects*/}
       <ContainerWithTitle title={section1.title}>
