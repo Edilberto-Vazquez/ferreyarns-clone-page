@@ -30,8 +30,8 @@ const WorkWithUs = () => {
         title={idiom.workFerre.title}
         sectionName={idiom.workFerre.sectionName}
         img={idiom.workFerre.img}
-        xAxis="left"
-        yAxis="top"
+        vTextPosition="left"
+        hTextPosition="top"
       >
         <MultipleParagraphs paragraphs={idiom.workFerre.paragraphs} />
       </SectionDropDown>

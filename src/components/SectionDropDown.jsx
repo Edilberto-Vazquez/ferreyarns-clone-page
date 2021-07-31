@@ -1,5 +1,5 @@
 import React from "react";
-import useFeatureSectionAnm from "../utils/animations/useFeatureSectionAnm";
+import useSectionDropDownAnm from "../utils/animations/useSectionDropDownAnm";
 import useOpacityAnm from "../utils/animations/useOpacityAnmOnScroll";
 import "./styles/SectionDropDown.css";
 
@@ -8,25 +8,25 @@ const SectionDropDown = ({
   sectionName,
   img,
   video,
-  xAxis,
-  yAxis,
+  hTextPosition,
+  vTextPosition,
   children,
 }) => {
-  const [refImg] = useFeatureSectionAnm(xAxis);
+  const [refImg] = useSectionDropDownAnm(hTextPosition);
   const [refOpc] = useOpacityAnm();
 
   const handleTextPositionHorizontal = () => {
-    if (xAxis === "right") {
+    if (hTextPosition === "right") {
       return "section-dropdown-right";
-    } else if (xAxis === "right") {
+    } else if (hTextPosition === "left") {
       return "section-dropdown-left";
     }
   };
 
   const handleTextPositionVertical = () => {
-    if (yAxis === "top") {
+    if (vTextPosition === "top") {
       return "section-dropdown-top";
-    } else if (yAxis === "bottom") {
+    } else if (vTextPosition === "bottom") {
       return "section-dropdown-bottom";
     }
   };
@@ -37,8 +37,8 @@ const SectionDropDown = ({
       <div
         ref={refOpc}
         className={`section-dropdown__text scrolling-animation-opacity ${handleTextPositionHorizontal(
-          xAxis
-        )} ${handleTextPositionVertical(yAxis)}`}
+          hTextPosition
+        )} ${handleTextPositionVertical(vTextPosition)}`}
         aria-expanded={false}
       >
         {sectionName ? <h4 className="section-name">{sectionName}</h4> : null}

@@ -28,8 +28,8 @@ const Certifications = () => {
         title={section1.title}
         sectionName={section1.sectionName}
         img={section1.img}
-        xAxis="left"
-        yAxis="bottom"
+        hTextPosition="left"
+        vTextPosition="bottom"
       >
         <MultipleParagraphs paragraphs={section1.paragraphs} />
       </SectionDropDown>

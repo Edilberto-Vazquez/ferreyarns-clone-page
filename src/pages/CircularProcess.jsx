@@ -22,7 +22,8 @@ const CircularProcess = () => {
         title={section1.title}
         sectionName={section1.sectionName}
         video={section1.video}
-        yAxis="top"
+        hTextPosition="left"
+        vTextPosition="top"
       >
         <MultipleParagraphs paragraphs={section1.paragraphs} />
       </SectionDropDown>

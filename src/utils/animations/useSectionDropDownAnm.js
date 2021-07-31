@@ -1,13 +1,13 @@
 import { createRef, useEffect } from "react";
 
-const useFeatureSectionAnm = (xAxis) => {
+const useSectionDropDownAnm = (hTextPosition) => {
   const refImg = createRef();
   useEffect(() => {
     const imgCallback = (entries) => {
       const [entry] = entries;
-      if (entry.isIntersecting && xAxis === "right") {
+      if (entry.isIntersecting && hTextPosition === "right") {
         return entry.target.classList.add("imgRight");
-      } else if (entry.isIntersecting && xAxis === "left") {
+      } else if (entry.isIntersecting && hTextPosition === "left") {
         return entry.target.classList.add("imgLeft");
       }
     };
@@ -23,8 +23,8 @@ const useFeatureSectionAnm = (xAxis) => {
     if (refImg.current) {
       imgObserver.observe(refImg.current);
     }
-  }, [refImg, xAxis]);
+  }, [refImg, hTextPosition]);
   return [refImg];
 };
 
-export default useFeatureSectionAnm;
+export default useSectionDropDownAnm;

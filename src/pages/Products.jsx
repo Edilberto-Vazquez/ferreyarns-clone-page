@@ -43,7 +43,8 @@ const Products = () => {
         title={section1.title}
         img={section1.img}
         sectionName={section1.sectionName}
-        xAxis="left"
+        hTextPosition="left"
+        vTextPosition="top"
       >
         <MultipleParagraphs paragraphs={section1.paragraphs} />
       </SectionDropDown>

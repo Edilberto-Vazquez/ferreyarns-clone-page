@@ -41,13 +41,19 @@ const Home = () => {
         <SectionDropDown
           title={section2.title}
           img={section2.img}
-          xAxis="right"
+          hTextPosition="right"
+          vTextPosition="top"
         >
           <MultipleParagraphs paragraphs={section2.paragraphs} />
         </SectionDropDown>
 
         {/* A circular process section3*/}
-        <SectionDropDown title={section3.title} img={section3.img} xAxis="left">
+        <SectionDropDown
+          title={section3.title}
+          img={section3.img}
+          hTextPosition="left"
+          vTextPosition="top"
+        >
           <MultipleParagraphs paragraphs={section3.paragraphs} />
         </SectionDropDown>
 
@@ -55,7 +61,8 @@ const Home = () => {
         <SectionDropDown
           title={section4.title}
           img={section4.img}
-          xAxis="right"
+          vTextPosition="right"
+          hTextPosition="top"
         >
           <MultipleParagraphs paragraphs={section4.paragraphs} />
         </SectionDropDown>

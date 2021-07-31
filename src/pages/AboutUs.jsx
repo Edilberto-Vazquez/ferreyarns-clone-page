@@ -63,7 +63,8 @@ const AboutUs = () => {
         title={idiom.alwaysLook.title}
         sectionName={idiom.alwaysLook.sectionName}
         img={idiom.alwaysLook.img}
-        xAxis="left"
+        hTextPosition="left"
+        vTextPosition="bottom"
       >
         <MultipleParagraphs paragraphs={idiom.alwaysLook.paragraphs} />
       </SectionDropDown>
@@ -96,8 +97,8 @@ const AboutUs = () => {
       <SectionDropDown
         title={idiom.awardsHonours.title}
         img={idiom.awardsHonours.img}
-        xAxis="right"
-        yAxis="bottom"
+        hTextPosition="right"
+        vTextPosition="top"
       >
         <ul>
           {idiom.awardsHonours.paragraphs.map((item, index) => (

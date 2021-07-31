@@ -21,8 +21,8 @@ const PositiveImpact = () => {
         title={section1.title}
         sectionName={section1.sectionName}
         img={section1.img}
-        xAxis="left"
-        yAxis="bottom"
+        hTextPosition="left"
+        vTextPosition="bottom"
         aria-expanded={false}
       >
         <MultipleParagraphs paragraphs={section1.paragraphs} />
@@ -50,8 +50,8 @@ const PositiveImpact = () => {
       <SectionDropDown
         title={section4.title}
         img={section4.img}
-        xAxis="right"
-        yAxis="bottom"
+        hTextPosition="right"
+        vTextPosition="bottom"
       >
         <MultipleParagraphs paragraphs={section4.paragraphs} />
       </SectionDropDown>
