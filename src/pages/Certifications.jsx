@@ -38,7 +38,6 @@ const Certifications = () => {
         <h2
           ref={refOpcTitleCert}
           className="title-black scrolling-animation-opacity"
-          aria-expanded={false}
         >
           {section2.title}
         </h2>
@@ -59,7 +58,6 @@ const Certifications = () => {
         <h2
           ref={refOpcTitleAsc}
           className="title-black scrolling-animation-opacity"
-          aria-expanded={false}
         >
           {section3.title}
         </h2>
