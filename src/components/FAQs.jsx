@@ -4,7 +4,7 @@ import useChangeLanguage from "../utils/hooks/useChangeLanguage";
 import English from "../utils/PageContent/Faqs/English.json";
 import Spanish from "../utils/PageContent/Faqs/Spanish.json";
 import { ContainerWithTitle, MultipleParagraphs } from "./GeneralComponents";
-import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
+import useSectionChangeAnm from "../utils/animations/useSectionChangeAnm";
 import useDisplayAnm from "../utils/animations/useDisplayAnm";
 import "./styles/FAQs.css";
 
@@ -36,7 +36,7 @@ const FAQsQuestions = ({ question, answer }) => {
 // main component of the section Faqs
 export const FAQs = () => {
   // hook to get the animation
-  const [refOpc] = useOpacityAnmOnScroll();
+  const [refOpc] = useSectionChangeAnm();
   // hook to set the type language
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
@@ -45,7 +45,7 @@ export const FAQs = () => {
   return (
     <div
       ref={refOpc}
-      className="faqs some-questions__item opacity-animation"
+      className="faqs some-questions__item section-change-animation"
       aria-expanded={false}
     >
       {/* Faqs description section */}

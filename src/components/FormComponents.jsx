@@ -8,7 +8,7 @@ export const FormSection = ({ title, children, privacy }) => {
   return (
     <div
       ref={refOpc}
-      className="form-section opacity-animation"
+      className="form-section scrolling-animation-opacity"
       aria-expanded={false}
     >
       <div className="form-section__title">

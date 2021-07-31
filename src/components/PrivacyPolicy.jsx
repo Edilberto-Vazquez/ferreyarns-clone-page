@@ -8,7 +8,7 @@ import {
   MultipleList,
   MultipleParagraphs,
 } from "./GeneralComponents";
-import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
+import useSectionChangeAnm from "../utils/animations/useSectionChangeAnm";
 
 const PrivacyPolicy = () => {
   const { language } = useContext(LanguageChanger);
@@ -25,11 +25,11 @@ const PrivacyPolicy = () => {
     section9,
     section10,
   ] = idiom;
-  const [refOpc] = useOpacityAnmOnScroll();
+  const [refOpc] = useSectionChangeAnm();
   return (
     <div
       ref={refOpc}
-      className="privacy-policy some-questions__item container-row-gap opacity-animation"
+      className="privacy-policy some-questions__item section-change-animation"
       aria-expanded={false}
     >
       {/* first paragraph section1 */}

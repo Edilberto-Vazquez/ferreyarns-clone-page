@@ -8,17 +8,17 @@ import {
   MultipleList,
   MultipleParagraphs,
 } from "./GeneralComponents";
-import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
+import useSectionChangeAnm from "../utils/animations/useSectionChangeAnm";
 
 const LegalNotice = () => {
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1, section2] = idiom;
-  const [refOpc] = useOpacityAnmOnScroll();
+  const [refOpc] = useSectionChangeAnm();
   return (
     <div
       ref={refOpc}
-      className="legal-notice some-questions__item opacity-animation"
+      className="legal-notice some-questions__item section-change-animation"
       aria-expanded={false}
     >
       {/* general aspects legal notice section1 */}

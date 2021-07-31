@@ -51,7 +51,7 @@ const Products = () => {
       {/* materials section2 */}
       <div
         ref={refOpc}
-        className="materials opacity-animation"
+        className="materials scrolling-animation-opacity"
         aria-expanded={false}
       >
         <div className="ecological-section-description">

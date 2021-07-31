@@ -35,11 +35,19 @@ const Certifications = () => {
       </SectionDropDown>
       {/* certifications section2 */}
       <div className="certifications__title">
-        <h2 ref={refOpcTitleCert} className="title-black">
+        <h2
+          ref={refOpcTitleCert}
+          className="title-black scrolling-animation-opacity"
+          aria-expanded={false}
+        >
           {section2.title}
         </h2>
       </div>
-      <div ref={refOpcItemCert} className="certifications__items">
+      <div
+        ref={refOpcItemCert}
+        className="certifications__items scrolling-animation-opacity"
+        aria-expanded={false}
+      >
         {section2.certsItem.map((item, index) => (
           <CertificationItem key={index} title={item.title} img={item.img}>
             <MultipleParagraphs paragraphs={item.paragraphs} />
@@ -48,11 +56,19 @@ const Certifications = () => {
       </div>
       {/* Associations and Commitments section3 */}
       <div className="certifications__title">
-        <h2 ref={refOpcTitleAsc} className="title-black">
+        <h2
+          ref={refOpcTitleAsc}
+          className="title-black scrolling-animation-opacity"
+          aria-expanded={false}
+        >
           {section3.title}
         </h2>
       </div>
-      <div ref={refOpcItemAsc} className="associations__items">
+      <div
+        ref={refOpcItemAsc}
+        className="associations__items scrolling-animation-opacity"
+        aria-expanded={false}
+      >
         {section3.assoCommitsItem.map((item, index) => (
           <CertificationItem key={index} title={item.title} img={item.img}>
             <MultipleParagraphs paragraphs={item.paragraphs} />

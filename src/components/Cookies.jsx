@@ -8,17 +8,17 @@ import {
   MultipleList,
   MultipleParagraphs,
 } from "./GeneralComponents";
-import useOpacityAnmOnScroll from "../utils/animations/useOpacityAnmOnScroll";
+import useSectionChangeAnm from "../utils/animations/useSectionChangeAnm";
 
 const Cookies = () => {
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1, section2, section3, section4, section5] = idiom;
-  const [refOpc] = useOpacityAnmOnScroll();
+  const [refOpc] = useSectionChangeAnm();
   return (
     <div
       ref={refOpc}
-      className="cookies some-questions__item opacity-animation"
+      className="cookies some-questions__item section-change-animation"
       aria-expanded={false}
     >
       {/* What are cookies? section1 */}

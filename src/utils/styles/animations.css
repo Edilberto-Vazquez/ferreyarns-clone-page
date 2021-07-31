@@ -1,11 +1,22 @@
-/* opacity animation */
+/* scrolling animation opacity */
 
-.opacity-animation {
+.scrolling-animation-opacity {
   opacity: 0;
-  transition: opacity 400ms linear 1000ms;
+  transition: opacity 400ms linear 700ms;
 }
 
-.opacity-animation[aria-expanded="true"] {
+.scrolling-animation-opacity[aria-expanded="true"] {
+  opacity: 1;
+}
+
+/* section change animation */
+
+.section-change-animation {
+  opacity: 0;
+  transition: opacity 400ms linear;
+}
+
+.section-change-animation[aria-expanded="true"] {
   opacity: 1;
 }
 
@@ -62,7 +73,7 @@
 /* FeatureSection component images animation */
 
 .imgLeft {
-  animation: imgLeft 1000ms linear 0ms;
+  animation: imgLeft 700ms linear 0ms;
 }
 
 @keyframes imgLeft {
@@ -77,7 +88,7 @@
 }
 
 .imgRight {
-  animation: imgRight 1000ms linear 0ms;
+  animation: imgRight 700ms linear 0ms;
 }
 
 @keyframes imgRight {

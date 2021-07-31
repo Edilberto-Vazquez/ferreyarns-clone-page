@@ -28,7 +28,7 @@ const CircularProcess = () => {
       </SectionDropDown>
       <div
         ref={refOpc}
-        className="circular-process-items opacity-animation"
+        className="circular-process-items scrolling-animation-opacity"
         aria-expanded={false}
       >
         {section2.process.map((item, index) => (

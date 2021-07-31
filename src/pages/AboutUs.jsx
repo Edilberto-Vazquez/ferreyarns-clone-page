@@ -68,7 +68,13 @@ const AboutUs = () => {
         <MultipleParagraphs paragraphs={idiom.alwaysLook.paragraphs} />
       </SectionDropDown>
       <div className="about-us-phrase">
-        <p ref={refOpc}>{idiom.aboutSlogan}</p>
+        <p
+          ref={refOpc}
+          className="scrolling-animation-opacity"
+          aria-expanded={false}
+        >
+          {idiom.aboutSlogan}
+        </p>
       </div>
       <div className="story-slides">
         <h2 className="story-slides__title title-white">

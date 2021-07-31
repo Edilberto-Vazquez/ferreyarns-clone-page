@@ -7,7 +7,7 @@ const useDisplayAnm = (color) => {
   useEffect(() => {
     if (refDisplay.current) {
       refDisplay.current.classList.add("display-animation");
-      refDisplay.current.ariaexpanded = !show;
+      refDisplay.current.ariaExpanded = !show;
       if (color === "black") {
         refButton.current.classList.add(
           "display-animation-button",

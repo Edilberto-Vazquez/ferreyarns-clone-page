@@ -17,7 +17,7 @@ const useOpacityAnmOnScroll = () => {
     };
 
     const opacityObserver = new IntersectionObserver(opacityCallback, options);
-    if (refOpc.current && refOpc !== null) {
+    if (refOpc.current) {
       opacityObserver.observe(refOpc.current);
     }
   }, [refOpc]);

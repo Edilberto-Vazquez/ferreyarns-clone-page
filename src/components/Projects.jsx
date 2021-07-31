@@ -4,18 +4,18 @@ import useChangeLanguage from "../utils/hooks/useChangeLanguage";
 import English from "../utils/PageContent/Projects/English.json";
 import Spanish from "../utils/PageContent/Projects/Spanish.json";
 import { ContainerWithTitle, MultipleParagraphs } from "./GeneralComponents";
-import useOpacityAnm from "../utils/animations/useOpacityAnm";
+import useSectionChangeAnm from "../utils/animations/useSectionChangeAnm";
 
 const Projects = () => {
   const { language } = useContext(LanguageChanger);
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [section1] = idiom;
-  const [refOpc] = useOpacityAnm();
+  const [refOpc] = useSectionChangeAnm();
 
   return (
     <div
       ref={refOpc}
-      className="projects some-questions-section-item opacity-animation"
+      className="projects some-questions-section-item section-change-animation"
       aria-expanded={false}
     >
       {/* Projects*/}
