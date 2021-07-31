@@ -24,9 +24,9 @@ const SectionDropDown = ({
   };
 
   const handleTextPositionVertical = () => {
-    if (yAxis === "right") {
+    if (yAxis === "top") {
       return "section-dropdown-top";
-    } else if (yAxis === "right") {
+    } else if (yAxis === "bottom") {
       return "section-dropdown-bottom";
     }
   };

@@ -1,5 +1,5 @@
 .env-sav {
-  padding: 10% 10%;
+  padding: 0 10% 10% 10%;
   display: grid;
   row-gap: 14px;
   background: var(--primary);

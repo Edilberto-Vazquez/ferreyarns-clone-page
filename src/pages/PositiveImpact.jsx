@@ -22,6 +22,7 @@ const PositiveImpact = () => {
         sectionName={section1.sectionName}
         img={section1.img}
         xAxis="left"
+        yAxis="bottom"
         aria-expanded={false}
       >
         <MultipleParagraphs paragraphs={section1.paragraphs} />
@@ -29,20 +30,6 @@ const PositiveImpact = () => {
 
       {/* slider section2 */}
       <SlidesContainer slides={section2.slides} />
-      {/* <SliderContainer className="positive-impact-slide">
-        {section2.slides.map((item, index) => (
-          <SlideItem key={index} sectionImg={item.img}>
-            <SlideTitle titleImg={item.imgTitle} />
-            <SlideDescription
-              brand={item.brand}
-              garment={item.garment}
-              compositions={item.composition}
-            />
-            <SlideTotalSavings totalSavings={item.totalSavings} />
-            <SlideDataSource dataSource={item.dataSource} />
-          </SlideItem>
-        ))}
-      </SliderContainer> */}
 
       {/* Our environmental savings in 2020 section3 */}
       <div className="env-sav">
@@ -64,7 +51,7 @@ const PositiveImpact = () => {
         title={section4.title}
         img={section4.img}
         xAxis="right"
-        yAxis="top"
+        yAxis="bottom"
       >
         <MultipleParagraphs paragraphs={section4.paragraphs} />
       </SectionDropDown>

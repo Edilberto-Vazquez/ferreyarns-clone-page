@@ -10,9 +10,15 @@ export const SliderContainer = ({ children }) => {
 
 // item in slider
 export const SlideItem = ({ sectionImg, children }) => {
+  const [refOpc] = useSectionChangeAnm();
   return (
-    <div className="slide-item">
-      <img src={sectionImg} alt="" />
+    <div className="slide-item ">
+      <img
+        ref={refOpc}
+        src={sectionImg}
+        alt=""
+        className="section-change-animation"
+      />
       <div className="slide-item-content">{children}</div>
     </div>
   );
@@ -20,14 +26,24 @@ export const SlideItem = ({ sectionImg, children }) => {
 
 // title image in item
 export const SlideTitle = ({ titleImg }) => {
-  return <img src={titleImg} alt="" className="slide-title" />;
+  const [refOpc] = useSectionChangeAnm();
+  return (
+    <img
+      ref={refOpc}
+      src={titleImg}
+      alt=""
+      className="slide-title section-change-animation"
+    />
+  );
 };
 
 export const SlideDescription = ({ brand, garment, compositions }) => {
-  console.log();
+  const [refOpcBrand] = useSectionChangeAnm();
+  const [refOpcComposition] = useSectionChangeAnm();
+  const [refOpcMaterials] = useSectionChangeAnm();
   return (
     <div className="slide-section-description border-white">
-      <div className="brand-garment">
+      <div ref={refOpcBrand} className="brand-garment section-change-animation">
         <p>
           {brand.title}: {brand.brand}
         </p>
@@ -35,8 +51,16 @@ export const SlideDescription = ({ brand, garment, compositions }) => {
           {garment.title}: {garment.garment}
         </p>
       </div>
-      <p className="composition">{compositions.title} </p>
-      <div className="composition-materials">
+      <p
+        ref={refOpcComposition}
+        className="composition section-change-animation"
+      >
+        {compositions.title}{" "}
+      </p>
+      <div
+        ref={refOpcMaterials}
+        className="composition-materials section-change-animation"
+      >
         <MaterialsTypes materials={compositions.materials} />
       </div>
     </div>
@@ -46,11 +70,18 @@ export const SlideDescription = ({ brand, garment, compositions }) => {
 // total savings section tabs
 export const SlideTotalSavings = ({ totalSavings }) => {
   const [tab, setTab] = useState(totalSavings.elements[0].element);
-  const [refOpc] = useSectionChangeAnm();
+  const [refOpcTitle] = useSectionChangeAnm();
+  const [refOpcTab] = useSectionChangeAnm();
+  const [refOpcElements] = useSectionChangeAnm();
   return (
     <div className="slide-section-savings border-white">
-      <h3>{totalSavings.title}</h3>
-      <div className="tabs-saving">
+      <h3 ref={refOpcTitle} className="section-change-animation">
+        {totalSavings.title}
+      </h3>
+      <div
+        ref={refOpcElements}
+        className="tabs-saving section-change-animation"
+      >
         {totalSavings.elements.map((item, index) => (
           <li
             key={index}
@@ -69,10 +100,9 @@ export const SlideTotalSavings = ({ totalSavings }) => {
         if (item.element !== tab) return undefined;
         return (
           <div
-            ref={refOpc}
+            ref={refOpcTab}
             key={index}
             className="tab-content section-change-animation"
-            aria-expanded={false}
           >
             <span>{item.amount}</span>
             <span>{item.element}</span>
@@ -85,8 +115,12 @@ export const SlideTotalSavings = ({ totalSavings }) => {
 
 // item data source
 export const SlideDataSource = ({ dataSource }) => {
+  const [refOpc] = useSectionChangeAnm();
   return (
-    <div className="data-source border-white">
+    <div
+      ref={refOpc}
+      className="data-source border-white section-change-animation"
+    >
       <p>{dataSource}</p>
     </div>
   );
