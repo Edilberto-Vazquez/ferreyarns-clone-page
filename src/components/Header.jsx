@@ -77,7 +77,16 @@ const Header = () => {
             </Link>
           </li>
           <li className="dropdown-menu">
-            <details className="dropdown-menu__details">
+            {header.sustainability.title}
+
+            <ul className="dropdown-menu__details-items">
+              {header.sustainability.items.map((item, index) => (
+                <li key={index}>
+                  <Link to={item.link}>{item.name}</Link>
+                </li>
+              ))}
+            </ul>
+            {/* <details className="dropdown-menu__details">
               <summary className="dropdown-menu__details-title">
                 {header.sustainability.title}
               </summary>
@@ -88,7 +97,7 @@ const Header = () => {
                   </li>
                 ))}
               </div>
-            </details>
+            </details> */}
           </li>
           {/* <li>
             <Link to={header.workWithUs[1]}>{header.workWithUs[0]}</Link>
