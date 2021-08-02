@@ -34,7 +34,7 @@ header {
   background-size: cover;
 }
 
-.navbar-mobile-links {
+.navbar-mobile__links {
   width: 80%;
   height: auto;
   padding: 13px 5%;
@@ -49,13 +49,13 @@ header {
   border-top: 4px solid var(--primary);
 }
 
-.navbar-mobile-links > li {
+.navbar-mobile__links > li {
   padding: 10px 5%;
   list-style: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
 
-.navbar-mobile-language {
+.navbar-mobile__language {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: min-content;
@@ -76,7 +76,7 @@ header {
   color: var(--secondary-font);
 }
 
-.navbar-mobile:hover .navbar-mobile-links {
+.navbar-mobile:hover .navbar-mobile__links {
   display: grid;
 }
 
@@ -88,8 +88,8 @@ header {
   justify-content: space-between;
 }
 
-.navbar-desktop-links,
-.navbar-desktop-contact {
+.navbar-desktop__links,
+.navbar-desktop__contact {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: max-content;
@@ -97,12 +97,12 @@ header {
   column-gap: 22px;
 }
 
-.navbar-desktop-links ul li,
-.navbar-desktop-contact li {
+.navbar-desktop__links ul li,
+.navbar-desktop__contact li {
   cursor: pointer;
 }
 
-.navbar-desktop-contact li:nth-child(3) {
+.navbar-desktop__contact li:nth-child(3) {
   width: 144px;
   height: 44px;
   display: grid;

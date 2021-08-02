@@ -17,7 +17,7 @@ const Header = () => {
         <img src={header.logo[0]} alt={header.logo[1]} />
       </Link>
       <nav className="navbar-mobile">
-        <ul className="navbar-mobile-links">
+        <ul className="navbar-mobile__links">
           {/* <li>
             <Link to={header.aboutUs[1]}>{header.aboutUs[0]}</Link>
           </li> */}
@@ -47,7 +47,7 @@ const Header = () => {
           <li>
             <Link to={header.contact[1]}>{header.contact[0]}</Link>
           </li>
-          <ul className="navbar-mobile-language navbar-language">
+          <ul className="navbar-mobile__language navbar-language">
             <li
               onClick={() => setLanguage("en")}
               className={`${language === "en" && "navbar-language__current"}`}
@@ -64,7 +64,7 @@ const Header = () => {
         </ul>
       </nav>
       <nav className="navbar-desktop">
-        <ul className="navbar-desktop-links">
+        <ul className="navbar-desktop__links">
           {/* <li>
             <Link to={header.aboutUs[1]}>{header.aboutUs[0]}</Link>
           </li> */}
@@ -103,7 +103,7 @@ const Header = () => {
             <Link to={header.workWithUs[1]}>{header.workWithUs[0]}</Link>
           </li> */}
         </ul>
-        <ul className="navbar-desktop-contact navbar-language">
+        <ul className="navbar-desktop__contact navbar-language">
           <li
             onClick={() => setLanguage("en")}
             className={`${language === "en" && "navbar-language__current"}`}

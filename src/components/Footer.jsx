@@ -11,12 +11,12 @@ const Footer = () => {
   const [idiom] = useChangeLanguage(language, English, Spanish);
   const [footer] = idiom;
   return (
-    <footer>
+    <footer className="footer">
       <div className="footer-information">
-        <div className="footer-logo">
+        <div className="footer-information__logo">
           <div></div>
         </div>
-        <div className="footer-contac">
+        <div className="footer-information__contac">
           <p>{footer.contact.paragraphs}</p>
           {footer.contact.links.map((item, index) => (
             <p key={index}>
@@ -25,21 +25,21 @@ const Footer = () => {
             </p>
           ))}
         </div>
-        <div className="footer-general-information">
+        <div className="footer-information__general-information">
           {footer.someQuestions.map((item, index) => (
             <Link key={index} to={item.link}>
               {item.name}
             </Link>
           ))}
         </div>
-        <div className="footer-general-information">
+        <div className="footer-information__general-information">
           {footer.pages.map((item, index) => (
             <Link key={index} to={item.link}>
               {item.name}
             </Link>
           ))}
         </div>
-        <div className="footer-social-media">
+        <div className="footer-information__social-media">
           <p>
             <strong>{footer.follow.title}</strong>
           </p>
@@ -48,16 +48,16 @@ const Footer = () => {
               <img
                 src={item.img}
                 alt={item.alt}
-                className="footer-social-media_icons"
+                className="footer-information__social-media-icons"
               />
             </a>
           ))}
         </div>
       </div>
-      <div className="certifications border-black">
+      <div className="footer-certifications border-black">
         <img src={footer.img} alt="" />
       </div>
-      <div className="all-rights-reserved">
+      <div className="footer-all-rights-reserved">
         <p>{footer.reserved}</p>
       </div>
     </footer>
