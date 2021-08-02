@@ -36,6 +36,7 @@
 /* display transition button style */
 
 .display-animation-button-black::after {
+  content: "-";
   justify-self: flex-end;
   width: 35px;
   height: 35px;
@@ -49,6 +50,7 @@
 }
 
 .display-animation-button-white::after {
+  content: "-";
   justify-self: flex-end;
   width: 35px;
   height: 35px;
@@ -62,17 +64,12 @@
 }
 
 /* display transition button transition */
-.display-animation-button::after {
-  content: "-";
-  transition: content 700ms linear;
-}
 
 .display-animation-button[aria-expanded="true"]::after {
   content: "+";
-  transition: content 500ms cubic-bezier(0, 1, 0, 1);
 }
 
-/* FeatureSection component images animation */
+/* SectionDropDown component images animation */
 
 .imgLeft {
   animation: imgLeft 700ms linear 0ms;
