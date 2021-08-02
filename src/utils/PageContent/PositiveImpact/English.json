@@ -3,7 +3,10 @@
     "id": "section1",
     "sectionName": "Ferre / Sustainability / Positive impact",
     "title": "Metrics that matter",
-    "img": "/assets/images/positive_impact/positive-impact.jpg",
+    "img": {
+      "img": "/assets/images/positive_impact/positive-impact.jpg",
+      "alt": "positive-impact"
+    },
     "paragraphs": [
       "After more than seven decades supplying recycled yarns to the fashion industry, circularity is in our DNA. Recycled raw material, zero chemicals, zero water and minimal CO2 emissions. Circular business models have always fueled our resource- and energy-efficient yarn manufacturing process and helped us minimize our impact."
     ]
@@ -12,8 +15,14 @@
     "id": "section2",
     "slides": [
       {
-        "img": "assets/images/positive_impact/kimoa-tshirt.jpg",
-        "imgTitle": "/assets/icons/products/f_images/fblue.svg",
+        "img": {
+          "img": "assets/images/positive_impact/kimoa-tshirt.jpg",
+          "alt": "kimoa-tshirt"
+        },
+        "imgTitle": {
+          "img": "/assets/icons/products/f_images/fblue.svg",
+          "alt": "fblue"
+        },
         "brand": { "title": "Brand", "brand": "Kimoa" },
         "garment": { "title": "Garment", "garment": "T-SHIRT" },
         "composition": {
@@ -21,17 +30,26 @@
           "materials": [
             {
               "name": "Recover™ recycled cotton",
-              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+                "alt": "cotton-icon-white"
+              },
               "percentage": "50%"
             },
             {
               "name": "Recycled Polyester",
-              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+                "alt": "poliester-icon-white.svg"
+              },
               "percentage": "47%"
             },
             {
               "name": "Other fibers",
-              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/other-fibers.svg",
+                "alt": "other-fibers"
+              },
               "percentage": "3%"
             }
           ]
@@ -40,27 +58,42 @@
           "title": "Total savings",
           "elements": [
             {
-              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/water-icon.svg",
+                "alt": "/assets/icons/positive_impact/water-icon.svg"
+              },
               "amount": "1,343",
               "element": "liters of water saved"
             },
             {
-              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/co2-icon.svg",
+                "alt": "co2-icon"
+              },
               "amount": "2",
               "element": "kg of CO2 saved"
             },
             {
-              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/chemical-icon.svg",
+                "alt": "chemical-icon"
+              },
               "amount": "0.1",
               "element": "kg of chemicals saved"
             },
             {
-              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/energy-icon.svg",
+                "alt": "energy-icon"
+              },
               "amount": "5",
               "element": "kWh of energy saved"
             },
             {
-              "img": "/assets/icons/positive_impact/bottle-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/bottle-icon.svg",
+                "alt": "bottle-icon"
+              },
               "amount": "4",
               "element": "PET bottle units saved"
             }
@@ -69,8 +102,14 @@
         "dataSource": "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO."
       },
       {
-        "img": "assets/images/positive_impact/kimoa-hoodie.jpg",
-        "imgTitle": "/assets/icons/products/f_images/fblue.svg",
+        "img": {
+          "img": "assets/images/positive_impact/kimoa-hoodie.jpg",
+          "alt": "kimoa-hoodie"
+        },
+        "imgTitle": {
+          "img": "/assets/icons/products/f_images/fblue.svg",
+          "alt": "fblue"
+        },
         "brand": { "title": "Brand", "brand": "Kimoa" },
         "garment": { "title": "Garment", "garment": "Hoodie" },
         "composition": {
@@ -78,17 +117,26 @@
           "materials": [
             {
               "name": "Recover™ recycled cotton",
-              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+                "alt": "cotton-icon-white"
+              },
               "percentage": "50%"
             },
             {
               "name": "Recycled Polyester",
-              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+                "alt": "poliester-icon-white.svg"
+              },
               "percentage": "47%"
             },
             {
               "name": "Other fibers",
-              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/other-fibers.svg",
+                "alt": "other-fibers"
+              },
               "percentage": "3%"
             }
           ]
@@ -97,27 +145,42 @@
           "title": "Total savings",
           "elements": [
             {
-              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/water-icon.svg",
+                "alt": "/assets/icons/positive_impact/water-icon.svg"
+              },
               "amount": "2,090",
               "element": "liters of water saved"
             },
             {
-              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/co2-icon.svg",
+                "alt": "co2-icon"
+              },
               "amount": "3",
               "element": "kg of CO2 saved"
             },
             {
-              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/chemical-icon.svg",
+                "alt": "chemical-icon"
+              },
               "amount": "0.2",
               "element": "kg of chemicals saved"
             },
             {
-              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/energy-icon.svg",
+                "alt": "energy-icon"
+              },
               "amount": "8",
               "element": "kWh of energy saved"
             },
             {
-              "img": "/assets/icons/positive_impact/bottle-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/bottle-icon.svg",
+                "alt": "bottle-icon"
+              },
               "amount": "6",
               "element": "PET bottle units saved"
             }
@@ -126,8 +189,14 @@
         "dataSource": "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO."
       },
       {
-        "img": "assets/images/positive_impact/mud-jeans.jpg",
-        "imgTitle": "/assets/icons/products/f_images/fjeans.svg",
+        "img": {
+          "img": "assets/images/positive_impact/mud-jeans.jpg",
+          "alt": "mud-jeans"
+        },
+        "imgTitle": {
+          "img": "/assets/icons/products/f_images/fjeans.svg",
+          "alt": "fjeans"
+        },
         "brand": { "title": "Brand", "brand": "Mud Jeans" },
         "garment": { "title": "Garment", "garment": "Denim" },
         "composition": {
@@ -135,12 +204,18 @@
           "materials": [
             {
               "name": "Recover™ recycled cotton",
-              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+                "alt": "cotton-icon-white"
+              },
               "percentage": "50%"
             },
             {
               "name": "Organic cotton",
-              "img": "/assets/icons/products/materials/organic-cotton.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/organic-cotton.svg",
+                "alt": "organic-cotton"
+              },
               "percentage": "50%"
             }
           ]
@@ -149,22 +224,34 @@
           "title": "Total savings",
           "elements": [
             {
-              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/water-icon.svg",
+                "alt": "/assets/icons/positive_impact/water-icon.svg"
+              },
               "amount": "5,917",
               "element": "liters of water saved"
             },
             {
-              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/co2-icon.svg",
+                "alt": "co2-icon"
+              },
               "amount": "9",
               "element": "kg of CO2 saved"
             },
             {
-              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/chemical-icon.svg",
+                "alt": "chemical-icon"
+              },
               "amount": "0.5",
               "element": "kg of chemicals saved"
             },
             {
-              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/energy-icon.svg",
+                "alt": "energy-icon"
+              },
               "amount": "22",
               "element": "kWh of energy saved"
             }
@@ -173,8 +260,14 @@
         "dataSource": "Data calculated using the LCA methodology and verified by AITEX, Universitat de València and UNESCO."
       },
       {
-        "img": "assets/images/positive_impact/coyuchi.jpg",
-        "imgTitle": "/assets/icons/products/f_images/fearth.svg",
+        "img": {
+          "img": "assets/images/positive_impact/coyuchi.jpg",
+          "alt": "coyuchi"
+        },
+        "imgTitle": {
+          "img": "/assets/icons/products/f_images/fearth.svg",
+          "alt": "fearth"
+        },
         "brand": { "title": "Brand", "brand": "Coyuchi" },
         "garment": { "title": "Garment", "garment": "Blanket" },
         "composition": {
@@ -182,17 +275,26 @@
           "materials": [
             {
               "name": "Recover™ recycled cotton",
-              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+                "alt": "cotton-icon-white"
+              },
               "percentage": "45%"
             },
             {
               "name": "Organic cotton",
-              "img": "/assets/icons/products/materials/organic-cotton.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/organic-cotton.svg",
+                "alt": "organic-cotton"
+              },
               "percentage": "50%"
             },
             {
               "name": "Other fibers",
-              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/other-fibers.svg",
+                "alt": "other-fibers"
+              },
               "percentage": "5%"
             }
           ]
@@ -201,22 +303,34 @@
           "title": "Total savings",
           "elements": [
             {
-              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/water-icon.svg",
+                "alt": "/assets/icons/positive_impact/water-icon.svg"
+              },
               "amount": "16,420",
               "element": "liters of water saved"
             },
             {
-              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/co2-icon.svg",
+                "alt": "co2-icon"
+              },
               "amount": "25",
               "element": "kg of CO2 saved"
             },
             {
-              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/chemical-icon.svg",
+                "alt": "chemical-icon"
+              },
               "amount": "1.2",
               "element": "kg of chemicals saved"
             },
             {
-              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/energy-icon.svg",
+                "alt": "energy-icon"
+              },
               "amount": "62",
               "element": "kWh of energy saved"
             }
@@ -231,32 +345,50 @@
     "title": "Our environmental savings in 2020",
     "environmentalSavings": [
       {
-        "img": "/assets/icons/positive_impact/water-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/water-icon.svg",
+          "alt": "water-icon.svg"
+        },
         "number": 28,
         "element": "billion liters of water saved"
       },
       {
-        "img": "/assets/icons/positive_impact/co2-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/co2-icon.svg",
+          "alt": "co2-icon"
+        },
         "number": 40.2,
         "element": "million kg of CO2 emissions saved"
       },
       {
-        "img": "/assets/icons/positive_impact/chemical-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/chemical-icon.svg",
+          "alt": "chemical-icon"
+        },
         "number": 2.1,
         "element": "million kg of chemicals saved"
       },
       {
-        "img": "/assets/icons/positive_impact/textil-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/textil-icon.svg",
+          "alt": "textil-icon"
+        },
         "number": 1.9,
         "element": "million kg textile waste recycled"
       },
       {
-        "img": "/assets/icons/positive_impact/energy-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/energy-icon.svg",
+          "alt": "energy-icon"
+        },
         "number": 102.7,
         "element": "million kWh of energy saved"
       },
       {
-        "img": "/assets/icons/positive_impact/bottle-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/bottle-icon.svg",
+          "alt": "bottle-icon"
+        },
         "number": 5.8,
         "element": "million PET bottle units saved"
       }
@@ -265,7 +397,10 @@
   {
     "id": "section4",
     "title": "Sustainability report",
-    "img": "/assets/images/positive_impact/positive-impact-memory.jpg",
+    "img": {
+      "img": "/assets/images/positive_impact/positive-impact-memory.jpg",
+      "alt": "positive-impact-memory"
+    },
     "paragraphs": [
       "At Ferre we guarantee the highest standards of corporate governance. We are committed to protecting the rights and well-being of our employees, as well as reducing our environmental impact and promoting the progress of our community and the whole society."
     ]

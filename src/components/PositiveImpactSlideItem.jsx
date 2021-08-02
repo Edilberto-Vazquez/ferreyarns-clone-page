@@ -10,8 +10,8 @@ export const PISlideItem = ({ sectionImg, children }) => {
     <div className="posimpact-slide ">
       <img
         ref={refOpc}
-        src={sectionImg}
-        alt=""
+        src={sectionImg.img}
+        alt={sectionImg.alt}
         className="section-change-animation"
       />
       <div className="posimpact-slide__content">{children}</div>
@@ -25,8 +25,8 @@ export const PISlideTitle = ({ titleImg }) => {
   return (
     <img
       ref={refOpc}
-      src={titleImg}
-      alt=""
+      src={titleImg.img}
+      alt={titleImg.alt}
       className="posimpact-slide__title-img section-change-animation"
     />
   );
@@ -87,8 +87,8 @@ export const PISlideSavings = ({ totalSavings }) => {
             onClick={() => setTab(item.element)}
           >
             <img
-              src={item.img}
-              alt=""
+              src={item.img.img}
+              alt={item.img.alt}
               className={`${
                 item.element !== tab &&
                 "posimpact-slide__savings-no-current-tab"

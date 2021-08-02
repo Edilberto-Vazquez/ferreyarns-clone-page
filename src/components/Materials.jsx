@@ -57,7 +57,7 @@ export const MaterialsTypes = ({ materials }) => {
     <>
       {materials.map((material, index) => (
         <div key={index} className="material-type">
-          <img src={material.img} alt="" />
+          <img src={material.img.img} alt={material.img.alt} />
           <div className="material-type__percentage">
             <span>{material.percentage}</span>
             <p>{material.name}</p>

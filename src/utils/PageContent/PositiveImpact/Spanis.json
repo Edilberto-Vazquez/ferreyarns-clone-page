@@ -3,7 +3,10 @@
     "id": "section1",
     "sectionName": "Ferre / Sostenibilidad / Impacto Positivo",
     "title": "Métricas que importan",
-    "img": "/assets/images/positive_impact/positive-impact.jpg",
+    "img": {
+      "img": "/assets/images/positive_impact/positive-impact.jpg",
+      "alt": "positive-impact"
+    },
     "paragraphs": [
       "Utilizamos la metodología Life Cycle Assessment (LCA) para medir la huella medioambiental de nuestros productos a lo largo de todo su ciclo de vida. Para ello observamos métricas como la huella de carbono, la huella hídrica, el uso de químicos y otras. Esta evaluación del impacto ambiental de nuestros productos ha sido revisada por organismos independientes -AITEX, Universitat de València y UNESCO-, para garantizar la transparencia.",
       "Compartimos nuestras métricas con fabricantes y marcas porque, no solo se trata de reducir nuestros impactos, sino también de crear cadenas de suministro sostenibles y satisfacer la demanda de los consumidores de una moda totalmente transparente."
@@ -13,8 +16,14 @@
     "id": "section2",
     "slides": [
       {
-        "img": "assets/images/positive_impact/kimoa-tshirt.jpg",
-        "imgTitle": "/assets/icons/products/f_images/fblue.svg",
+        "img": {
+          "img": "assets/images/positive_impact/kimoa-tshirt.jpg",
+          "alt": "kimoa-tshirt"
+        },
+        "imgTitle": {
+          "img": "/assets/icons/products/f_images/fblue.svg",
+          "alt": "fblue"
+        },
         "brand": { "title": "Marca", "brand": "Kimoa" },
         "garment": { "title": "Prenda", "garment": "T-SHIRT" },
         "composition": {
@@ -22,17 +31,26 @@
           "materials": [
             {
               "name": "Algodón reciclado Recover™",
-              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+                "alt": "cotton-icon-white"
+              },
               "percentage": "50%"
             },
             {
               "name": "Poliéster reciclado",
-              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+                "alt": "poliester-icon-white.svg"
+              },
               "percentage": "47%"
             },
             {
               "name": "Otras fibras",
-              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/other-fibers.svg",
+                "alt": "other-fibers"
+              },
               "percentage": "3%"
             }
           ]
@@ -41,27 +59,42 @@
           "title": "Ahorros totales",
           "elements": [
             {
-              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/water-icon.svg",
+                "alt": "/assets/icons/positive_impact/water-icon.svg"
+              },
               "amount": "1,343",
               "element": "litros de agua ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/co2-icon.svg",
+                "alt": "co2-icon"
+              },
               "amount": "2",
               "element": "kg de CO2 ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/chemical-icon.svg",
+                "alt": "chemical-icon"
+              },
               "amount": "0.1",
               "element": "kg de químicos ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/energy-icon.svg",
+                "alt": "energy-icon"
+              },
               "amount": "5",
               "element": "kWh de energía ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/bottle-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/bottle-icon.svg",
+                "alt": "bottle-icon"
+              },
               "amount": "4",
               "element": "uds botellas PET ahorradas"
             }
@@ -71,7 +104,10 @@
       },
       {
         "img": "assets/images/positive_impact/kimoa-hoodie.jpg",
-        "imgTitle": "/assets/icons/products/f_images/fblue.svg",
+        "imgTitle": {
+          "img": "/assets/icons/products/f_images/fblue.svg",
+          "alt": "fblue"
+        },
         "brand": { "title": "Marca", "brand": "Kimoa" },
         "garment": { "title": "Prenda", "garment": "Hoodie" },
         "composition": {
@@ -79,17 +115,26 @@
           "materials": [
             {
               "name": "Algodón reciclado Recover™",
-              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+                "alt": "cotton-icon-white"
+              },
               "percentage": "50%"
             },
             {
               "name": "Poliéster reciclado",
-              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+                "alt": "poliester-icon-white.svg"
+              },
               "percentage": "47%"
             },
             {
               "name": "Otras fibras",
-              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/other-fibers.svg",
+                "alt": "other-fibers"
+              },
               "percentage": "3%"
             }
           ]
@@ -98,27 +143,42 @@
           "title": "Ahorros totales",
           "elements": [
             {
-              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/water-icon.svg",
+                "alt": "/assets/icons/positive_impact/water-icon.svg"
+              },
               "amount": "2,090",
               "element": "litros de agua ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/co2-icon.svg",
+                "alt": "co2-icon"
+              },
               "amount": "3",
               "element": "kg de CO2 ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/chemical-icon.svg",
+                "alt": "chemical-icon"
+              },
               "amount": "0.2",
               "element": "kg de químicos ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/energy-icon.svg",
+                "alt": "energy-icon"
+              },
               "amount": "8",
               "element": "kWh de energía ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/bottle-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/bottle-icon.svg",
+                "alt": "bottle-icon"
+              },
               "amount": "6",
               "element": "uds botellas PET ahorradas"
             }
@@ -136,7 +196,10 @@
           "materials": [
             {
               "name": "Algodón reciclado Recover™",
-              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+                "alt": "cotton-icon-white"
+              },
               "percentage": "50%"
             },
             {
@@ -150,22 +213,34 @@
           "title": "Ahorros totales",
           "elements": [
             {
-              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/water-icon.svg",
+                "alt": "/assets/icons/positive_impact/water-icon.svg"
+              },
               "amount": "5,917",
               "element": "litros de agua ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/co2-icon.svg",
+                "alt": "co2-icon"
+              },
               "amount": "9",
               "element": "kg de CO2 ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/chemical-icon.svg",
+                "alt": "chemical-icon"
+              },
               "amount": "0.5",
               "element": "kg de químicos ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/energy-icon.svg",
+                "alt": "energy-icon"
+              },
               "amount": "22",
               "element": "kWh de energía ahorrados"
             }
@@ -183,7 +258,10 @@
           "materials": [
             {
               "name": "Algodón reciclado Recover™",
-              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+                "alt": "cotton-icon-white"
+              },
               "percentage": "45%"
             },
             {
@@ -193,7 +271,10 @@
             },
             {
               "name": "Otras fibras",
-              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "img": {
+                "img": "/assets/icons/products/materials/other-fibers.svg",
+                "alt": "other-fibers"
+              },
               "percentage": "5%"
             }
           ]
@@ -202,22 +283,34 @@
           "title": "Ahorros totales",
           "elements": [
             {
-              "img": "/assets/icons/positive_impact/water-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/water-icon.svg",
+                "alt": "/assets/icons/positive_impact/water-icon.svg"
+              },
               "amount": "16,420",
               "element": "litros de agua ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/co2-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/co2-icon.svg",
+                "alt": "co2-icon"
+              },
               "amount": "25",
               "element": "kg de CO2 ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/chemical-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/chemical-icon.svg",
+                "alt": "chemical-icon"
+              },
               "amount": "1.2",
               "element": "kg de químicos ahorrados"
             },
             {
-              "img": "/assets/icons/positive_impact/energy-icon.svg",
+              "img": {
+                "img": "/assets/icons/positive_impact/energy-icon.svg",
+                "alt": "energy-icon"
+              },
               "amount": "62",
               "element": "kWh de energía ahorrados"
             }
@@ -232,32 +325,50 @@
     "title": "Nuestros ahorros medioambientales en 2020",
     "environmentalSavings": [
       {
-        "img": "/assets/icons/positive_impact/water-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/water-icon.svg",
+          "alt": "water-icon.svg"
+        },
         "number": 28244,
         "element": "millones de litros de agua ahorrados"
       },
       {
-        "img": "/assets/icons/positive_impact/co2-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/co2-icon.svg",
+          "alt": "co2-icon"
+        },
         "number": 40.2,
         "element": "millones de kg de emisiones de CO2 ahorrados"
       },
       {
-        "img": "/assets/icons/positive_impact/chemical-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/chemical-icon.svg",
+          "alt": "chemical-icon"
+        },
         "number": 2.1,
         "element": "millones de kg de químicos ahorrados"
       },
       {
-        "img": "/assets/icons/positive_impact/textil-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/textil-icon.svg",
+          "alt": "textil-icon"
+        },
         "number": 1.9,
         "element": "millones de kg de residuo textil reciclados"
       },
       {
-        "img": "/assets/icons/positive_impact/energy-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/energy-icon.svg",
+          "alt": "energy-icon"
+        },
         "number": 102.7,
         "element": "millones de kWh de energía ahorrados"
       },
       {
-        "img": "/assets/icons/positive_impact/bottle-icon.svg",
+        "img": {
+          "img": "/assets/icons/positive_impact/bottle-icon.svg",
+          "alt": "bottle-icon"
+        },
         "number": 5.8,
         "element": "millones de botellas PET recicladas"
       }

@@ -59,7 +59,7 @@ const PositiveImpact = () => {
         <div className="enviromental-savings__items border-white">
           {section3.environmentalSavings.map((item, index) => (
             <div key={index} className="enviromental-savings__item">
-              <img src={item.img} alt="" />
+              <img src={item.img.img} alt={item.img.alt} />
               <span>{item.number}</span>
               <h3>{item.element}</h3>
             </div>
