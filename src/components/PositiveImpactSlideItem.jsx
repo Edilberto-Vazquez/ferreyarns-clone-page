@@ -3,23 +3,18 @@ import { MaterialsTypes } from "./Materials";
 import useSectionChangeAnm from "../utils/animations/useSectionChangeAnm";
 import "./styles/PositiveImpactSlider.css";
 
-// slider container
-export const SliderContainer = ({ children }) => {
-  return <section className="slide-container">{children}</section>;
-};
-
 // item in slider
 export const SlideItem = ({ sectionImg, children }) => {
   const [refOpc] = useSectionChangeAnm();
   return (
-    <div className="slide-item ">
+    <div className="posimpact-slide ">
       <img
         ref={refOpc}
         src={sectionImg}
         alt=""
         className="section-change-animation"
       />
-      <div className="slide-item-content">{children}</div>
+      <div className="posimpact-slide__content">{children}</div>
     </div>
   );
 };
@@ -32,7 +27,7 @@ export const SlideTitle = ({ titleImg }) => {
       ref={refOpc}
       src={titleImg}
       alt=""
-      className="slide-title section-change-animation"
+      className="posimpact-slide__title-img section-change-animation"
     />
   );
 };
@@ -42,8 +37,11 @@ export const SlideDescription = ({ brand, garment, compositions }) => {
   const [refOpcComposition] = useSectionChangeAnm();
   const [refOpcMaterials] = useSectionChangeAnm();
   return (
-    <div className="slide-section-description border-white">
-      <div ref={refOpcBrand} className="brand-garment section-change-animation">
+    <div className="posimpact-slide__description border-white">
+      <div
+        ref={refOpcBrand}
+        className="posimpact-slide__description-brand-garment section-change-animation"
+      >
         <p>
           {brand.title}: {brand.brand}
         </p>
@@ -53,13 +51,13 @@ export const SlideDescription = ({ brand, garment, compositions }) => {
       </div>
       <p
         ref={refOpcComposition}
-        className="composition section-change-animation"
+        className="posimpact-slide__description-composition-title section-change-animation"
       >
         {compositions.title}{" "}
       </p>
       <div
         ref={refOpcMaterials}
-        className="composition-materials section-change-animation"
+        className="posimpact-slide__description-composition-materials section-change-animation"
       >
         <MaterialsTypes materials={compositions.materials} />
       </div>
@@ -74,24 +72,27 @@ export const SlideTotalSavings = ({ totalSavings }) => {
   const [refOpcTab] = useSectionChangeAnm();
   const [refOpcElements] = useSectionChangeAnm();
   return (
-    <div className="slide-section-savings border-white">
+    <div className="posimpact-slide__savings border-white">
       <h3 ref={refOpcTitle} className="section-change-animation">
         {totalSavings.title}
       </h3>
       <div
         ref={refOpcElements}
-        className="tabs-saving section-change-animation"
+        className="posimpact-slide__savings-tabs section-change-animation"
       >
         {totalSavings.elements.map((item, index) => (
           <li
             key={index}
-            className="tab-item"
+            className="posimpact-slide__savings-tabs-item"
             onClick={() => setTab(item.element)}
           >
             <img
               src={item.img}
               alt=""
-              className={`${item.element !== tab && "no-current-tab"}`}
+              className={`${
+                item.element !== tab &&
+                "posimpact-slide__savings-no-current-tab"
+              }`}
             />
           </li>
         ))}
@@ -102,7 +103,7 @@ export const SlideTotalSavings = ({ totalSavings }) => {
           <div
             ref={refOpcTab}
             key={index}
-            className="tab-content section-change-animation"
+            className="posimpact-slide__savings-tabs-content section-change-animation"
           >
             <span>{item.amount}</span>
             <span>{item.element}</span>
@@ -119,7 +120,7 @@ export const SlideDataSource = ({ dataSource }) => {
   return (
     <div
       ref={refOpc}
-      className="data-source border-white section-change-animation"
+      className="posimpact-slide__savings-data-source border-white section-change-animation"
     >
       <p>{dataSource}</p>
     </div>

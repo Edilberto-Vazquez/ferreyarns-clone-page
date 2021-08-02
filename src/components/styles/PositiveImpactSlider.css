@@ -1,48 +1,39 @@
-.slide-container {
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(4, 100%);
-  overflow-x: scroll;
-  background: var(--primary);
-}
-
-.slide-item {
+.posimpact-slide {
   display: grid;
   grid-auto-rows: min-content;
 }
 
-.slide-item > img {
+.posimpact-slide > img {
   width: 100%;
   max-height: 800px;
 }
 
-.slide-item-content {
+.posimpact-slide__content {
   padding: 10%;
   display: grid;
   grid-auto-rows: min-content;
   row-gap: 14px;
 }
 
-.slide-title {
+.posimpact-slide__title-img {
   width: auto;
   height: 30px;
 }
 
-.slide-section-description {
+.posimpact-slide__description {
   display: grid;
   grid-auto-rows: min-content;
   row-gap: 14px;
   color: white;
 }
 
-.brand-garment {
+.posimpact-slide__description-brand-garment {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
 }
 
-.composition-materials {
+.posimpact-slide__description-composition-materials {
   display: grid;
   grid-auto-rows: 126px;
   grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
@@ -50,51 +41,51 @@
   row-gap: 14px;
 }
 
-.slide-section-savings {
+.posimpact-slide__savings {
   display: grid;
   row-gap: 14px;
 }
 
-.slide-section-savings h3 {
+.posimpact-slide__savings h3 {
   font-size: 22px;
   color: white;
 }
 
-.tabs-saving {
+.posimpact-slide__savings-tabs {
   display: grid;
   grid-auto-rows: min-content;
   grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
   column-gap: 14px;
 }
 
-.tab-item img {
+.posimpact-slide__savings-tabs-item img {
   width: 40px;
   height: 40px;
 }
 
-.tab-content {
+.posimpact-slide__savings-tabs-content {
   display: grid;
   color: white;
   font-weight: 700;
 }
 
-.tab-content span:nth-child(1) {
+.posimpact-slide__savings-tabs-content span:nth-child(1) {
   font-size: 6rem;
 }
 
-.tab-content span:nth-child(2) {
+.posimpact-slide__savings-tabs-content span:nth-child(2) {
   font-size: clamp(2.2rem, 5vw, 4.8rem);
 }
 
-.data-source {
+.posimpact-slide__savings-data-source {
   color: white;
 }
-.no-current-tab {
+.posimpact-slide__savings-no-current-tab {
   filter: invert(0.5);
 }
 
 @media (min-width: 980px) {
-  .slide-item {
+  .posimpact-slide {
     grid-template-columns: 1fr 1fr;
   }
 }
