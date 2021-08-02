@@ -48,8 +48,8 @@ const SectionDropDown = ({
       {img ? (
         <img
           ref={refImg}
-          src={img}
-          alt=""
+          src={img.img}
+          alt={img.alt}
           className="section-dropdown__media"
         />
       ) : (
