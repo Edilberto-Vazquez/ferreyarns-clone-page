@@ -45,8 +45,8 @@
   width: 100px;
   color: white;
   display: grid;
+  grid-auto-rows: 20px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(auto-fill, 20px);
 }
 
 /* ecological material */
