@@ -100,8 +100,8 @@ const Home = () => {
           <h2 className="title-black">{section6.title}</h2>
         </div>
         <div className="our-clientes__img border-black">
-          {section6.brandImgs.map((item, index) => (
-            <img key={index} src={item} alt="" />
+          {section6.imgs.map((item, index) => (
+            <img key={index} src={item.img} alt={item.alt} />
           ))}
         </div>
       </div>
