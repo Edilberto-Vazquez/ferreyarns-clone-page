@@ -6,11 +6,11 @@ import Spanish from "../utils/PageContent/PositiveImpact/Spanis.json";
 import SectionDropDown from "../components/SectionDropDown";
 import { MultipleParagraphs } from "../components/GeneralComponents";
 import {
-  SlideItem,
-  SlideTitle,
-  SlideDescription,
-  SlideTotalSavings,
-  SlideDataSource,
+  PISlideItem,
+  PISlideTitle,
+  PISlideDescription,
+  PISlideSavings,
+  PISlideDataSource,
 } from "../components/PositiveImpactSlideItem";
 import SlidesContainer from "../components/SlidesContainer";
 import "./styles/PositiveImpact.css";
@@ -38,16 +38,16 @@ const PositiveImpact = () => {
       {/* slider section2 */}
       <SlidesContainer>
         {section2.slides.map((item, index) => (
-          <SlideItem key={index} sectionImg={item.img}>
-            <SlideTitle titleImg={item.imgTitle} />
-            <SlideDescription
+          <PISlideItem key={index} sectionImg={item.img}>
+            <PISlideTitle titleImg={item.imgTitle} />
+            <PISlideDescription
               brand={item.brand}
               garment={item.garment}
               compositions={item.composition}
             />
-            <SlideTotalSavings totalSavings={item.totalSavings} />
-            <SlideDataSource dataSource={item.dataSource} />
-          </SlideItem>
+            <PISlideSavings totalSavings={item.totalSavings} />
+            <PISlideDataSource dataSource={item.dataSource} />
+          </PISlideItem>
         ))}
       </SlidesContainer>
 

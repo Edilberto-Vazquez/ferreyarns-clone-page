@@ -4,7 +4,7 @@ import useSectionChangeAnm from "../utils/animations/useSectionChangeAnm";
 import "./styles/PositiveImpactSlider.css";
 
 // item in slider
-export const SlideItem = ({ sectionImg, children }) => {
+export const PISlideItem = ({ sectionImg, children }) => {
   const [refOpc] = useSectionChangeAnm();
   return (
     <div className="posimpact-slide ">
@@ -20,7 +20,7 @@ export const SlideItem = ({ sectionImg, children }) => {
 };
 
 // title image in item
-export const SlideTitle = ({ titleImg }) => {
+export const PISlideTitle = ({ titleImg }) => {
   const [refOpc] = useSectionChangeAnm();
   return (
     <img
@@ -32,7 +32,7 @@ export const SlideTitle = ({ titleImg }) => {
   );
 };
 
-export const SlideDescription = ({ brand, garment, compositions }) => {
+export const PISlideDescription = ({ brand, garment, compositions }) => {
   const [refOpcBrand] = useSectionChangeAnm();
   const [refOpcComposition] = useSectionChangeAnm();
   const [refOpcMaterials] = useSectionChangeAnm();
@@ -66,7 +66,7 @@ export const SlideDescription = ({ brand, garment, compositions }) => {
 };
 
 // total savings section tabs
-export const SlideTotalSavings = ({ totalSavings }) => {
+export const PISlideSavings = ({ totalSavings }) => {
   const [tab, setTab] = useState(totalSavings.elements[0].element);
   const [refOpcTitle] = useSectionChangeAnm();
   const [refOpcTab] = useSectionChangeAnm();
@@ -115,7 +115,7 @@ export const SlideTotalSavings = ({ totalSavings }) => {
 };
 
 // item data source
-export const SlideDataSource = ({ dataSource }) => {
+export const PISlideDataSource = ({ dataSource }) => {
   const [refOpc] = useSectionChangeAnm();
   return (
     <div
