@@ -30,7 +30,7 @@ export const MaterialsContainer = ({
             onClick={() => setShow(!show)}
             className="materials-container__button"
           >
-            <img src={title} alt="" /> <span>{type}</span>
+            <img src={title.img} alt={title.alt} /> <span>{type}</span>
           </button>
           <div ref={refDisplay} aria-expanded={!show}>
             <p className="materials-container__applications">

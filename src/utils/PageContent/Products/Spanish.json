@@ -3,7 +3,7 @@
     "id": "section1",
     "sectionName": "Ferre / Productos",
     "title": "Impulsando una moda de impacto cero",
-    "img": "/assets/images/products/products.jpg",
+    "img": { "img": "/assets/images/products/products.jpg", "alt": "products" },
     "paragraphs": [
       "Fabricamos hilos reciclados de alta calidad para todo tipo de productos de moda, accesorios y textil hogar. Nuestros productos están hechos con Recover™, la fibra de algodón reciclado de menor impacto del mercado global, según el Indice Higg MSI.",
       "Tenemos pasión por los hilos de bajo impacto y un profundo conocimiento de las posibilidades del hilo reciclado. Nuestros Consultores de Hilo trabajarán contigo para comprender las necesidades de tu marca y ayudarte a llevar a cabo tus proyectos de moda, creando el mejor hilo Sustentable para tus prendas."
@@ -11,7 +11,10 @@
   },
   {
     "id": "section2",
-    "img": "/assets/icons/products/ferre-yarns.svg",
+    "img": {
+      "img": "/assets/icons/products/ferre-yarns.svg",
+      "alt": "ferre-yarns"
+    },
     "paragraphs": [
       "Los hilos Ferre están hechos a partir de residuo textil de algodón reciclado, por lo que puede detectarse un porcentaje de otras fibras como poliéster, viscosa, acrílico, lana o nylon en las pruebas finales de composición."
     ],
@@ -30,333 +33,498 @@
     "materialItem": [
       {
         "tabs": [0, 1, 7],
-        "img": "/assets/icons/products/f_images/funo.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/funo.svg",
+          "alt": "funo"
+        },
         "type": "COPAC",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 28", "Ne 17"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "50%"
           },
 
           {
             "name": "Acrílico",
-            "img": "/assets/icons/products/materials/acrylic.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/acrylic.svg",
+              "alt": "acrylic"
+            },
             "percentage": "45%"
           },
 
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "5%"
           }
         ]
       },
       {
         "tabs": [0, 1, 8],
-        "img": "/assets/icons/products/f_images/funo.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/funo.svg",
+          "alt": "funo"
+        },
         "type": "POLICOTON",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 40", "Ne 24"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "52%"
           },
           {
             "name": "Poliéster",
-            "img": "/assets/icons/products/materials/polyester.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/polyester.svg",
+              "alt": "polyester"
+            },
             "percentage": "45%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "3%"
           }
         ]
       },
       {
         "tabs": [0, 1, 8],
-        "img": "/assets/icons/products/f_images/funo.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/funo.svg",
+          "alt": "funo"
+        },
         "type": "COTOPOL 30",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 30", "Ne 18"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "60%"
           },
           {
             "name": "Poliéster",
-            "img": "/assets/icons/products/materials/polyester.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/polyester.svg",
+              "alt": "polyester"
+            },
             "percentage": "35%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "5%"
           }
         ]
       },
       {
         "tabs": [0, 1, 8],
-        "img": "/assets/icons/products/f_images/funo.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/funo.svg",
+          "alt": "funo"
+        },
         "type": "COTOTAP",
         "aplication": "Weaving.",
         "specs": ["Nm 15", "Ne 9"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "70%"
           },
           {
             "name": "Poliéster",
-            "img": "/assets/icons/products/materials/polyester.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/polyester.svg",
+              "alt": "polyester"
+            },
             "percentage": "25%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "5%"
           }
         ]
       },
       {
         "tabs": [0, 1, 8],
-        "img": "/assets/icons/products/f_images/funo.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/funo.svg",
+          "alt": "funo"
+        },
         "type": "COTOPOL 20",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 20", "Ne 12"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "70%"
           },
           {
             "name": "Poliéster",
-            "img": "/assets/icons/products/materials/polyester.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/polyester.svg",
+              "alt": "polyester"
+            },
             "percentage": "25%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "5%"
           }
         ]
       },
       {
         "tabs": [0, 1, 8],
-        "img": "/assets/icons/products/f_images/funo.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/funo.svg",
+          "alt": "funo"
+        },
         "type": "COTOPOL 90/10",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 20", "Ne 12"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "87%"
           },
           {
             "name": "Poliéster",
-            "img": "/assets/icons/products/materials/polyester.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/polyester.svg",
+              "alt": "polyester"
+            },
             "percentage": "10%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "3%"
           }
         ]
       },
       {
         "tabs": [0, 1, 2],
-        "img": "/assets/icons/products/f_images/fblue.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/fblue.svg",
+          "alt": "fblue"
+        },
         "type": "B-52",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 34", "Ne 20", "Nm 50", "Ne 30", "Nm28", "Ne 17"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "50%"
           },
           {
             "name": "Poliéster reciclado",
-            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "alt": "poliester-icon-white"
+            },
             "percentage": "47%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "3%"
           }
         ]
       },
       {
         "tabs": [0, 1, 2],
-        "img": "/assets/icons/products/f_images/fblue.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/fblue.svg",
+          "alt": "fblue"
+        },
         "type": "B-75",
         "aplication": "Weaving.",
         "specs": ["Nm 13.5", "Ne 8"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "70%"
           },
           {
             "name": "Poliéster reciclado",
-            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "alt": "poliester-icon-white"
+            },
             "percentage": "25%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "5%"
           }
         ]
       },
       {
         "tabs": [0, 1, 4],
-        "img": "/assets/icons/products/f_images/fearth.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/fearth.svg",
+          "alt": "fearth"
+        },
         "type": "E-50",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 44", "Ne 26", "Nm 28", "Ne 17"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "50%"
           },
           {
             "name": "Algodón orgánico",
-            "img": "/assets/icons/products/materials/organic-cotton.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/organic-cotton.svg",
+              "alt": "organic-cotton"
+            },
             "percentage": "50%"
           }
         ]
       },
       {
         "tabs": [0, 2, 3],
-        "img": "/assets/icons/products/f_images/fearth.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/fearth.svg",
+          "alt": "fearth"
+        },
         "type": "W-25",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 28", "Ne 17"],
         "materials": [
           {
             "name": "Lana posindustrial reciclada",
-            "img": "/assets/icons/products/materials/wool.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/wool.svg",
+              "alt": "wool"
+            },
             "percentage": "25%"
           },
           {
             "name": "Poliéster reciclado",
-            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "alt": "poliester-icon-white"
+            },
             "percentage": "55%"
           },
           {
             "name": "Poliamida",
-            "img": "/assets/icons/products/materials/polyamide.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/polyamide.svg",
+              "alt": "polyamide"
+            },
             "percentage": "17%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "5%"
           }
         ]
       },
       {
         "tabs": [0, 1, 4, 5],
-        "img": "/assets/icons/products/f_images/fjeans.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/fjeans.svg",
+          "alt": "fjeans"
+        },
         "type": "J-30",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 15", "Ne 9"],
         "materials": [
           {
             "name": "Denim reciclado Recover™",
-            "img": "/assets/icons/products/materials/denim.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/denim.svg",
+              "alt": "denim"
+            },
             "percentage": "27%"
           },
           {
             "name": "Algodón orgánico",
-            "img": "/assets/icons/products/materials/organic-cotton.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/organic-cotton.svg",
+              "alt": "organic-cotton"
+            },
             "percentage": "70%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "3%"
           }
         ]
       },
       {
         "tabs": [0, 1, 4, 5],
-        "img": "/assets/icons/products/f_images/fjeans.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/fjeans.svg",
+          "alt": "fjeans"
+        },
         "type": "j-50",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 15", "Ne 9"],
         "materials": [
           {
             "name": "Denim reciclado Recover™",
-            "img": "/assets/icons/products/materials/denim.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/denim.svg",
+              "alt": "denim"
+            },
             "percentage": "45%"
           },
           {
             "name": "Algodón orgánico",
-            "img": "/assets/icons/products/materials/organic-cotton.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/organic-cotton.svg",
+              "alt": "organic-cotton"
+            },
             "percentage": "50%"
           },
           {
             "name": "Otras fibras",
-            "img": "/assets/icons/products/materials/other-fibers.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/other-fibers.svg",
+              "alt": "other-fibers"
+            },
             "percentage": "5%"
           }
         ]
       },
       {
         "tabs": [0, 1, 2],
-        "img": "/assets/icons/products/f_images/fearth.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/fearth.svg",
+          "alt": "fearth"
+        },
         "type": "T-25",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 50", "Ne 30"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "25%"
           },
           {
             "name": "Poliéster reciclado",
-            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "alt": "poliester-icon-white"
+            },
             "percentage": "75%"
           }
         ]
       },
       {
         "tabs": [0, 1, 2, 6],
-        "img": "/assets/icons/products/f_images/funo.svg",
+        "img": {
+          "img": "/assets/icons/products/f_images/funo.svg",
+          "alt": "funo"
+        },
         "type": "3-25",
         "aplication": "Géneros de punto, tejidos y calcetería.",
         "specs": ["Nm 50", "Ne 30"],
         "materials": [
           {
             "name": "Algodón reciclado Recover™",
-            "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/cotton-icon-white.svg",
+              "alt": "cotton-icon-white"
+            },
             "percentage": "25%"
           },
           {
             "name": "Poliéster reciclado",
-            "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/poliester-icon-white.svg",
+              "alt": "poliester-icon-white"
+            },
             "percentage": "45%"
           },
           {
             "name": "TENCEL™",
-            "img": "/assets/icons/products/materials/tecnel.svg",
+            "img": {
+              "img": "/assets/icons/products/materials/tecnel.svg",
+              "alt": "tecnel"
+            },
             "percentage": "30%"
           }
         ]

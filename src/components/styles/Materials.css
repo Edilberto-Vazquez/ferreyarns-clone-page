@@ -10,8 +10,8 @@
 
 .materials-container__button {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   background: none;
   border: none;
@@ -24,6 +24,7 @@
 }
 
 .materials-container__button span {
+  justify-self: center;
   font-size: 1.4rem;
   color: white;
   font-weight: 400;

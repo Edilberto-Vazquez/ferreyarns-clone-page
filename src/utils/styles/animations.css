@@ -36,6 +36,7 @@
 /* display transition button style */
 
 .display-animation-button-black::after {
+  justify-self: flex-end;
   width: 35px;
   height: 35px;
   display: grid;
@@ -48,6 +49,7 @@
 }
 
 .display-animation-button-white::after {
+  justify-self: flex-end;
   width: 35px;
   height: 35px;
   display: grid;
