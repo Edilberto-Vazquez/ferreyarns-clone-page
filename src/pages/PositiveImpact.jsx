@@ -11,7 +11,7 @@ import {
   SlideDescription,
   SlideTotalSavings,
   SlideDataSource,
-} from "../components/PositiveImpactSlider";
+} from "../components/PositiveImpactSlideItem";
 import SlidesContainer from "../components/SlidesContainer";
 import "./styles/PositiveImpact.css";
 
@@ -52,13 +52,13 @@ const PositiveImpact = () => {
       </SlidesContainer>
 
       {/* Our environmental savings in 2020 section3 */}
-      <div className="env-sav">
-        <div className="env-sav-title">
+      <div className="enviromental-savings">
+        <div className="enviromental-savings__title">
           <h2 className="title-white">{section3.title}</h2>
         </div>
-        <div className="env-sav-items border-white">
+        <div className="enviromental-savings__items border-white">
           {section3.environmentalSavings.map((item, index) => (
-            <div key={index} className="env-sav-items__desc">
+            <div key={index} className="enviromental-savings__item">
               <img src={item.img} alt="" />
               <span>{item.number}</span>
               <h3>{item.element}</h3>
@@ -66,6 +66,7 @@ const PositiveImpact = () => {
           ))}
         </div>
       </div>
+
       {/* Sustainability report section4 */}
       <SectionDropDown
         title={section4.title}

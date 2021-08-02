@@ -1,15 +1,15 @@
-.env-sav {
-  padding: 0 10% 10% 10%;
+.enviromental-savings {
+  padding: 10% 10% 10% 10%;
   display: grid;
   row-gap: 14px;
   background: var(--primary);
 }
 
-.env-sav-title {
+.enviromental-savings__title {
   color: white;
 }
 
-.env-sav-items {
+.enviromental-savings__items {
   display: grid;
   grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fill, minmax(240px, 400px));
@@ -17,7 +17,7 @@
   gap: 32px;
 }
 
-.env-sav-items__desc {
+.enviromental-savings__item {
   min-width: 250px;
   min-height: 250px;
   padding: 40px;
@@ -27,19 +27,19 @@
   color: white;
 }
 
-.env-sav-items__desc img {
+.enviromental-savings__item img {
   width: 100px;
   height: 100px;
 }
 
-.env-sav-items__desc span {
+.enviromental-savings__item span {
   font-size: 60px;
 }
 
-.env-sav-items__desc span {
+.enviromental-savings__item span {
   font-size: 60px;
 }
 
-.env-sav-items__desc h3 {
+.enviromental-savings__item h3 {
   font-size: 16px;
 }
