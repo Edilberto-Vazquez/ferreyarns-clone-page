@@ -28,7 +28,7 @@ export const SectionMenu = ({
     }
   };
   return (
-    <div className="section-menu">
+    <ul className="section-menu">
       {listItems.map((item) => (
         <li
           key={item.tab}
@@ -42,7 +42,7 @@ export const SectionMenu = ({
           {item.name}
         </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

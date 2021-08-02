@@ -1,7 +1,7 @@
 [
   {
     "id": "header",
-    "logo": ["/assets/icons/logo-ferre.svg", "/"],
+    "logo": ["/assets/icons/logo-ferre.svg", "logo ferre", "/"],
     "aboutUs": ["About us", "/about-us"],
     "products": ["Products", "/products"],
     "certifications": ["Certifications", "/certifications"],

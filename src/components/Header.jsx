@@ -13,8 +13,8 @@ const Header = () => {
 
   return (
     <header>
-      <Link to={header.logo[1]} className="ferreyarns-logo">
-        <img src={header.logo[0]} alt="" />
+      <Link to={header.logo[2]} className="ferreyarns-logo" aria-label="home">
+        <img src={header.logo[0]} alt={header.logo[1]} />
       </Link>
       <nav className="navbar-mobile">
         <ul className="navbar-mobile-links">

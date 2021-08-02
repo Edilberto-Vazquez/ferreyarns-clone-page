@@ -81,7 +81,7 @@ export const PISlideSavings = ({ totalSavings }) => {
         className="posimpact-slide__savings-tabs section-change-animation"
       >
         {totalSavings.elements.map((item, index) => (
-          <li
+          <button
             key={index}
             className="posimpact-slide__savings-tabs-item"
             onClick={() => setTab(item.element)}
@@ -94,7 +94,7 @@ export const PISlideSavings = ({ totalSavings }) => {
                 "posimpact-slide__savings-no-current-tab"
               }`}
             />
-          </li>
+          </button>
         ))}
       </div>
       {totalSavings.elements.map((item, index) => {

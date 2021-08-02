@@ -39,12 +39,12 @@
   row-gap: 14px;
 }
 
-.form-section__terms-conditions span {
+.form-section__terms-conditions label {
   font-size: 1.4rem;
   color: var(--secondary-font);
 }
 
-.form-section__terms-conditions span a {
+.form-section__terms-conditions label a {
   font-size: 1.4rem;
   color: var(--secondary-font);
   text-decoration: underline;

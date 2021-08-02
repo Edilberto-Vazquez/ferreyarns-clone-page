@@ -37,11 +37,15 @@
       "socialMedia": [
         {
           "img": "/assets/icons/footer/instagram.svg",
-          "link": "https://www.instagram.com/ferreyarns/"
+          "alt": "instagram-icon",
+          "link": "https://www.instagram.com/ferreyarns/",
+          "arialabel": "instagram"
         },
         {
           "img": "/assets/icons/footer/linkedin.svg",
-          "link": "https://www.linkedin.com/company/ferreyarns/?viewAsMember=true"
+          "alt": "linkedin-icon",
+          "link": "https://www.linkedin.com/company/ferreyarns/?viewAsMember=true",
+          "arialabel": "linkedin"
         }
       ]
     },

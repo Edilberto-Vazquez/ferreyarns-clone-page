@@ -58,6 +58,12 @@
   column-gap: 14px;
 }
 
+.posimpact-slide__savings-tabs-item {
+  background: none;
+  border: none;
+  outline: none;
+}
+
 .posimpact-slide__savings-tabs-item img {
   width: 40px;
   height: 40px;

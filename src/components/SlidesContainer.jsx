@@ -23,8 +23,16 @@ const SlidesContainer = ({ children }) => {
     <div className="slides-container">
       {sliderSection(numSlide)}
       <div className="slides-container__arrow-butons">
-        <button type="button" onClick={() => handleClick(numSlide - 1)} />
-        <button type="button" onClick={() => handleClick(numSlide + 1)} />
+        <button
+          type="button"
+          onClick={() => handleClick(numSlide - 1)}
+          aria-label="previous slide"
+        />
+        <button
+          type="button"
+          onClick={() => handleClick(numSlide + 1)}
+          aria-label="next slide"
+        />
       </div>
     </div>
   );

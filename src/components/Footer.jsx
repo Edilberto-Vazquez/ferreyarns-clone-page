@@ -44,10 +44,10 @@ const Footer = () => {
             <strong>{footer.follow.title}</strong>
           </p>
           {footer.follow.socialMedia.map((item, index) => (
-            <a key={index} href={item.link}>
+            <a key={index} href={item.link} aria-label={item.arialabel}>
               <img
                 src={item.img}
-                alt=""
+                alt={item.alt}
                 className="footer-social-media_icons"
               />
             </a>

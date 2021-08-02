@@ -20,11 +20,11 @@ export const FormSection = ({ title, children, privacy }) => {
           {children[1]}
           <div className="form-section__terms-conditions">
             <input type="checkbox" name="accept" id="accept" />
-            <span>
+            <label htmlFor="accept">
               {" "}
               {privacy.paragraph}{" "}
               <Link to={privacy.link.link}>{privacy.link.name}</Link>
-            </span>
+            </label>
           </div>
           {children[2]}
         </form>
