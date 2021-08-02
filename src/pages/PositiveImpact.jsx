@@ -5,6 +5,13 @@ import English from "../utils/PageContent/PositiveImpact/English.json";
 import Spanish from "../utils/PageContent/PositiveImpact/Spanis.json";
 import SectionDropDown from "../components/SectionDropDown";
 import { MultipleParagraphs } from "../components/GeneralComponents";
+import {
+  SlideItem,
+  SlideTitle,
+  SlideDescription,
+  SlideTotalSavings,
+  SlideDataSource,
+} from "../components/PositiveImpactSlider";
 import SlidesContainer from "../components/SlidesContainer";
 import "./styles/PositiveImpact.css";
 
@@ -29,7 +36,20 @@ const PositiveImpact = () => {
       </SectionDropDown>
 
       {/* slider section2 */}
-      <SlidesContainer slides={section2.slides} />
+      <SlidesContainer>
+        {section2.slides.map((item, index) => (
+          <SlideItem key={index} sectionImg={item.img}>
+            <SlideTitle titleImg={item.imgTitle} />
+            <SlideDescription
+              brand={item.brand}
+              garment={item.garment}
+              compositions={item.composition}
+            />
+            <SlideTotalSavings totalSavings={item.totalSavings} />
+            <SlideDataSource dataSource={item.dataSource} />
+          </SlideItem>
+        ))}
+      </SlidesContainer>
 
       {/* Our environmental savings in 2020 section3 */}
       <div className="env-sav">
