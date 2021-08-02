@@ -4,8 +4,8 @@
 
 .faqs-question__item-button {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 8fr 1fr;
   align-items: center;
   background: none;
   border: none;

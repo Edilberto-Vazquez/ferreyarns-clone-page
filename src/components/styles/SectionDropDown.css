@@ -19,6 +19,7 @@
 .section-dropdown__media {
   width: 100%;
   max-height: 800px;
+  object-fit: cover;
 }
 
 .section-dropdown-top {
