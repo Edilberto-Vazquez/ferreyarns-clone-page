@@ -13,7 +13,7 @@ const ProcessItem = ({ title, titleNum, description, imgs }) => {
       </div>
       <div className="circular-proc-imgs">
         {imgs.map((item, index) => {
-          return <img key={index} src={item} alt="" />;
+          return <img key={index} src={item.img} alt={item.alt} />;
         })}
       </div>
     </div>

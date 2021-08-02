@@ -16,23 +16,40 @@
         "title": "El residuo textil es nuestra materia prima",
         "paragraphs": "Utilizamos residuo textil pre y posconsumidor como principal fuente de materia prima. Al hacerlo evitamos que el residuo textil vaya al vertedero o la incineración y somos menos dependientes de materias primas vírgenes y finitas.",
         "imgs": [
-          "/assets/images/circular_process/circular-process-1.jpg",
-          "/assets/images/circular_process/circular-process-2.jpg"
+          {
+            "img": "/assets/images/circular_process/circular-process-1.jpg",
+            "alt": "circular-process-1"
+          },
+          {
+            "img": "/assets/images/circular_process/circular-process-2.jpg",
+            "alt": "circular-process-2"
+          }
         ]
       },
       {
         "imgNumber": "/assets/icons/circular_process/numbers/icon-02.svg",
         "title": "Reciclaje de fibra de algodón",
         "paragraphs": "Recover™, nuestro socio estratégico en la cadena de suministro sostenible, transforma el residuo textil en nueva fibra de algodón reciclado, asegurando la mejor calidad y máxima longitud de fibra. Según el Indice Higg MSI, la fibra de algodón reciclado Recover™ es la de menor impacto en el mercado global.",
-        "imgs": ["/assets/images/circular_process/circular-process-3.jpg"]
+        "imgs": [
+          {
+            "img": "/assets/images/circular_process/circular-process-3.jpg",
+            "alt": "circular-process-3"
+          }
+        ]
       },
       {
         "imgNumber": "/assets/icons/circular_process/numbers/icon-03.svg",
         "title": "Creación de mezclas de bajo impacto",
         "paragraphs": "El Sistema Recover™ ColorBlend mezcla la fibra de algodón reciclado sin teñir Recover™ con otras fibras de soporte que han sido teñidas con procesos de bajo impacto (PET reciclado, lana reciclada, nylon reciclado, algodón orgánico, …), para crear nuevas fibras recicladas con colores precisos y únicos sin utilizar agua ni productos químicos.",
         "imgs": [
-          "/assets/images/circular_process/circular-process-4.jpg",
-          "/assets/images/circular_process/circular-process-5.jpg"
+          {
+            "img": "/assets/images/circular_process/circular-process-4.jpg",
+            "alt": "circular-process-4"
+          },
+          {
+            "img": "/assets/images/circular_process/circular-process-5.jpg",
+            "alt": "circular-process-5"
+          }
         ]
       },
       {
@@ -40,15 +57,26 @@
         "title": "Las mezcladas",
         "paragraphs": "La mezcla de fibras de bajo impacto se reproduce a escala industrial y se somete posteriormente a varios procesos de mezclas íntimas en los cuartos de mezclas hasta alcanzar la combinación perfecta de rendimiento y precisión en el color.",
         "imgs": [
-          "/assets/images/circular_process/circular-process-6.jpg",
-          "/assets/images/circular_process/circular-process-7.jpg"
+          {
+            "img": "/assets/images/circular_process/circular-process-6.jpg",
+            "alt": "circular-process-6"
+          },
+          {
+            "img": "/assets/images/circular_process/circular-process-7.jpg",
+            "alt": "circular-process-7"
+          }
         ]
       },
       {
         "imgNumber": "/assets/icons/circular_process/numbers/icon-05.svg",
         "title": "Hilado",
         "paragraphs": "Las mezclas de fibra de algodón reciclado se convierten en hilos premium de bajo impacto para todo tipo de moda, accesorios y textil hogar, en una amplia gama de colores precisos y únicos.",
-        "imgs": ["/assets/images/circular_process/circular-process-8.jpg"]
+        "imgs": [
+          {
+            "img": "/assets/images/circular_process/circular-process-8.jpg",
+            "alt": "circular-process-8"
+          }
+        ]
       }
     ]
   }
